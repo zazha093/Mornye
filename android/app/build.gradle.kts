@@ -124,6 +124,19 @@ android {
         }
     }
 
+    flavorDimensions += "variant"
+    productFlavors {
+        create("standard") {
+            dimension = "variant"
+            // Uses default applicationId from defaultConfig: com.zarz.mornye
+        }
+        create("test") {
+            dimension = "variant"
+            applicationId = "com.zarz.mornye.test"
+            versionNameSuffix = "-test"
+        }
+    }
+
     buildTypes {
         getByName("debug") {
             applicationIdSuffix = ".debug"

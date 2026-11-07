@@ -9,10 +9,13 @@ OUTPUT_DIR="$PROJECT_DIR/build/app/outputs/flutter-apk"
 FLUTTER_ARGS=()
 PRODUCTION_BUILD=0
 LITE_BUILD=0
+FLAVOR=""
 for argument in "$@"; do
   case "$argument" in
     --production) PRODUCTION_BUILD=1 ;;
     --lite) LITE_BUILD=1; export MORNYE_DISCORD_SDK=0 ;;
+    --flavor) FLAVOR="$2"; shift ;;
+    --flavor=*) FLAVOR="${argument#*=}" ;;
     --target-platform|--target-platform=*|--split-per-abi|--no-split-per-abi)
       echo "Error: set MORNYE_RUST_ANDROID_ABIS to select the release APK architectures." >&2
       exit 1
@@ -20,6 +23,10 @@ for argument in "$@"; do
     *) FLUTTER_ARGS+=("$argument") ;;
   esac
 done
+
+if [[ -n "$FLAVOR" ]]; then
+  FLUTTER_ARGS+=(--flavor "$FLAVOR")
+fi
 
 if [[ "$PRODUCTION_BUILD" == "1" ]]; then
   if [[ "$LITE_BUILD" == "1" ]]; then
@@ -106,10 +113,18 @@ BUILD_GIT_COMMIT="$(git rev-parse --short=8 HEAD)"
   ${FLUTTER_ARGS[@]+"${FLUTTER_ARGS[@]}"}
 
 for target in "${ANDROID_ABIS[@]}" universal; do
-  apk="app-$target-release.apk"
+  if [[ -n "$FLAVOR" ]]; then
+    apk="app-$FLAVOR-$target-release.apk"
+  else
+    apk="app-$target-release.apk"
+  fi
   abis="$target"
   if [[ "$target" == "universal" ]]; then
-    apk=app-release.apk
+    if [[ -n "$FLAVOR" ]]; then
+      apk="app-$FLAVOR-release.apk"
+    else
+      apk=app-release.apk
+    fi
     abis="$ANDROID_ABIS_RAW"
   fi
   if [[ ! -f "$OUTPUT_DIR/$apk" ]]; then
