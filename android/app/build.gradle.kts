@@ -132,8 +132,8 @@ android {
         }
         create("sideload") {
             dimension = "variant"
-            applicationId = "com.zarz.mornye.sideload"
-            versionNameSuffix = "-sideload"
+            applicationId = "com.zarz.mornye.th"
+            versionNameSuffix = "-th"
         }
     }
 

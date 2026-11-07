@@ -105,12 +105,13 @@ fi
 BUILD_GIT_COMMIT="$(git rev-parse --short=8 HEAD)"
 "${FLUTTER_COMMAND[@]}" build apk \
   --release \
+  --flavor sideload \
+  --target lib/main.dart \
   --obfuscate \
   --split-debug-info "$PROJECT_DIR/build/symbols/android" \
   --split-per-abi \
-  --target-platform "$TARGET_PLATFORM_LIST" \
-  --dart-define="GIT_COMMIT=$BUILD_GIT_COMMIT" \
-  ${FLUTTER_ARGS[@]+"${FLUTTER_ARGS[@]}"}
+  --target-platform android-arm64 \
+  --dart-define="GIT_COMMIT=$BUILD_GIT_COMMIT"
 
 for target in "${ANDROID_ABIS[@]}" universal; do
   if [[ -n "$FLAVOR" ]]; then
