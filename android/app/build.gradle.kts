@@ -130,10 +130,10 @@ android {
             dimension = "variant"
             // Uses default applicationId from defaultConfig: com.zarz.mornye
         }
-        create("test") {
+        create("sideload") {
             dimension = "variant"
-            applicationId = "com.zarz.mornye.test"
-            versionNameSuffix = "-test"
+            applicationId = "com.zarz.mornye.sideload"
+            versionNameSuffix = "-sideload"
         }
     }
 
