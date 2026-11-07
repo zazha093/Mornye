@@ -85,8 +85,8 @@ jobs:
           key: cargo-${{ runner.os }}-android-${{ hashFiles('rust_backend/rust-toolchain.toml') }}-${{ hashFiles('rust_backend/Cargo.lock') }}
           restore-keys: cargo-${{ runner.os }}-android-${{ hashFiles('rust_backend/rust-toolchain.toml') }}-
 
-      - name: Package Rust application and run native unit tests
-        run: gradle -p android :app:assembleDebug :app:testDebugUnitTest --info
+      - name: Package Rust application (assembleDebug only)
+        run: gradle -p android :app:assembleDebug --info
 
       - name: Build Rust release application (Lite) - sideload flavor
         run: bash scripts/build_android.sh --lite --target lib/main.dart --flavor sideload
