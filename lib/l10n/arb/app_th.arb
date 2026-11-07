@@ -636,7 +636,7 @@
   "@optionsPrimaryProviderSubtitle": {
     "description": "Subtitle for primary provider"
   },
-  "optionsUsingExtension": "Using extension: {extensionชื่อ}",
+  "optionsUsingExtension": "Using extension: {extensionName}",
   "@optionsUsingExtension": {
     "description": "Shows active extension name",
     "placeholders": {
@@ -1084,7 +1084,7 @@
   "@setupPermissionDeniedMessage": {
     "description": "Error when permission denied"
   },
-  "setupPermissionRequired": "{permissionประเภท} Permission จำเป็น",
+  "setupPermissionRequired": "{permissionType} Permission จำเป็น",
   "@setupPermissionRequired": {
     "description": "Generic permission required title",
     "placeholders": {
@@ -1094,7 +1094,7 @@
       }
     }
   },
-  "setupPermissionRequiredMessage": "{permissionประเภท} permission is required for the best experience. You can change this later in การตั้งค่า.",
+  "setupPermissionRequiredMessage": "{permissionType} permission is required for the best experience. You can change this later in การตั้งค่า.",
   "@setupPermissionRequiredMessage": {
     "description": "Generic permission required message",
     "placeholders": {
@@ -1359,7 +1359,7 @@
   "@dialogUninstallExtension": {
     "description": "Dialog title - uninstall extension"
   },
-  "dialogUninstallExtensionMessage": "Are you sure you want to remove {extensionชื่อ}?",
+  "dialogUninstallExtensionMessage": "Are you sure you want to remove {extensionName}?",
   "@dialogUninstallExtensionMessage": {
     "description": "Dialog message - uninstall specific extension",
     "placeholders": {
@@ -1471,7 +1471,7 @@
       }
     }
   },
-  "duplicatesKeepBestMessage": "ลบ {count} lower-quality copies of \"{trackชื่อ}\"?",
+  "duplicatesKeepBestMessage": "ลบ {count} lower-quality copies of \"{trackName}\"?",
   "@duplicatesKeepBestMessage": {
     "description": "Confirmation message for the keep-best action",
     "placeholders": {
@@ -1483,7 +1483,7 @@
       }
     }
   },
-  "duplicatesDeleteCopyMessage": "ลบ this copy of \"{trackชื่อ}\"?",
+  "duplicatesDeleteCopyMessage": "ลบ this copy of \"{trackName}\"?",
   "@duplicatesDeleteCopyMessage": {
     "description": "Confirmation message for deleting one duplicate copy",
     "placeholders": {
@@ -1500,7 +1500,7 @@
       }
     }
   },
-  "snackbarAddedToQueue": "เพิ่มed \"{trackชื่อ}\" to queue",
+  "snackbarAddedToQueue": "เพิ่มed \"{trackName}\" to queue",
   "@snackbarAddedToQueue": {
     "description": "Snackbar - track added to download queue",
     "placeholders": {
@@ -1518,7 +1518,7 @@
       }
     }
   },
-  "snackbarAlreadyDownloaded": "\"{trackชื่อ}\" already downloaded",
+  "snackbarAlreadyDownloaded": "\"{trackName}\" already downloaded",
   "@snackbarAlreadyDownloaded": {
     "description": "Snackbar - track already exists",
     "placeholders": {
@@ -1527,7 +1527,7 @@
       }
     }
   },
-  "snackbarAlreadyInLibrary": "\"{trackชื่อ}\" already exists in your library",
+  "snackbarAlreadyInLibrary": "\"{trackName}\" already exists in your library",
   "@snackbarAlreadyInLibrary": {
     "description": "Snackbar - track already exists in local library",
     "placeholders": {
@@ -1588,7 +1588,7 @@
   "@snackbarMetadataProviderSaved": {
     "description": "Snackbar - metadata provider order saved"
   },
-  "snackbarExtensionInstalled": "{extensionชื่อ} installed.",
+  "snackbarExtensionInstalled": "{extensionName} installed.",
   "@snackbarExtensionInstalled": {
     "description": "Snackbar - extension installed successfully",
     "placeholders": {
@@ -1597,7 +1597,7 @@
       }
     }
   },
-  "snackbarExtensionUpdated": "{extensionชื่อ} updated.",
+  "snackbarExtensionUpdated": "{extensionName} updated.",
   "@snackbarExtensionUpdated": {
     "description": "Snackbar - extension updated successfully",
     "placeholders": {
@@ -4114,7 +4114,7 @@
   "@trackEditMetadata": {
     "description": "Menu action - edit embedded metadata"
   },
-  "trackCoverSaved": "ภาพปก saved to {fileชื่อ}",
+  "trackCoverSaved": "ภาพปก saved to {fileName}",
   "@trackCoverSaved": {
     "description": "Snackbar after cover art saved",
     "placeholders": {
@@ -4127,7 +4127,7 @@
   "@trackCoverNoSource": {
     "description": "Snackbar when no cover art URL or embedded cover"
   },
-  "trackLyricsSaved": "บันทึกเนื้อเพลงแล้ว to {fileชื่อ}",
+  "trackLyricsSaved": "บันทึกเนื้อเพลงแล้ว to {fileName}",
   "@trackLyricsSaved": {
     "description": "Snackbar after lyrics saved",
     "placeholders": {
@@ -4226,7 +4226,7 @@
   "@trackConvertConfirmTitle": {
     "description": "Confirmation dialog title"
   },
-  "trackConvertConfirmMessage": "Convert from {sourceรูปแบบ} to {targetรูปแบบ} at {bitrate}?\n\nThe original file will be deleted after conversion.",
+  "trackConvertConfirmMessage": "Convert from {sourceFormat} to {targetFormat} at {bitrate}?\n\nThe original file will be deleted after conversion.",
   "@trackConvertConfirmMessage": {
     "description": "Confirmation dialog message",
     "placeholders": {
@@ -4241,7 +4241,7 @@
       }
     }
   },
-  "trackConvertConfirmMessageLossless": "Convert from {sourceรูปแบบ} to {targetรูปแบบ}? (ลอสเลส — no quality loss)\n\nThe original file will be deleted after conversion.",
+  "trackConvertConfirmMessageLossless": "Convert from {sourceFormat} to {targetFormat}? (ลอสเลส — no quality loss)\n\nThe original file will be deleted after conversion.",
   "@trackConvertConfirmMessageLossless": {
     "description": "Confirmation dialog message for lossless-to-lossless conversion",
     "placeholders": {
@@ -4253,7 +4253,7 @@
       }
     }
   },
-  "trackConvertConfirmKeepOriginal": "Convert from {sourceรูปแบบ} to {targetรูปแบบ}?\n\nThe original file will be kept and the converted file will be added as a separate library entry.",
+  "trackConvertConfirmKeepOriginal": "Convert from {sourceFormat} to {targetFormat}?\n\nThe original file will be kept and the converted file will be added as a separate library entry.",
   "@trackConvertConfirmKeepOriginal": {
     "description": "Confirmation message when the source file will be preserved",
     "placeholders": {
@@ -4420,7 +4420,7 @@
       }
     }
   },
-  "collectionAddedToPlaylist": "เพิ่มed to \"{playlistชื่อ}\"",
+  "collectionAddedToPlaylist": "เพิ่มed to \"{playlistName}\"",
   "@collectionAddedToPlaylist": {
     "description": "Snackbar after adding track to playlist",
     "placeholders": {
@@ -4429,7 +4429,7 @@
       }
     }
   },
-  "collectionAlreadyInPlaylist": "Already in \"{playlistชื่อ}\"",
+  "collectionAlreadyInPlaylist": "Already in \"{playlistName}\"",
   "@collectionAlreadyInPlaylist": {
     "description": "Snackbar when track already exists in playlist",
     "placeholders": {
@@ -4507,7 +4507,7 @@
   "@collectionRemoveFromFolder": {
     "description": "Tooltip for removing track from wishlist/loved folder"
   },
-  "collectionAddedToLoved": "\"{trackชื่อ}\" added to Loved",
+  "collectionAddedToLoved": "\"{trackName}\" added to Loved",
   "@collectionAddedToLoved": {
     "description": "Snackbar after adding track to loved folder",
     "placeholders": {
@@ -4516,7 +4516,7 @@
       }
     }
   },
-  "collectionRemovedFromLoved": "\"{trackชื่อ}\" removed from Loved",
+  "collectionRemovedFromLoved": "\"{trackName}\" removed from Loved",
   "@collectionRemovedFromLoved": {
     "description": "Snackbar after removing track from loved folder",
     "placeholders": {
@@ -4525,7 +4525,7 @@
       }
     }
   },
-  "collectionAddedToWishlist": "\"{trackชื่อ}\" added to Wishlist",
+  "collectionAddedToWishlist": "\"{trackName}\" added to Wishlist",
   "@collectionAddedToWishlist": {
     "description": "Snackbar after adding track to wishlist",
     "placeholders": {
@@ -4534,7 +4534,7 @@
       }
     }
   },
-  "collectionRemovedFromWishlist": "\"{trackชื่อ}\" removed from Wishlist",
+  "collectionRemovedFromWishlist": "\"{trackName}\" removed from Wishlist",
   "@collectionRemovedFromWishlist": {
     "description": "Snackbar after removing track from wishlist",
     "placeholders": {
@@ -4543,7 +4543,7 @@
       }
     }
   },
-  "collectionAddedToFavoriteArtists": "\"{artistชื่อ}\" added to Favorite ศิลปิน",
+  "collectionAddedToFavoriteArtists": "\"{artistName}\" added to Favorite ศิลปิน",
   "@collectionAddedToFavoriteArtists": {
     "description": "Snackbar after adding artist to favorite artists",
     "placeholders": {
@@ -4552,7 +4552,7 @@
       }
     }
   },
-  "collectionRemovedFromFavoriteArtists": "\"{artistชื่อ}\" removed from Favorite ศิลปิน",
+  "collectionRemovedFromFavoriteArtists": "\"{artistName}\" removed from Favorite ศิลปิน",
   "@collectionRemovedFromFavoriteArtists": {
     "description": "Snackbar after removing artist from favorite artists",
     "placeholders": {
@@ -5622,7 +5622,7 @@
   "@audioAnalysisSaveSpectrogram": {
     "description": "Tooltip for the spectrogram button that saves the plot, with its axes and legend, as a PNG image the user places in storage"
   },
-  "audioAnalysisSpectrogramSaved": "สเปกโตรแกรม saved to {fileชื่อ}",
+  "audioAnalysisSpectrogramSaved": "สเปกโตรแกรม saved to {fileName}",
   "@audioAnalysisSpectrogramSaved": {
     "description": "Snackbar after the spectrogram image was saved",
     "placeholders": {
@@ -5791,7 +5791,7 @@
   "@extensionsHomeFeedOffSubtitle": {
     "description": "Extensions page - subtitle for off home feed option"
   },
-  "extensionsHomeFeedUse": "Use {extensionชื่อ} home feed",
+  "extensionsHomeFeedUse": "Use {extensionName} home feed",
   "@extensionsHomeFeedUse": {
     "description": "Extensions page - subtitle for a specific extension home feed option",
     "placeholders": {
@@ -5808,7 +5808,7 @@
   "@cancelDownloadTitle": {
     "description": "Dialog title when confirming cancellation of an active download"
   },
-  "cancelDownloadContent": "This will cancel the active download for \"{trackชื่อ}\".",
+  "cancelDownloadContent": "This will cancel the active download for \"{trackName}\".",
   "@cancelDownloadContent": {
     "description": "Dialog body when confirming cancellation of an active download",
     "placeholders": {
@@ -5846,7 +5846,7 @@
       }
     }
   },
-  "notifDownloadingTrack": "ดาวน์โหลดing {trackชื่อ}",
+  "notifDownloadingTrack": "ดาวน์โหลดing {trackName}",
   "@notifDownloadingTrack": {
     "description": "Notification title while downloading a track",
     "placeholders": {
@@ -5855,7 +5855,7 @@
       }
     }
   },
-  "notifFinalizingTrack": "Finalizing {trackชื่อ}",
+  "notifFinalizingTrack": "Finalizing {trackName}",
   "@notifFinalizingTrack": {
     "description": "Notification title while finalizing (embedding metadata) a track",
     "placeholders": {
@@ -6099,7 +6099,7 @@
   "@homeSearchHintDefault": {
     "description": "Default placeholder for the main search field on Home"
   },
-  "homeSearchHintProvider": "ค้นหา with {providerชื่อ}...",
+  "homeSearchHintProvider": "ค้นหา with {providerName}...",
   "@homeSearchHintProvider": {
     "description": "Placeholder for the main search field when a provider is selected",
     "placeholders": {
@@ -6371,7 +6371,7 @@
   "@setupChangeFolderTooltip": {
     "description": "Tooltip for editing the selected download folder"
   },
-  "a11yOpenTrackByArtist": "เปิด track {trackชื่อ} by {artistชื่อ}",
+  "a11yOpenTrackByArtist": "เปิด track {trackName} by {artistName}",
   "@a11yOpenTrackByArtist": {
     "description": "Accessibility label for opening a track item",
     "placeholders": {
@@ -6383,7 +6383,7 @@
       }
     }
   },
-  "a11yOpenItem": "เปิด {itemประเภท} {name}",
+  "a11yOpenItem": "เปิด {itemType} {name}",
   "@a11yOpenItem": {
     "description": "Accessibility label for opening a generic item",
     "placeholders": {
@@ -6407,7 +6407,7 @@
       }
     }
   },
-  "a11yOpenAlbumByArtistTrackCount": "เปิด album {albumชื่อ} by {artistชื่อ}, {trackCount} tracks",
+  "a11yOpenAlbumByArtistTrackCount": "เปิด album {albumName} by {artistName}, {trackCount} tracks",
   "@a11yOpenAlbumByArtistTrackCount": {
     "description": "Accessibility label for opening an album item with track count",
     "placeholders": {
@@ -6422,7 +6422,7 @@
       }
     }
   },
-  "a11yTrackByArtist": "{trackชื่อ} by {artistชื่อ}",
+  "a11yTrackByArtist": "{trackName} by {artistName}",
   "@a11yTrackByArtist": {
     "description": "Accessibility label for a queue or list track item",
     "placeholders": {
@@ -6434,7 +6434,7 @@
       }
     }
   },
-  "a11ySelectAlbum": "เซเล็กต์ album {albumชื่อ}",
+  "a11ySelectAlbum": "เซเล็กต์ album {albumName}",
   "@a11ySelectAlbum": {
     "description": "Accessibility label for selecting an album",
     "placeholders": {
@@ -6443,7 +6443,7 @@
       }
     }
   },
-  "a11yOpenAlbum": "เปิด album {albumชื่อ}",
+  "a11yOpenAlbum": "เปิด album {albumName}",
   "@a11yOpenAlbum": {
     "description": "Accessibility label for opening an album",
     "placeholders": {
@@ -6634,7 +6634,7 @@
       }
     }
   },
-  "collectionAddedTracksToPlaylist": "เพิ่มed {count} {count, plural, =1{track} other{tracks}} to {playlistชื่อ}",
+  "collectionAddedTracksToPlaylist": "เพิ่มed {count} {count, plural, =1{track} other{tracks}} to {playlistName}",
   "@collectionAddedTracksToPlaylist": {
     "description": "Snackbar after adding multiple tracks to a playlist",
     "placeholders": {
@@ -6646,7 +6646,7 @@
       }
     }
   },
-  "collectionAddedTracksToPlaylistWithExisting": "เพิ่มed {count} {count, plural, =1{track} other{tracks}} to {playlistชื่อ} ({alreadyCount} already in playlist)",
+  "collectionAddedTracksToPlaylistWithExisting": "เพิ่มed {count} {count, plural, =1{track} other{tracks}} to {playlistName} ({alreadyCount} already in playlist)",
   "@collectionAddedTracksToPlaylistWithExisting": {
     "description": "Snackbar after adding multiple tracks to a playlist when some were already present",
     "placeholders": {
@@ -6723,7 +6723,7 @@
   "@a11yDeselectTrack": {
     "description": "Accessibility label for deselecting a track"
   },
-  "a11yPlayTrackByArtist": "เล่น {trackชื่อ} by {artistชื่อ}",
+  "a11yPlayTrackByArtist": "เล่น {trackName} by {artistName}",
   "@a11yPlayTrackByArtist": {
     "description": "Accessibility label for playing a local library track",
     "placeholders": {
@@ -6915,7 +6915,7 @@
   "@audioAnalysisMono": {
     "description": "Audio channel layout label - mono"
   },
-  "trackOpenInService": "เปิด in {serviceชื่อ}",
+  "trackOpenInService": "เปิด in {serviceName}",
   "@trackOpenInService": {
     "description": "Button label to open a track in a named music service",
     "placeholders": {
@@ -7801,7 +7801,7 @@
       }
     }
   },
-  "trackConvertConfirmMessageLosslessCapped": "Convert from {sourceรูปแบบ} to {targetรูปแบบ} ({quality})?\n\nThe output stays in a lossless codec, but bit depth/sample rate will be capped. ต้นฉบับ file will be deleted after conversion.",
+  "trackConvertConfirmMessageLosslessCapped": "Convert from {sourceFormat} to {targetFormat} ({quality})?\n\nThe output stays in a lossless codec, but bit depth/sample rate will be capped. ต้นฉบับ file will be deleted after conversion.",
   "@trackConvertConfirmMessageLosslessCapped": {
     "description": "Confirmation dialog message for capped lossless conversion of a single file",
     "placeholders": {
@@ -7831,7 +7831,7 @@
       }
     }
   },
-  "trackConvertActionLabelLossless": "{sourceรูปแบบ} → {targetรูปแบบ} ({quality})",
+  "trackConvertActionLabelLossless": "{sourceFormat} → {targetFormat} ({quality})",
   "@trackConvertActionLabelLossless": {
     "description": "Convert button label for lossless conversion with quality cap",
     "placeholders": {
@@ -7846,7 +7846,7 @@
       }
     }
   },
-  "trackConvertActionLabelLossy": "{sourceรูปแบบ} → {targetรูปแบบ} @ {bitrate}",
+  "trackConvertActionLabelLossy": "{sourceFormat} → {targetFormat} @ {bitrate}",
   "@trackConvertActionLabelLossy": {
     "description": "Convert button label for lossy conversion",
     "placeholders": {
@@ -7962,7 +7962,7 @@
   "@trackAddToQueue": {
     "description": "Menu action to add a track to the playback queue"
   },
-  "snackbarExtensionInstalledEnable": "{extensionชื่อ} installed. เปิดใช้งาน it in การตั้งค่า > ส่วนขยาย",
+  "snackbarExtensionInstalledEnable": "{extensionName} installed. เปิดใช้งาน it in การตั้งค่า > ส่วนขยาย",
   "@snackbarExtensionInstalledEnable": {
     "description": "Snackbar after installing an extension from the repo tab",
     "placeholders": {
@@ -7971,7 +7971,7 @@
       }
     }
   },
-  "snackbarExtensionUpdatedVersion": "{extensionชื่อ} updated to v{version}",
+  "snackbarExtensionUpdatedVersion": "{extensionName} updated to v{version}",
   "@snackbarExtensionUpdatedVersion": {
     "description": "Snackbar after updating an extension from the repo tab",
     "placeholders": {
@@ -7983,7 +7983,7 @@
       }
     }
   },
-  "snackbarFailedToInstallNamed": "ล้มเหลว to install {extensionชื่อ}",
+  "snackbarFailedToInstallNamed": "ล้มเหลว to install {extensionName}",
   "@snackbarFailedToInstallNamed": {
     "description": "Snackbar when extension install fails in the repo tab",
     "placeholders": {
@@ -7992,7 +7992,7 @@
       }
     }
   },
-  "snackbarFailedToUpdateNamed": "ล้มเหลว to update {extensionชื่อ}",
+  "snackbarFailedToUpdateNamed": "ล้มเหลว to update {extensionName}",
   "@snackbarFailedToUpdateNamed": {
     "description": "Snackbar when extension update fails in the repo tab",
     "placeholders": {
