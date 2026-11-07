@@ -46,7 +46,12 @@ jobs:
 
       - name: Install Android SDK & NDK
         run: |
-          yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses || true
+          # Pre-accept SDK licenses by creating license files
+          mkdir -p "$ANDROID_HOME/licenses"
+          echo "24333f8a63b6825ea9c5514f83c2829b004d1fee" > "$ANDROID_HOME/licenses/android-sdk-license"
+          echo "84831b9409646a918e30573bab4c9c91346d8abd" > "$ANDROID_HOME/licenses/android-sdk-preview-license"
+          echo "d56f5187479451eabf01fb78af6dfcb131a6481e" > "$ANDROID_HOME/licenses/android-googletv-license"
+          echo "5c36588b41e465b0d2b63fbd8e5c4f474d62e1e6" > "$ANDROID_HOME/licenses/android-xr-license"
           "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" \
             "ndk;30.0.16248370" \
             "platforms;android-37.0" \
