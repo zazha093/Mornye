@@ -14,7 +14,7 @@
   "networkErrorStorage": "เข้าถึงเซิร์ฟเวอร์ได้ แต่อุปกรณ์นี้บันทึกการเชื่อมต่อไม่ได้ ตรวจสอบบันทึกแอปและลองใหม่",
   "extensionsUnsecuredStorage": "Use unsecured extension storage",
   "extensionsUnsecuredStorageDescription": "Run extensions without a Linux keyring. The key is saved locally, so anyone with access to your app files can read extension credentials. ปิด uses the system keyring.",
-  "extensionsStorageKeyringRequired": "Existing extension data needs its original key. Unlock the system keyring once, then enable unsecured storage again. Your data has been preserved.",
+  "extensionsStorageKeyringRequired": "ข้อมูลส่วนขยายที่มีอยู่ต้องการคีย์ต้นฉบับ ปลดล็อกคียริงระบบครั้งเดียว แล้วเปิดใช้งานที่จัดเก็บไม่ปลอดภัยอีกครั้ง",
   "extensionsStorageKeyConflict": "The local and system keyring keys differ. ที่เก็บข้อมูล was not changed and both keys were preserved.",
   "extensionsStorageKeyringUnavailable": "The system keyring is unavailable or locked. Start or unlock it before switching to secure storage. Your local key has been preserved.",
   "linkFileActionOn": "{action} บน {name}",
@@ -64,7 +64,7 @@
   "linkFileJobsEmptyMessage": "แก้ไขs, conversions and deletions you start on the computer's songs from this phone appear here.",
   "linkDesktopFileJobsSubtitle": "Changes requested from your phones",
   "linkDesktopFileJobsEmptyMessage": "แก้ไขs, conversions and deletions requested from your phones appear here.",
-  "linkFileJobRequestedBy": "From {name}",
+  "linkFileJobRequestedBy": "จาก {name}",
   "@linkFileJobRequestedBy": {
     "placeholders": {
       "name": {
@@ -337,7 +337,7 @@
   "extensionAccountTitle": "ส่วนขยาย account",
   "extensionAccountInvalidForm": "The extension returned an invalid account form.",
   "extensionAccountRestartLogin": "Restart account login to continue.",
-  "extensionAccountRequiredValue": "Enter a value.",
+  "extensionAccountRequiredValue": "กรุณากรอกค่า",
   "extensionAccountInvalidNumber": "Enter a valid number.",
   "settingsPlaybackSubtitle": "เล่นer, volume, อัตโนมัติMix, and audio output",
   "sectionPlayer": "เล่นer",
@@ -584,7 +584,7 @@
   "@folderTemplateInvalid": {
     "description": "Validation error for an invalid folder template"
   },
-  "folderTemplatePreview": "Example folder path",
+  "folderTemplatePreview": "ตัวอย่างพาธโฟลเดอร์",
   "@folderTemplatePreview": {
     "description": "Label for a sample expanded folder template"
   },
@@ -950,11 +950,11 @@
   "@aboutReportIssueSubtitle": {
     "description": "Subtitle for report issue"
   },
-  "aboutFeatureRequest": "Feature request",
+  "aboutFeatureRequest": "ขอฟีเจอร์ใหม่",
   "@aboutFeatureRequest": {
     "description": "Link to suggest features"
   },
-  "aboutFeatureRequestSubtitle": "Suggest new features for the app",
+  "aboutFeatureRequestSubtitle": "เสนอฟีเจอร์ใหม่สำหรับแอป",
   "@aboutFeatureRequestSubtitle": {
     "description": "Subtitle for feature request"
   },
@@ -1907,7 +1907,7 @@
   "@updateMacInstallHint": {
     "description": "Update instructions on macOS after the downloaded disk image opens"
   },
-  "updateQuitApp": "Quit Mornye",
+  "updateQuitApp": "ออกจาก Mornye",
   "@updateQuitApp": {
     "description": "Update button on macOS - quit the app so the new version can replace it"
   },
@@ -2410,7 +2410,7 @@
   "@storeAddRepoTitle": {
     "description": "Store setup screen - heading when no repo is configured"
   },
-  "storeAddRepoDescription": "Enter a GitHub repository URL that contains a registry.json file to browse and install extensions.",
+  "storeAddRepoDescription": "ใส่ URL ที่เก็บ GitHub ที่มีไฟล์ registry.json เพื่อเรียกดูและติดตั้งส่วนขยาย",
   "@storeAddRepoDescription": {
     "description": "Store setup screen - explanatory text"
   },
@@ -4494,7 +4494,7 @@
   "@collectionRemoveFromPlaylist": {
     "description": "Tooltip for removing track from playlist"
   },
-  "collectionDeleteFilesMessage": "Permanently delete {count} {count, plural, =1{audio file} other{audio files}} from storage? This affects every playlist that uses {count, plural, =1{this file} other{these files}}.",
+  "collectionDeleteFilesMessage": "ลบ {count} {count, plural, =1{ไฟล์เสียง} other{ไฟล์เสียง}} ออกจากที่จัดเก็บอย่างถาวร? การกระทำนี้จะมีผลต่อ",
   "@collectionDeleteFilesMessage": {
     "description": "Confirmation for physical file deletion from a collection selection, distinct from removing playlist entries",
     "placeholders": {
@@ -4507,7 +4507,7 @@
   "@collectionRemoveFromFolder": {
     "description": "Tooltip for removing track from wishlist/loved folder"
   },
-  "collectionAddedToLoved": "\"{trackName}\" added to Loved",
+  "collectionAddedToLoved": "\"{trackName}\" เพิ่มเข้าโปรดแล้ว",
   "@collectionAddedToLoved": {
     "description": "Snackbar after adding track to loved folder",
     "placeholders": {
@@ -4516,7 +4516,7 @@
       }
     }
   },
-  "collectionRemovedFromLoved": "\"{trackName}\" removed from Loved",
+  "collectionRemovedFromLoved": "\"{trackName}\" นำออกจากโปรดแล้ว",
   "@collectionRemovedFromLoved": {
     "description": "Snackbar after removing track from loved folder",
     "placeholders": {
@@ -5154,11 +5154,11 @@
   "@downloadAppleQqMultiPerson": {
     "description": "Setting for word-by-word multi-person lyrics from Apple Music and QQ Music"
   },
-  "downloadAppleQqMultiPersonEnabled": "Speaker labels included for duets and group tracks",
+  "downloadAppleQqMultiPersonEnabled": "รวมฉลากผู้ร้องสำหรับเพลงคู่และกลุ่ม",
   "@downloadAppleQqMultiPersonEnabled": {
     "description": "Subtitle when multi-person lyrics is on"
   },
-  "downloadAppleQqMultiPersonDisabled": "Standard lyrics without speaker labels",
+  "downloadAppleQqMultiPersonDisabled": "เนื้อเพลงมาตรฐานไม่มีฉลากผู้ร้อง",
   "@downloadAppleQqMultiPersonDisabled": {
     "description": "Subtitle when multi-person lyrics is off"
   },
@@ -5166,11 +5166,11 @@
   "@downloadAppleElrcWordSync": {
     "description": "Setting for preserving Apple Music word-by-word eLRC timestamps"
   },
-  "downloadAppleElrcWordSyncEnabled": "Raw word-by-word timestamps preserved",
+  "downloadAppleElrcWordSyncEnabled": "เก็บตราตำแหน่งคำดิบของ Apple Music",
   "@downloadAppleElrcWordSyncEnabled": {
     "description": "Subtitle when Apple Music eLRC word sync is enabled"
   },
-  "downloadAppleElrcWordSyncDisabled": "Safer line-by-line Apple Music lyrics",
+  "downloadAppleElrcWordSyncDisabled": "เนื้อเพลง Apple Music แบบบรรทัดต่อบรรทัดที่ปลอดภัยกว่า",
   "@downloadAppleElrcWordSyncDisabled": {
     "description": "Subtitle when Apple Music eLRC word sync is disabled"
   },
@@ -5817,7 +5817,7 @@
       }
     }
   },
-  "cancelDownloadKeep": "Keep",
+  "cancelDownloadKeep": "เก็บไว้",
   "@cancelDownloadKeep": {
     "description": "Dialog button - keep the active download (do not cancel)"
   },
@@ -5912,7 +5912,7 @@
       }
     }
   },
-  "notifVerificationRequiredTitle": "Verification required",
+  "notifVerificationRequiredTitle": "ต้องการการยืนยัน",
   "@notifVerificationRequiredTitle": {
     "description": "Notification title shown when a download needs the user to complete a verification challenge but the app is in the background"
   },
@@ -6257,11 +6257,11 @@
   "@queueDownloadCompleted": {
     "description": "Accessibility label for completed download state in queue"
   },
-  "queueRateLimitTitle": "Service rate limited",
+  "queueRateLimitTitle": "บริการจำกัดอัตรา",
   "@queueRateLimitTitle": {
     "description": "Title shown on a failed queue item when the download service rate limits requests"
   },
-  "queueRateLimitMessage": "This track may still be available. Wait a few minutes, reduce parallel downloads, then retry.",
+  "queueRateLimitMessage": "เพลงนี้อาจยังพร้อมใช้งาน รอสักครู่ ลดการดาวน์โหลดพร้อมกัน แล้วลองใหม่",
   "@queueRateLimitMessage": {
     "description": "Explanation shown on a failed queue item when the download service rate limits requests"
   },
@@ -6322,7 +6322,7 @@
   "@logIssueNetworkErrorDescription": {
     "description": "Diagnostic badge description for generic network errors"
   },
-  "logIssueNetworkErrorSuggestion": "Check your internet connection",
+  "logIssueNetworkErrorSuggestion": "ตรวจสอบการเชื่อมต่ออินเทอร์เน็ต",
   "@logIssueNetworkErrorSuggestion": {
     "description": "Diagnostic badge suggestion for generic network errors"
   },
@@ -6472,11 +6472,11 @@
   "@settingsLyrics": {
     "description": "Settings menu item - lyrics settings"
   },
-  "settingsLyricsSubtitle": "Embed, mode, providers, language options",
+  "settingsLyricsSubtitle": "ฝัง  โหมด  ผู้ให้บริการ  ตัวเลือกภาษา",
   "@settingsLyricsSubtitle": {
     "description": "Subtitle for lyrics settings"
   },
-  "settingsApp": "App",
+  "settingsApp": "แอป",
   "@settingsApp": {
     "description": "Settings menu item - app settings"
   },
@@ -6500,7 +6500,7 @@
   "@metadataProvidersTitle": {
     "description": "Settings item title for metadata provider order"
   },
-  "metadataProvidersSubtitle": "Drag to set search and metadata source order",
+  "metadataProvidersSubtitle": "ลากเพื่อตั้งค่าลำดับการค้นหาและแหล่งข้อมูลเมตา",
   "@metadataProvidersSubtitle": {
     "description": "Subtitle for metadata provider priority item"
   },
@@ -6540,7 +6540,7 @@
   "@downloadFallbackExtensionsSubtitle": {
     "description": "Subtitle for fallback extensions item"
   },
-  "editMetadataFieldDateHint": "YYYY-MM-DD or YYYY",
+  "editMetadataFieldDateHint": "YYYY-MM-DD หรือ YYYY",
   "@editMetadataFieldDateHint": {
     "description": "Hint text for the edit metadata date field"
   },
@@ -6548,7 +6548,7 @@
   "@editMetadataFieldTrackTotal": {
     "description": "Label for total tracks field in the edit metadata sheet"
   },
-  "editMetadataFieldDiscTotal": "Disc Total",
+  "editMetadataFieldDiscTotal": "ดิสก์ทั้งหมด",
   "@editMetadataFieldDiscTotal": {
     "description": "Label for total discs field in the edit metadata sheet"
   },
@@ -6556,7 +6556,7 @@
   "@editMetadataFieldComposer": {
     "description": "Label for composer field in the edit metadata sheet"
   },
-  "editMetadataFieldComment": "Comment",
+  "editMetadataFieldComment": "ความคิดเห็น",
   "@editMetadataFieldComment": {
     "description": "Label for comment field in the edit metadata sheet"
   },
@@ -6568,23 +6568,23 @@
   "@editMetadataFieldAlbumTypeHint": {
     "description": "Hint for the release type metadata field"
   },
-  "editMetadataFieldExplicit": "Explicit",
+  "editMetadataFieldExplicit": "เนื้อหาเฉพาะผู้ใหญ่",
   "@editMetadataFieldExplicit": {
     "description": "Label for the explicit content metadata field"
   },
-  "editMetadataFieldExplicitHint": "Mark this track as containing explicit content",
+  "editMetadataFieldExplicitHint": "ทำเครื่องหมายว่าเพลงนี้มีเนื้อหาเฉพาะผู้ใหญ่",
   "@editMetadataFieldExplicitHint": {
     "description": "Description for the explicit content metadata switch"
   },
-  "metadataExplicitValue": "Explicit",
+  "metadataExplicitValue": "เนื้อหาเฉพาะผู้ใหญ่",
   "@metadataExplicitValue": {
     "description": "Displayed value when a track is marked explicit"
   },
-  "editMetadataFieldUpc": "UPC / Barcode",
+  "editMetadataFieldUpc": "UPC / บาร์โค้ด",
   "@editMetadataFieldUpc": {
     "description": "Label for the release barcode metadata field"
   },
-  "editMetadataFieldUpcHint": "Numeric UPC, EAN, or GTIN",
+  "editMetadataFieldUpcHint": "UPC, EAN หรือ GTIN แบบตัวเลข",
   "@editMetadataFieldUpcHint": {
     "description": "Hint for the release barcode metadata field"
   },
@@ -6625,7 +6625,7 @@
       }
     }
   },
-  "collectionPlaylistsDeleted": "{count} {count, plural, =1{playlist} other{playlists}} deleted",
+  "collectionPlaylistsDeleted": "{count} {count, plural, =1{เพลย์ลิสต์} other{เพลย์ลิสต์}} ถูกลบแล้ว",
   "@collectionPlaylistsDeleted": {
     "description": "Snackbar after deleting selected playlists",
     "placeholders": {
@@ -6707,8 +6707,8 @@
   "queueCheckingDownloadSession": "กำลังตรวจสอบเซสชันดาวน์โหลด...",
   "queueResolvingDownloadMetadata": "กำลังแก้ไขข้อมูลเมตาเพลง...",
   "queueResolvingDownloadStream": "กำลังเตรียมสตรีมเสียง...",
-  "queueWaitingForVerification": "Waiting for verification...",
-  "queueResumingAfterVerification": "Resuming after verification...",
+  "queueWaitingForVerification": "รอการยืนยัน...",
+  "queueResumingAfterVerification": "ดำเนินต่อหลังยืนยัน...",
   "@queueDownloadStarting": {
     "description": "Queue status before download progress is available"
   },
@@ -6744,7 +6744,7 @@
       }
     }
   },
-  "storeRequiresVersion": "Requires v{version}+",
+  "storeRequiresVersion": "ต้องการ v{version}+",
   "@storeRequiresVersion": {
     "description": "Store compatibility badge for minimum app version",
     "placeholders": {
@@ -6757,7 +6757,7 @@
   "@logIssueSummary": {
     "description": "Header for log issue analysis summary"
   },
-  "logTotalErrors": "Total errors: {count}",
+  "logTotalErrors": "ข้อผิดพลาดทั้งหมด: {count}",
   "@logTotalErrors": {
     "description": "Total error count in log issue analysis",
     "placeholders": {
@@ -6846,7 +6846,7 @@
   "@extensionCustomUrlHandlingShareHint": {
     "description": "Extension detail hint explaining share-to-app URL handling"
   },
-  "extensionSettingsCount": "{count} {count, plural, =1{setting} other{settings}}",
+  "extensionSettingsCount": "{count} {count, plural, =1{การตั้งค่า} other{การตั้งค่า}}",
   "@extensionSettingsCount": {
     "description": "Count of settings exposed by an extension quality option",
     "placeholders": {
@@ -6875,7 +6875,7 @@
   "@extensionHealthUnknown": {
     "description": "Extension service health status - unknown"
   },
-  "extensionHealthRequired": "required",
+  "extensionHealthRequired": "จำเป็น",
   "@extensionHealthRequired": {
     "description": "Label for a required extension service health check"
   },
@@ -6883,7 +6883,7 @@
   "@extensionSettingNotSet": {
     "description": "Value shown when an extension setting has no value"
   },
-  "extensionActionFailed": "Action failed",
+  "extensionActionFailed": "การดำเนินการล้มเหลว",
   "@extensionActionFailed": {
     "description": "Fallback error when an extension action fails without details"
   },
@@ -6976,7 +6976,7 @@
   "@storeCategoryIntegration": {
     "description": "Store extension category - integration"
   },
-  "artistReleases": "Releases",
+  "artistReleases": "การเปิดตัว",
   "@artistReleases": {
     "description": "Section header for all artist releases"
   },
@@ -7001,7 +7001,7 @@
   "@settingsSaveDownloadHistorySubtitle": {
     "description": "Settings switch subtitle for storing completed downloads in history"
   },
-  "dialogDisableHistoryTitle": "Turn off download history?",
+  "dialogDisableHistoryTitle": "ปิดประวัติดาวน์โหลด?",
   "@dialogDisableHistoryTitle": {
     "description": "Confirmation dialog title shown before disabling download history"
   },
@@ -7009,7 +7009,7 @@
   "@dialogDisableHistoryMessage": {
     "description": "Confirmation dialog message shown before disabling download history"
   },
-  "dialogDisableAndClear": "Turn off and clear",
+  "dialogDisableAndClear": "ปิดและล้าง",
   "@dialogDisableAndClear": {
     "description": "Confirmation action to disable download history and clear existing entries"
   },
@@ -7060,17 +7060,17 @@
   "@nowPlayingTitle": {
     "description": "Title for the now playing screen"
   },
-  "nowPlayingNothingPlaying": "Nothing is playing",
+  "nowPlayingNothingPlaying": "ไม่มีการเล่นเพลง",
   "@nowPlayingNothingPlaying": {
     "description": "Empty state when no track is currently playing"
   },
-  "nowPlayingMinimize": "Minimize",
+  "nowPlayingMinimize": "ย่อ",
   "@nowPlayingMinimize": {
     "description": "Tooltip for minimizing the now playing screen"
   },
   "nowPlayingUpNext": "ต่อไป",
   "nowPlayingAudioOutput": "เสียง Output",
-  "nowPlayingWrittenBy": "Written by: {writers}",
+  "nowPlayingWrittenBy": "โดย: {writers}",
   "@nowPlayingWrittenBy": {
     "placeholders": {
       "writers": {
@@ -7087,13 +7087,13 @@
     }
   },
   "concertGetTickets": "Get Tickets",
-  "concertSetList": "Concert Set List",
-  "concertSetListButton": "Set List",
+  "concertSetList": "รายการเพลงคอนเสิร์ต",
+  "concertSetListButton": "รายการเพลง",
   "concertAddToCalendar": "เพิ่ม to Calendar",
   "concertOpenMaps": "เปิด Maps",
   "concertDetailsUnavailable": "Concert details are currently unavailable.",
   "concertCalendarUnavailable": "Unable to open the calendar.",
-  "nowPlayingAudioOutputUnavailable": "Unable to open audio output settings.",
+  "nowPlayingAudioOutputUnavailable": "เปิดการตั้งค่าเอาต์พุตเสียงไม่ได้",
   "@nowPlayingUpNext": {
     "description": "Title for the playback queue sheet"
   },
@@ -7105,7 +7105,7 @@
   "@nowPlayingNextTrack": {
     "description": "Tooltip for the next-track playback control"
   },
-  "nowPlayingDetails": "Details",
+  "nowPlayingDetails": "รายละเอียด",
   "@nowPlayingDetails": {
     "description": "Menu item and section title for track metadata details"
   },
@@ -7113,7 +7113,7 @@
   "@nowPlayingSleepTimer": {
     "description": "Menu item and sheet title for the playback sleep timer"
   },
-  "nowPlayingSleepTimerActive": "Ends at {time}",
+  "nowPlayingSleepTimerActive": "สิ้นสุดเวลา {time}",
   "@nowPlayingSleepTimerActive": {
     "description": "Active sleep timer deadline shown in the player menu",
     "placeholders": {
@@ -7122,7 +7122,7 @@
       }
     }
   },
-  "nowPlayingSleepTimerMinutes": "{minutes, plural, =1{1 minute} other{{minutes} minutes}}",
+  "nowPlayingSleepTimerMinutes": "{minutes, plural, =1{1 นาที} other{{minutes} นาที}}",
   "@nowPlayingSleepTimerMinutes": {
     "description": "Duration choice for the playback sleep timer",
     "placeholders": {
@@ -7131,7 +7131,7 @@
       }
     }
   },
-  "nowPlayingSleepTimerOff": "Turn off sleep timer",
+  "nowPlayingSleepTimerOff": "ปิดตัวนับเวลาหยุดเล่น",
   "@nowPlayingSleepTimerOff": {
     "description": "Action to cancel the active playback sleep timer"
   },
@@ -7169,7 +7169,7 @@
     "description": "Tab label for the lyrics view"
   },
   "nowPlayingNoLyrics": "ไม่มีเนื้อเพลง in this file",
-  "nowPlayingInstrumental": "Instrumental",
+  "nowPlayingInstrumental": "ดนตรี (ไม่มีเนื้อร้อง)",
   "@nowPlayingInstrumental": {
     "description": "Accessibility label for the three-dot countdown during an instrumental break before lyrics resume"
   },
@@ -7209,7 +7209,7 @@
   "@nowPlayingCancelTranslation": {
     "description": "Player lyrics menu action that stops an AI lyrics translation in progress"
   },
-  "nowPlayingTranslatingLyrics": "Translating lyrics, {percent}%",
+  "nowPlayingTranslatingLyrics": "กำลังแปลเนื้อเพลง {percent}%",
   "@nowPlayingTranslatingLyrics": {
     "description": "Tooltip and screen reader label of the lyrics menu button while an AI translation runs",
     "placeholders": {
@@ -7344,7 +7344,7 @@
   "@lyricsAiModelLoad": {
     "description": "Button in the model sheet that lists the models the provider offers"
   },
-  "lyricsAiModelsEmpty": "The provider listed no models",
+  "lyricsAiModelsEmpty": "ผู้ให้บริการไม่ได้ระบุโมเดล",
   "@lyricsAiModelsEmpty": {
     "description": "Shown in the model sheet when the provider's model list is empty"
   },
@@ -7422,7 +7422,7 @@
       }
     }
   },
-  "lyricsAiClearCacheConfirm": "Clear saved translations?",
+  "lyricsAiClearCacheConfirm": "ล้างการแปลที่บันทึกไว้?",
   "@lyricsAiClearCacheConfirm": {
     "description": "Title of the confirmation before deleting saved AI translations"
   },
@@ -7446,7 +7446,7 @@
   "@lyricsAiErrorRateLimited": {
     "description": "AI translation error when the provider rate limits the requests"
   },
-  "lyricsAiErrorQuota": "Your provider account is out of credit or quota",
+  "lyricsAiErrorQuota": "บัญชีผู้ให้บริการหมดเครดิตหรือโควตา",
   "@lyricsAiErrorQuota": {
     "description": "AI translation error for an exhausted quota or billing problem"
   },
@@ -7454,7 +7454,7 @@
   "@lyricsAiErrorNetwork": {
     "description": "AI translation error when the provider cannot be reached"
   },
-  "lyricsAiErrorTimeout": "The provider took too long to answer",
+  "lyricsAiErrorTimeout": "ผู้ให้บริการตอบช้เกินไป",
   "@lyricsAiErrorTimeout": {
     "description": "AI translation error when a request times out"
   },
