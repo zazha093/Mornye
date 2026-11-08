@@ -115,7 +115,7 @@ BUILD_GIT_COMMIT="$(git rev-parse --short=8 HEAD)"
 
 for target in "${ANDROID_ABIS[@]}" universal; do
   if [[ -n "$FLAVOR" ]]; then
-    apk="app-$FLAVOR-$target-release.apk"
+    apk="app-$target-$FLAVOR-release.apk"
   else
     apk="app-$target-release.apk"
   fi
