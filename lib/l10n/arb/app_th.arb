@@ -77,7 +77,7 @@
     "description": "Snackbar action that opens the file changes list to see which songs failed"
   },
   "linkFileJobsUnsupported": "อัปเดต Mornye on your computer to manage its music files from this phone.",
-  "linkFileSelectionOneDevice": "เซเล็กต์ songs from one linked computer at a time (up to 100 songs).",
+  "linkFileSelectionOneDevice": "เลือกเพลงจากคอมพิวเตอร์ที่เชื่อมต่อทีละเครื่อง (สูงสุด 100 เพลง)",
   "linkFileJobProgress": "{finished} of {total} {total, plural, =1{song} other{songs}}",
   "@linkFileJobProgress": {
     "placeholders": {
@@ -131,23 +131,23 @@
   "subsonicSearch": "ค้นหา server music...",
   "subsonicMoreAlbums": "เพิ่มเติม albums",
   "subsonicErrorApi": "The server does not support this เวอร์ชัน API or authentication method. Check the server settings and the selected sign-in method.",
-  "networkDownloadDestination": "เครือข่าย download destination",
+  "networkDownloadDestination": "ตำแหน่งดาวน์โหลดเครือข่าย",
   "@networkDownloadDestination": {
     "description": "Files settings item that opens network storage to choose a folder for downloaded music"
   },
-  "networkUseForDownloads": "ดาวน์โหลด to this folder",
+  "networkUseForDownloads": "ดาวน์โหลดลงโฟลเดอร์นี้",
   "@networkUseForDownloads": {
     "description": "Action to select the current network folder as the download destination; also the settings subtitle when no network destination is selected"
   },
-  "networkDownloadSelected": "เซเล็กต์ed download destination",
+  "networkDownloadSelected": "โฟลเดอร์ดาวน์โหลดที่เลือกแล้ว",
   "@networkDownloadSelected": {
     "description": "Status label replacing the download destination action when the current network folder is already selected"
   },
-  "networkUseLocalDownloads": "Use local download folder",
+  "networkUseLocalDownloads": "ใช้โฟลเดอร์ดาวน์โหลดในเครื่อง",
   "@networkUseLocalDownloads": {
     "description": "Files settings action that clears the network download destination and returns downloads to the local folder"
   },
-  "networkDownloadAccessFailed": "Could not write to this folder.",
+  "networkDownloadAccessFailed": "เขียนไฟล์ในโฟลเดอร์นี้ไม่ได้",
   "@networkDownloadAccessFailed": {
     "description": "Snackbar prefix when the write-access check fails while selecting a network download folder; followed by a specific network error message"
   },
@@ -159,7 +159,7 @@
   "@networkUpload": {
     "description": "Library song action that copies songs stored on this device to a NAS or WebDAV folder; also the title of the folder choice sheet"
   },
-  "networkUploadChooseFolder": "Choose a folder",
+  "networkUploadChooseFolder": "เลือกโฟลเดอร์",
   "@networkUploadChooseFolder": {
     "description": "Subtitle of a network connection in the upload sheet; opens its folders to pick the upload destination"
   },
@@ -202,7 +202,7 @@
   "@networkUploadNoSongs": {
     "description": "Snackbar when the upload action is used on songs that already stream from a server"
   },
-  "networkDownloadDescription": "Prepare songs on this device, then upload them to your NAS. Keep the app open until the upload finishes. ลองใหม่ reuses prepared audio. Existing files are kept; new downloads with the same name get a numbered suffix.",
+  "networkDownloadDescription": "เตรียมเพลงในเครื่องนี้ แล้วอัปโหลดไปยัง NAS ของคุณ ให้เปิดแอปค้างจนอัปโหลดเสร็จ ลองใหม่จะใช้การตั้งค่าเดิม",
   "@networkDownloadDescription": {
     "description": "Help below the network download destination action explaining local preparation, upload, retry behavior, and preservation of existing files; NAS means network-attached storage"
   },
@@ -218,7 +218,7 @@
   "@networkLibraryDescription": {
     "description": "Help below the add-to-Library action explaining recursive scanning, local metadata and artwork storage, and management in Local Library settings"
   },
-  "networkStorage": "เครือข่าย storage",
+  "networkStorage": "ที่จัดเก็บเครือข่าย",
   "@networkStorage": {
     "description": "Title and navigation label for the screen used to manage network connections and browse remote music folders"
   },
@@ -238,7 +238,7 @@
   "@networkErrorPermission": {
     "description": "Network access error when the server denies account permissions for a shared folder; distinct from the device's local network permission"
   },
-  "networkErrorLocalPermission": "Local network access is not allowed. ทั้งหมดow Nearby devices for Mornye in และroid app settings, then try again.",
+  "networkErrorLocalPermission": "การเข้าถึงเครือข่ายในเครื่องไม่ได้รับอนุญาต กรุณาอนุญาต \"อุปกรณ์ใกล้เคียง\" ให้ Mornye ในการตั้งค่าแอป Android แล้วลองใหม่",
   "@networkErrorLocalPermission": {
     "description": "Network access error when Android denies local network permission; Nearby devices is the Android app permission setting"
   },
@@ -270,7 +270,7 @@
   "@networkRefresh": {
     "description": "Toolbar tooltip for reloading saved connections or the current network folder listing"
   },
-  "networkStorageDescription": "เชื่อมต่อ to your NAS or music server and browse its folders. Your sign-in details are stored securely on this device.",
+  "networkStorageDescription": "เชื่อมต่อกับ NAS หรือเซิร์ฟเวอร์เพลง และเรียกดูโฟลเดอร์ต่างๆ รายละเอียดการเข้าสู่ระบบถูกเก็บอย่างปลอดภัยในเครื่องนี้",
   "@networkStorageDescription": {
     "description": "Introduction shown in the empty connections screen and connection form, explaining remote folder browsing and secure local credential storage; NAS means network-attached storage"
   },
@@ -512,11 +512,11 @@
   "@libraryFoldersEmptyTitle": {
     "description": "Title of the Folders view when the Library has no songs"
   },
-  "libraryFoldersEmptyMessage": "ดาวน์โหลด songs or add a music folder in Local การตั้งค่าไลบรารี to browse them by folder.",
+  "libraryFoldersEmptyMessage": "ดาวน์โหลดเพลง หรือเพิ่มโฟลเดอร์เพลงในการตั้งค่าไลบรารี (Local) เพื่อเรียกดูตามโฟลเดอร์",
   "@libraryFoldersEmptyMessage": {
     "description": "Next step shown in the empty Folders view"
   },
-  "libraryFolderMissing": "This folder is no longer in your ไลบรารี",
+  "libraryFolderMissing": "โฟลเดอร์นี้ไม่อยู่ในไลบรารีของคุณแล้ว",
   "@libraryFolderMissing": {
     "description": "Shown on an open folder page after its songs were deleted or moved"
   },
@@ -548,39 +548,39 @@
   "@downloadTitle": {
     "description": "Download settings page title"
   },
-  "downloadAskQualitySubtitle": "แสดง quality picker for each download",
+  "downloadAskQualitySubtitle": "แสดงตัวเลือกคุณภาพสำหรับแต่ละการดาวน์โหลด",
   "@downloadAskQualitySubtitle": {
     "description": "Subtitle for ask quality toggle"
   },
-  "downloadFilenameFormat": "ไฟล์name รูปแบบ",
+  "downloadFilenameFormat": "รูปแบบชื่อไฟล์",
   "@downloadFilenameFormat": {
     "description": "Setting for output filename pattern"
   },
-  "downloadSingleFilenameFormat": "Single ไฟล์name รูปแบบ",
+  "downloadSingleFilenameFormat": "รูปแบบชื่อไฟล์ซิงเกิล",
   "@downloadSingleFilenameFormat": {
     "description": "Setting for output filename pattern for singles/EPs"
   },
-  "downloadSingleFilenameFormatDescription": "ไฟล์name pattern for singles and EPs. Uses the same tags as the album format.",
+  "downloadSingleFilenameFormatDescription": "รูปแบบชื่อไฟล์สำหรับซิงเกิลและ EP ใช้แท็กเดียวกับรูปแบบอัลบั้ม",
   "@downloadSingleFilenameFormatDescription": {
     "description": "Subtitle description for single filename format setting"
   },
-  "downloadFolderOrganization": "โฟลเดอร์ Organization",
+  "downloadFolderOrganization": "การจัดระเบียบโฟลเดอร์",
   "@downloadFolderOrganization": {
     "description": "Title of the folder organization picker bottom sheet"
   },
-  "downloadFolderTemplate": "กำหนดเอง โฟลเดอร์ Structure",
+  "downloadFolderTemplate": "โครงสร้างโฟลเดอร์กำหนดเอง",
   "@downloadFolderTemplate": {
     "description": "Setting for editing a relative download folder template"
   },
-  "downloadFolderTemplateDescription": "Use naming tags and / for subfolders. Saving replaces the preset album and singles layout. ว่างเปล่า folder names use ไม่ทราบ.",
+  "downloadFolderTemplateDescription": "ใช้แท็กตั้งชื่อและ / สำหรับโฟลเดอร์ย่อย การบันทึกจะแทนที่เลย์เอาต์อัลบั้มและซิงเกิลเริ่มต้น ชื่อโฟลเดอร์ว่างจะใช้ \"ไม่ทราบ\"",
   "@downloadFolderTemplateDescription": {
     "description": "Help for custom download folder templates"
   },
-  "folderOrganizationCustom": "กำหนดเอง template",
+  "folderOrganizationCustom": "เทมเพลตกำหนดเอง",
   "@folderOrganizationCustom": {
     "description": "Folder organization mode using a user-defined template"
   },
-  "folderTemplateInvalid": "Enter a relative folder path with supported tags. ว่างเปล่า folders, . and .. are not allowed.",
+  "folderTemplateInvalid": "กรุณาใส่พาธโฟลเดอร์แบบสัมพัทธ์พร้อมแท็กที่รองรับ โฟลเดอร์ว่าง . และ .. ไม่อนุญาต",
   "@folderTemplateInvalid": {
     "description": "Validation error for an invalid folder template"
   },
@@ -588,7 +588,7 @@
   "@folderTemplatePreview": {
     "description": "Label for a sample expanded folder template"
   },
-  "folderTemplatePreviewFailed": "ตัวอย่าง unavailable",
+  "folderTemplatePreviewFailed": "ไม่สามารถแสดงตัวอย่างได้",
   "@folderTemplatePreviewFailed": {
     "description": "Shown when the native folder preview could not be generated"
   },
@@ -1072,7 +1072,7 @@
   "@setupStorageAccessRequired": {
     "description": "Title when storage access needed"
   },
-  "setupStorageAccessMessageAndroid11": "และroid 11+ requires \"ทั้งหมด files access\" permission to save files to your chosen download folder.",
+  "setupStorageAccessMessageAndroid11": "Android 11+ ต้องการสิทธิ์ \"เข้าถึงไฟล์ทั้งหมด\" เพื่อบันทึกไฟล์ลงโฟลเดอร์ที่คุณเลือก",
   "@setupStorageAccessMessageAndroid11": {
     "description": "Android 11+ specific explanation"
   },
@@ -1171,15 +1171,15 @@
   "@setupNotificationEnable": {
     "description": "Button to enable notifications"
   },
-  "setupFolderChoose": "Choose ดาวน์โหลด โฟลเดอร์",
+  "setupFolderChoose": "เลือกโฟลเดอร์สำหรับดาวน์โหลด",
   "@setupFolderChoose": {
     "description": "Button to choose folder"
   },
-  "setupFolderDescription": "เซเล็กต์ a folder where your downloaded music will be saved.",
+  "setupFolderDescription": "เลือกโฟลเดอร์ที่จะบันทึกไฟล์เพลงที่ดาวน์โหลด",
   "@setupFolderDescription": {
     "description": "Explanation for folder selection"
   },
-  "setupSelectFolder": "เซเล็กต์ โฟลเดอร์",
+  "setupSelectFolder": "เลือกโฟลเดอร์",
   "@setupSelectFolder": {
     "description": "Button to select folder"
   },
@@ -1215,7 +1215,7 @@
   "@whatsNewLinkNearbyAllow": {
     "description": "Main button on the Nearby devices page of the What's New tour that asks for Android's Nearby devices permission"
   },
-  "whatsNewLinkNearbyGranted": "Nearby devices allowed",
+  "whatsNewLinkNearbyGranted": "อนุญาตอุปกรณ์ใกล้เคียงแล้ว",
   "@whatsNewLinkNearbyGranted": {
     "description": "Shown on the Nearby devices page of the What's New tour after the Nearby devices permission is granted"
   },
@@ -1235,11 +1235,11 @@
   "@whatsNewNearbyLinkBody": {
     "description": "Explains how Mornye Link uses the Nearby devices permission"
   },
-  "whatsNewNearbyStorageTitle": "เครือข่าย storage",
+  "whatsNewNearbyStorageTitle": "ที่จัดเก็บเครือข่าย",
   "@whatsNewNearbyStorageTitle": {
     "description": "Use of the Nearby devices permission: SMB and WebDAV servers at home"
   },
-  "whatsNewNearbyStorageBody": "เล่น music from a NAS or a server at home over SMB or WebDAV.",
+  "whatsNewNearbyStorageBody": "เล่นเพลงจาก NAS หรือเซิร์ฟเวอร์ที่บ้านผ่าน SMB หรือ WebDAV",
   "@whatsNewNearbyStorageBody": {
     "description": "Explains how network storage uses the Nearby devices permission"
   },
@@ -1376,11 +1376,11 @@
   "@dialogClearHistoryMessage": {
     "description": "Dialog message - clear history confirmation"
   },
-  "dialogDeleteSelectedTitle": "ลบ เซเล็กต์ed",
+  "dialogDeleteSelectedTitle": "ลบที่เลือก",
   "@dialogDeleteSelectedTitle": {
     "description": "Dialog title - delete selected items"
   },
-  "dialogDeleteSelectedMessage": "ลบ {count} {count, plural, =1{track} other{tracks}} from history?\n\nThis will also delete the files from storage.",
+  "dialogDeleteSelectedMessage": "ลบ {count} {count, plural, =1{เพลง} other{เพลง}} จากประวัติ?\n\nไฟล์บนที่จัดเก็บก็จะถูกลบด้วย",
   "@dialogDeleteSelectedMessage": {
     "description": "Dialog message - delete selected tracks",
     "placeholders": {
@@ -1518,7 +1518,7 @@
       }
     }
   },
-  "snackbarAlreadyDownloaded": "\"{trackName}\" already downloaded",
+  "snackbarAlreadyDownloaded": "\"{trackName}\" ดาวน์โหลดแล้ว",
   "@snackbarAlreadyDownloaded": {
     "description": "Snackbar - track already exists",
     "placeholders": {
@@ -1663,15 +1663,15 @@
   "@actionCancel": {
     "description": "Action button - cancel operation"
   },
-  "actionSelectAll": "เซเล็กต์ ทั้งหมด",
+  "actionSelectAll": "เลือกทั้งหมด",
   "@actionSelectAll": {
     "description": "Action button - select all items"
   },
-  "actionDeselect": "Deselect",
+  "actionDeselect": "ยกเลิกเลือก",
   "@actionDeselect": {
     "description": "Action button - deselect all"
   },
-  "selectionSelected": "{count} selected",
+  "selectionSelected": "{count} รายการที่เลือก",
   "@selectionSelected": {
     "description": "Selection count indicator",
     "placeholders": {
@@ -1680,11 +1680,11 @@
       }
     }
   },
-  "selectionAllSelected": "ทั้งหมด tracks selected",
+  "selectionAllSelected": "เลือกเพลงทั้งหมดแล้ว",
   "@selectionAllSelected": {
     "description": "Status - all items selected"
   },
-  "selectionSelectToDelete": "เซเล็กต์ tracks to delete",
+  "selectionSelectToDelete": "เลือกเพลงเพื่อลบ",
   "@selectionSelectToDelete": {
     "description": "Placeholder when nothing selected"
   },
@@ -1790,23 +1790,23 @@
   "@filenameShowAdvancedTagsDescription": {
     "description": "Description for advanced filename tag toggle"
   },
-  "folderOrganizationNone": "No organization",
+  "folderOrganizationNone": "ไม่จัดระเบียบ",
   "@folderOrganizationNone": {
     "description": "Folder option - flat structure"
   },
-  "folderOrganizationByPlaylist": "By เพลย์ลิสต์",
+  "folderOrganizationByPlaylist": "ตามเพลย์ลิสต์",
   "@folderOrganizationByPlaylist": {
     "description": "Folder option - playlist folders"
   },
-  "folderOrganizationByPlaylistSubtitle": "Separate folder for each playlist",
+  "folderOrganizationByPlaylistSubtitle": "โฟลเดอร์แยกสำหรับแต่ละเพลย์ลิสต์",
   "@folderOrganizationByPlaylistSubtitle": {
     "description": "Subtitle for playlist folder option"
   },
-  "folderOrganizationByArtist": "By ศิลปิน",
+  "folderOrganizationByArtist": "ตามศิลปิน",
   "@folderOrganizationByArtist": {
     "description": "Folder option - artist folders"
   },
-  "folderOrganizationByAlbum": "By อัลบั้ม",
+  "folderOrganizationByAlbum": "ตามอัลบั้ม",
   "@folderOrganizationByAlbum": {
     "description": "Folder option - album folders"
   },
@@ -1814,23 +1814,23 @@
   "@folderOrganizationByArtistAlbum": {
     "description": "Folder option - nested folders"
   },
-  "folderOrganizationDescription": "Organize downloaded files into folders",
+  "folderOrganizationDescription": "จัดระเบียบไฟล์ที่ดาวน์โหลดเข้าโฟลเดอร์",
   "@folderOrganizationDescription": {
     "description": "Folder organization sheet description"
   },
-  "folderOrganizationNoneSubtitle": "ทั้งหมด files in download folder",
+  "folderOrganizationNoneSubtitle": "ไฟล์ทั้งหมดอยู่ในโฟลเดอร์ดาวน์โหลด",
   "@folderOrganizationNoneSubtitle": {
     "description": "Subtitle for no organization option"
   },
-  "folderOrganizationByArtistSubtitle": "Separate folder for each artist",
+  "folderOrganizationByArtistSubtitle": "โฟลเดอร์แยกสำหรับแต่ละศิลปิน",
   "@folderOrganizationByArtistSubtitle": {
     "description": "Subtitle for artist folder option"
   },
-  "folderOrganizationByAlbumSubtitle": "Separate folder for each album",
+  "folderOrganizationByAlbumSubtitle": "โฟลเดอร์แยกสำหรับแต่ละอัลบั้ม",
   "@folderOrganizationByAlbumSubtitle": {
     "description": "Subtitle for album folder option"
   },
-  "folderOrganizationByArtistAlbumSubtitle": "Nested folders for artist and album",
+  "folderOrganizationByArtistAlbumSubtitle": "โฟลเดอร์ซ้อนสำหรับศิลปินและอัลบั้ม",
   "@folderOrganizationByArtistAlbumSubtitle": {
     "description": "Subtitle for nested folder option"
   },
@@ -1842,7 +1842,7 @@
   "@updateLater": {
     "description": "Update button - dismiss"
   },
-  "updateStartingDownload": "Starting download...",
+  "updateStartingDownload": "เริ่มดาวน์โหลด...",
   "@updateStartingDownload": {
     "description": "Update status - initializing"
   },
@@ -1887,7 +1887,7 @@
   "@updateWhatsNew": {
     "description": "Changelog section title"
   },
-  "updateDownloadInstall": "ดาวน์โหลด & ติดตั้ง",
+  "updateDownloadInstall": "ดาวน์โหลดและติดตั้ง",
   "@updateDownloadInstall": {
     "description": "Update button - download and install"
   },
@@ -2127,7 +2127,7 @@
   "@settingsAppearanceSubtitle": {
     "description": "Appearance settings description"
   },
-  "settingsDownloadSubtitle": "Service, quality, fallback",
+  "settingsDownloadSubtitle": "บริการ คุณภาพ สำรอง",
   "@settingsDownloadSubtitle": {
     "description": "Download settings description"
   },
@@ -2673,21 +2673,21 @@
   "@qualityHiResFlacMaxSubtitle": {
     "description": "Technical spec for hi-res max"
   },
-  "downloadLossyFormat": "Lossy รูปแบบ",
+  "downloadLossyFormat": "รูปแบบ Lossy",
   "@downloadLossyFormat": {
     "description": "Setting title to pick output format for lossy downloads"
   },
-  "downloadAutoConvert": "อัตโนมัติ-convert after download",
+  "downloadAutoConvert": "แปลงอัตโนมัติหลังดาวน์โหลด",
   "@downloadAutoConvert": {
     "description": "Toggle for automatic post-download audio conversion"
   },
-  "downloadAutoConvertAllFormatsSubtitle": "Convert completed downloads or limit FLAC bit depth and sample rate. The original is replaced only after conversion succeeds.",
-  "downloadAutoConvertOutputSubtitle": "Choose the output format for newly completed downloads.",
-  "downloadAutoConvertFlacSubtitle": "ลอสเลส FLAC with quality limits. ต่ำer bit depths and sample rates are preserved.",
-  "downloadAutoConvertMaxBitDepth": "สูงสุด bit depth",
-  "downloadAutoConvertMaxSampleRate": "สูงสุด sample rate",
-  "downloadAutoConvertFlacLimitsSubtitle": "These are upper limits. For example, a 44.1 kHz source stays at 44.1 kHz when 48 kHz is selected. Lossy sources are kept in their original format.",
-  "downloadAutoConvertSubtitle": "Convert completed downloads to a smaller lossy format. The original is replaced only after conversion succeeds.",
+  "downloadAutoConvertAllFormatsSubtitle": "แปลงไฟล์ที่ดาวน์โหลดเสร็จแล้ว หรือจำกัดความลึกบิตและอัตราตัวอย่างของ FLAC ไฟล์ต้นฉบับจะถูกแทนที่หลังแปลงสำเร็จเท่านั้น",
+  "downloadAutoConvertOutputSubtitle": "เลือกรูปแบบเอาต์พุตสำหรับไฟล์ที่ดาวน์โหลดเสร็จแล้ว",
+  "downloadAutoConvertFlacSubtitle": "FLAC ไร้การสูญเสียพร้อมจำกัดคุณภาพ ความลึกบิตและอัตราตัวอย่างที่ต่ำกว่าจะถูกเก็บไว้",
+  "downloadAutoConvertMaxBitDepth": "ความลึกบิตสูงสุด",
+  "downloadAutoConvertMaxSampleRate": "อัตราตัวอย่างสูงสุด",
+  "downloadAutoConvertFlacLimitsSubtitle": "เป็นขีดจำกัดบน ตัวอย่าง 44.1 kHz จะคงอยู่ที่ 44.1 kHz แม้เลือก 48 kHz ไฟล์ lossy จะถูกเก็บไว้",
+  "downloadAutoConvertSubtitle": "แปลงไฟล์ที่ดาวน์โหลดเสร็จเป็นรูปแบบ lossy ขนาดเล็กลง ไฟล์ต้นฉบับจะถูกแทนที่หลังแปลงสำเร็จ",
   "@downloadAutoConvertSubtitle": {
     "description": "Explanation of safe automatic post-download conversion"
   },
@@ -2695,7 +2695,7 @@
   "@downloadAutoConvertFormat": {
     "description": "Automatic conversion output format setting"
   },
-  "downloadAutoConvertFormatSubtitle": "Choose the lossy format used for newly completed downloads.",
+  "downloadAutoConvertFormatSubtitle": "เลือกรูปแบบ lossy สำหรับไฟล์ที่ดาวน์โหลดเสร็จแล้ว",
   "@downloadAutoConvertFormatSubtitle": {
     "description": "Automatic conversion format picker explanation"
   },
@@ -2703,63 +2703,63 @@
   "@downloadAutoConvertBitrate": {
     "description": "Automatic conversion bitrate setting"
   },
-  "downloadAutoConvertBitrateSubtitle": "สูงer bitrates preserve more detail but create larger files.",
+  "downloadAutoConvertBitrateSubtitle": "บิตรีทสูงรายละเอียดมากขึ้น แต่ไฟล์ใหญ่ขึ้น",
   "@downloadAutoConvertBitrateSubtitle": {
     "description": "Automatic conversion bitrate picker explanation"
   },
-  "downloadAutoConvertMp3Subtitle": "Best compatibility across players and devices",
+  "downloadAutoConvertMp3Subtitle": "เข้ากันได้ดีที่สุดกับเพลเยอร์และอุปกรณ์ทุกอย่าง",
   "@downloadAutoConvertMp3Subtitle": {
     "description": "MP3 automatic conversion option description"
   },
-  "downloadAutoConvertM4aSubtitle": "Efficient AAC audio in an M4A container",
+  "downloadAutoConvertM4aSubtitle": "เสียง AAC ประหยัดพื้นที่ในคอนเทนเนอร์ M4A",
   "@downloadAutoConvertM4aSubtitle": {
     "description": "M4A AAC automatic conversion option description"
   },
-  "downloadAutoConvertOpusSubtitle": "Best efficiency for modern players",
+  "downloadAutoConvertOpusSubtitle": "ประสิทธิภาพดีที่สุดสำหรับเพลเยอร์สมัยใหม่",
   "@downloadAutoConvertOpusSubtitle": {
     "description": "Opus automatic conversion option description"
   },
-  "downloadAskBeforeDownload": "Ask Before ดาวน์โหลด",
+  "downloadAskBeforeDownload": "ถามก่อนดาวน์โหลด",
   "@downloadAskBeforeDownload": {
     "description": "Setting - show quality picker"
   },
-  "downloadDirectory": "ดาวน์โหลด ไดเรกทอรี",
+  "downloadDirectory": "ไดเรกทอรีดาวน์โหลด",
   "@downloadDirectory": {
     "description": "Setting - download folder"
   },
-  "downloadSeparateSinglesFolder": "Separate Singles โฟลเดอร์",
+  "downloadSeparateSinglesFolder": "โฟลเดอร์ซิงเกิลแยกต่างหาก",
   "@downloadSeparateSinglesFolder": {
     "description": "Setting - separate folder for singles"
   },
-  "downloadAlbumFolderStructure": "อัลบั้ม โฟลเดอร์ Structure",
+  "downloadAlbumFolderStructure": "โครงสร้างโฟลเดอร์อัลบั้ม",
   "@downloadAlbumFolderStructure": {
     "description": "Setting - album folder organization"
   },
-  "albumFolderStructureDescription": "Choose how album folders are structured",
+  "albumFolderStructureDescription": "เลือกวิธีจัดโครงสร้างโฟลเดอร์อัลบั้ม",
   "@albumFolderStructureDescription": {
     "description": "Album folder structure picker description"
   },
-  "downloadUseAlbumArtistForFolders": "Use ศิลปินอัลบั้ม for folders",
+  "downloadUseAlbumArtistForFolders": "ใช้ศิลปินอัลบั้มสำหรับโฟลเดอร์",
   "@downloadUseAlbumArtistForFolders": {
     "description": "Setting - choose whether artist folders use Album Artist or Track Artist"
   },
-  "downloadUsePrimaryArtistOnly": "Primary artist only for folders",
+  "downloadUsePrimaryArtistOnly": "ใช้ศิลปินหลักเพียงรายเดียวสำหรับโฟลเดอร์",
   "@downloadUsePrimaryArtistOnly": {
     "description": "Setting - strip featured artists from folder name"
   },
-  "downloadUsePrimaryArtistOnlyEnabled": "Featured artists removed from folder name (e.g. Justin Bieber, Quavo → Justin Bieber)",
+  "downloadUsePrimaryArtistOnlyEnabled": "ศิลปินร่วมfeat. จะถูกลบออกจากชื่อโฟลเดอร์ (เช่น Justin Bieber, Quavo → Justin Bieber)",
   "@downloadUsePrimaryArtistOnlyEnabled": {
     "description": "Subtitle when primary artist only is enabled"
   },
-  "downloadUsePrimaryArtistOnlyDisabled": "Full artist string used for folder name",
+  "downloadUsePrimaryArtistOnlyDisabled": "ใช้สตริงศิลปินเต็มสำหรับชื่อโฟลเดอร์",
   "@downloadUsePrimaryArtistOnlyDisabled": {
     "description": "Subtitle when primary artist only is disabled"
   },
-  "downloadSelectQuality": "เซเล็กต์ คุณภาพ",
+  "downloadSelectQuality": "เลือกคุณภาพ",
   "@downloadSelectQuality": {
     "description": "Dialog title - choose audio quality"
   },
-  "downloadFrom": "ดาวน์โหลด From",
+  "downloadFrom": "ดาวน์โหลดจาก",
   "@downloadFrom": {
     "description": "Label - download source"
   },
@@ -2803,19 +2803,19 @@
   "@settingsAutoExportFailedSubtitle": {
     "description": "Subtitle for auto-export setting"
   },
-  "settingsDownloadNetwork": "ดาวน์โหลด เครือข่าย",
+  "settingsDownloadNetwork": "เครือข่ายดาวน์โหลด",
   "@settingsDownloadNetwork": {
     "description": "Setting for network type preference"
   },
-  "settingsDownloadNetworkAny": "WiFi + Mobile ข้อมูล",
+  "settingsDownloadNetworkAny": "WiFi + ข้อมูลมือถือ",
   "@settingsDownloadNetworkAny": {
     "description": "Network option - use any connection"
   },
-  "settingsDownloadNetworkWifiOnly": "WiFi Only",
+  "settingsDownloadNetworkWifiOnly": "เฉพาะ WiFi",
   "@settingsDownloadNetworkWifiOnly": {
     "description": "Network option - only use WiFi"
   },
-  "settingsDownloadNetworkSubtitle": "Choose which network to use for downloads. When set to WiFi Only, downloads will pause on mobile data.",
+  "settingsDownloadNetworkSubtitle": "เลือกเครือข่ายที่ใช้ดาวน์โหลด ตั้งเป็น WiFi Only จะหยุดดาวน์โหลดเมื่อใช้ข้อมูลมือถือ",
   "@settingsDownloadNetworkSubtitle": {
     "description": "Subtitle explaining network preference"
   },
@@ -2823,15 +2823,15 @@
   "@settingsConcurrentDownloads": {
     "description": "Setting title - how many tracks download at the same time"
   },
-  "settingsConcurrentDownloadsSubtitle": "ดาวน์โหลดing several tracks at once is faster, but some providers may rate-limit parallel requests.",
+  "settingsConcurrentDownloadsSubtitle": "ดาวน์โหลดหลายเพลงพร้อมกันจะเร็วกว่า แต่บางผู้ให้บริการอาจจำกัดคำขอแบบขนาน",
   "@settingsConcurrentDownloadsSubtitle": {
     "description": "Subtitle explaining the concurrent downloads picker"
   },
-  "concurrentDownloadsOne": "1 track at a time",
+  "concurrentDownloadsOne": "ทีละ 1 เพลง",
   "@concurrentDownloadsOne": {
     "description": "Concurrent downloads option - sequential"
   },
-  "concurrentDownloadsCount": "Up to {count} เพลง at once",
+  "concurrentDownloadsCount": "สูงสุด {count} เพลงพร้อมกัน",
   "@concurrentDownloadsCount": {
     "description": "Concurrent downloads option - parallel",
     "placeholders": {
@@ -2844,7 +2844,7 @@
   "@albumFolderArtistAlbum": {
     "description": "Album folder option"
   },
-  "albumFolderArtistAlbumSubtitle": "อัลบั้ม/ศิลปิน ชื่อ/อัลบั้ม ชื่อ/",
+  "albumFolderArtistAlbumSubtitle": "อัลบั้ม/ชื่อศิลปิน/ชื่ออัลบั้ม/",
   "@albumFolderArtistAlbumSubtitle": {
     "description": "Folder structure example"
   },
@@ -2852,15 +2852,15 @@
   "@albumFolderArtistYearAlbum": {
     "description": "Album folder option with year"
   },
-  "albumFolderArtistYearAlbumSubtitle": "อัลบั้ม/ศิลปิน ชื่อ/[2005] อัลบั้ม ชื่อ/",
+  "albumFolderArtistYearAlbumSubtitle": "อัลบั้ม/ชื่อศิลปิน/[2005] ชื่ออัลบั้ม/",
   "@albumFolderArtistYearAlbumSubtitle": {
     "description": "Folder structure example"
   },
-  "albumFolderAlbumOnly": "อัลบั้ม Only",
+  "albumFolderAlbumOnly": "อัลบั้มอย่างเดียว",
   "@albumFolderAlbumOnly": {
     "description": "Album folder option"
   },
-  "albumFolderAlbumOnlySubtitle": "อัลบั้ม/อัลบั้ม ชื่อ/",
+  "albumFolderAlbumOnlySubtitle": "อัลบั้ม/ชื่ออัลบั้ม/",
   "@albumFolderAlbumOnlySubtitle": {
     "description": "Folder structure example"
   },
@@ -2868,31 +2868,31 @@
   "@albumFolderYearAlbum": {
     "description": "Album folder option with year"
   },
-  "albumFolderYearAlbumSubtitle": "อัลบั้ม/[2005] อัลบั้ม ชื่อ/",
+  "albumFolderYearAlbumSubtitle": "อัลบั้ม/[2005] ชื่ออัลบั้ม/",
   "@albumFolderYearAlbumSubtitle": {
     "description": "Folder structure example"
   },
-  "albumFolderArtistAlbumSingles": "ศิลปิน / อัลบั้ม + Singles",
+  "albumFolderArtistAlbumSingles": "ศิลปิน / อัลบั้ม + ซิงเกิล",
   "@albumFolderArtistAlbumSingles": {
     "description": "Album folder option with singles inside artist"
   },
-  "albumFolderArtistAlbumSinglesSubtitle": "ศิลปิน/อัลบั้ม/ and ศิลปิน/Singles/",
+  "albumFolderArtistAlbumSinglesSubtitle": "ศิลปิน/อัลบั้ม/ และ ศิลปิน/ซิงเกิล/",
   "@albumFolderArtistAlbumSinglesSubtitle": {
     "description": "Folder structure example"
   },
-  "albumFolderArtistAlbumFlat": "ศิลปิน / อัลบั้ม (Singles flat)",
+  "albumFolderArtistAlbumFlat": "ศิลปิน / อัลบั้ม (ซิงเกิลแบน)",
   "@albumFolderArtistAlbumFlat": {
     "description": "Album folder option with singles directly in artist folder"
   },
-  "albumFolderArtistAlbumFlatSubtitle": "ศิลปิน/อัลบั้ม/ and ศิลปิน/song.flac",
+  "albumFolderArtistAlbumFlatSubtitle": "ศิลปิน/อัลบั้ม/ และ ศิลปิน/ไฟล์เพลง.flac",
   "@albumFolderArtistAlbumFlatSubtitle": {
     "description": "Folder structure example for flat singles"
   },
-  "downloadedAlbumDeleteSelected": "ลบ เซเล็กต์ed",
+  "downloadedAlbumDeleteSelected": "ลบที่เลือก",
   "@downloadedAlbumDeleteSelected": {
     "description": "Button - delete selected tracks"
   },
-  "downloadedAlbumDeleteMessage": "ลบ {count} {count, plural, =1{track} other{tracks}} from this album?\n\nThis will also delete the files from storage.",
+  "downloadedAlbumDeleteMessage": "ลบ {count} {count, plural, =1{เพลง} other{เพลง}} จากอัลบั้มนี้?\n\nไฟล์บนที่จัดเก็บก็จะถูกลบด้วย",
   "@downloadedAlbumDeleteMessage": {
     "description": "Delete confirmation with count",
     "placeholders": {
@@ -2901,7 +2901,7 @@
       }
     }
   },
-  "downloadedAlbumSelectedCount": "{count} selected",
+  "downloadedAlbumSelectedCount": "{count} รายการที่เลือก",
   "@downloadedAlbumSelectedCount": {
     "description": "Selection count indicator",
     "placeholders": {
@@ -2910,11 +2910,11 @@
       }
     }
   },
-  "downloadedAlbumTapToSelect": "Tap tracks to select",
+  "downloadedAlbumTapToSelect": "แตะเพลงเพื่อเลือก",
   "@downloadedAlbumTapToSelect": {
     "description": "Selection hint"
   },
-  "downloadedAlbumDeleteCount": "ลบ {count} {count, plural, =1{track} other{tracks}}",
+  "downloadedAlbumDeleteCount": "ลบ {count} {count, plural, =1{เพลง} other{เพลง}}",
   "@downloadedAlbumDeleteCount": {
     "description": "Delete button text with count",
     "placeholders": {
@@ -2923,11 +2923,11 @@
       }
     }
   },
-  "downloadedAlbumSelectToDelete": "เซเล็กต์ tracks to delete",
+  "downloadedAlbumSelectToDelete": "เลือกเพลงเพื่อลบ",
   "@downloadedAlbumSelectToDelete": {
     "description": "Placeholder when nothing selected"
   },
-  "downloadedAlbumDiscHeader": "Disc {discNumber}",
+  "downloadedAlbumDiscHeader": "ดิสก์ {discNumber}",
   "@downloadedAlbumDiscHeader": {
     "description": "Header for disc separator in multi-disc albums",
     "placeholders": {
@@ -2961,7 +2961,7 @@
   "@recentClearAllMessage": {
     "description": "Confirmation message before clearing all recent activity"
   },
-  "recentShowAllDownloads": "แสดง ทั้งหมด ดาวน์โหลด",
+  "recentShowAllDownloads": "แสดงดาวน์โหลดทั้งหมด",
   "@recentShowAllDownloads": {
     "description": "Button label to unhide hidden downloads in recent access"
   },
@@ -2975,15 +2975,15 @@
       }
     }
   },
-  "discographyDownload": "ดาวน์โหลด ดิสคอกราฟี",
+  "discographyDownload": "ดาวน์โหลดดิสคอกราฟี",
   "@discographyDownload": {
     "description": "Button - download artist discography"
   },
-  "discographyDownloadAll": "ดาวน์โหลด ทั้งหมด",
+  "discographyDownloadAll": "ดาวน์โหลดทั้งหมด",
   "@discographyDownloadAll": {
     "description": "Option - download entire discography"
   },
-  "discographyDownloadAllSubtitle": "{count} เพลง from {albumCount} releases",
+  "discographyDownloadAllSubtitle": "{count} เพลงจาก {albumCount} รีลีส",
   "@discographyDownloadAllSubtitle": {
     "description": "Subtitle showing total tracks and albums",
     "placeholders": {
@@ -3027,11 +3027,11 @@
       }
     }
   },
-  "discographySelectAlbums": "เซเล็กต์ อัลบั้ม...",
+  "discographySelectAlbums": "เลือกอัลบั้ม...",
   "@discographySelectAlbums": {
     "description": "Option - manually select albums to download"
   },
-  "discographySelectAlbumsSubtitle": "Choose specific albums or singles",
+  "discographySelectAlbumsSubtitle": "เลือกอัลบั้มหรือซิงเกิลที่ต้องการ",
   "@discographySelectAlbumsSubtitle": {
     "description": "Subtitle for select albums option"
   },
@@ -3051,7 +3051,7 @@
       }
     }
   },
-  "discographyDownloadSelected": "ดาวน์โหลด เซเล็กต์ed",
+  "discographyDownloadSelected": "ดาวน์โหลดที่เลือกแล้ว",
   "@discographyDownloadSelected": {
     "description": "Button - download selected albums"
   },
@@ -3084,7 +3084,7 @@
   "@discographyFailedToFetch": {
     "description": "Error - some albums failed to load"
   },
-  "sectionStorageAccess": "ที่เก็บข้อมูล Access",
+  "sectionStorageAccess": "การเข้าถึงที่จัดเก็บ",
   "@sectionStorageAccess": {
     "description": "Section header for storage access settings"
   },
@@ -3144,7 +3144,7 @@
   "@libraryEnableLocalLibrarySubtitle": {
     "description": "Subtitle for enable toggle"
   },
-  "libraryFolder": "ไลบรารี โฟลเดอร์",
+  "libraryFolder": "โฟลเดอร์ไลบรารี",
   "@libraryFolder": {
     "description": "Folder selection setting"
   },
@@ -3152,11 +3152,11 @@
   "@libraryFolderHint": {
     "description": "Placeholder when no folder selected"
   },
-  "libraryAddFolder": "เพิ่ม library folder",
+  "libraryAddFolder": "เพิ่มโฟลเดอร์ไลบรารี",
   "@libraryAddFolder": {
     "description": "Action to add another local library source"
   },
-  "libraryAddFolderSubtitle": "หน่วยความจำภายใน, การ์ด SD, SSD, or another external drive",
+  "libraryAddFolderSubtitle": "หน่วยความจำในเครื่อง บัตร SD SSD หรือไดรฟ์ภายนอกอื่นๆ",
   "@libraryAddFolderSubtitle": {
     "description": "Supported storage locations for local library sources"
   },
@@ -3187,15 +3187,15 @@
       }
     }
   },
-  "libraryExternalStorage": "หน่วยความจำภายนอก",
+  "libraryExternalStorage": "ที่จัดเก็บภายนอก",
   "@libraryExternalStorage": {
     "description": "Label for a removable or external library source"
   },
-  "libraryRemoveFolder": "ลบ library folder",
+  "libraryRemoveFolder": "ลบโฟลเดอร์ไลบรารี",
   "@libraryRemoveFolder": {
     "description": "Action to remove one indexed library source"
   },
-  "libraryRemoveFolderMessage": "ลบ this folder and its indexed tracks from Mornye? เสียง files on the storage will not be deleted.",
+  "libraryRemoveFolderMessage": "ลบโฟลเดอร์นี้และเพลงที่จัดทำดัชนีออกจาก Mornye? ไฟล์เสียงบนที่จัดเก็บจะไม่ถูกลบ",
   "@libraryRemoveFolderMessage": {
     "description": "Confirmation shown before removing a library source"
   },
@@ -3273,7 +3273,7 @@
   "@libraryScanSubtitle": {
     "description": "Subtitle for scan button"
   },
-  "libraryScanSelectFolderFirst": "เซเล็กต์ a folder first",
+  "libraryScanSelectFolderFirst": "เลือกโฟลเดอร์ก่อน",
   "@libraryScanSelectFolderFirst": {
     "description": "Message when trying to scan without folder"
   },
@@ -3285,7 +3285,7 @@
   "@libraryCleanupMissingFilesSubtitle": {
     "description": "Subtitle for cleanup button"
   },
-  "libraryFindMovedDownloads": "Find ย้ายd ดาวน์โหลด",
+  "libraryFindMovedDownloads": "ค้นหาไฟล์ดาวน์โหลดที่ย้าย",
   "@libraryFindMovedDownloads": {
     "description": "Library action that relinks downloads whose files were moved to the current download folder"
   },
@@ -3293,7 +3293,7 @@
   "@libraryFindMovedDownloadsSubtitle": {
     "description": "Subtitle for the Find Moved Downloads action"
   },
-  "libraryFindMovedDownloadsResult": "{relinked, plural, =0{ไม่พบดาวน์โหลดที่ย้าย} =1{เชื่อมต่อ 1 ดาวน์โหลด} other{เชื่อมต่อ {relinked} ดาวน์โหลด}}{missing, plural, =0{} =1{ หายไป 1 รายการ} other{ หายไป {missing} รายการ}}",
+  "libraryFindMovedDownloadsResult": "{relinked, plural, =0{ไม่พบดาวน์โหลดที่ย้าย} =1{เชื่อมต่อ 1 ดาวน์โหลด} other{เชื่อมต่อ {relinked} ดาวน์โหลด}}{missing, p",
   "@libraryFindMovedDownloadsResult": {
     "description": "Snackbar after Find Moved Downloads: downloads relinked, then downloads whose files are still missing",
     "placeholders": {
@@ -3401,11 +3401,11 @@
   "@libraryCleared": {
     "description": "Snackbar after clearing library"
   },
-  "libraryStorageAccessRequired": "ที่เก็บข้อมูล Access จำเป็น",
+  "libraryStorageAccessRequired": "ต้องการการเข้าถึงที่จัดเก็บ",
   "@libraryStorageAccessRequired": {
     "description": "Dialog title for storage permission"
   },
-  "libraryStorageAccessMessage": "Mornye ต้องการสิทธิ์เข้าถึงที่เก็บข้อมูลเพื่อสแกนไลบรารี กรุณาอนุญาตในการตั้งค่า",
+  "libraryStorageAccessMessage": "Mornye ต้องการสิทธิ์เข้าถึงที่จัดเก็บเพื่อสแกนไลบรารี กรุณาอนุญาตในการตั้งค่า",
   "@libraryStorageAccessMessage": {
     "description": "Dialog message for storage permission"
   },
@@ -3591,7 +3591,7 @@
   "@tutorialSearchDesc": {
     "description": "Tutorial search page description"
   },
-  "tutorialDownloadTitle": "ดาวน์โหลดing Music",
+  "tutorialDownloadTitle": "กำลังดาวน์โหลดเพลง",
   "@tutorialDownloadTitle": {
     "description": "Tutorial download page title"
   },
@@ -3704,7 +3704,7 @@
   "whatsNewLibraryTitle": "ไลบรารี and search",
   "whatsNewLibraryDesc": "ใหม่ ways to find and organize your music.",
   "whatsNewLibraryFoldersTitle": "เรียกดูตามโฟลเดอร์",
-  "whatsNewLibraryFoldersBody": "สำรวจ your ไลบรารี the way it's stored on disk.",
+  "whatsNewLibraryFoldersBody": "สำรวจไลบรารีของคุณในลักษณะที่จัดเก็บอยู่บนดิสก์",
   "whatsNewLibrarySuggestionsTitle": "เพลงแนะนำ",
   "whatsNewLibrarySuggestionsBody": "อัลบั้ม, singles and playlists now suggest songs that fit.",
   "whatsNewLibraryRecognizeTitle": "จดจำเพลง",
@@ -5030,95 +5030,95 @@
   "@downloadLocationSubtitle": {
     "description": "Subtitle shown in the download location picker sheet"
   },
-  "storageAutomaticFolder": "อัตโนมัติmatic folder",
-  "storageAutomaticDownloadFolder": "Uses ดาวน์โหลด/Mornye when writable, otherwise app storage",
-  "storageSafRecommended": "Choose folder (Recommended)",
-  "storageDownloadFolderHint": "In the และroid folder picker, open ดาวน์โหลด and select Mornye. If it does not exist, create it using ใหม่ folder, then tap Use this folder to grant access.",
-  "downloadFolderAccessLostTitle": "โฟลเดอร์ดาวน์โหลด access lost",
+  "storageAutomaticFolder": "โฟลเดอร์อัตโนมัติ",
+  "storageAutomaticDownloadFolder": "ใช้ Download/Mornye เมื่อเขียนได้ มิฉะนั้นใช้ที่จัดเก็บของแอป",
+  "storageSafRecommended": "เลือกโฟลเดอร์ (แนะนำ)",
+  "storageDownloadFolderHint": "ในเครื่องมือเลือกโฟลเดอร์ของ Android ให้เปิดโฟลเดอร์ดาวน์โหลดและเลือก Mornye หากยังไม่มี ให้สร้างโฟลเดอร์ใหม่ แล้วกด \"ใช้โฟลเดอร์นี้\" เพื่ออนุญาตการเข้าถึง",
+  "downloadFolderAccessLostTitle": "เข้าถึงโฟลเดอร์ดาวน์โหลดไม่ได้",
   "@downloadFolderAccessLostTitle": {
     "description": "Title of the warning banner shown in Files settings when the saved SAF folder grant is no longer valid"
   },
-  "downloadFolderAccessLostSubtitle": "ดาวน์โหลด will fail until you re-select the folder",
+  "downloadFolderAccessLostSubtitle": "ดาวน์โหลดจะล้มเหลวจนกว่าคุณจะเลือกโฟลเดอร์ใหม่",
   "@downloadFolderAccessLostSubtitle": {
     "description": "Subtitle of the warning banner shown when the saved SAF folder grant is no longer valid"
   },
-  "downloadFolderReselect": "Re-select folder",
+  "downloadFolderReselect": "เลือกโฟลเดอร์ใหม่",
   "@downloadFolderReselect": {
     "description": "Button that reopens the folder picker to restore download folder access"
   },
-  "downloadErrorSafPermissionLost": "SAF permission invalid or revoked. Please reconfigure download location in การตั้งค่า.",
+  "downloadErrorSafPermissionLost": "สิทธิ์ SAF ไม่ถูกต้องหรือถูกเพิกถอน กรุณาตั้งค่าตำแหน่งดาวน์โหลดใหม่ในการตั้งค่า",
   "@downloadErrorSafPermissionLost": {
     "description": "Error shown on downloads that failed because the persisted Android SAF folder grant is no longer valid"
   },
-  "downloadErrorFolderAccessLost": "โฟลเดอร์ดาวน์โหลด access lost. Please re-select your download folder in การตั้งค่า.",
+  "downloadErrorFolderAccessLost": "เข้าถึงโฟลเดอร์ดาวน์โหลดไม่ได้ กรุณาเลือกโฟลเดอร์ดาวน์โหลดใหม่ในการตั้งค่า",
   "@downloadErrorFolderAccessLost": {
     "description": "Error shown on downloads that failed because the iOS download folder bookmark could not be opened"
   },
-  "downloadFilenameDescription": "Use {artist}, {title}, {album}, {track}, {year}, {date}, {disc} as placeholders.",
+  "downloadFilenameDescription": "ใช้ {artist}, {title}, {album}, {track}, {year}, {date}, {disc} เป็นตัวแทน",
   "@downloadFilenameDescription": {
     "description": "Description shown in filename format editor"
   },
-  "downloadFilenameInsertTag": "Tap to insert tag:",
+  "downloadFilenameInsertTag": "แตะเพื่อแทรกแท็ก:",
   "@downloadFilenameInsertTag": {
     "description": "Label above filename tag chips"
   },
-  "downloadSeparateSinglesEnabled": "Singles and EPs saved in a separate folder",
+  "downloadSeparateSinglesEnabled": "ซิงเกิลและ EP บันทึกในโฟลเดอร์แยกต่างหาก",
   "@downloadSeparateSinglesEnabled": {
     "description": "Subtitle when separate singles folder is on"
   },
-  "downloadSeparateSinglesDisabled": "Singles and albums saved in the same folder",
+  "downloadSeparateSinglesDisabled": "ซิงเกิลและอัลบั้มบันทึกในโฟลเดอร์เดียวกัน",
   "@downloadSeparateSinglesDisabled": {
     "description": "Subtitle when separate singles folder is off"
   },
-  "downloadArtistNameFilters": "ศิลปิน ชื่อ ฟิลเตอร์",
+  "downloadArtistNameFilters": "ตัวกรองชื่อศิลปิน",
   "@downloadArtistNameFilters": {
     "description": "Setting title for artist folder filter options"
   },
-  "downloadCreatePlaylistSourceFolder": "เพลย์ลิสต์ แหล่งที่มา โฟลเดอร์",
+  "downloadCreatePlaylistSourceFolder": "โฟลเดอร์แหล่งที่มาเพลย์ลิสต์",
   "@downloadCreatePlaylistSourceFolder": {
     "description": "Setting to create a subfolder per playlist source"
   },
-  "downloadCreatePlaylistSourceFolderEnabled": "A subfolder is created for each playlist",
+  "downloadCreatePlaylistSourceFolderEnabled": "สร้างโฟลเดอร์ย่อยสำหรับแต่ละเพลย์ลิสต์",
   "@downloadCreatePlaylistSourceFolderEnabled": {
     "description": "Subtitle when playlist folder is enabled"
   },
-  "downloadCreatePlaylistSourceFolderDisabled": "ทั้งหมด tracks saved directly to download folder",
+  "downloadCreatePlaylistSourceFolderDisabled": "บันทึกเพลงทั้งหมดลงโฟลเดอร์ดาวน์โหลดโดยตรง",
   "@downloadCreatePlaylistSourceFolderDisabled": {
     "description": "Subtitle when playlist folder is disabled"
   },
-  "downloadCreatePlaylistSourceFolderRedundant": "Handled by folder organization setting",
+  "downloadCreatePlaylistSourceFolderRedundant": "จัดการโดยการตั้งค่าจัดระเบียบโฟลเดอร์",
   "@downloadCreatePlaylistSourceFolderRedundant": {
     "description": "Subtitle when folder organization is already set to playlist"
   },
-  "downloadSongLinkRegion": "Songลิงก์ Region",
+  "downloadSongLinkRegion": "ภูมิภาค SongLink",
   "@downloadSongLinkRegion": {
     "description": "Setting for SongLink region used during fallback resolution"
   },
-  "downloadNetworkCompatibilityMode": "เครือข่าย Compatibility Mode",
+  "downloadNetworkCompatibilityMode": "โหมดความเข้ากันได้เครือข่าย",
   "@downloadNetworkCompatibilityMode": {
     "description": "Setting for legacy TLS/network handling"
   },
-  "downloadNetworkCompatibilityModeEnabled": "ทั้งหมดowing legacy HTTP endpoints; TLS verification remains enabled",
+  "downloadNetworkCompatibilityModeEnabled": "อนุญาต HTTP endpoint แบบเก่า การตรวจสอบ TLS ยังคงเปิดใช้งาน",
   "@downloadNetworkCompatibilityModeEnabled": {
     "description": "Subtitle when network compatibility mode is on"
   },
-  "downloadNetworkCompatibilityModeDisabled": "Using standard network settings",
+  "downloadNetworkCompatibilityModeDisabled": "ใช้การตั้งค่าเครือข่ายมาตรฐาน",
   "@downloadNetworkCompatibilityModeDisabled": {
     "description": "Subtitle when network compatibility mode is off"
   },
-  "downloadAllowLocalNetwork": "ทั้งหมดow Local เครือข่าย Access",
+  "downloadAllowLocalNetwork": "อนุญาตการเข้าถึงเครือข่ายในเครื่อง",
   "@downloadAllowLocalNetwork": {
     "description": "Setting title for allowing requests to private/local network targets"
   },
-  "downloadAllowLocalNetworkEnabled": "Requests to local/private addresses are allowed (for local proxy or custom DNS)",
+  "downloadAllowLocalNetworkEnabled": "อนุญาตคำขอไปยังที่อยู่ในเครื่อง/ส่วนตัว (สำหรับพร็อกซีภายในหรือ DNS แบบกำหนดเอง)",
   "@downloadAllowLocalNetworkEnabled": {
     "description": "Subtitle when allow local network access is on"
   },
-  "downloadAllowLocalNetworkDisabled": "Local/private addresses are blocked for security",
+  "downloadAllowLocalNetworkDisabled": "บล็อกที่อยู่ในเครื่อง/ส่วนตัวเพื่อความปลอดภัย",
   "@downloadAllowLocalNetworkDisabled": {
     "description": "Subtitle when allow local network access is off"
   },
-  "downloadSelectServiceToEnable": "เซเล็กต์ a provider with quality options to enable this option",
+  "downloadSelectServiceToEnable": "เลือกผู้ให้บริการที่มีตัวเลือกคุณภาพเพื่อเปิดใช้งานตัวเลือกนี้",
   "@downloadSelectServiceToEnable": {
     "description": "Subtitle when quality picker is disabled due to extension service"
   },
@@ -5194,19 +5194,19 @@
   "@downloadFilterContributingDisabled": {
     "description": "Subtitle when contributing artist filter is off"
   },
-  "downloadProvidersNoneEnabled": "No providers enabled",
+  "downloadProvidersNoneEnabled": "ไม่มีผู้ให้บริการที่เปิดใช้งาน",
   "@downloadProvidersNoneEnabled": {
     "description": "Shown when no lyrics providers are active"
   },
-  "downloadMusixmatchLanguageCode": "ภาษา code",
+  "downloadMusixmatchLanguageCode": "รหัสภาษา",
   "@downloadMusixmatchLanguageCode": {
     "description": "Label for Musixmatch language input field"
   },
-  "downloadMusixmatchLanguageHint": "e.g. en, de, ja",
+  "downloadMusixmatchLanguageHint": "เช่น en, de, ja",
   "@downloadMusixmatchLanguageHint": {
     "description": "Placeholder for Musixmatch language input"
   },
-  "downloadMusixmatchLanguageDesc": "Enter a BCP-47 language code (e.g. en, de, ja) to request translated lyrics from Musixmatch.",
+  "downloadMusixmatchLanguageDesc": "ใส่รหัสภาษา BCP-47 (เช่น en, de, ja) เพื่อขอเนื้อเพลงแปลจาก Musixmatch",
   "@downloadMusixmatchLanguageDesc": {
     "description": "Description in Musixmatch language picker"
   },
@@ -5214,15 +5214,15 @@
   "@downloadMusixmatchAuto": {
     "description": "Button to clear Musixmatch language (use auto)"
   },
-  "downloadNetworkAnySubtitle": "Use WiFi or mobile data",
+  "downloadNetworkAnySubtitle": "ใช้ WiFi หรือข้อมูลมือถือ",
   "@downloadNetworkAnySubtitle": {
     "description": "Subtitle for any-network option in picker"
   },
-  "downloadNetworkWifiOnlySubtitle": "ดาวน์โหลด pause when on mobile data",
+  "downloadNetworkWifiOnlySubtitle": "หยุดดาวน์โหลดเมื่อใช้ข้อมูลมือถือ",
   "@downloadNetworkWifiOnlySubtitle": {
     "description": "Subtitle for WiFi-only option in picker"
   },
-  "downloadSongLinkRegionDesc": "Region used when resolving track links via Songลิงก์. Choose the country where your streaming services are available.",
+  "downloadSongLinkRegionDesc": "ภูมิภาคที่ใช้ในการแก้ไขลิงก์เพลงผ่าน SongLink เลือกประเทศที่บริการสตรีมมิ่งของคุณให้บริการ",
   "@downloadSongLinkRegionDesc": {
     "description": "Description in SongLink region picker"
   },
@@ -5234,7 +5234,7 @@
   "@cacheRefresh": {
     "description": "Tooltip for refresh button on cache management page"
   },
-  "dialogDownloadPlaylistsMessage": "ดาวน์โหลด {trackCount} {trackCount, plural, =1{track} other{tracks}} from {playlistCount} {playlistCount, plural, =1{playlist} other{playlists}}?",
+  "dialogDownloadPlaylistsMessage": "ดาวน์โหลด {trackCount} {trackCount, plural, =1{เพลง} other{เพลง}} จาก {playlistCount} {playlistCount, plural, =1{เพลย์ลิสต์} other{เพลย์ลิสต์}}?",
   "@dialogDownloadPlaylistsMessage": {
     "description": "Dialog message for bulk playlist download confirmation",
     "placeholders": {
@@ -5246,7 +5246,7 @@
       }
     }
   },
-  "bulkDownloadPlaylistsButton": "ดาวน์โหลด {count} {count, plural, =1{playlist} other{playlists}}",
+  "bulkDownloadPlaylistsButton": "ดาวน์โหลด {count} {count, plural, =1{เพลย์ลิสต์} other{เพลย์ลิสต์}}",
   "@bulkDownloadPlaylistsButton": {
     "description": "Button label for bulk downloading selected playlists",
     "placeholders": {
@@ -5255,11 +5255,11 @@
       }
     }
   },
-  "bulkDownloadSelectPlaylists": "เซเล็กต์ playlists to download",
+  "bulkDownloadSelectPlaylists": "เลือกเพลย์ลิสต์เพื่อดาวน์โหลด",
   "@bulkDownloadSelectPlaylists": {
     "description": "Button label when no playlists are selected for download"
   },
-  "snackbarSelectedPlaylistsEmpty": "เซเล็กต์ed playlists have no tracks",
+  "snackbarSelectedPlaylistsEmpty": "เพลย์ลิสต์ที่เลือกไม่มีเพลง",
   "@snackbarSelectedPlaylistsEmpty": {
     "description": "Snackbar when selected playlists contain no tracks"
   },
@@ -5329,7 +5329,7 @@
   "@editMetadataAutoFillNoResults": {
     "description": "Snackbar when online metadata search returns no results"
   },
-  "editMetadataAutoFillNoneSelected": "เซเล็กต์ at least one field to auto-fill",
+  "editMetadataAutoFillNoneSelected": "เลือกอย่างน้อยหนึ่งฟิลด์เพื่อกรอกอัตโนมัติ",
   "@editMetadataAutoFillNoneSelected": {
     "description": "Snackbar when user taps Fetch without selecting any fields"
   },
@@ -5337,39 +5337,39 @@
   "@editMetadataLyricsSearch": {
     "description": "Button in the edit metadata lyrics section that searches every lyrics provider"
   },
-  "lyricsPickerTitle": "Choose lyrics",
+  "lyricsPickerTitle": "เลือกเนื้อเพลง",
   "@lyricsPickerTitle": {
     "description": "Title of the sheet listing each lyrics provider's result"
   },
-  "lyricsPickerNeedsTitle": "Enter a title and artist first",
+  "lyricsPickerNeedsTitle": "ใส่ชื่อเพลงและศิลปinink่อน",
   "@lyricsPickerNeedsTitle": {
     "description": "Snackbar when searching lyrics without a title or artist"
   },
-  "lyricsPickerNoProviders": "ไม่มีเนื้อเพลง providers are enabled. Turn some on in การตั้งค่า > เนื้อเพลง.",
+  "lyricsPickerNoProviders": "ไม่มีผู้ให้บริการเนื้อเพลงที่เปิดใช้งาน เปิดบางรายการในการตั้งค่า > เนื้อเพลง",
   "@lyricsPickerNoProviders": {
     "description": "Shown in the lyrics picker when no provider is enabled"
   },
-  "lyricsPickerWordSynced": "Word-synced",
+  "lyricsPickerWordSynced": "ซิงค์คำ",
   "@lyricsPickerWordSynced": {
     "description": "Lyrics result timed word by word"
   },
-  "lyricsPickerSynced": "ซิงค์ed",
+  "lyricsPickerSynced": "ซิงค์แล้ว",
   "@lyricsPickerSynced": {
     "description": "Lyrics result timed line by line"
   },
-  "lyricsPickerPlain": "Plain text",
+  "lyricsPickerPlain": "ข้อความธรรมดา",
   "@lyricsPickerPlain": {
     "description": "Lyrics result without timing"
   },
-  "lyricsPickerInstrumental": "Instrumental",
+  "lyricsPickerInstrumental": "ดนตรี (ไม่มีเนื้อร้อง)",
   "@lyricsPickerInstrumental": {
     "description": "Lyrics result that marks the track as instrumental"
   },
-  "lyricsPickerNotFound": "ไม่มีเนื้อเพลง found",
+  "lyricsPickerNotFound": "ไม่พบเนื้อเพลง",
   "@lyricsPickerNotFound": {
     "description": "A lyrics provider returned nothing for this track"
   },
-  "lyricsPickerLineCount": "{count, plural, =1{1 line} other{{count} lines}}",
+  "lyricsPickerLineCount": "{count, plural, =1{1 บรรทัด} other{{count} บรรทัด}}",
   "@lyricsPickerLineCount": {
     "description": "Number of lyric lines in a provider's result",
     "placeholders": {
@@ -5430,11 +5430,11 @@
   "@editMetadataSelectAll": {
     "description": "Button to select all fields for auto-fill"
   },
-  "editMetadataSelectEmpty": "ว่างเปล่า only",
+  "editMetadataSelectEmpty": "ว่างอย่างเดียว",
   "@editMetadataSelectEmpty": {
     "description": "Button to select only fields that are currently empty"
   },
-  "queueDownloadingCount": "ดาวน์โหลดing ({count})",
+  "queueDownloadingCount": "กำลังดาวน์โหลด ({count})",
   "@queueDownloadingCount": {
     "description": "Header for active downloads section with count",
     "placeholders": {
@@ -5510,15 +5510,15 @@
   "@queueEmptyHistorySubtitle": {
     "description": "Empty state subtitle for download history"
   },
-  "selectionAllPlaylistsSelected": "ทั้งหมด playlists selected",
+  "selectionAllPlaylistsSelected": "เลือกเพลย์ลิสต์ทั้งหมดแล้ว",
   "@selectionAllPlaylistsSelected": {
     "description": "Shown when all playlists are selected in selection mode"
   },
-  "selectionTapPlaylistsToSelect": "Tap playlists to select",
+  "selectionTapPlaylistsToSelect": "แตะเพลย์ลิสต์เพื่อเลือก",
   "@selectionTapPlaylistsToSelect": {
     "description": "Hint shown in playlist selection mode"
   },
-  "selectionSelectPlaylistsToDelete": "เซเล็กต์ playlists to delete",
+  "selectionSelectPlaylistsToDelete": "เลือกเพลย์ลิสต์เพื่อลบ",
   "@selectionSelectPlaylistsToDelete": {
     "description": "Hint shown when no playlists are selected for deletion"
   },
@@ -5631,11 +5631,11 @@
       }
     }
   },
-  "downloadRedownloadFakeHiRes": "Re-download fake ไฮเรส",
+  "downloadRedownloadFakeHiRes": "ดาวน์โหลดใหม่ Hi-Res ปลอม",
   "@downloadRedownloadFakeHiRes": {
     "description": "Setting title: automatically replace downloads that measure as fake Hi-Res"
   },
-  "downloadRedownloadFakeHiResSubtitle": "ปิด by default. Check ไฮเรส downloads and replace only when every audio sample is preserved. Keep the original if verification or processing fails",
+  "downloadRedownloadFakeHiResSubtitle": "ปิดเป็นค่าเริ่มต้น ตรวจสอบไฟล์ Hi-Res และแทนที่ก็ต่อเมื่อตัวอย่างเสียงทุกตัวถูกเก็บไว้ เก็บไฟล์ต้นฉบับไว้หากยืนยันไม่ได้",
   "@downloadRedownloadFakeHiResSubtitle": {
     "description": "Setting subtitle for the fake Hi-Res re-download toggle"
   },
@@ -5808,7 +5808,7 @@
   "@cancelDownloadTitle": {
     "description": "Dialog title when confirming cancellation of an active download"
   },
-  "cancelDownloadContent": "This will cancel the active download for \"{trackName}\".",
+  "cancelDownloadContent": "จะยกเลิกการดาวน์โหลดที่ทำงานอยู่สำหรับ \"{trackName}\"",
   "@cancelDownloadContent": {
     "description": "Dialog body when confirming cancellation of an active download",
     "placeholders": {
@@ -5837,7 +5837,7 @@
   "@metadataSaveFailedStorage": {
     "description": "Snackbar error when writing metadata file back to storage fails"
   },
-  "snackbarFolderPickerFailed": "ล้มเหลว to open folder picker: {error}",
+  "snackbarFolderPickerFailed": "เปิดเครื่องมือเลือกโฟลเดอร์ไม่ได้: {error}",
   "@snackbarFolderPickerFailed": {
     "description": "Snackbar shown when folder picker fails to open",
     "placeholders": {
@@ -5846,7 +5846,7 @@
       }
     }
   },
-  "notifDownloadingTrack": "ดาวน์โหลดing {trackName}",
+  "notifDownloadingTrack": "กำลังดาวน์โหลด {trackName}",
   "@notifDownloadingTrack": {
     "description": "Notification title while downloading a track",
     "placeholders": {
@@ -5884,7 +5884,7 @@
   "@notifAlreadyInLibrary": {
     "description": "Notification title when track is already in library"
   },
-  "notifDownloadCompleteCount": "ดาวน์โหลด เสร็จสิ้น ({completed}/{total})",
+  "notifDownloadCompleteCount": "ดาวน์โหลดเสร็จสิ้น ({completed}/{total})",
   "@notifDownloadCompleteCount": {
     "description": "Notification title when download is complete, with count",
     "placeholders": {
@@ -5896,11 +5896,11 @@
       }
     }
   },
-  "notifDownloadComplete": "ดาวน์โหลด เสร็จสิ้น",
+  "notifDownloadComplete": "ดาวน์โหลดเสร็จสิ้น",
   "@notifDownloadComplete": {
     "description": "Notification title when a single download is complete"
   },
-  "notifDownloadsFinished": "ดาวน์โหลด เสร็จed ({completed} done, {failed} failed)",
+  "notifDownloadsFinished": "ดาวน์โหลดเสร็จแล้ว ({completed} สำเร็จ {failed} ล้มเหลว)",
   "@notifDownloadsFinished": {
     "description": "Notification title when queue finishes with some failures",
     "placeholders": {
@@ -5920,11 +5920,11 @@
   "@notifVerificationRequiredBody": {
     "description": "Notification body prompting the user to return to the app to solve a verification challenge"
   },
-  "notifAllDownloadsComplete": "ทั้งหมด ดาวน์โหลด เสร็จสิ้น",
+  "notifAllDownloadsComplete": "ดาวน์โหลดทั้งหมดเสร็จสิ้น",
   "@notifAllDownloadsComplete": {
     "description": "Notification title when all downloads finish successfully"
   },
-  "notifTracksDownloadedSuccess": "{count, plural, =1{1 track downloaded successfully} other{{count} เพลง downloaded successfully}}",
+  "notifTracksDownloadedSuccess": "{count, plural, =1{ดาวน์โหลด 1 เพลงสำเร็จ} other{ดาวน์โหลด {count} เพลงสำเร็จ}}",
   "@notifTracksDownloadedSuccess": {
     "description": "Notification body for queue complete - how many tracks were downloaded",
     "placeholders": {
@@ -5933,7 +5933,7 @@
       }
     }
   },
-  "notifDownloadsFinishedBody": "{completed, plural, =1{1 track downloaded} other{{completed} tracks downloaded}}, {failed, plural, =1{1 failed} other{{failed} failed}}",
+  "notifDownloadsFinishedBody": "{completed, plural, =1{1 เพลงดาวน์โหลดแล้ว} other{{completed} เพลงดาวน์โหลดแล้ว}}, {failed, plural, =1{1 ล้มเหลว} other{{failed} ล้มเหลว}}",
   "@notifDownloadsFinishedBody": {
     "description": "Notification body when queue finishes with failures",
     "placeholders": {
@@ -5945,11 +5945,11 @@
       }
     }
   },
-  "notifDownloadsCanceledTitle": "ดาวน์โหลด canceled",
+  "notifDownloadsCanceledTitle": "ยกเลิกดาวน์โหลดแล้ว",
   "@notifDownloadsCanceledTitle": {
     "description": "Notification title when downloads are canceled by the user"
   },
-  "notifDownloadsCanceledBody": "{count, plural, =1{1 download canceled by user} other{{count} การดาวน์โหลด canceled by user}}",
+  "notifDownloadsCanceledBody": "{count, plural, =1{ผู้ใช้ยกเลิก 1 การดาวน์โหลด} other{ผู้ใช้ยกเลิก {count} การดาวน์โหลด}}",
   "@notifDownloadsCanceledBody": {
     "description": "Notification body when downloads are canceled by the user",
     "placeholders": {
@@ -6046,7 +6046,7 @@
       }
     }
   },
-  "notifDownloadingUpdate": "ดาวน์โหลดing Mornye v{version}",
+  "notifDownloadingUpdate": "กำลังดาวน์โหลด Mornye v{version}",
   "@notifDownloadingUpdate": {
     "description": "Notification title while downloading an app update",
     "placeholders": {
@@ -6124,15 +6124,15 @@
   "@tutorialSearchHint": {
     "description": "Placeholder shown in the tutorial search demo"
   },
-  "tutorialDownloadCompletedSemantics": "ดาวน์โหลดเสร็จสิ้นd",
+  "tutorialDownloadCompletedSemantics": "ดาวน์โหลดเสร็จสิ้น",
   "@tutorialDownloadCompletedSemantics": {
     "description": "Accessibility label for completed download state in tutorial demo"
   },
-  "tutorialDownloadInProgressSemantics": "ดาวน์โหลด in progress",
+  "tutorialDownloadInProgressSemantics": "กำลังดาวน์โหลดอยู่",
   "@tutorialDownloadInProgressSemantics": {
     "description": "Accessibility label for active download state in tutorial demo"
   },
-  "tutorialStartDownloadSemantics": "Start download",
+  "tutorialStartDownloadSemantics": "เริ่มดาวน์โหลด",
   "@tutorialStartDownloadSemantics": {
     "description": "Accessibility label for idle download button in tutorial demo"
   },
@@ -6156,11 +6156,11 @@
   "@trackCoverReplace": {
     "description": "Button label for replacing selected cover art"
   },
-  "trackCoverPick": "Pick ปิดทับ",
+  "trackCoverPick": "เลือกภาพปก",
   "@trackCoverPick": {
     "description": "Button label for selecting cover art"
   },
-  "trackCoverClearSelected": "Clear selected cover",
+  "trackCoverClearSelected": "ล้างภาพปกที่เลือก",
   "@trackCoverClearSelected": {
     "description": "Tooltip for clearing the newly selected cover art"
   },
@@ -6168,7 +6168,7 @@
   "@trackCoverCurrent": {
     "description": "Label for the currently embedded cover preview"
   },
-  "trackCoverSelected": "เซเล็กต์ed cover",
+  "trackCoverSelected": "ภาพปกที่เลือก",
   "@trackCoverSelected": {
     "description": "Label for the newly selected cover preview"
   },
@@ -6192,11 +6192,11 @@
   "@actionStop": {
     "description": "Generic action - stop"
   },
-  "queueFinalizingDownload": "Finalizing download",
+  "queueFinalizingDownload": "กำลังจัดการไฟล์ดาวน์โหลด...",
   "@queueFinalizingDownload": {
     "description": "Accessibility label for a queue item that is finalizing"
   },
-  "queueDownloadNext": "ดาวน์โหลด next",
+  "queueDownloadNext": "ดาวน์โหลดต่อไป",
   "@queueDownloadNext": {
     "description": "Tooltip on a queued download row; moves the item to the front of the queue so the next free slot downloads it"
   },
@@ -6245,15 +6245,15 @@
       }
     }
   },
-  "queueDownloadedFileMissing": "ดาวน์โหลดแล้ว file missing",
+  "queueDownloadedFileMissing": "ไฟล์ที่ดาวน์โหลดหายไป",
   "@queueDownloadedFileMissing": {
     "description": "Accessibility label when a downloaded file is missing from disk"
   },
-  "queueCheckingDownloadedFile": "Checking downloaded file...",
+  "queueCheckingDownloadedFile": "กำลังตรวจสอบไฟล์ที่ดาวน์โหลด...",
   "@queueCheckingDownloadedFile": {
     "description": "Accessibility label while the app checks whether a just-completed download has appeared at its final path yet. Not about authentication or a download session."
   },
-  "queueDownloadCompleted": "ดาวน์โหลดเสร็จสิ้นd",
+  "queueDownloadCompleted": "ดาวน์โหลดเสร็จสิ้น",
   "@queueDownloadCompleted": {
     "description": "Accessibility label for completed download state in queue"
   },
@@ -6265,7 +6265,7 @@
   "@queueRateLimitMessage": {
     "description": "Explanation shown on a failed queue item when the download service rate limits requests"
   },
-  "appearanceSelectAccentColor": "เซเล็กต์ accent color {hex}",
+  "appearanceSelectAccentColor": "เลือกสีเน้น {hex}",
   "@appearanceSelectAccentColor": {
     "description": "Accessibility label for picking an accent color",
     "placeholders": {
@@ -6367,7 +6367,7 @@
   "@actionDismiss": {
     "description": "Generic action - dismiss"
   },
-  "setupChangeFolderTooltip": "Change folder",
+  "setupChangeFolderTooltip": "เปลี่ยนโฟลเดอร์",
   "@setupChangeFolderTooltip": {
     "description": "Tooltip for editing the selected download folder"
   },
@@ -6434,7 +6434,7 @@
       }
     }
   },
-  "a11ySelectAlbum": "เซเล็กต์ album {albumName}",
+  "a11ySelectAlbum": "เลือกอัลบั้ม {albumName}",
   "@a11ySelectAlbum": {
     "description": "Accessibility label for selecting an album",
     "placeholders": {
@@ -6504,39 +6504,39 @@
   "@metadataProvidersSubtitle": {
     "description": "Subtitle for metadata provider priority item"
   },
-  "downloadDeduplication": "ข้าม คัดลอก ดาวน์โหลด",
+  "downloadDeduplication": "ข้ามดาวน์โหลดซ้ำ",
   "@downloadDeduplication": {
     "description": "Setting - skip tracks already in download history"
   },
-  "downloadDeduplicationEnabled": "Already-downloaded tracks will be skipped",
+  "downloadDeduplicationEnabled": "เพลงที่ดาวน์โหลดแล้วจะถูกข้าม",
   "@downloadDeduplicationEnabled": {
     "description": "Subtitle when deduplication is on"
   },
-  "downloadDeduplicationWithQualityVariants": "Existing files at the selected quality will be skipped",
+  "downloadDeduplicationWithQualityVariants": "ไฟล์ที่มีอยู่แล้วในคุณภาพที่เลือกจะถูกข้าม",
   "@downloadDeduplicationWithQualityVariants": {
     "description": "Deduplication subtitle when separate quality versions are allowed"
   },
-  "downloadDeduplicationDisabled": "ทั้งหมด tracks will be downloaded regardless of history",
+  "downloadDeduplicationDisabled": "ดาวน์โหลดทุกเพลงโดยไม่สนประวัติ",
   "@downloadDeduplicationDisabled": {
     "description": "Subtitle when deduplication is off"
   },
-  "downloadQualityVariants": "ทั้งหมดow different quality versions",
+  "downloadQualityVariants": "อนุญาตเวอร์ชันคุณภาพต่างกัน",
   "@downloadQualityVariants": {
     "description": "Setting to retain multiple quality versions of the same track"
   },
-  "downloadQualityVariantsDescription": "Keep every quality version; add its measured quality to the filename only when the name is already used",
+  "downloadQualityVariantsDescription": "เก็บทุกเวอร์ชันคุณภาพ เพิ่มคุณภาพที่วัดได้ในชื่อไฟล์ก็ต่อเมื่อชื่อซ้ำ",
   "@downloadQualityVariantsDescription": {
     "description": "Description for retaining multiple quality versions"
   },
-  "trackOptionDownloadQualityVariant": "ดาวน์โหลด another quality",
+  "trackOptionDownloadQualityVariant": "ดาวน์โหลดคุณภาพอื่น",
   "@trackOptionDownloadQualityVariant": {
     "description": "Track menu action to download another quality version"
   },
-  "downloadFallbackExtensions": "Fallback ส่วนขยาย",
+  "downloadFallbackExtensions": "ส่วนขยายสำรอง",
   "@downloadFallbackExtensions": {
     "description": "Settings item for configuring fallback extension providers"
   },
-  "downloadFallbackExtensionsSubtitle": "Choose which extensions can be used as fallback",
+  "downloadFallbackExtensionsSubtitle": "เลือกส่วนขยายที่ใช้เป็นสำรองได้",
   "@downloadFallbackExtensionsSubtitle": {
     "description": "Subtitle for fallback extensions item"
   },
@@ -6685,7 +6685,7 @@
       }
     }
   },
-  "selectionDeleteTracksCount": "ลบ {count} {count, plural, =1{track} other{tracks}}",
+  "selectionDeleteTracksCount": "ลบ {count} {count, plural, =1{เพลง} other{เพลง}}",
   "@selectionDeleteTracksCount": {
     "description": "Button label for deleting selected tracks",
     "placeholders": {
@@ -6694,7 +6694,7 @@
       }
     }
   },
-  "queueDownloadSpeedStatus": "ดาวน์โหลดing - {speed} MB/s",
+  "queueDownloadSpeedStatus": "กำลังดาวน์โหลด - {speed} MB/s",
   "@queueDownloadSpeedStatus": {
     "description": "Queue status while downloading with speed",
     "placeholders": {
@@ -6703,10 +6703,10 @@
       }
     }
   },
-  "queueDownloadStarting": "Starting...",
-  "queueCheckingDownloadSession": "Checking download session...",
-  "queueResolvingDownloadMetadata": "Resolving track metadata...",
-  "queueResolvingDownloadStream": "Preparing audio stream...",
+  "queueDownloadStarting": "กำลังเริ่มต้น...",
+  "queueCheckingDownloadSession": "กำลังตรวจสอบเซสชันดาวน์โหลด...",
+  "queueResolvingDownloadMetadata": "กำลังแก้ไขข้อมูลเมตาเพลง...",
+  "queueResolvingDownloadStream": "กำลังเตรียมสตรีมเสียง...",
   "queueWaitingForVerification": "Waiting for verification...",
   "queueResumingAfterVerification": "Resuming after verification...",
   "@queueDownloadStarting": {
@@ -6715,11 +6715,11 @@
   "@queueCheckingDownloadSession": {
     "description": "Queue status while the download provider's session is being checked during preparation (preparationStage 'checking_session'). This is about the provider session, not about locating a finished file."
   },
-  "a11ySelectTrack": "เซเล็กต์ track",
+  "a11ySelectTrack": "เลือกเพลง",
   "@a11ySelectTrack": {
     "description": "Accessibility label for selecting a track"
   },
-  "a11yDeselectTrack": "Deselect track",
+  "a11yDeselectTrack": "ยกเลิกการเลือกเพลง",
   "@a11yDeselectTrack": {
     "description": "Accessibility label for deselecting a track"
   },
@@ -6783,7 +6783,7 @@
   "@libraryScanCancelledSubtitle": {
     "description": "Library scan status subtitle after cancellation"
   },
-  "libraryDownloadsHistoryExcluded": "{count} from ดาวน์โหลด history (excluded from list)",
+  "libraryDownloadsHistoryExcluded": "{count} จากประวัติดาวน์โหลด (ไม่นับในรายการ)",
   "@libraryDownloadsHistoryExcluded": {
     "description": "Library count note for downloaded history items excluded from the local list",
     "placeholders": {
@@ -6792,11 +6792,11 @@
       }
     }
   },
-  "downloadNativeWorker": "Native download worker",
+  "downloadNativeWorker": "ตัวดาวน์โหลดเนทีฟ",
   "@downloadNativeWorker": {
     "description": "Setting title for Android native download worker"
   },
-  "downloadNativeWorkerSubtitle": "และroid background service for extension downloads",
+  "downloadNativeWorkerSubtitle": "บริการพื้นหลัง Android สำหรับดาวน์โหลดส่วนขยาย",
   "@downloadNativeWorkerSubtitle": {
     "description": "Setting subtitle for Android native download worker"
   },
@@ -6940,7 +6940,7 @@
   "@permissionAudio": {
     "description": "Audio permission type label"
   },
-  "permissionStorage": "ที่เก็บข้อมูล",
+  "permissionStorage": "ที่จัดเก็บ",
   "@permissionStorage": {
     "description": "Storage permission type label"
   },
@@ -6948,7 +6948,7 @@
   "@permissionNotification": {
     "description": "Notification permission type label"
   },
-  "errorInvalidFolderSelected": "ไม่ถูกต้อง folder selected",
+  "errorInvalidFolderSelected": "โฟลเดอร์ที่เลือกไม่ถูกต้อง",
   "@errorInvalidFolderSelected": {
     "description": "Error when the selected folder is invalid"
   },
@@ -6993,11 +6993,11 @@
       }
     }
   },
-  "settingsSaveDownloadHistory": "บันทึก download history",
+  "settingsSaveDownloadHistory": "บันทึกประวัติดาวน์โหลด",
   "@settingsSaveDownloadHistory": {
     "description": "Settings switch title for storing completed downloads in history"
   },
-  "settingsSaveDownloadHistorySubtitle": "Keep completed downloads in history and library views",
+  "settingsSaveDownloadHistorySubtitle": "เก็บดาวน์โหลดที่เสร็จสิ้นไว้ในประวัติและมุมมองไลบรารี",
   "@settingsSaveDownloadHistorySubtitle": {
     "description": "Settings switch subtitle for storing completed downloads in history"
   },
@@ -7544,7 +7544,7 @@
       }
     }
   },
-  "linkDesktopDownloads": "ดาวน์โหลด on {name}",
+  "linkDesktopDownloads": "ดาวน์โหลดบน {name}",
   "@linkDesktopDownloads": {
     "description": "Mornye Link: heading of the paired desktop's download queue",
     "placeholders": {
@@ -7618,7 +7618,7 @@
       }
     }
   },
-  "linkDownloadOnDesktop": "ดาวน์โหลด on {name}",
+  "linkDownloadOnDesktop": "ดาวน์โหลดบน {name}",
   "@linkDownloadOnDesktop": {
     "description": "Mornye Link: queues a track, album or link for download in the paired desktop app",
     "placeholders": {
@@ -7627,7 +7627,7 @@
       }
     }
   },
-  "linkDownloadQueuedOnDesktop": "{count, plural, =1{คิวd 1 track on {name}} other{คิวd {count} เพลง on {name}}}",
+  "linkDownloadQueuedOnDesktop": "{count, plural, =1{คิว 1 เพลงบน {name}} other{คิว {count} เพลงบน {name}}}",
   "@linkDownloadQueuedOnDesktop": {
     "description": "Mornye Link: the paired desktop queued downloads",
     "placeholders": {
@@ -7772,11 +7772,11 @@
       }
     }
   },
-  "linkDownloadStatusQueued": "Waiting",
+  "linkDownloadStatusQueued": "รอคิว",
   "@linkDownloadStatusQueued": {
     "description": "Mornye Link: a download on the paired desktop has not started"
   },
-  "linkDownloadStatusDownloading": "ดาวน์โหลดing",
+  "linkDownloadStatusDownloading": "กำลังดาวน์โหลด",
   "@linkDownloadStatusDownloading": {
     "description": "Mornye Link: a download on the paired desktop is running"
   },
@@ -7816,7 +7816,7 @@
       }
     }
   },
-  "selectionBatchConvertConfirmMessageLosslessCapped": "Convert {count} {count, plural, =1{track} other{tracks}} to {format} ({quality})?\n\nThe output stays in a lossless codec, but bit depth/sample rate will be capped. ต้นฉบับ files will be deleted after conversion.",
+  "selectionBatchConvertConfirmMessageLosslessCapped": "แปลง {count} {count, plural, =1{เพลง} other{เพลง}} เป็น {format} ({quality})?\n\nเอาต์พุตอยู่ในโค덱ไร้การสูญเสีย",
   "@selectionBatchConvertConfirmMessageLosslessCapped": {
     "description": "Confirmation dialog message for capped lossless batch conversion",
     "placeholders": {
@@ -7873,7 +7873,7 @@
   "@snackbarAddedToQueueGeneric": {
     "description": "Snackbar when a track is added to the playback queue without naming it"
   },
-  "selectionDeletePlaylistsCount": "ลบ {count} {count, plural, =1{playlist} other{playlists}}",
+  "selectionDeletePlaylistsCount": "ลบ {count} {count, plural, =1{เพลย์ลิสต์} other{เพลย์ลิสต์}}",
   "@selectionDeletePlaylistsCount": {
     "description": "Button label for deleting multiple selected playlists",
     "placeholders": {
@@ -7890,19 +7890,19 @@
   "@artistShuffleEmpty": {
     "description": "Snackbar when shuffling an artist with no songs in the Library"
   },
-  "downloadPrimaryArtistOnlyOn": "Primary only: On",
+  "downloadPrimaryArtistOnlyOn": "ศิลปินหลักอย่างเดียว: เปิด",
   "@downloadPrimaryArtistOnlyOn": {
     "description": "Status label when primary-artist-only folder naming is enabled"
   },
-  "downloadPrimaryArtistOnlyOff": "Primary only: ปิด",
+  "downloadPrimaryArtistOnlyOff": "ศิลปินหลักอย่างเดียว: ปิด",
   "@downloadPrimaryArtistOnlyOff": {
     "description": "Status label when primary-artist-only folder naming is disabled"
   },
-  "downloadAlbumArtistMetadataPrimaryOnly": "ศิลปินอัลบั้ม metadata: Primary only",
+  "downloadAlbumArtistMetadataPrimaryOnly": "ข้อมูลเมตาศิลปินอัลบั้ม: ศิลปินหลักอย่างเดียว",
   "@downloadAlbumArtistMetadataPrimaryOnly": {
     "description": "Status label when album-artist folder filtering uses primary artist only"
   },
-  "downloadAlbumArtistMetadataFull": "ศิลปินอัลบั้ม metadata: Full",
+  "downloadAlbumArtistMetadataFull": "ข้อมูลเมตาศิลปินอัลบั้ม: เต็ม",
   "@downloadAlbumArtistMetadataFull": {
     "description": "Status label when album-artist folder filtering uses full metadata"
   },
@@ -8698,7 +8698,7 @@
   "libraryArtistsEmpty": "ศิลปิน appear here once you download music or scan a local library.",
   "listeningRewind": "ข้ามหลัง",
   "listeningRewindDescription": "Relive the highlights of your recent weeks and months",
-  "listeningRewindChoosePeriod": "Choose a period",
+  "listeningRewindChoosePeriod": "เลือกช่วงเวลา",
   "listeningRewindLastWeeks": "Last {weeks} weeks",
   "@listeningRewindLastWeeks": {
     "placeholders": {
@@ -8921,7 +8921,7 @@
   "discordPresenceActive": "Sharing current track",
   "discordPresenceUnavailable": "Discord is unavailable. ลองใหม่ing during playback.",
   "discordPresenceBuildUnavailable": "Discord SDK is not available in this build.",
-  "discordPresenceAndroidHelp": "ติดตั้ง Discord and sign in on this phone. ทั้งหมดow activity sharing in Discord. ภายนอก players are not supported.",
+  "discordPresenceAndroidHelp": "ติดตั้ง Discord และเข้าสู่ระบบบนโทรศัพท์นี้ เปิดแชร์กิจกรรมใน Discord ผู้เล่นภายนอกไม่รองรับ",
   "discordPresenceIosHelp": "ลิงก์ your account through Discord and allow activity sharing. Tap to link again if authorization fails.",
   "discordPresenceDesktopHelp": "Keep the Discord desktop app running and signed in on this computer, and allow activity sharing in Discord.",
   "discordPresenceDisconnect": "ยกเลิกการเชื่อมต่อ and forget account",
@@ -9013,7 +9013,7 @@
   "@lyricsShareTitle": {
     "description": "Screen that turns selected lyric lines into an image for stories"
   },
-  "lyricsShareSelectHint": "เซเล็กต์ up to {count} lines",
+  "lyricsShareSelectHint": "เลือกได้สูงสุด {count} บรรทัด",
   "@lyricsShareSelectHint": {
     "placeholders": {
       "count": {
@@ -9154,14 +9154,14 @@
   "@audioInfoBluetoothFormat": {
     "description": "Negotiated Bluetooth transport format, separate from Android PCM mixer properties"
   },
-  "audioInfoAndroidNotReported": "Not reported by และroid",
+  "audioInfoAndroidNotReported": "Android ไม่ได้รายงาน",
   "audioInfoBluetoothUnavailable": "Unavailable to this app",
   "audioInfoBluetoothUnavailableHint": "และroid may show the active codec in น้ำเงินtooth settings without making it available to Mornye. This is separate from the song's file format.",
   "audioAnalysisFileBitrate": "Average file bitrate",
   "audioAnalysisFileBitrateHint": "Includes tags and container overhead. It can differ from the audio stream bitrate and is not the น้ำเงินtooth bitrate.",
   "audioInfoSystemDefaultRate": "ระบบ default sample rate",
-  "audioInfoAndroidPcmRates": "และroid PCM sample rates",
-  "audioInfoAndroidPcmFormats": "และroid PCM formats",
+  "audioInfoAndroidPcmRates": "อัตราตัวอย่าง PCM ของ Android",
+  "audioInfoAndroidPcmFormats": "รูปแบบ PCM ของ Android",
   "audioInfoSystemDefaultBuffer": "ระบบ default buffer",
   "audioInfoDeviceRates": "Device sample rates",
   "audioInfoDeviceFormats": "Device formats",
@@ -9337,11 +9337,11 @@
   "@desktopMenuProjectPage": {
     "description": "Help menu item that opens the app's source repository"
   },
-  "desktopDownloadsShowAll": "แสดง all",
+  "desktopDownloadsShowAll": "แสดงทั้งหมด",
   "@desktopDownloadsShowAll": {
     "description": "Button in the desktop downloads popover that opens the full download queue"
   },
-  "desktopDownloadsQueued": "Waiting",
+  "desktopDownloadsQueued": "รอคิว",
   "@desktopDownloadsQueued": {
     "description": "Status of a download in the desktop downloads popover that has not started yet"
   },
@@ -10091,11 +10091,11 @@
   "@linkTransfersReasonDisconnected": {
     "description": "Why a transfer failed: the devices lost their connection"
   },
-  "linkTransfersReasonNoFolder": "Choose a download folder first",
+  "linkTransfersReasonNoFolder": "เลือกโฟลเดอร์ดาวน์โหลดก่อน",
   "@linkTransfersReasonNoFolder": {
     "description": "Why a transfer to this device failed: no download folder is set"
   },
-  "linkTransfersReasonNoFolderPeer": "{name} has no download folder",
+  "linkTransfersReasonNoFolderPeer": "{name} ไม่มีโฟลเดอร์ดาวน์โหลด",
   "@linkTransfersReasonNoFolderPeer": {
     "description": "Why a transfer to the linked device failed: that device has no download folder set",
     "placeholders": {
@@ -10264,11 +10264,11 @@
   "@playlistCreateEmptySubtitle": {
     "description": "Subtitle of the empty playlist option"
   },
-  "playlistCreateFromFolder": "From a folder",
+  "playlistCreateFromFolder": "จากโฟลเดอร์",
   "@playlistCreateFromFolder": {
     "description": "Create playlist option that uses the tracks of one Library folder"
   },
-  "playlistCreateFromFolderSubtitle": "Every track in one folder of your ไลบรารี",
+  "playlistCreateFromFolderSubtitle": "ทุกเพลงในโฟลเดอร์หนึ่งของไลบรารีคุณ",
   "@playlistCreateFromFolderSubtitle": {
     "description": "Subtitle of the create playlist from folder option"
   },
@@ -10280,15 +10280,15 @@
   "@playlistImportFileSubtitle": {
     "description": "Subtitle of the import playlist file option"
   },
-  "playlistFolderPickerTitle": "Choose a folder",
+  "playlistFolderPickerTitle": "เลือกโฟลเดอร์",
   "@playlistFolderPickerTitle": {
     "description": "Title of the sheet listing Library folders to turn into a playlist"
   },
-  "playlistFolderPickerEmptyTitle": "No folders yet",
+  "playlistFolderPickerEmptyTitle": "ยังไม่มีโฟลเดอร์",
   "@playlistFolderPickerEmptyTitle": {
     "description": "Title of the empty folder picker when no Library folder has tracks"
   },
-  "playlistFolderPickerEmpty": "No scanned tracks yet. เพิ่ม a ไลบรารี folder and scan it first.",
+  "playlistFolderPickerEmpty": "ยังไม่มีเพลงที่สแกน เพิ่มโฟลเดอร์ไลบรารีและสแกนก่อน",
   "@playlistFolderPickerEmpty": {
     "description": "Shown when no Library folder has tracks to create a playlist from"
   },
@@ -10415,15 +10415,15 @@
   "@recognizeMicrophoneMessage": {
     "description": "Hint when the microphone could not record"
   },
-  "recognizePermissionTitle": "Microphone access is off",
+  "recognizePermissionTitle": "การเข้าถึงไมโครโฟนปิดอยู่",
   "@recognizePermissionTitle": {
     "description": "Title when microphone permission was denied"
   },
-  "recognizePermissionMessage": "Mornye uses the microphone only while you identify a song.",
+  "recognizePermissionMessage": "Mornye ใช้ไมโครโฟนเฉพาะขณะระบุเพลงเท่านั้น",
   "@recognizePermissionMessage": {
     "description": "Explanation when microphone permission was denied"
   },
-  "recognizePermissionAllow": "ทั้งหมดow Microphone",
+  "recognizePermissionAllow": "อนุญาตไมโครโฟน",
   "@recognizePermissionAllow": {
     "description": "Button that asks for microphone permission again"
   },
@@ -10482,7 +10482,7 @@
   "lastfmNowPlayingDescription": "แสดง the current song on your Last.fm profile.",
   "lastfmDisconnect": "ยกเลิกการเชื่อมต่อ Last.fm",
   "lastfmConnectionError": "Last.fm could not be reached. บันทึกd scrobbles will be retried automatically.",
-  "lastfmStorageError": "Last.fm settings could not be saved. Check access to this device's secure storage and try again.",
+  "lastfmStorageError": "บันทึกการตั้งค่า Last.fm ไม่ได้ ตรวจสอบการเข้าถึงที่จัดเก็บปลอดภัยของอุปกรณ์นี้ แล้วลองใหม่",
   "lastfmAuthorizationPending": "Access has not been approved yet. เสร็จ authorizing Mornye in your browser.",
   "lastfmAuthorizationExpired": "This connection request expired. เชื่อมต่อ again to continue.",
   "lastfmReauthenticate": "Your Last.fm connection expired. เชื่อมต่อ again to resume scrobbling.",
@@ -10523,7 +10523,7 @@
   "@collectionSuggestionsAddHere": {
     "description": "Tooltip of the button that adds a suggested song to the user's playlist shown above"
   },
-  "sectionExistingDownloads": "Existing ไฟล์s",
+  "sectionExistingDownloads": "ไฟล์ที่มีอยู่แล้ว",
   "@sectionExistingDownloads": {
     "description": "Files settings section header for actions on already-downloaded files"
   },
@@ -10591,7 +10591,7 @@
       }
     }
   },
-  "reorganizeLibraryOutsideFolder": "{count} {count, plural, =1{เพลงอยู่} other{เพลงอยู่}} นอกโฟลเดอร์ดาวน์โหลดปัจจุบันและจะไม่ย้าย",
+  "reorganizeLibraryOutsideFolder": "{count} {count, plural, =1{เพลงอยู่} other{เพลงอยู}} นอกโฟลเดอร์ดาวน์โหลดปัจจุบัน และจะไม่ย้าย",
   "@reorganizeLibraryOutsideFolder": {
     "description": "Note in the reorganize confirmation dialog",
     "placeholders": {
@@ -10622,7 +10622,7 @@
   "@reorganizeLibraryScanHint": {
     "description": "Hint in the reorganize confirmation dialog about which files are covered"
   },
-  "reorganizeLibraryKeepsPlaylistFolders": "กฎโฟลเดอร์ใช้ชื่อเพลย์ลิสต์ ซึ่ง Mornye ไม่เก็บของดาวน์โหลดเก่าไว้ ดังนั้นไฟล์อยู่ที่เดิมและเปลี่ยนแค่ชื่อ",
+  "reorganizeLibraryKeepsPlaylistFolders": "กฎโฟลเดอร์ใช้ชื่อเพลย์ลิสต์ ซึ่ง Mornye ไม่เก็บข้อมูลดาวน์โหลดเก่าไว้ ดังนั้นไฟล์อยู่ที่เดิมและเปลี่ยนแค่ชื่อ",
   "@reorganizeLibraryKeepsPlaylistFolders": {
     "description": "Warning in the reorganize confirmation dialog when the folder rule depends on the playlist"
   },
@@ -10710,7 +10710,7 @@
   },
   "openAudio": "เปิด audio",
   "openAudioFiles": "เปิด audio files",
-  "openAudioFolder": "เล่น folder",
+  "openAudioFolder": "เล่นโฟลเดอร์",
   "reorganizeLibraryFailed": "จัดระเบียบไฟล์ไม่ได้: {error}",
   "@reorganizeLibraryFailed": {
     "description": "Snackbar when planning or applying the reorganization fails",
