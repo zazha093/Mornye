@@ -8,7 +8,7 @@
       }
     }
   },
-  "libraryLyricsSearchIncomplete": "Some songs could not be read. Results may be incomplete.",
+  "libraryLyricsSearchIncomplete": "บางเพลงอ่านไม่ได้ ผลลัพธ์อาจไม่ครบ",
   "libraryLyricsRefresh": "รีเฟรช lyrics search",
   "networkErrorListing": "The server responded, but its folder listing could not be read. For WebDAV, use the WebDAV endpoint. For HTTP, use a directory listing or direct audio URL.",
   "networkErrorStorage": "The server was reached, but this device could not save the connection. Check the app log and retry.",
@@ -118,7 +118,7 @@
   "linkFileChanged": "The file changed since the preview. ตัวอย่าง it again before saving.",
   "linkFileOperationFailed": "The operation could not be completed. Check the computer's logs for details.",
   "trackBpm": "BPM",
-  "trackMood": "Mood",
+  "trackMood": "ความรู้สึก",
   "subsonicAddToLibrary": "เพิ่มเซิร์ฟเวอร์ to ไลบรารี",
   "subsonicLibraryAdded": "เซิร์ฟเวอร์ added to ไลบรารี",
   "subsonicLibraryDescription": "ซิงค์ the server catalogue and artwork to ไลบรารี. Music stays on your server. สแกนใหม่ it in Local การตั้งค่าไลบรารี to update the catalogue.",
@@ -492,9 +492,9 @@
   },
   "libraryRecentlyAdded": "ล่าสุดly เพิ่มed",
   "libraryDownloads": "ดาวน์โหลด",
-  "libraryNoActiveDownloads": "No active downloads",
+  "libraryNoActiveDownloads": "ไม่มีการดาวน์โหลดที่ทำงานอยู่",
   "librarySearchHint": "ค้นหา your library",
-  "libraryEmptyCollection": "Your music will appear here",
+  "libraryEmptyCollection": "เพลงของคุณจะแสดงที่นี่",
   "libraryFolders": "โฟลเดอร์",
   "@libraryFolders": {
     "description": "Library view that browses downloaded and scanned songs by the folders their files are in"
@@ -508,7 +508,7 @@
       }
     }
   },
-  "libraryFoldersEmptyTitle": "No folders yet",
+  "libraryFoldersEmptyTitle": "ยังไม่มีโฟลเดอร์",
   "@libraryFoldersEmptyTitle": {
     "description": "Title of the Folders view when the Library has no songs"
   },
@@ -520,7 +520,7 @@
   "@libraryFolderMissing": {
     "description": "Shown on an open folder page after its songs were deleted or moved"
   },
-  "libraryFoldersLoadFailed": "Couldn't read your folders",
+  "libraryFoldersLoadFailed": "อ่านโฟลเดอร์ไม่ได้",
   "@libraryFoldersLoadFailed": {
     "description": "Shown when the Folders view fails to load"
   },
@@ -685,7 +685,7 @@
   "@trackReplayGain": {
     "description": "Three-dot menu option to scan loudness and write ReplayGain tags"
   },
-  "trackReplayGainScanning": "Analyzing loudness...",
+  "trackReplayGainScanning": "กำลังวิเคราะห์ความดัง...",
   "@trackReplayGainScanning": {
     "description": "Snackbar/progress message while scanning ReplayGain for a single track"
   },
@@ -1044,7 +1044,7 @@
       }
     }
   },
-  "trackMetadataService": "Service",
+  "trackMetadataService": "บริการ",
   "@trackMetadataService": {
     "description": "Metadata field - download service used"
   },
@@ -1431,15 +1431,15 @@
   "@trackOpenOn": {
     "description": "Track option and sheet title listing streaming platforms where the track can be opened"
   },
-  "trackOpenOnNoLinks": "No platform links found for this track.",
+  "trackOpenOnNoLinks": "ไม่พบลิงก์แพลตฟอร์มสำหรับเพลงนี้",
   "@trackOpenOnNoLinks": {
     "description": "Shown in the Open on sheet when song.link returns no links"
   },
-  "libraryReviewDuplicates": "Review duplicates",
+  "libraryReviewDuplicates": "ตรวจสอบเพลงซ้ำ",
   "@libraryReviewDuplicates": {
     "description": "Library settings row opening the duplicate review sheet"
   },
-  "libraryReviewDuplicatesSubtitle": "Find tracks stored more than once",
+  "libraryReviewDuplicatesSubtitle": "ค้นหาเพลงที่เก็บซ้ำกัน",
   "@libraryReviewDuplicatesSubtitle": {
     "description": "Subtitle for the duplicate review settings row"
   },
@@ -1527,7 +1527,7 @@
       }
     }
   },
-  "snackbarAlreadyInLibrary": "\"{trackName}\" already exists in your library",
+  "snackbarAlreadyInLibrary": "\"{trackName}\" อยู่ในไลบรารีแล้ว",
   "@snackbarAlreadyInLibrary": {
     "description": "Snackbar - track already exists in local library",
     "placeholders": {
@@ -1622,7 +1622,7 @@
   "@errorRateLimitedMessage": {
     "description": "Error message - rate limit explanation"
   },
-  "errorNoTracksFound": "No tracks found",
+  "errorNoTracksFound": "ไม่พบเพลง",
   "@errorNoTracksFound": {
     "description": "Error - search returned no results"
   },
@@ -2070,16 +2070,16 @@
     "description": "Settings section header"
   },
   "lyricsKeepScreenOn": "เก็บหน้าจอเปิด while viewing lyrics",
-  "lyricsKeepScreenOnSubtitle": "Prevent screen timeout while lyrics are open, including when playback is paused.",
+  "lyricsKeepScreenOnSubtitle": "ป้องกันการปิดหน้าจอขณะเปิดเนื้อร้อง รวมถึงขณะหยุดเล่นชั่วคราว",
   "lyricsMode": "เนื้อเพลง Mode",
   "@lyricsMode": {
     "description": "Setting - how to save lyrics"
   },
-  "lyricsModeDescription": "Choose how lyrics are saved with your downloads",
+  "lyricsModeDescription": "เลือกวิธีการบันทึกเนื้อร้องกับไฟล์ที่ดาวน์โหลด",
   "@lyricsModeDescription": {
     "description": "Lyrics mode picker description"
   },
-  "lyricsModeEmbed": "Embed in file",
+  "lyricsModeEmbed": "ฝังในไฟล์",
   "@lyricsModeEmbed": {
     "description": "Lyrics mode option - embed in audio file"
   },
@@ -2091,15 +2091,15 @@
   "@lyricsModeExternal": {
     "description": "Lyrics mode option - separate LRC file"
   },
-  "lyricsModeExternalSubtitle": "Separate .lrc file for players like Samsung Music",
+  "lyricsModeExternalSubtitle": "ไฟล์ .lrc แยกสำหรับเพลเยอร์อย่าง Samsung Music",
   "@lyricsModeExternalSubtitle": {
     "description": "Subtitle for external option"
   },
-  "lyricsModeBoth": "Both",
+  "lyricsModeBoth": "ทั้งคู่",
   "@lyricsModeBoth": {
     "description": "Lyrics mode option - embed and external"
   },
-  "lyricsModeBothSubtitle": "Embed and save .lrc file",
+  "lyricsModeBothSubtitle": "ฝังในไฟล์และบันทึก .lrc แยก",
   "@lyricsModeBothSubtitle": {
     "description": "Subtitle for both option"
   },
@@ -2257,7 +2257,7 @@
   "@libraryQualityLabelFileFormat": {
     "description": "Library audio quality label mode that shows the detected file format"
   },
-  "trackReleaseDate": "Release date",
+  "trackReleaseDate": "วันที่วางจำหน่าย",
   "@trackReleaseDate": {
     "description": "Metadata label - release date"
   },
@@ -2318,11 +2318,11 @@
   "@trackLyricsEmbedded": {
     "description": "Snackbar - lyrics saved to file"
   },
-  "trackInstrumental": "Instrumental track",
+  "trackInstrumental": "เพลงดนตรี (ไม่มีเนื้อร้อง)",
   "@trackInstrumental": {
     "description": "Message when track is instrumental (no lyrics)"
   },
-  "trackCopiedToClipboard": "Copied to clipboard",
+  "trackCopiedToClipboard": "คัดลอกไปที่คลิปบอร์ดแล้ว",
   "@trackCopiedToClipboard": {
     "description": "Snackbar - content copied"
   },
@@ -2330,8 +2330,8 @@
   "@trackDeleteConfirmTitle": {
     "description": "Delete confirmation title"
   },
-  "trackDeleteNetworkConfirmMessage": "This will permanently delete the file from your network storage and remove it from your library and history.",
-  "snackbarDeleteTracksFailed": "Could not delete {count} {count, plural, =1{track} other{tracks}}. Check storage access and try again.",
+  "trackDeleteNetworkConfirmMessage": "จะลบไฟล์ออกจากที่จัดเก็บเครือข่ายและนำออกจากประวัติอย่างถาวร",
+  "snackbarDeleteTracksFailed": "ลบ {count} {count, plural, =1{เพลง} other{เพลง}} ไม่ได้ ตรวจสอบที่จัดเก็บ",
   "@snackbarDeleteTracksFailed": {
     "placeholders": {
       "count": {
@@ -2339,7 +2339,7 @@
       }
     }
   },
-  "trackDeleteConfirmMessage": "This will permanently delete the downloaded file and remove it from your history.",
+  "trackDeleteConfirmMessage": "จะลบไฟล์ที่ดาวน์โหลดและนำออกจากประวัติอย่างถาวร",
   "@trackDeleteConfirmMessage": {
     "description": "Delete confirmation message"
   },
@@ -3035,7 +3035,7 @@
   "@discographySelectAlbumsSubtitle": {
     "description": "Subtitle for select albums option"
   },
-  "discographyFetchingTracks": "Fetching tracks...",
+  "discographyFetchingTracks": "กำลังดึงข้อมูลเพลง...",
   "@discographyFetchingTracks": {
     "description": "Progress - fetching album tracks"
   },
@@ -3116,7 +3116,7 @@
   "@settingsLocalLibrary": {
     "description": "Settings menu item - local library"
   },
-  "settingsLocalLibrarySubtitle": "Scan music & detect duplicates",
+  "settingsLocalLibrarySubtitle": "สแกนเพลงและตรวจจับเพลงซ้ำ",
   "@settingsLocalLibrarySubtitle": {
     "description": "Subtitle for local library settings"
   },
@@ -3140,7 +3140,7 @@
   "@libraryEnableLocalLibrary": {
     "description": "Toggle to enable library scanning"
   },
-  "libraryEnableLocalLibrarySubtitle": "Scan and track your existing music",
+  "libraryEnableLocalLibrarySubtitle": "สแกนและติดตามเพลงที่มีอยู่แล้ว",
   "@libraryEnableLocalLibrarySubtitle": {
     "description": "Subtitle for enable toggle"
   },
@@ -3148,7 +3148,7 @@
   "@libraryFolder": {
     "description": "Folder selection setting"
   },
-  "libraryFolderHint": "Tap to select folder",
+  "libraryFolderHint": "แตะเพื่อเลือกโฟลเดอร์",
   "@libraryFolderHint": {
     "description": "Placeholder when no folder selected"
   },
@@ -3172,7 +3172,7 @@
   "@librarySourceDisabled": {
     "description": "Library source has been disabled by the user"
   },
-  "librarySourceScanCount": "{scanned} of {total} files scanned ({progress}%)",
+  "librarySourceScanCount": "สแกนแล้ว {scanned} จาก {total} ไฟล์ ({progress}%)",
   "@librarySourceScanCount": {
     "description": "Live progress for one library folder scan",
     "placeholders": {
@@ -3208,19 +3208,19 @@
       }
     }
   },
-  "libraryUnreadableFilesTitle": "Unreadable files",
+  "libraryUnreadableFilesTitle": "ไฟล์ที่อ่านไม่ได้",
   "@libraryUnreadableFilesTitle": {
     "description": "Title of the list of files a library scan could not read, and the action that opens it"
   },
-  "libraryUnreadableFilesSubtitle": "These files were left out of your library. They may be damaged, still downloading, or blocked by the storage app.",
+  "libraryUnreadableFilesSubtitle": "ไฟล์เหล่านี้ไม่ได้รวมในไลบรารี อาจเสียหาย กำลังดาวน์โหลด หรือถูกบล็อกโดยแอปจัดเก็บ",
   "@libraryUnreadableFilesSubtitle": {
     "description": "Explanation above the list of files a library scan could not read"
   },
-  "libraryUnreadableFilesAction": "See which files and why",
+  "libraryUnreadableFilesAction": "ดูว่ามีไฟล์ไหนและเหตุผล",
   "@libraryUnreadableFilesAction": {
     "description": "Subtitle of the library folder action that lists unreadable files"
   },
-  "libraryUnreadableFilesMore": "{count, plural, =1{1 more file isn't listed} other{{count} more files aren't listed}}",
+  "libraryUnreadableFilesMore": "{count, plural, =1{อีก 1 ไฟล์ไม่ได้แสดง} other{อีก {count} ไฟล์ไม่ได้แสดง}}",
   "@libraryUnreadableFilesMore": {
     "description": "Note below the unreadable files list when the scan skipped more files than it lists",
     "placeholders": {
@@ -3249,7 +3249,7 @@
   "@libraryAutoScanOff": {
     "description": "Auto scan disabled"
   },
-  "libraryAutoScanOnOpen": "Every app open",
+  "libraryAutoScanOnOpen": "ทุกครั้งที่เปิดแอป",
   "@libraryAutoScanOnOpen": {
     "description": "Auto scan when app opens"
   },
@@ -3261,7 +3261,7 @@
   "@libraryAutoScanWeekly": {
     "description": "Auto scan once per week"
   },
-  "libraryActions": "Actions",
+  "libraryActions": "การดำเนินการ",
   "@libraryActions": {
     "description": "Section header for library actions"
   },
@@ -3269,7 +3269,7 @@
   "@libraryScan": {
     "description": "Button to start library scan"
   },
-  "libraryScanSubtitle": "Scan for audio files",
+  "libraryScanSubtitle": "สแกนหาไฟล์เสียง",
   "@libraryScanSubtitle": {
     "description": "Subtitle for scan button"
   },
@@ -3289,11 +3289,11 @@
   "@libraryFindMovedDownloads": {
     "description": "Library action that relinks downloads whose files were moved to the current download folder"
   },
-  "libraryFindMovedDownloadsSubtitle": "Relink downloads you moved into the current download folder, without removing anything",
+  "libraryFindMovedDownloadsSubtitle": "เชื่อมต่อดาวน์โหลดที่ย้ายเข้าโฟลเดอร์ดาวน์โหลดปัจจุบัน โดยไม่ลบอะไร",
   "@libraryFindMovedDownloadsSubtitle": {
     "description": "Subtitle for the Find Moved Downloads action"
   },
-  "libraryFindMovedDownloadsResult": "{relinked, plural, =0{No moved downloads found} =1{Relinked 1 download} other{Relinked {relinked} downloads}}{missing, plural, =0{} =1{ · 1 file still missing} other{ · {missing} files still missing}}",
+  "libraryFindMovedDownloadsResult": "{relinked, plural, =0{ไม่พบดาวน์โหลดที่ย้าย} =1{เชื่อมต่อ 1 ดาวน์โหลด} other{เชื่อมต่อ {relinked} ดาวน์โหลด}}{missing, plural, =0{} =1{ หายไป 1 รายการ} other{ หายไป {missing} รายการ}}",
   "@libraryFindMovedDownloadsResult": {
     "description": "Snackbar after Find Moved Downloads: downloads relinked, then downloads whose files are still missing",
     "placeholders": {
@@ -3317,7 +3317,7 @@
   "@libraryClearConfirmTitle": {
     "description": "Dialog title for clear confirmation"
   },
-  "libraryClearConfirmMessage": "This will remove all scanned tracks from your library. Your actual music files will not be deleted.",
+  "libraryClearConfirmMessage": "จะลบเพลงที่สแกนแล้วทั้งหมดออกจากไลบรารี ไฟล์เพลงจริงจะไม่ถูกลบ",
   "@libraryClearConfirmMessage": {
     "description": "Dialog message for clear confirmation"
   },
@@ -3329,7 +3329,7 @@
   "@libraryAboutDescription": {
     "description": "Description of local library feature"
   },
-  "libraryTracksUnit": "{count, plural, =1{track} other{tracks}}",
+  "libraryTracksUnit": "{count, plural, =1{เพลง} other{เพลง}}",
   "@libraryTracksUnit": {
     "description": "Unit label for tracks count (without the number itself)",
     "placeholders": {
@@ -3338,7 +3338,7 @@
       }
     }
   },
-  "libraryFilesUnit": "{count, plural, =1{file} other{files}}",
+  "libraryFilesUnit": "{count, plural, =1{ไฟล์} other{ไฟล์}}",
   "@libraryFilesUnit": {
     "description": "Unit label for files count during library scanning",
     "placeholders": {
@@ -3347,7 +3347,7 @@
       }
     }
   },
-  "libraryLastScanned": "Last scanned: {time}",
+  "libraryLastScanned": "สแกนล่าสุด: {time}",
   "@libraryLastScanned": {
     "description": "Last scan time display",
     "placeholders": {
@@ -3360,19 +3360,19 @@
   "@libraryLastScannedNever": {
     "description": "Shown when library has never been scanned"
   },
-  "libraryScanning": "Scanning...",
+  "libraryScanning": "กำลังสแกน...",
   "@libraryScanning": {
     "description": "Status during scan"
   },
-  "libraryScanFinalizing": "Finalizing library...",
+  "libraryScanFinalizing": "กำลังจบการสแกนไลบรารี...",
   "@libraryScanFinalizing": {
     "description": "Status shown after file scanning finishes but library persistence is still running"
   },
-  "libraryScanPaused": "Scan paused",
+  "libraryScanPaused": "สแกนหยุดชั่วคราว",
   "@libraryScanPaused": {
     "description": "Status shown while a library scan is paused by the user"
   },
-  "libraryScanProgress": "{progress}% of {total} files",
+  "libraryScanProgress": "{progress}% จาก {total} ไฟล์",
   "@libraryScanProgress": {
     "description": "Scan progress display",
     "placeholders": {
@@ -3405,7 +3405,7 @@
   "@libraryStorageAccessRequired": {
     "description": "Dialog title for storage permission"
   },
-  "libraryStorageAccessMessage": "Mornye needs storage access to scan your music library. Please grant permission in settings.",
+  "libraryStorageAccessMessage": "Mornye ต้องการสิทธิ์เข้าถึงที่เก็บข้อมูลเพื่อสแกนไลบรารี กรุณาอนุญาตในการตั้งค่า",
   "@libraryStorageAccessMessage": {
     "description": "Dialog message for storage permission"
   },
@@ -3413,7 +3413,7 @@
   "@librarySourceDownloaded": {
     "description": "Badge for tracks downloaded via Mornye"
   },
-  "librarySourceLocal": "Local",
+  "librarySourceLocal": "เครื่องนี้",
   "@librarySourceLocal": {
     "description": "Badge for tracks from local library scan"
   },
@@ -3441,7 +3441,7 @@
   "@libraryFilterDownloaded": {
     "description": "Filter chip - show only downloaded items"
   },
-  "libraryFilterLocal": "Local",
+  "libraryFilterLocal": "เครื่องนี้",
   "@libraryFilterLocal": {
     "description": "Filter chip - show only local library items"
   },
@@ -3469,11 +3469,11 @@
   "@libraryFilterQualityHiRes": {
     "description": "Filter option - high resolution audio"
   },
-  "libraryFilterQualityCD": "CD (16bit)",
+  "libraryFilterQualityCD": "ซีดี (16-bit)",
   "@libraryFilterQualityCD": {
     "description": "Filter option - CD quality audio"
   },
-  "libraryFilterQualityLossy": "Lossy",
+  "libraryFilterQualityLossy": "ลอสซี",
   "@libraryFilterQualityLossy": {
     "description": "Filter option - lossy compressed audio"
   },
@@ -3489,19 +3489,19 @@
   "@libraryFilterMetadataComplete": {
     "description": "Filter option - items with complete metadata"
   },
-  "libraryFilterMetadataMissingAny": "Missing any metadata",
+  "libraryFilterMetadataMissingAny": "ขาดข้อมูลใดๆ",
   "@libraryFilterMetadataMissingAny": {
     "description": "Filter option - items missing any tracked metadata field"
   },
-  "libraryFilterMetadataMissingYear": "Missing year",
+  "libraryFilterMetadataMissingYear": "ขาดปี",
   "@libraryFilterMetadataMissingYear": {
     "description": "Filter option - items missing release year/date"
   },
-  "libraryFilterMetadataMissingGenre": "Missing genre",
+  "libraryFilterMetadataMissingGenre": "ขาดแนวเพลง",
   "@libraryFilterMetadataMissingGenre": {
     "description": "Filter option - items missing genre"
   },
-  "libraryFilterMetadataMissingAlbumArtist": "Missing album artist",
+  "libraryFilterMetadataMissingAlbumArtist": "ขาดศิลปินอัลบั้ม",
   "@libraryFilterMetadataMissingAlbumArtist": {
     "description": "Filter option - items missing album artist"
   },
@@ -3509,11 +3509,11 @@
   "@libraryFilterSort": {
     "description": "Filter section - sort order"
   },
-  "libraryFilterSortLatest": "Latest",
+  "libraryFilterSortLatest": "ใหม่สุด",
   "@libraryFilterSortLatest": {
     "description": "Sort option - newest first"
   },
-  "libraryFilterSortOldest": "Oldest",
+  "libraryFilterSortOldest": "เก่าสุด",
   "@libraryFilterSortOldest": {
     "description": "Sort option - oldest first"
   },
@@ -3611,11 +3611,11 @@
   "@tutorialLibraryTip1": {
     "description": "Tutorial library tip 1"
   },
-  "tutorialLibraryTip2": "Tap a track to play it with the built-in player",
+  "tutorialLibraryTip2": "แตะเพลงเพื่อเล่นด้วยเพลเยอร์ในตัว",
   "@tutorialLibraryTip2": {
     "description": "Tutorial library tip 2"
   },
-  "tutorialLibraryTip3": "Browse tracks, albums, and playlists in list or grid views",
+  "tutorialLibraryTip3": "เรียกดูเพลง อัลบั้ม และเพลย์ลิสต์ในมุมมองรายการหรือกริด",
   "@tutorialLibraryTip3": {
     "description": "Tutorial library tip 3"
   },
@@ -3703,18 +3703,18 @@
   "whatsNewPlayerExclusiveBody": "ส่ง audio straight to your output device without the system mixer.",
   "whatsNewLibraryTitle": "ไลบรารี and search",
   "whatsNewLibraryDesc": "ใหม่ ways to find and organize your music.",
-  "whatsNewLibraryFoldersTitle": "Browse by folder",
+  "whatsNewLibraryFoldersTitle": "เรียกดูตามโฟลเดอร์",
   "whatsNewLibraryFoldersBody": "สำรวจ your ไลบรารี the way it's stored on disk.",
-  "whatsNewLibrarySuggestionsTitle": "Suggested songs",
+  "whatsNewLibrarySuggestionsTitle": "เพลงแนะนำ",
   "whatsNewLibrarySuggestionsBody": "อัลบั้ม, singles and playlists now suggest songs that fit.",
-  "whatsNewLibraryRecognizeTitle": "Recognize music",
+  "whatsNewLibraryRecognizeTitle": "จดจำเพลง",
   "whatsNewLibraryRecognizeBody": "Tap the microphone in ค้นหา to find out what's playing nearby.",
-  "whatsNewLibraryPlaylistsTitle": "Better playlists",
+  "whatsNewLibraryPlaylistsTitle": "เพลย์ลิสต์ที่ดีขึ้น",
   "whatsNewLibraryPlaylistsBody": "เรียงลำดับเพลง, create a playlist from a folder, or import playlist files.",
   "whatsNewFasterTitle": "Faster everywhere",
   "whatsNewFasterDesc": "Quicker and lighter, especially with large libraries.",
   "whatsNewFasterLibraryTitle": "A quicker ไลบรารี",
-  "whatsNewFasterLibraryBody": "Tabs and albums open faster, and scrolling stays smooth.",
+  "whatsNewFasterLibraryBody": "แท็บและอัลบั้มเปิดเร็วขึ้น และเลื่อนลื่นขึ้น",
   "whatsNewFasterNetworkTitle": "Faster network music",
   "whatsNewFasterNetworkBody": "แชร์เครือข่าย scan many times faster, and Subsonic servers sync with far fewer requests.",
   "whatsNewFasterQueueTitle": "Long queues that last",
@@ -3734,7 +3734,7 @@
       }
     }
   },
-  "libraryForceFullScan": "Force Full Scan",
+  "libraryForceFullScan": "บังคับสแกนเต็ม",
   "@libraryForceFullScan": {
     "description": "Button to force a complete rescan of library"
   },
@@ -3886,7 +3886,7 @@
   "@cacheTrackLookup": {
     "description": "Cache item title for track ID lookup cache"
   },
-  "cacheTrackLookupDesc": "Spotify/Deezer track ID lookups. Clearing may slow next few searches.",
+  "cacheTrackLookupDesc": "การค้นหา ID เพลงจาก Spotify/Deezer การล้างอาจทำให้การค้นหาครั้งต่อไปช้าลง",
   "@cacheTrackLookupDesc": {
     "description": "Description of what track lookup cache contains"
   },
@@ -3994,7 +3994,7 @@
   "@trackSaveLyrics": {
     "description": "Menu action - save lyrics as .lrc file"
   },
-  "trackSaveLyricsProgress": "Saving lyrics...",
+  "trackSaveLyricsProgress": "กำลังบันทึกเนื้อร้อง...",
   "@trackSaveLyricsProgress": {
     "description": "Snackbar while saving lyrics to file"
   },
@@ -4151,7 +4151,7 @@
   "trackReEnrichSuccess": "ข้อมูลเมตา re-enriched successfully",
   "trackReEnrichMetadataSaved": "ข้อมูลเมตา saved",
   "trackReEnrichLyricsUpdated": "อัปเดตเนื้อเพลงแล้ว",
-  "trackReEnrichLyricsPreserved": "No new lyrics found; existing lyrics kept",
+  "trackReEnrichLyricsPreserved": "ไม่พบเนื้อร้องใหม่ เก็บเนื้อร้องเดิมไว้",
   "trackReEnrichLyricsDisabled": "เนื้อเพลง not updated: lyric downloading is disabled in การตั้งค่า",
   "@trackReEnrichSuccess": {
     "description": "Snackbar after successful re-enrichment"
@@ -4711,7 +4711,7 @@
       }
     }
   },
-  "lyricsProvidersAtLeastOne": "At least one provider must remain enabled",
+  "lyricsProvidersAtLeastOne": "ต้องเปิดใช้งานผู้ให้บริการเนื้อร้องอย่างน้อยหนึ่งราย",
   "@lyricsProvidersAtLeastOne": {
     "description": "Snackbar when user tries to disable the last enabled provider"
   },
@@ -4719,7 +4719,7 @@
   "@lyricsProvidersSaved": {
     "description": "Snackbar after saving lyrics provider priority"
   },
-  "lyricsProvidersDiscardContent": "You have unsaved changes that will be lost.",
+  "lyricsProvidersDiscardContent": "มีการเปลี่ยนแปลงที่ยังไม่ได้บันทึก จะหายไปหากออก",
   "@lyricsProvidersDiscardContent": {
     "description": "Body text of the discard-changes dialog on lyrics provider page"
   },
@@ -4727,23 +4727,23 @@
   "@lyricsProviderLrclibDesc": {
     "description": "Description for LRCLIB provider"
   },
-  "lyricsProviderNeteaseDesc": "NetEase Cloud Music (good for Asian songs)",
+  "lyricsProviderNeteaseDesc": "NetEase Cloud Music (เหมาะกับเพลงเอเชีย)",
   "@lyricsProviderNeteaseDesc": {
     "description": "Description for Netease provider"
   },
-  "lyricsProviderMusixmatchDesc": "Largest lyrics database (multi-language)",
+  "lyricsProviderMusixmatchDesc": "ฐานข้อมูลเนื้อร้องใหญ่ที่สุด (หลายภาษา)",
   "@lyricsProviderMusixmatchDesc": {
     "description": "Description for Musixmatch provider"
   },
-  "lyricsProviderAppleMusicDesc": "Word-by-word synced lyrics (via proxy)",
+  "lyricsProviderAppleMusicDesc": "เนื้อร้องซิงค์คำทีละคำ (ผ่านพร็อกซี)",
   "@lyricsProviderAppleMusicDesc": {
     "description": "Description for Apple Music provider"
   },
-  "lyricsProviderQqMusicDesc": "QQ Music (good for Chinese songs, direct API)",
+  "lyricsProviderQqMusicDesc": "QQ Music (เหมาะกับเพลงจีน API ตรง)",
   "@lyricsProviderQqMusicDesc": {
     "description": "Description for QQ Music provider"
   },
-  "lyricsProviderLyricsPlusDesc": "Word-by-word karaoke lyrics (Apple/Musixmatch/Spotify/QQ, via proxy)",
+  "lyricsProviderLyricsPlusDesc": "เนื้อร้องคาราโอเกะคำทีละคำ (Apple/Musixmatch/Spotify/QQ ผ่านพร็อกซี)",
   "@lyricsProviderLyricsPlusDesc": {
     "description": "Description for LyricsPlus provider"
   },
@@ -5498,7 +5498,7 @@
   "@libraryDefaultView": {
     "description": "Setting title - which library view opens when switching to the Library tab"
   },
-  "libraryDefaultViewLastUsed": "Last used",
+  "libraryDefaultViewLastUsed": "ใช้มุมมองล่าสุด",
   "@libraryDefaultViewLastUsed": {
     "description": "Default view option - keep the last used library view"
   },
@@ -5958,11 +5958,11 @@
       }
     }
   },
-  "notifScanningLibrary": "Scanning local library",
+  "notifScanningLibrary": "กำลังสแกนไลบรารีในเครื่อง",
   "@notifScanningLibrary": {
     "description": "Notification title while scanning local library"
   },
-  "notifLibraryScanProgressWithTotal": "{scanned}/{total} files • {percentage}%",
+  "notifLibraryScanProgressWithTotal": "{scanned}/{total} ไฟล์ • {percentage}%",
   "@notifLibraryScanProgressWithTotal": {
     "description": "Notification body for library scan progress when total is known",
     "placeholders": {
@@ -5977,7 +5977,7 @@
       }
     }
   },
-  "notifLibraryScanProgressNoTotal": "{scanned} files scanned",
+  "notifLibraryScanProgressNoTotal": "สแกนแล้ว {scanned} ไฟล์",
   "@notifLibraryScanProgressNoTotal": {
     "description": "Notification body for library scan progress when total is unknown",
     "placeholders": {
@@ -5999,7 +5999,7 @@
       }
     }
   },
-  "notifLibraryScanExcluded": "{count} excluded",
+  "notifLibraryScanExcluded": "{count} รายการถูกตัดออก",
   "@notifLibraryScanExcluded": {
     "description": "Library scan complete suffix - excluded track count",
     "placeholders": {
@@ -6021,7 +6021,7 @@
   "@notifLibraryScanFailed": {
     "description": "Notification title when library scan fails"
   },
-  "notifLibraryScanInterruptedBody": "The previous library scan was interrupted. Scan the folder again to continue. Your indexed tracks are still available.",
+  "notifLibraryScanInterruptedBody": "การสแกนไลบรารีครั้งก่อนถูกขัดจังหวะ สแกนโฟลเดอร์อีกครั้งเพื่อต่อเนื่อง เพลงที่จัดดัชนีไว้ยังใช้ได้",
   "@notifLibraryScanInterruptedBody": {
     "description": "Recovery notice after the app stops during a library scan"
   },
@@ -6029,7 +6029,7 @@
   "@notifLibraryScanCancelled": {
     "description": "Notification title when library scan is cancelled by the user"
   },
-  "notifLibraryScanStopped": "Scan stopped before completion.",
+  "notifLibraryScanStopped": "หยุดสแกนก่อนเสร็จ",
   "@notifLibraryScanStopped": {
     "description": "Notification body when library scan is cancelled"
   },
@@ -6592,27 +6592,27 @@
   "@editMetadataAdvanced": {
     "description": "Expandable section label for advanced metadata fields"
   },
-  "libraryFilterMetadataMissingTrackNumber": "Missing track number",
+  "libraryFilterMetadataMissingTrackNumber": "ขาดเลขทรैक",
   "@libraryFilterMetadataMissingTrackNumber": {
     "description": "Filter option - items missing track number"
   },
-  "libraryFilterMetadataMissingDiscNumber": "Missing disc number",
+  "libraryFilterMetadataMissingDiscNumber": "ขาดเลขดิสก์",
   "@libraryFilterMetadataMissingDiscNumber": {
     "description": "Filter option - items missing disc number"
   },
-  "libraryFilterMetadataMissingArtist": "Missing artist",
+  "libraryFilterMetadataMissingArtist": "ขาดศิลปิน",
   "@libraryFilterMetadataMissingArtist": {
     "description": "Filter option - items missing artist"
   },
-  "libraryFilterMetadataIncorrectIsrcFormat": "Incorrect ISRC format",
+  "libraryFilterMetadataIncorrectIsrcFormat": "รูปแบบ ISRC ไม่ถูกต้อง",
   "@libraryFilterMetadataIncorrectIsrcFormat": {
     "description": "Filter option - items with an invalid ISRC format"
   },
-  "libraryFilterMetadataMissingIsrc": "Missing ISRC",
+  "libraryFilterMetadataMissingIsrc": "ขาด ISRC",
   "@libraryFilterMetadataMissingIsrc": {
     "description": "Filter option - items without any ISRC tag"
   },
-  "libraryFilterMetadataMissingLabel": "Missing label",
+  "libraryFilterMetadataMissingLabel": "ขาดเลเบล",
   "@libraryFilterMetadataMissingLabel": {
     "description": "Filter option - items missing record label"
   },
@@ -6775,11 +6775,11 @@
       }
     }
   },
-  "libraryScanCancelled": "Scan cancelled",
+  "libraryScanCancelled": "ยกเลิกการสแกน",
   "@libraryScanCancelled": {
     "description": "Library scan status when a scan was cancelled"
   },
-  "libraryScanCancelledSubtitle": "You can retry the scan when ready.",
+  "libraryScanCancelledSubtitle": "สามารถสแกนใหม่เมื่อพร้อมได้",
   "@libraryScanCancelledSubtitle": {
     "description": "Library scan status subtitle after cancellation"
   },
@@ -7048,7 +7048,7 @@
   "@libraryExternalPlayerSubtitle": {
     "description": "Subtitle for external player option"
   },
-  "libraryBuiltInPreviewPlayer": "Built-in player",
+  "libraryBuiltInPreviewPlayer": "เพลเยอร์สำหรับดูตัวอย่างในตัว",
   "@libraryBuiltInPreviewPlayer": {
     "description": "Setting option to use the built-in preview player"
   },
@@ -7482,11 +7482,11 @@
   "@lyricsAiErrorNoLyrics": {
     "description": "AI translation error when the lyrics have no translatable lines"
   },
-  "nowPlayingLibraryEmpty": "Your library is empty",
+  "nowPlayingLibraryEmpty": "ไลบรารีว่างเปล่า",
   "@nowPlayingLibraryEmpty": {
     "description": "Snackbar when shuffle library is requested but library has no tracks"
   },
-  "nowPlayingShuffleLibraryFailed": "Could not shuffle library: {error}",
+  "nowPlayingShuffleLibraryFailed": "สับไลบรารีไม่ได้: {error}",
   "@nowPlayingShuffleLibraryFailed": {
     "description": "Snackbar when shuffling the library fails",
     "placeholders": {
@@ -8151,7 +8151,7 @@
       }
     }
   },
-  "libraryFilterMetadataMissingLyrics": "Missing lyrics",
+  "libraryFilterMetadataMissingLyrics": "ขาดเนื้อเพลง",
   "@libraryFilterMetadataMissingLyrics": {
     "description": "Filter option for tracks without embedded or sidecar lyrics"
   },
@@ -8163,7 +8163,7 @@
   "@libraryFilterMetadataHasReplayGain": {
     "description": "Filter option for tracks with indexed ReplayGain track or album gain tags"
   },
-  "libraryFilterIncompleteAlbums": "Incomplete albums",
+  "libraryFilterIncompleteAlbums": "อัลบั้มไม่ครบ",
   "@libraryFilterIncompleteAlbums": {
     "description": "Library filter for albums with confirmed missing track positions"
   },
@@ -8171,7 +8171,7 @@
   "@libraryAlbumCompletenessUnknown": {
     "description": "Library filter and status for missing, conflicting or ambiguous album track counts"
   },
-  "libraryAlbumMissingTracks": "{present}/{expected} tracks · {missing} missing",
+  "libraryAlbumMissingTracks": "{present}/{expected} เพลง · ขาด {missing}",
   "@libraryAlbumMissingTracks": {
     "description": "Album completeness badge tooltip",
     "placeholders": {
@@ -10535,15 +10535,15 @@
   "@reorganizeLibrarySubtitle": {
     "description": "Subtitle of the apply-rules-to-existing-files action"
   },
-  "reorganizeLibraryScanning": "Checking your files…",
+  "reorganizeLibraryScanning": "กำลังตรวจสอบไฟล์ของคุณ…",
   "@reorganizeLibraryScanning": {
     "description": "Shown while Mornye works out which downloaded files need to move"
   },
-  "reorganizeLibraryBusy": "Wait for active downloads to finish before reorganizing files",
+  "reorganizeLibraryBusy": "รอการดาวน์โหลดที่ทำงานอยู่เสร็จก่อนจัดระเบียบไฟล์",
   "@reorganizeLibraryBusy": {
     "description": "Snackbar when the user tries to reorganize files while downloads are running"
   },
-  "reorganizeLibraryNothingTitle": "Already Organized",
+  "reorganizeLibraryNothingTitle": "จัดระเบียบแล้ว",
   "@reorganizeLibraryNothingTitle": {
     "description": "Dialog title when every downloaded file already follows the rules"
   },
@@ -10556,7 +10556,7 @@
       }
     }
   },
-  "reorganizeLibraryConfirmTitle": "Reorganize {count} {count, plural, =1{file} other{files}}?",
+  "reorganizeLibraryConfirmTitle": "จัดระเบียบ {count} {count, plural, =1{ไฟล์} other{ไฟล์}}?",
   "@reorganizeLibraryConfirmTitle": {
     "description": "Confirmation dialog title before moving files",
     "placeholders": {
@@ -10569,11 +10569,11 @@
   "@reorganizeLibraryConfirmMessage": {
     "description": "Confirmation dialog body before moving files"
   },
-  "reorganizeLibraryExamples": "For example:",
+  "reorganizeLibraryExamples": "เช่น:",
   "@reorganizeLibraryExamples": {
     "description": "Label above a few sample moves in the reorganize confirmation dialog"
   },
-  "reorganizeLibraryMoreChanges": "…and {count} more",
+  "reorganizeLibraryMoreChanges": "…และอีก {count} รายการ",
   "@reorganizeLibraryMoreChanges": {
     "description": "Shown under the sample moves when more files will be moved",
     "placeholders": {
@@ -10582,7 +10582,7 @@
       }
     }
   },
-  "reorganizeLibraryAlreadyOrganized": "{count} {count, plural, =1{track already matches} other{tracks already match}} and will stay where {count, plural, =1{it is} other{they are}}.",
+  "reorganizeLibraryAlreadyOrganized": "{count} {count, plural, =1{เพลงจัดเรียบร้อยแล้ว} other{เพลงจัดเรียบร้อยแล้ว}} และจะอยู่ที่เดิม {count, plural, =1{นั้นแหละ} other{นั้นแหละ}}",
   "@reorganizeLibraryAlreadyOrganized": {
     "description": "Note in the reorganize confirmation dialog",
     "placeholders": {
@@ -10591,7 +10591,7 @@
       }
     }
   },
-  "reorganizeLibraryOutsideFolder": "{count} {count, plural, =1{track is} other{tracks are}} stored outside the current download folder and will be left alone.",
+  "reorganizeLibraryOutsideFolder": "{count} {count, plural, =1{เพลงอยู่} other{เพลงอยู่}} นอกโฟลเดอร์ดาวน์โหลดปัจจุบันและจะไม่ย้าย",
   "@reorganizeLibraryOutsideFolder": {
     "description": "Note in the reorganize confirmation dialog",
     "placeholders": {
@@ -10600,7 +10600,7 @@
       }
     }
   },
-  "reorganizeLibraryMissing": "{count} {count, plural, =1{file} other{files}} could not be found and will be skipped.",
+  "reorganizeLibraryMissing": "{count} {count, plural, =1{ไฟล์} other{ไฟล์}} หาไม่เจอและจะข้าม",
   "@reorganizeLibraryMissing": {
     "description": "Note in the reorganize confirmation dialog",
     "placeholders": {
@@ -10609,7 +10609,7 @@
       }
     }
   },
-  "reorganizeLibraryUntagged": "{count} {count, plural, =1{file has} other{files have}} no artist tag and will be left alone.",
+  "reorganizeLibraryUntagged": "{count} {count, plural, =1{ไฟล์} other{ไฟล์}} ไม่มีแท็กศิลปินและจะไม่ย้าย",
   "@reorganizeLibraryUntagged": {
     "description": "Note in the reorganize confirmation dialog about scanned files without tags",
     "placeholders": {
@@ -10622,11 +10622,11 @@
   "@reorganizeLibraryScanHint": {
     "description": "Hint in the reorganize confirmation dialog about which files are covered"
   },
-  "reorganizeLibraryKeepsPlaylistFolders": "Your folder rule uses the playlist name, which Mornye doesn't keep for past downloads, so files stay in their current folder and are only renamed.",
+  "reorganizeLibraryKeepsPlaylistFolders": "กฎโฟลเดอร์ใช้ชื่อเพลย์ลิสต์ ซึ่ง Mornye ไม่เก็บของดาวน์โหลดเก่าไว้ ดังนั้นไฟล์อยู่ที่เดิมและเปลี่ยนแค่ชื่อ",
   "@reorganizeLibraryKeepsPlaylistFolders": {
     "description": "Warning in the reorganize confirmation dialog when the folder rule depends on the playlist"
   },
-  "reorganizeLibraryDropsPlaylistFolders": "Mornye doesn't keep which playlist a past download came from, so tracks inside playlist folders will be moved out of them.",
+  "reorganizeLibraryDropsPlaylistFolders": "Mornye ไม่เก็บว่าดาวน์โหลดเก่ามาจากเพลย์ลิสต์ไหน เพลงในโฟลเดอร์เพลย์ลิสต์จะถูกย้ายออก",
   "@reorganizeLibraryDropsPlaylistFolders": {
     "description": "Warning in the reorganize confirmation dialog when playlist folders are enabled"
   },
@@ -10638,7 +10638,7 @@
   "@reorganizeLibraryConfirmAction": {
     "description": "Confirm button of the reorganize dialog"
   },
-  "reorganizeLibraryMoving": "Moving files",
+  "reorganizeLibraryMoving": "กำลังย้ายไฟล์",
   "@reorganizeLibraryMoving": {
     "description": "Title of the progress dialog while files are moved"
   },
@@ -10711,7 +10711,7 @@
   "openAudio": "เปิด audio",
   "openAudioFiles": "เปิด audio files",
   "openAudioFolder": "เล่น folder",
-  "reorganizeLibraryFailed": "Couldn't reorganize your files: {error}",
+  "reorganizeLibraryFailed": "จัดระเบียบไฟล์ไม่ได้: {error}",
   "@reorganizeLibraryFailed": {
     "description": "Snackbar when planning or applying the reorganization fails",
     "placeholders": {
@@ -10764,5 +10764,37 @@
   "lyricsEditLineActions": "บรรทัด actions",
   "lyricsEditSaved": "บันทึกเนื้อเพลงแล้ว",
   "lyricsEditSaveFailed": "Couldn't save the lyrics to this file",
-  "lyricsEditReadOnly": "เนื้อเพลง can't be saved to this song's file"
+  "lyricsEditReadOnly": "เนื้อเพลง can't be saved to this song's file",
+  "trackSaveLyricsError": "บันทึกเนื้อร้องไม่ได้",
+  "lyricsSearchNoResults": "ไม่พบเนื้อร้อง",
+  "lyricsSearchError": "ค้นหาเนื้อร้องผิดพลาด",
+  "lyricsEditSave": "บันทึก",
+  "lyricsEditCancel": "ยกเลิก",
+  "lyricsEditClear": "ล้าง",
+  "lyricsEditLineNumber": "บรรทัด {number}",
+  "lyricsEditTimeSync": "ซิงค์เวลา",
+  "lyricsEditNoTimestamp": "ไม่มีเวลา",
+  "lyricsEditTimestampFormat": "รูปแบบเวลา [mm:ss.xx] หรือ [mm:ss]",
+  "lyricsOffsetDescription": "ปรับเวลาเนื้อร้องให้ตรงกับเพลง",
+  "lyricsOffsetPositive": "+{offset} วินาที (ช้ากว่า)",
+  "lyricsOffsetNegative": "{offset} วินาที (เร็วกว่า)",
+  "lyricsEmbedModeTitle": "โหมดบันทึกเนื้อร้อง",
+  "lyricsEmbedModeEmbed": "ฝังในไฟล์",
+  "lyricsEmbedModeExternal": "ไฟล์ .lrc แยกต่างหาก",
+  "lyricsEmbedModeBoth": "ทั้งสองอย่าง",
+  "lyricsLanguageTitle": "ภาษาเนื้อร้อง",
+  "lyricsLanguageSubtitle": "เลือกภาษาที่ต้องการสำหรับเนื้อร้อง",
+  "lyricsTranslationTitle": "แปลเนื้อร้อง",
+  "lyricsTranslationSubtitle": "แปลเนื้อร้องเป็นภาษาที่เลือก",
+  "lyricsAutoTranslation": "แปลอัตโนมัติ",
+  "lyricsAutoTranslationSubtitle": "ใช้การแปลอัตโนมัติเมื่อไม่มีเนื้อร้องในภาษาที่ต้องการ",
+  "lyricsShowTranslation": "แสดงการแปล",
+  "lyricsShowTranslationSubtitle": "แสดงการแปลด้านล่างเนื้อร้องต้นฉบับ",
+  "lyricsFontSize": "ขนาดตัวอักษรเนื้อร้อง",
+  "lyricsFontSizeSubtitle": "ปรับขนาดตัวอักษรของเนื้อร้อง",
+  "lyricsModeTitle": "โหมดเนื้อร้อง",
+  "lyricsProviderTitle": "ผู้ให้บริการเนื้อร้อง",
+  "lyricsProviderSubtitle": "จัดการผู้ให้บริการเนื้อร้องที่เปิดใช้งาน",
+  "lyricsProviderEnable": "เปิดใช้งาน",
+  "lyricsProviderDisable": "ปิดใช้งาน"
 }
