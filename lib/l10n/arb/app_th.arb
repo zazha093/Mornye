@@ -379,7 +379,7 @@
   "usbBitPerfectPending": "Waiting for the next track and a compatible USB output.",
   "usbOutputReady": "USB output is ready. Start playback to activate it.",
   "usbOutputPreparing": "Preparing USB audio output...",
-  "usbOutputCancelled": "USB preparation was cancelled. เซเล็กต์ a track to try again.",
+  "usbOutputCancelled": "USB preparation was cancelled. เลือกเพลงเพื่อลองใหม่",
   "usbBitPerfectNoDevice": "No USB DAC connected. Using normal audio output.",
   "usbBitPerfectFallback": "อุปกรณ์หรือรูปแบบเสียงนี้ไม่รองรับเอาต์พุตแบบบิตเพอร์เฟกต์ ใช้การเล่นปกติ",
   "usbBitPerfectRouteChanged": "The USB audio route changed. การเล่น paused; select a track to reconnect.",
@@ -1135,7 +1135,7 @@
   "@setupChooseFromFiles": {
     "description": "iOS file picker option"
   },
-  "setupChooseFromFilesSubtitle": "เซเล็กต์ iCloud or other location",
+  "setupChooseFromFilesSubtitle": "เลือก iCloud หรือตำแหน่งอื่น",
   "@setupChooseFromFilesSubtitle": {
     "description": "Subtitle for file picker"
   },
@@ -3659,7 +3659,7 @@
   "@tutorialSettingsTip3": {
     "description": "Tutorial settings tip 3"
   },
-  "tutorialReadyMessage": "You're ready. เซเล็กต์ your extensions, then search or paste a supported link.",
+  "tutorialReadyMessage": "คุณพร้อมแล้ว เลือกส่วนขยายของคุณ แล้วค้นหาหรือวางลิงก์ที่รองรับ",
   "@tutorialReadyMessage": {
     "description": "Tutorial completion message"
   },
@@ -4030,7 +4030,7 @@
   "@trackReEnrichFieldExtra": {
     "description": "Checkbox label for extra metadata in re-enrich"
   },
-  "trackReEnrichSelectAll": "เซเล็กต์ ทั้งหมด",
+  "trackReEnrichSelectAll": "เลือกทั้งหมด",
   "@trackReEnrichSelectAll": {
     "description": "Select all fields checkbox in re-enrich"
   },
@@ -4865,7 +4865,7 @@
   "backupSelectCollectionsDescription": "เพลงที่ชอบ รายการโปรด ศิลปินโปรด เพลย์ลิสต์ และปกเพลย์ลิสต์",
   "backupSelectExtensions": "ส่วนขยาย and their settings",
   "backupSelectedExportDescription": "บันทึก the selected categories to a backup file. เสียง files are not included.",
-  "backupSelectAtLeastOne": "เซเล็กต์ at least one category to create a backup.",
+  "backupSelectAtLeastOne": "เลือกอย่างน้อยหนึ่งหมวดหมู่เพื่อสร้างสำรอง",
   "backupSelectedRestoreMessage": "จะกู้คืนเฉพาะหมวดหมู่ที่แสดงด้านล่าง หมวดหมู่อื่นจะคงเดิม",
   "backupContentsSettings": "การตั้งค่าแอป",
   "@backupContentsSettings": {
