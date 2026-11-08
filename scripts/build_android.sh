@@ -113,6 +113,8 @@ BUILD_GIT_COMMIT="$(git rev-parse --short=8 HEAD)"
   --target-platform android-arm64 \
   --dart-define="GIT_COMMIT=$BUILD_GIT_COMMIT"
 
+# Use hardcoded flavor "sideload" to match the flutter build command
+FLAVOR="sideload"
 for target in "${ANDROID_ABIS[@]}" universal; do
   if [[ -n "$FLAVOR" ]]; then
     apk="app-$target-$FLAVOR-release.apk"
