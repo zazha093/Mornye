@@ -1147,7 +1147,7 @@
   "@setupIcloudNotSupported": {
     "description": "Error when user selects iCloud Drive on iOS"
   },
-  "setupDownloadInFlac": "ดาวน์โหลด music in lossless and ไฮเรส quality",
+  "setupDownloadInFlac": "ดาวน์โหลดเพลงในคุณภาพ lossless และ Hi-Res",
   "@setupDownloadInFlac": {
     "description": "App tagline in setup"
   },
@@ -1191,7 +1191,7 @@
   "@setupNotificationBackgroundDescription": {
     "description": "Detailed notification explanation"
   },
-  "setupSkipForNow": "ข้าม for now",
+  "setupSkipForNow": "ข้ามไปก่อน",
   "@setupSkipForNow": {
     "description": "Skip button text"
   },
@@ -1259,7 +1259,7 @@
   "@setupNext": {
     "description": "Next button text"
   },
-  "setupGetStarted": "Get Started",
+  "setupGetStarted": "เริ่มต้นใช้งาน",
   "@setupGetStarted": {
     "description": "Final setup button"
   },
@@ -1267,15 +1267,15 @@
   "@setupAllowAccessToManageFiles": {
     "description": "Instruction for file access permission"
   },
-  "setupLanguageTitle": "Choose ภาษา",
+  "setupLanguageTitle": "เลือกภาษา",
   "@setupLanguageTitle": {
     "description": "Title for the language selection step in setup"
   },
-  "setupLanguageDescription": "เซเล็กต์ your preferred language for the app. You can change this later in การตั้งค่า.",
+  "setupLanguageDescription": "เลือกภาษาที่คุณต้องการสำหรับแอป คุณสามารถเปลี่ยนได้ภายหลังในการตั้งค่า",
   "@setupLanguageDescription": {
     "description": "Description for the language selection step in setup"
   },
-  "setupLanguageSystemDefault": "ระบบ ค่าเริ่มต้น",
+  "setupLanguageSystemDefault": "ตามระบบ (ค่าเริ่มต้น)",
   "@setupLanguageSystemDefault": {
     "description": "Option to use the system language"
   },
@@ -3563,7 +3563,7 @@
       }
     }
   },
-  "tutorialWelcomeTitle": "Welcome to Mornye!",
+  "tutorialWelcomeTitle": "ยินดีต้อนรับสู่ Mornye!",
   "@tutorialWelcomeTitle": {
     "description": "Tutorial welcome page title"
   },
