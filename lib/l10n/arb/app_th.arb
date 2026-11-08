@@ -17,7 +17,7 @@
   "extensionsStorageKeyringRequired": "Existing extension data needs its original key. Unlock the system keyring once, then enable unsecured storage again. Your data has been preserved.",
   "extensionsStorageKeyConflict": "The local and system keyring keys differ. ที่เก็บข้อมูล was not changed and both keys were preserved.",
   "extensionsStorageKeyringUnavailable": "The system keyring is unavailable or locked. Start or unlock it before switching to secure storage. Your local key has been preserved.",
-  "linkFileActionOn": "{action} on {name}",
+  "linkFileActionOn": "{action} บน {name}",
   "@linkFileActionOn": {
     "description": "File operation on a named linked computer",
     "placeholders": {
@@ -29,7 +29,7 @@
       }
     }
   },
-  "linkFileActionsDescription": "Changes apply to music files on {name}. Accepted work continues if this phone disconnects.",
+  "linkFileActionsDescription": "การเปลี่ยนแปลงจะใช้กับไฟล์เพลงบน {name} งานที่ยอมรับจะดำเนินต่อไปแม้โทรศัพท์จะตัดการเชื่อมต่อ",
   "@linkFileActionsDescription": {
     "placeholders": {
       "name": {
@@ -60,7 +60,7 @@
       }
     }
   },
-  "linkFileJobsEmpty": "No file changes yet",
+  "linkFileJobsEmpty": "ยังไม่มีการเปลี่ยนแปลงไฟล์",
   "linkFileJobsEmptyMessage": "แก้ไขs, conversions and deletions you start on the computer's songs from this phone appear here.",
   "linkDesktopFileJobsSubtitle": "Changes requested from your phones",
   "linkDesktopFileJobsEmptyMessage": "แก้ไขs, conversions and deletions requested from your phones appear here.",
@@ -110,7 +110,7 @@
   },
   "linkFileDeleting": "Deleting...",
   "linkFileReading": "Reading tags...",
-  "linkFileSavingCover": "Saving cover art...",
+  "linkFileSavingCover": "กำลังบันทึกภาพปก...",
   "linkFileCancelHint": "หยุด after the current song",
   "linkFileJobCancelled": "หยุด",
   "linkFileJobQueued": "คิวd",
@@ -390,7 +390,7 @@
   "@nowPlayingVolume": {
     "description": "System volume control label in the Mornye player"
   },
-  "appearanceStyle": "App Style",
+  "appearanceStyle": "สไตล์แอป",
   "appearanceAccentRed": "แดง (default)",
   "appearanceAccentOrange": "ส้ม",
   "appearanceAccentGreen": "เขียว",
@@ -398,14 +398,14 @@
   "appearanceAccentBlue": "น้ำเงิน",
   "appearanceAccentPurple": "ม่วง",
   "appearanceAccentPink": "ชมพู",
-  "appearanceGlassClarity": "Glass clarity",
-  "appearanceGlassOutlines": "Glass outlines",
+  "appearanceGlassClarity": "ความชัดของแก้ว",
+  "appearanceGlassOutlines": "ขอบแก้ว",
   "appearanceGlassOutlinesSubtitle": "แสดง decorative edges around Mornye glass. Turning this off keeps blur and refraction.",
   "appearanceGlassClaritySubtitle": "ปรับ transparency in Mornye menus and navigation. ข้อความ contrast is preserved.",
   "appearanceGlassTinted": "เฉดed",
-  "appearanceGlassClear": "Clear",
+  "appearanceGlassClear": "ใส",
   "appearanceGlassClearPerformance": "Very clear glass may use more power and feel less smooth on older devices. ต่ำer clarity if needed.",
-  "appearanceGlassClarityBlurOff": "Glass is opaque on this device. Turn on “{setting}” to adjust clarity.",
+  "appearanceGlassClarityBlurOff": "แก้วบนอุปกรณ์นี้เป็นทึบ เปิด \"การตั้งค่า\" เพื่อปรับความชัด",
   "@appearanceGlassClarityBlurOff": {
     "description": "Shown under the disabled glass clarity slider when the device renders Mornye glass without blur. The placeholder is the name of the force-blur toggle.",
     "placeholders": {
@@ -414,7 +414,7 @@
       }
     }
   },
-  "appearanceGlassClarityHighContrast": "Your system requests increased contrast, so glass stays opaque. Turn on “{setting}” to use glass anyway; text contrast is preserved.",
+  "appearanceGlassClarityHighContrast": "ระบบขอคอนทราสต์สูง ดังนั้นแก้วจึงทึบ เปิด \"การตั้งค่า\" เพื่อใช้แก้วได้",
   "@appearanceGlassClarityHighContrast": {
     "description": "Explains the system contrast request (which can include medium contrast) and the explicit glass-only override.",
     "placeholders": {
@@ -423,8 +423,8 @@
       }
     }
   },
-  "appearanceUseSystemFont": "Use system font",
-  "appearanceUseSystemFontSubtitle": "Use your device’s default typeface for app text.",
+  "appearanceUseSystemFont": "ใช้ฟอนต์ระบบ",
+  "appearanceUseSystemFontSubtitle": "ใช้แบบอักษรเริ่มต้นของอุปกรณ์สำหรับข้อความในแอป",
   "@appearanceStyle": {
     "description": "Appearance section for choosing the app visual style"
   },
@@ -486,7 +486,7 @@
   "@historyFilterAlbums": {
     "description": "Filter chip - show albums only"
   },
-  "historyFilterSingles": "Singles",
+  "historyFilterSingles": "ซิงเกิล",
   "@historyFilterSingles": {
     "description": "Filter chip - show singles only"
   },
@@ -612,7 +612,7 @@
   "@appearanceDynamicColor": {
     "description": "Material You dynamic colors"
   },
-  "appearanceDynamicColorSubtitle": "Use colors from your wallpaper",
+  "appearanceDynamicColorSubtitle": "ใช้สีจากผ้าปูหน้าจอ",
   "@appearanceDynamicColorSubtitle": {
     "description": "Subtitle for dynamic color"
   },
@@ -620,7 +620,7 @@
   "@appearanceHistoryView": {
     "description": "Layout style for history"
   },
-  "appearanceHistoryViewList": "List",
+  "appearanceHistoryViewList": "รายการ",
   "@appearanceHistoryViewList": {
     "description": "List layout option"
   },
@@ -833,7 +833,7 @@
   "@optionsUpdateChannelStable": {
     "description": "Only stable updates"
   },
-  "optionsUpdateChannelPreview": "Get preview releases",
+  "optionsUpdateChannelPreview": "รับเวอร์ชันทดลอง",
   "@optionsUpdateChannelPreview": {
     "description": "Include beta/preview updates"
   },
@@ -1295,7 +1295,7 @@
   "@dialogRetry": {
     "description": "Dialog button - retry action"
   },
-  "dialogClear": "Clear",
+  "dialogClear": "ล้าง",
   "@dialogClear": {
     "description": "Dialog button - clear items"
   },
@@ -1339,7 +1339,7 @@
   "@dialogDiscardChanges": {
     "description": "Dialog title - unsaved changes warning"
   },
-  "dialogUnsavedChanges": "You have unsaved changes. Do you want to discard them?",
+  "dialogUnsavedChanges": "คุณมีการเปลี่ยนแปลงที่ยังไม่บันทึก ต้องการทิ้งการเปลี่ยนแปลงหรือไม่?",
   "@dialogUnsavedChanges": {
     "description": "Dialog message - unsaved changes"
   },
@@ -1351,7 +1351,7 @@
   "@dialogRemoveExtension": {
     "description": "Dialog title - uninstall extension"
   },
-  "dialogRemoveExtensionMessage": "Are you sure you want to remove this extension? This cannot be undone.",
+  "dialogRemoveExtensionMessage": "แน่ใจว่าต้องการลบส่วนขยายนี้? ไม่สามารถยกเลิกได้",
   "@dialogRemoveExtensionMessage": {
     "description": "Dialog message - uninstall confirmation"
   },
@@ -1359,7 +1359,7 @@
   "@dialogUninstallExtension": {
     "description": "Dialog title - uninstall extension"
   },
-  "dialogUninstallExtensionMessage": "Are you sure you want to remove {extensionName}?",
+  "dialogUninstallExtensionMessage": "แน่ใจว่าต้องการลบ {extensionName}?",
   "@dialogUninstallExtensionMessage": {
     "description": "Dialog message - uninstall specific extension",
     "placeholders": {
@@ -1372,7 +1372,7 @@
   "@dialogClearHistoryTitle": {
     "description": "Dialog title - clear download history"
   },
-  "dialogClearHistoryMessage": "Are you sure you want to clear all download history? This cannot be undone.",
+  "dialogClearHistoryMessage": "แน่ใจว่าต้องการล้างประวัติดาวน์โหลดทั้งหมด? ไม่สามารถยกเลิกได้",
   "@dialogClearHistoryMessage": {
     "description": "Dialog message - clear history confirmation"
   },
@@ -1447,7 +1447,7 @@
   "@duplicatesTitle": {
     "description": "Title of the duplicate review sheet"
   },
-  "duplicatesEmpty": "No duplicate tracks found.",
+  "duplicatesEmpty": "ไม่พบเพลงซ้ำ",
   "@duplicatesEmpty": {
     "description": "Shown when the duplicate review sheet finds nothing"
   },
@@ -1549,7 +1549,7 @@
       }
     }
   },
-  "snackbarCannotOpenFile": "Cannot open file: {error}",
+  "snackbarCannotOpenFile": "เปิดไฟล์ไม่ได้: {error}",
   "@snackbarCannotOpenFile": {
     "description": "Snackbar - file open error",
     "placeholders": {
@@ -1562,7 +1562,7 @@
   "@snackbarViewQueue": {
     "description": "Snackbar action - view download queue"
   },
-  "snackbarUrlCopied": "{platform} URL copied to clipboard",
+  "snackbarUrlCopied": "คัดลอก URL {platform} ไปยังคลิปบอร์ดแล้ว",
   "@snackbarUrlCopied": {
     "description": "Snackbar - URL copied",
     "placeholders": {
@@ -1576,11 +1576,11 @@
   "@snackbarFileNotFound": {
     "description": "Snackbar - file doesn't exist"
   },
-  "snackbarSelectExtFile": "Please select a .mornye-ext file",
+  "snackbarSelectExtFile": "กรุณาเลือกไฟล์ .mornye-ext",
   "@snackbarSelectExtFile": {
     "description": "Snackbar - wrong file type selected"
   },
-  "snackbarProviderPrioritySaved": "Provider priority saved",
+  "snackbarProviderPrioritySaved": "บันทึกลำดับความสำคัญผู้ให้บริการแล้ว",
   "@snackbarProviderPrioritySaved": {
     "description": "Snackbar - provider order saved"
   },
@@ -1588,7 +1588,7 @@
   "@snackbarMetadataProviderSaved": {
     "description": "Snackbar - metadata provider order saved"
   },
-  "snackbarExtensionInstalled": "{extensionName} installed.",
+  "snackbarExtensionInstalled": "ติดตั้ง {extensionName} แล้ว",
   "@snackbarExtensionInstalled": {
     "description": "Snackbar - extension installed successfully",
     "placeholders": {
@@ -1597,7 +1597,7 @@
       }
     }
   },
-  "snackbarExtensionUpdated": "{extensionName} updated.",
+  "snackbarExtensionUpdated": "อัปเดต {extensionName} แล้ว",
   "@snackbarExtensionUpdated": {
     "description": "Snackbar - extension updated successfully",
     "placeholders": {
@@ -1626,7 +1626,7 @@
   "@errorNoTracksFound": {
     "description": "Error - search returned no results"
   },
-  "searchEmptyResultSubtitle": "Try another keyword",
+  "searchEmptyResultSubtitle": "ลองคำค้นหาอื่น",
   "@searchEmptyResultSubtitle": {
     "description": "Subtitle shown under the empty search result state on the home screen"
   },
@@ -1655,7 +1655,7 @@
   "@actionPause": {
     "description": "Action button - pause download"
   },
-  "actionResume": "Resume",
+  "actionResume": "ดำเนินต่อ",
   "@actionResume": {
     "description": "Action button - resume download"
   },
@@ -1967,7 +1967,7 @@
   "@logSearchHint": {
     "description": "Log search placeholder"
   },
-  "logFilterLevel": "Level",
+  "logFilterLevel": "ระดับ",
   "@logFilterLevel": {
     "description": "Filter by log level"
   },
@@ -2003,7 +2003,7 @@
   "@logNoLogsYetSubtitle": {
     "description": "Empty state subtitle"
   },
-  "logEntriesFiltered": "Entries ({count} filtered)",
+  "logEntriesFiltered": "รายการ ({count} ถูกกรอง)",
   "@logEntriesFiltered": {
     "description": "Log count with filter active",
     "placeholders": {
@@ -2390,7 +2390,7 @@
   "@storeFilterDownload": {
     "description": "Repo filter - download providers"
   },
-  "storeFilterUtility": "Utility",
+  "storeFilterUtility": "ยูทิลิตี้",
   "@storeFilterUtility": {
     "description": "Repo filter - utility extensions"
   },
@@ -2398,11 +2398,11 @@
   "@storeFilterLyrics": {
     "description": "Repo filter - lyrics providers"
   },
-  "storeFilterIntegration": "Integration",
+  "storeFilterIntegration": "การรวม",
   "@storeFilterIntegration": {
     "description": "Repo filter - integrations"
   },
-  "storeClearFilters": "Clear filters",
+  "storeClearFilters": "ล้างตัวกรอง",
   "@storeClearFilters": {
     "description": "Button to clear all filters"
   },
@@ -2434,7 +2434,7 @@
   "@storeRepoDialogTitle": {
     "description": "Title of the change/remove repository dialog"
   },
-  "storeRepoDialogCurrent": "Current repository:",
+  "storeRepoDialogCurrent": "ที่เก็บปัจจุบัน:",
   "@storeRepoDialogCurrent": {
     "description": "Label shown above the current repository URL in the dialog"
   },
@@ -2446,11 +2446,11 @@
   "@storeLoadError": {
     "description": "Error heading when the store cannot be loaded"
   },
-  "storeEmptyNoExtensions": "No extensions available",
+  "storeEmptyNoExtensions": "ไม่มีส่วนขยาย",
   "@storeEmptyNoExtensions": {
     "description": "Message when store has no extensions"
   },
-  "storeEmptyNoResults": "No extensions found",
+  "storeEmptyNoResults": "ไม่พบส่วนขยาย",
   "@storeEmptyNoResults": {
     "description": "Message when search/filter returns no results"
   },
@@ -2767,19 +2767,19 @@
   "@appearanceAmoledDark": {
     "description": "Theme option - pure black"
   },
-  "appearanceAmoledDarkSubtitle": "Pure black background",
+  "appearanceAmoledDarkSubtitle": "พื้นหลังสีดำแท้",
   "@appearanceAmoledDarkSubtitle": {
     "description": "Subtitle for AMOLED dark"
   },
-  "appearanceHeroAnimations": "Hero animations",
+  "appearanceHeroAnimations": "แอนิเมชันฮีโร่",
   "@appearanceHeroAnimations": {
     "description": "Toggle for shared-element (Hero) transitions"
   },
-  "appearanceHeroAnimationsSubtitle": "Fly covers between screens, e.g. when opening the player",
+  "appearanceHeroAnimationsSubtitle": "บินภาพปกระหว่างหน้าจอ เช่น เมื่อเปิดเพลเยอร์",
   "@appearanceHeroAnimationsSubtitle": {
     "description": "Subtitle for the Hero animations toggle"
   },
-  "appearanceForceBlur": "Always use blur effects",
+  "appearanceForceBlur": "ใช้เอฟเฟกต์เบลอเสมอ",
   "@appearanceForceBlur": {
     "description": "Toggle that forces backdrop blur on even when the device profile disabled it"
   },
@@ -2953,7 +2953,7 @@
   "@recentTypePlaylist": {
     "description": "Recent access item type - playlist"
   },
-  "recentEmpty": "No recent items yet",
+  "recentEmpty": "ยังไม่มีรายการล่าสุด",
   "@recentEmpty": {
     "description": "Empty state text for recent access list"
   },
@@ -3567,7 +3567,7 @@
   "@tutorialWelcomeTitle": {
     "description": "Tutorial welcome page title"
   },
-  "tutorialWelcomeDesc": "Learn how to find music with extensions, choose the quality you want, and manage downloads in Mornye.",
+  "tutorialWelcomeDesc": "เรียนรู้วิธีค้นหาเพลงด้วยส่วนขยาย เลือกคุณภาพที่ต้องการ และจัดการการดาวน์โหลดใน Mornye",
   "@tutorialWelcomeDesc": {
     "description": "Tutorial welcome page description"
   },
@@ -3575,15 +3575,15 @@
   "@tutorialWelcomeTip1": {
     "description": "Tutorial welcome tip 1"
   },
-  "tutorialWelcomeTip2": "Choose from the audio qualities offered by your download provider",
+  "tutorialWelcomeTip2": "เลือกคุณภาพเสียงจากผู้ให้บริการดาวน์โหลดของคุณ",
   "@tutorialWelcomeTip2": {
     "description": "Tutorial welcome tip 2"
   },
-  "tutorialWelcomeTip3": "Embed metadata, cover art, lyrics, and release information automatically",
+  "tutorialWelcomeTip3": "ฝังข้อมูลเมตา ภาพปก เนื้อเพลง และข้อมูลการเปิดตัวโดยอัตโนมัติ",
   "@tutorialWelcomeTip3": {
     "description": "Tutorial welcome tip 3"
   },
-  "tutorialSearchTitle": "Finding Music",
+  "tutorialSearchTitle": "ค้นหาเพลง",
   "@tutorialSearchTitle": {
     "description": "Tutorial search page title"
   },
@@ -3627,11 +3627,11 @@
   "@tutorialExtensionsDesc": {
     "description": "Tutorial extensions page description"
   },
-  "tutorialExtensionsTip1": "Browse the Repo tab to discover useful extensions",
+  "tutorialExtensionsTip1": "เรียกดูแท็บ Repo เพื่อค้นพบส่วนขยายที่มีประโยชน์",
   "@tutorialExtensionsTip1": {
     "description": "Tutorial extensions tip 1"
   },
-  "tutorialExtensionsTip2": "Choose providers for search, downloads, metadata, and fallbacks",
+  "tutorialExtensionsTip2": "เลือกผู้ให้บริการสำหรับการค้นหา ดาวน์โหลด ข้อมูลเมตา และสำรอง",
   "@tutorialExtensionsTip2": {
     "description": "Tutorial extensions tip 2"
   },
@@ -3950,7 +3950,7 @@
       }
     }
   },
-  "cacheClearAllConfirmTitle": "Clear all cache?",
+  "cacheClearAllConfirmTitle": "ล้างแคชทั้งหมด?",
   "@cacheClearAllConfirmTitle": {
     "description": "Dialog title before clearing all caches"
   },
@@ -4078,15 +4078,15 @@
   "@trackReEnrichFieldsTitle": {
     "description": "Heading above batch re-enrich field checkboxes"
   },
-  "trackReEnrichReview": "Review changes",
+  "trackReEnrichReview": "ตรวจสอบการเปลี่ยนแปลง",
   "@trackReEnrichReview": {
     "description": "Button that searches metadata and opens the batch change review"
   },
-  "trackReEnrichReviewTitle": "Review metadata changes",
+  "trackReEnrichReviewTitle": "ตรวจสอบการเปลี่ยนแปลงข้อมูลเมตา",
   "@trackReEnrichReviewTitle": {
     "description": "Title of the batch metadata review sheet"
   },
-  "trackReEnrichReviewSubtitle": "{changeCount} proposed changes across {trackCount} tracks",
+  "trackReEnrichReviewSubtitle": "{changeCount} การเปลี่ยนแปลงที่เสนอ สำหรับ {trackCount} เพลง",
   "@trackReEnrichReviewSubtitle": {
     "description": "Summary shown above proposed batch metadata changes",
     "placeholders": {
@@ -4123,7 +4123,7 @@
       }
     }
   },
-  "trackCoverNoSource": "No cover art source available",
+  "trackCoverNoSource": "ไม่มีแหล่งภาพปก",
   "@trackCoverNoSource": {
     "description": "Snackbar when no cover art URL or embedded cover"
   },
@@ -4226,7 +4226,7 @@
   "@trackConvertConfirmTitle": {
     "description": "Confirmation dialog title"
   },
-  "trackConvertConfirmMessage": "Convert from {sourceFormat} to {targetFormat} at {bitrate}?\n\nThe original file will be deleted after conversion.",
+  "trackConvertConfirmMessage": "แปลงจาก {sourceFormat} เป็น {targetFormat} ที่ {bitrate}?\n\nไฟล์ต้นฉบับจะถูกลบหลัง",
   "@trackConvertConfirmMessage": {
     "description": "Confirmation dialog message",
     "placeholders": {
@@ -4253,7 +4253,7 @@
       }
     }
   },
-  "trackConvertConfirmKeepOriginal": "Convert from {sourceFormat} to {targetFormat}?\n\nThe original file will be kept and the converted file will be added as a separate library entry.",
+  "trackConvertConfirmKeepOriginal": "แปลงจาก {sourceFormat} เป็น {targetFormat}?\n\nไฟล์ต้นฉบับจะถูกเก็บไว้และไฟล์ที่แปลงแล้ว",
   "@trackConvertConfirmKeepOriginal": {
     "description": "Confirmation message when the source file will be preserved",
     "placeholders": {
@@ -4374,7 +4374,7 @@
   "@collectionFoldersTitle": {
     "description": "Library section title for custom folders"
   },
-  "collectionWishlist": "Wishlist",
+  "collectionWishlist": "รายการโปรด",
   "@collectionWishlist": {
     "description": "Custom folder for saved tracks to download later"
   },
@@ -4458,19 +4458,19 @@
   "@collectionPlaylistRenamed": {
     "description": "Snackbar after renaming playlist"
   },
-  "collectionWishlistEmptyTitle": "Wishlist is empty",
+  "collectionWishlistEmptyTitle": "รายการโปรดว่าง",
   "@collectionWishlistEmptyTitle": {
     "description": "Wishlist empty state title"
   },
-  "collectionWishlistEmptySubtitle": "Tap + on tracks to save what you want to download later",
+  "collectionWishlistEmptySubtitle": "แตะ + บนเพลงเพื่อบันทึกสิ่งที่ต้องการดาวน์โหลดภายหลัง",
   "@collectionWishlistEmptySubtitle": {
     "description": "Wishlist empty state subtitle"
   },
-  "collectionLovedEmptyTitle": "Loved folder is empty",
+  "collectionLovedEmptyTitle": "โฟลเดอร์โปรดว่าง",
   "@collectionLovedEmptyTitle": {
     "description": "Loved empty state title"
   },
-  "collectionLovedEmptySubtitle": "Tap love on tracks to keep your favorites",
+  "collectionLovedEmptySubtitle": "แตะหัวใจบนเพลงเพื่อเก็บรายการโปรดไว้",
   "@collectionLovedEmptySubtitle": {
     "description": "Loved empty state subtitle"
   },
@@ -4525,7 +4525,7 @@
       }
     }
   },
-  "collectionAddedToWishlist": "\"{trackName}\" added to Wishlist",
+  "collectionAddedToWishlist": "\"{trackName}\" เพิ่มเข้าไปในรายการโปรดแล้ว",
   "@collectionAddedToWishlist": {
     "description": "Snackbar after adding track to wishlist",
     "placeholders": {
@@ -4534,7 +4534,7 @@
       }
     }
   },
-  "collectionRemovedFromWishlist": "\"{trackName}\" removed from Wishlist",
+  "collectionRemovedFromWishlist": "\"{trackName}\" นำออกจากรายการโปรดแล้ว",
   "@collectionRemovedFromWishlist": {
     "description": "Snackbar after removing track from wishlist",
     "placeholders": {
@@ -4593,7 +4593,7 @@
   "@collectionPlaylistRemoveCover": {
     "description": "Bottom sheet action to remove custom cover image from a playlist"
   },
-  "selectionConvertCount": "Convert {count} {count, plural, =1{track} other{tracks}}",
+  "selectionConvertCount": "แปลง {count} {count, plural, =1{เพลง} other{เพลง}}",
   "@selectionConvertCount": {
     "description": "Convert button text with count in selection mode",
     "placeholders": {
@@ -4602,11 +4602,11 @@
       }
     }
   },
-  "selectionConvertNoConvertible": "No convertible tracks selected",
+  "selectionConvertNoConvertible": "ไม่มีเพลงที่แปลงได้ในรายการที่เลือก",
   "@selectionConvertNoConvertible": {
     "description": "Snackbar when no selected tracks support conversion"
   },
-  "selectionBatchConvertConfirmTitle": "Batch Convert",
+  "selectionBatchConvertConfirmTitle": "แปลงเป็นกลุ่ม",
   "@selectionBatchConvertConfirmTitle": {
     "description": "Confirmation dialog title for batch conversion"
   },
@@ -4649,7 +4649,7 @@
       }
     }
   },
-  "selectionBatchConvertSuccess": "Converted {success} of {total} tracks to {format}",
+  "selectionBatchConvertSuccess": "แปลง {success} จาก {total} เพลงเป็น {format} แล้ว",
   "@selectionBatchConvertSuccess": {
     "description": "Snackbar after batch conversion completes",
     "placeholders": {
@@ -5018,7 +5018,7 @@
       }
     }
   },
-  "snackbarNoActionDefined": "No action defined for this button",
+  "snackbarNoActionDefined": "ไม่มีการดำเนินการที่กำหนดสำหรับปุ่มนี้",
   "@snackbarNoActionDefined": {
     "description": "Snackbar when an extension button has no action configured"
   },
@@ -5226,7 +5226,7 @@
   "@downloadSongLinkRegionDesc": {
     "description": "Description in SongLink region picker"
   },
-  "snackbarUnsupportedAudioFormat": "Unsupported audio format",
+  "snackbarUnsupportedAudioFormat": "รูปแบบเสียงไม่รองรับ",
   "@snackbarUnsupportedAudioFormat": {
     "description": "Snackbar when the audio format is not supported for the requested operation"
   },
@@ -5473,11 +5473,11 @@
   "@queueEmptyAlbumsSubtitle": {
     "description": "Empty state subtitle for album downloads"
   },
-  "queueEmptySingles": "No single downloads",
+  "queueEmptySingles": "ไม่มีการดาวน์โหลดเพลงเดี่ยว",
   "@queueEmptySingles": {
     "description": "Empty state title when no single track downloads exist"
   },
-  "queueEmptySinglesSubtitle": "Single track downloads will appear here",
+  "queueEmptySinglesSubtitle": "การดาวน์โหลดเพลงเดี่ยวจะปรากฏที่นี่",
   "@queueEmptySinglesSubtitle": {
     "description": "Empty state subtitle for single track downloads"
   },
@@ -5502,7 +5502,7 @@
   "@libraryDefaultViewLastUsed": {
     "description": "Default view option - keep the last used library view"
   },
-  "queueEmptyHistory": "No download history",
+  "queueEmptyHistory": "ไม่มีประวัติการดาวน์โหลด",
   "@queueEmptyHistory": {
     "description": "Empty state title when download history is empty"
   },
@@ -6148,7 +6148,7 @@
   "@optionsEmbedMetadataSubtitleOff": {
     "description": "Subtitle when metadata embedding is disabled"
   },
-  "trackCoverNoEmbeddedArt": "No embedded album art found",
+  "trackCoverNoEmbeddedArt": "ไม่พบภาพปกอัลบั้มที่ฝังไว้",
   "@trackCoverNoEmbeddedArt": {
     "description": "Message shown when a track file has no embedded cover art"
   },
@@ -6164,7 +6164,7 @@
   "@trackCoverClearSelected": {
     "description": "Tooltip for clearing the newly selected cover art"
   },
-  "trackCoverCurrent": "Current cover",
+  "trackCoverCurrent": "ภาพปกปัจจุบัน",
   "@trackCoverCurrent": {
     "description": "Label for the currently embedded cover preview"
   },
@@ -6180,11 +6180,11 @@
   "@trackCoverResolution": {
     "description": "Label for selecting the embedded cover art resolution"
   },
-  "trackCoverResolutionHint": "Sets the longest edge when saved. Enlarging does not add image detail.",
+  "trackCoverResolutionHint": "กำหนดขอบที่ยาวที่สุดเมื่อบันทึก การขยายไม่เพิ่มรายละเอียดภาพ",
   "@trackCoverResolutionHint": {
     "description": "Explanation below the embedded cover art resolution selector"
   },
-  "trackCoverResizeFailed": "The cover image could not be resized. Please try another size or image.",
+  "trackCoverResizeFailed": "ปรับขนาดภาพปกไม่ได้ กรุณาลองขนาดหรือภาพอื่น",
   "@trackCoverResizeFailed": {
     "description": "Error shown when resizing cover art before saving metadata fails"
   },
@@ -6363,7 +6363,7 @@
   "@extensionUtilityFunctions": {
     "description": "Capability label for utility-only extensions"
   },
-  "actionDismiss": "Dismiss",
+  "actionDismiss": "ปิด",
   "@actionDismiss": {
     "description": "Generic action - dismiss"
   },
