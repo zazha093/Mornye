@@ -198,7 +198,7 @@
   "@networkUploadReadOnly": {
     "description": "Snackbar when the chosen upload destination is a read-only connection or no longer exists"
   },
-  "networkUploadNoSongs": "No songs stored on this device in this selection.",
+  "networkUploadNoSongs": "ไม่มีเพลงที่เก็บไว้บนอุปกรณ์นี้ในรายการที่เลือก",
   "@networkUploadNoSongs": {
     "description": "Snackbar when the upload action is used on songs that already stream from a server"
   },
@@ -381,7 +381,7 @@
   "usbOutputPreparing": "Preparing USB audio output...",
   "usbOutputCancelled": "USB preparation was cancelled. เซเล็กต์ a track to try again.",
   "usbBitPerfectNoDevice": "No USB DAC connected. Using normal audio output.",
-  "usbBitPerfectFallback": "This device or audio format does not support bit-perfect output. Using normal playback.",
+  "usbBitPerfectFallback": "อุปกรณ์หรือรูปแบบเสียงนี้ไม่รองรับเอาต์พุตแบบบิตเพอร์เฟกต์ ใช้การเล่นปกติ",
   "usbBitPerfectRouteChanged": "The USB audio route changed. การเล่น paused; select a track to reconnect.",
   "upgradeIntroContinue": "ดำเนินต่อ",
   "cacheMotionArtwork": "ออฟไลน์ motion covers",
@@ -657,7 +657,7 @@
   "@optionsAutoFallback": {
     "description": "Auto-retry with other services"
   },
-  "optionsAutoFallbackSubtitle": "Try other services if download fails",
+  "optionsAutoFallbackSubtitle": "ลองบริการอื่นหากดาวน์โหลดล้มเหลว",
   "@optionsAutoFallbackSubtitle": {
     "description": "Subtitle for auto fallback"
   },
@@ -771,21 +771,21 @@
   "optionsArtistTagMode": "ศิลปิน แท็ก Mode",
   "metadataSeparators": "ข้อมูลเมตา separators",
   "metadataSeparatorsDescription": "Choose how comma- or semicolon-separated values are joined in future downloads. กำหนดเอง artist separators use a joined tag; Primary artist only still applies. ชื่อs containing & or / are preserved.",
-  "metadataSeparatorSource": "Keep source formatting",
-  "metadataSeparatorComma": "Comma (,)",
-  "metadataSeparatorSemicolon": "Semicolon (;)",
-  "metadataSeparatorSlash": "Slash (/)",
+  "metadataSeparatorSource": "เก็บรูปแบบต้นฉบับ",
+  "metadataSeparatorComma": "คอมมา (,)",
+  "metadataSeparatorSemicolon": "เซมิโคลอน (;)",
+  "metadataSeparatorSlash": "สแลช (/)",
   "metadataSeparatorCustom": "กำหนดเอง separator",
   "metadataSeparatorPreview": "ตัวอย่าง",
-  "metadataSeparatorInvalid": "Use 1–16 characters without line breaks or control characters.",
+  "metadataSeparatorInvalid": "ใช้ 1–16 ตัวอักษร โดยไม่มีขึ้นบรรทัดใหม่หรืออักขระควบคุม",
   "@optionsArtistTagMode": {
     "description": "Setting title for how artist metadata is written into files"
   },
-  "optionsArtistTagModeDescription": "Choose how multiple artists are written into embedded tags.",
+  "optionsArtistTagModeDescription": "เลือกวิธีเขียนศิลปินหลายคนลงในแท็กที่ฝัง",
   "@optionsArtistTagModeDescription": {
     "description": "Bottom-sheet description for artist tag mode setting"
   },
-  "optionsArtistTagModeJoined": "Single joined value",
+  "optionsArtistTagModeJoined": "ค่าเดียวรวมกัน",
   "@optionsArtistTagModeJoined": {
     "description": "Artist tag mode option that joins multiple artists into one value"
   },
@@ -793,15 +793,15 @@
   "@optionsArtistTagModeJoinedSubtitle": {
     "description": "Subtitle for joined artist tag mode"
   },
-  "optionsArtistTagModeSplitVorbis": "Split tags for FLAC/Opus",
+  "optionsArtistTagModeSplitVorbis": "แยกแท็กสำหรับ FLAC/Opus",
   "@optionsArtistTagModeSplitVorbis": {
     "description": "Artist tag mode option that writes repeated ARTIST tags for Vorbis formats"
   },
-  "optionsArtistTagModeSplitVorbisSubtitle": "Write one artist tag per artist for FLAC and Opus; MP3 and M4A stay joined.",
+  "optionsArtistTagModeSplitVorbisSubtitle": "เขียนแท็กศิลปินคนละอันสำหรับ FLAC และ Opus; MP3 และ M4A ยังคงรวมกัน",
   "@optionsArtistTagModeSplitVorbisSubtitle": {
     "description": "Subtitle for split Vorbis artist tag mode"
   },
-  "optionsArtistTagModePrimary": "Primary artist only",
+  "optionsArtistTagModePrimary": "ศิลปินหลักอย่างเดียว",
   "@optionsArtistTagModePrimary": {
     "description": "Artist tag mode option that writes only the first credited artist"
   },
@@ -914,7 +914,7 @@
   "@aboutMobileDeveloper": {
     "description": "Role description for mobile dev"
   },
-  "aboutLogoArtist": "The talented artist who created our beautiful app logo!",
+  "aboutLogoArtist": "ศิลปินที่มีความสามารถซึ่งสร้างโลโก้แอปที่สวยงามของเรา!",
   "@aboutLogoArtist": {
     "description": "Role description for logo artist"
   },
@@ -1014,11 +1014,11 @@
   "@artistAlbums": {
     "description": "Section header for artist albums"
   },
-  "artistSingles": "Singles & EPs",
+  "artistSingles": "ซิงเกิลและ EP",
   "@artistSingles": {
     "description": "Section header for singles/EPs"
   },
-  "artistCompilations": "Compilations",
+  "artistCompilations": "การรวม",
   "@artistCompilations": {
     "description": "Section header for compilations"
   },
@@ -1026,7 +1026,7 @@
   "@artistPopular": {
     "description": "Section header for popular/top tracks"
   },
-  "artistLatestRelease": "Latest Release",
+  "artistLatestRelease": "ล่าสุด",
   "@artistLatestRelease": {
     "description": "Artist page on desktop: heading above the newest album"
   },
@@ -1034,7 +1034,7 @@
   "@artistTopSongs": {
     "description": "Artist page on desktop: heading above the artist's best known songs"
   },
-  "artistMonthlyListeners": "{count} monthly listeners",
+  "artistMonthlyListeners": "{count} ผู้ฟังต่อเดือน",
   "@artistMonthlyListeners": {
     "description": "Monthly listener count display",
     "placeholders": {
@@ -1688,7 +1688,7 @@
   "@selectionSelectToDelete": {
     "description": "Placeholder when nothing selected"
   },
-  "progressFetchingMetadata": "Fetching metadata... {current}/{total}",
+  "progressFetchingMetadata": "กำลังดึงข้อมูลเมตา... {current}/{total}",
   "@progressFetchingMetadata": {
     "description": "Progress indicator - loading track info",
     "placeholders": {
@@ -1931,11 +1931,11 @@
   "@providerPriorityInfo": {
     "description": "Info tip about fallback behavior"
   },
-  "providerPriorityFallbackExtensionsDescription": "Choose which installed download extensions can be used during automatic fallback.",
+  "providerPriorityFallbackExtensionsDescription": "เลือกส่วนขยายดาวน์โหลดที่ติดตั้งแล้วซึ่งใช้ได้ระหว่างการสำรองอัตโนมัติ",
   "@providerPriorityFallbackExtensionsDescription": {
     "description": "Section description for extension fallback selection"
   },
-  "providerPriorityFallbackExtensionsHint": "Only enabled extensions with download-provider capability are listed here.",
+  "providerPriorityFallbackExtensionsHint": "แสดงเฉพาะส่วนขยายที่เปิดใช้งานและมีความสามารถดาวน์โหลด",
   "@providerPriorityFallbackExtensionsHint": {
     "description": "Hint below the extension fallback selection list"
   },
@@ -1947,11 +1947,11 @@
   "@metadataProviderPriorityTitle": {
     "description": "Metadata priority page title"
   },
-  "metadataProviderPriorityDescription": "Drag to reorder metadata providers. The app will try providers from top to bottom when searching for tracks and fetching metadata.",
+  "metadataProviderPriorityDescription": "ลากเพื่อเรียงลำดับผู้ให้บริการข้อมูลเมตา แอปจะลองจากบนลงล่างเมื่อค้นหา",
   "@metadataProviderPriorityDescription": {
     "description": "Metadata priority page description"
   },
-  "metadataProviderPriorityInfo": "Deezer has no rate limits and is recommended as primary. Spotify may rate limit after many requests.",
+  "metadataProviderPriorityInfo": "Deezer ไม่มีขีดจำกัดอัตรา แนะนำเป็นหลัก Spotify อาจจำกัดอัตราหลายคำขอ",
   "@metadataProviderPriorityInfo": {
     "description": "Info tip about rate limits"
   },
@@ -2143,7 +2143,7 @@
   "@loadingSharedLink": {
     "description": "Status when opening shared URL"
   },
-  "pressBackAgainToExit": "Press back again to exit",
+  "pressBackAgainToExit": "กดย้อนกลับอีกครั้งเพื่อออก",
   "@pressBackAgainToExit": {
     "description": "Exit confirmation message"
   },
@@ -2609,7 +2609,7 @@
   "@extensionsFallbackTitle": {
     "description": "Setting and page title for choosing which download extensions can be used during fallback"
   },
-  "extensionsFallbackSubtitle": "Choose which installed download extensions can be used as fallback",
+  "extensionsFallbackSubtitle": "เลือกส่วนขยายดาวน์โหลดที่ติดตั้งแล้วเพื่อใช้เป็นสำรอง",
   "@extensionsFallbackSubtitle": {
     "description": "Subtitle for download fallback extensions menu"
   },
@@ -2621,11 +2621,11 @@
   "@extensionsMetadataPriority": {
     "description": "Setting - metadata provider order"
   },
-  "extensionsMetadataPrioritySubtitle": "Set search & metadata source order",
+  "extensionsMetadataPrioritySubtitle": "ตั้งค่าลำดับแหล่งค้นหาและข้อมูลเมตา",
   "@extensionsMetadataPrioritySubtitle": {
     "description": "Subtitle for metadata priority"
   },
-  "extensionsNoMetadataProvider": "No extensions with metadata provider",
+  "extensionsNoMetadataProvider": "ไม่มีส่วนขยายที่มีผู้ให้บริการข้อมูลเมตา",
   "@extensionsNoMetadataProvider": {
     "description": "Empty state - no metadata providers"
   },
@@ -2945,7 +2945,7 @@
   "@recentTypeAlbum": {
     "description": "Recent access item type - album"
   },
-  "recentTypeSong": "Song",
+  "recentTypeSong": "เพลง",
   "@recentTypeSong": {
     "description": "Recent access item type - song/track"
   },
@@ -3039,7 +3039,7 @@
   "@discographyFetchingTracks": {
     "description": "Progress - fetching album tracks"
   },
-  "discographyFetchingAlbum": "Fetching {current} of {total}...",
+  "discographyFetchingAlbum": "กำลังดึง {current} จาก {total}...",
   "@discographyFetchingAlbum": {
     "description": "Progress - fetching specific album",
     "placeholders": {
@@ -3076,7 +3076,7 @@
       }
     }
   },
-  "discographyNoAlbums": "No albums available",
+  "discographyNoAlbums": "ไม่มีอัลบั้ม",
   "@discographyNoAlbums": {
     "description": "Error - no albums found for artist"
   },
@@ -3720,7 +3720,7 @@
   "whatsNewFasterQueueTitle": "คู่อย่างยาวนาน",
   "whatsNewFasterQueueBody": "คิวขนาดใหญ่บันทึกได้เร็ว และคืนมาหลังรีสตาร์ท",
   "whatsNewFasterBackgroundTitle": "สว่างer in the background",
-  "whatsNewFasterBackgroundBody": "The app starts faster and does less work while music plays.",
+  "whatsNewFasterBackgroundBody": "แอปเริ่มเร็วขึ้น และทำงานน้อยลงขณะเล่นเพลง",
   "whatsNewDone": "Start listening",
   "@whatsNewDone": {
     "description": "Button on the last page of the What's New tour"
@@ -4474,11 +4474,11 @@
   "@collectionLovedEmptySubtitle": {
     "description": "Loved empty state subtitle"
   },
-  "collectionFavoriteArtistsEmptyTitle": "No favorite artists yet",
+  "collectionFavoriteArtistsEmptyTitle": "ยังไม่มีศิลปินโปรด",
   "@collectionFavoriteArtistsEmptyTitle": {
     "description": "Favorite artists empty state title"
   },
-  "collectionFavoriteArtistsEmptySubtitle": "Tap the heart on an artist page to keep them here",
+  "collectionFavoriteArtistsEmptySubtitle": "แตะหัวใจบนหน้าศิลปินเพื่อเก็บไว้ที่นี่",
   "@collectionFavoriteArtistsEmptySubtitle": {
     "description": "Favorite artists empty state subtitle"
   },
@@ -4815,11 +4815,11 @@
   "@backupImportSectionTitle": {
     "description": "Section title for the import/restore card"
   },
-  "backupImportSectionDescription": "Pick a backup file to restore your data. This replaces the current settings, history and library on this device.",
+  "backupImportSectionDescription": "เลือกไฟล์สำรองเพื่อกู้คืนข้อมูล จะแทนที่การตั้งค่า ประวัติ และไลบรารีปัจจุบัน",
   "@backupImportSectionDescription": {
     "description": "Description for the restore action"
   },
-  "backupImportButton": "Choose backup file",
+  "backupImportButton": "เลือกไฟล์สำรอง",
   "@backupImportButton": {
     "description": "Button to pick a backup file to restore"
   },
@@ -4847,11 +4847,11 @@
   "@backupRestoreFailed": {
     "description": "Snackbar when restore fails"
   },
-  "backupInvalidFile": "This file is not a valid Mornye backup",
+  "backupInvalidFile": "ไฟล์นี้ไม่ใช่ไฟล์สำรอง Mornye ที่ถูกต้อง",
   "@backupInvalidFile": {
     "description": "Snackbar when the chosen file is not a valid backup"
   },
-  "backupRestoreRestartHint": "Restart the app to make sure every change is applied.",
+  "backupRestoreRestartHint": "รีสตาร์ทแอปเพื่อให้การเปลี่ยนแปลงทั้งหมดมีผล",
   "@backupRestoreRestartHint": {
     "description": "Hint shown after restoring that an app restart is recommended"
   },
@@ -4862,16 +4862,16 @@
   "backupSettingsOnly": "การตั้งค่า only",
   "backupSelectHistory": "ดาวน์โหลด history",
   "backupSelectCollections": "ไลบรารี collections",
-  "backupSelectCollectionsDescription": "Liked tracks, wishlist, favorite artists, playlists and playlist covers.",
+  "backupSelectCollectionsDescription": "เพลงที่ชอบ รายการโปรด ศิลปินโปรด เพลย์ลิสต์ และปกเพลย์ลิสต์",
   "backupSelectExtensions": "ส่วนขยาย and their settings",
   "backupSelectedExportDescription": "บันทึก the selected categories to a backup file. เสียง files are not included.",
   "backupSelectAtLeastOne": "เซเล็กต์ at least one category to create a backup.",
-  "backupSelectedRestoreMessage": "Only the categories listed below will be restored. Categories not included in this backup will stay unchanged. Restoring can replace existing data and cannot be undone.",
+  "backupSelectedRestoreMessage": "จะกู้คืนเฉพาะหมวดหมู่ที่แสดงด้านล่าง หมวดหมู่อื่นจะคงเดิม",
   "backupContentsSettings": "การตั้งค่าแอป",
   "@backupContentsSettings": {
     "description": "Backup contents row label for settings"
   },
-  "backupContentsHistory": "{count} history {count, plural, =1{item} other{items}}",
+  "backupContentsHistory": "{count} ประวัติ {count, plural, =1{รายการ} other{รายการ}}",
   "@backupContentsHistory": {
     "description": "Backup contents row for history count",
     "placeholders": {
@@ -4880,7 +4880,7 @@
       }
     }
   },
-  "backupContentsLiked": "{count} liked {count, plural, =1{track} other{tracks}}",
+  "backupContentsLiked": "{count} ชอบ {count, plural, =1{เพลง} other{เพลง}}",
   "@backupContentsLiked": {
     "description": "Backup contents row for liked tracks count",
     "placeholders": {
@@ -4889,7 +4889,7 @@
       }
     }
   },
-  "backupContentsWishlist": "{count} wishlist {count, plural, =1{track} other{tracks}}",
+  "backupContentsWishlist": "{count} โปรด {count, plural, =1{เพลง} other{เพลง}}",
   "@backupContentsWishlist": {
     "description": "Backup contents row for wishlist tracks count",
     "placeholders": {
@@ -4907,7 +4907,7 @@
       }
     }
   },
-  "backupContentsArtists": "{count, plural, =1{1 favorite artist} other{{count} favorite artists}}",
+  "backupContentsArtists": "{count, plural, =1{1 ศิลปินโปรด} other{{count} ศิลปินโปรด}}",
   "@backupContentsArtists": {
     "description": "Backup contents row for favorite artists count",
     "placeholders": {
@@ -4925,7 +4925,7 @@
       }
     }
   },
-  "backupIncludeSecrets": "Include extension credentials",
+  "backupIncludeSecrets": "รวมข้อมูลเข้าส่วนขยาย",
   "@backupIncludeSecrets": {
     "description": "Toggle to include secret extension settings (tokens, API keys) in the backup"
   },
@@ -5022,7 +5022,7 @@
   "@snackbarNoActionDefined": {
     "description": "Snackbar when an extension button has no action configured"
   },
-  "noTracksFoundForAlbum": "No tracks found for this album",
+  "noTracksFoundForAlbum": "ไม่พบเพลงสำหรับอัลบั้มนี้",
   "@noTracksFoundForAlbum": {
     "description": "Empty state message when an album has no tracks"
   },
@@ -5276,7 +5276,7 @@
   "@editMetadataAutoFill": {
     "description": "Section title for selective online metadata auto-fill in the edit metadata sheet"
   },
-  "editMetadataAutoFillDesc": "Choose a metadata extension, select fields, then review its data before applying",
+  "editMetadataAutoFillDesc": "เลือกส่วนขยายข้อมูลเมตา เลือกฟิลด์ แล้วตรวจสอบข้อมูลก่อนใช้",
   "@editMetadataAutoFillDesc": {
     "description": "Description for the auto-fill section"
   },
@@ -5288,7 +5288,7 @@
   "@editMetadataAutoFillSourceAutomatic": {
     "description": "Automatic source option that follows configured metadata provider priority"
   },
-  "editMetadataAutoFillFind": "Find metadata",
+  "editMetadataAutoFillFind": "ค้นหาข้อมูลเมตา",
   "@editMetadataAutoFillFind": {
     "description": "Button label for finding an online metadata candidate"
   },
@@ -5325,7 +5325,7 @@
   "@editMetadataAutoFillSearching": {
     "description": "Snackbar shown while searching for online metadata"
   },
-  "editMetadataAutoFillNoResults": "No matching metadata found online",
+  "editMetadataAutoFillNoResults": "ไม่พบข้อมูลเมตาที่ตรงกันออนไลน์",
   "@editMetadataAutoFillNoResults": {
     "description": "Snackbar when online metadata search returns no results"
   },
@@ -5333,7 +5333,7 @@
   "@editMetadataAutoFillNoneSelected": {
     "description": "Snackbar when user taps Fetch without selecting any fields"
   },
-  "editMetadataLyricsSearch": "Find lyrics online",
+  "editMetadataLyricsSearch": "ค้นหาเนื้อเพลงออนไลน์",
   "@editMetadataLyricsSearch": {
     "description": "Button in the edit metadata lyrics section that searches every lyrics provider"
   },
@@ -5402,7 +5402,7 @@
   "@editMetadataFieldTrackNum": {
     "description": "Chip label for track number field in auto-fill selector"
   },
-  "editMetadataFieldDiscNum": "Disc #",
+  "editMetadataFieldDiscNum": "ดิสก์ #",
   "@editMetadataFieldDiscNum": {
     "description": "Chip label for disc number field in auto-fill selector"
   },
@@ -5465,7 +5465,7 @@
       }
     }
   },
-  "queueEmptyAlbums": "No album downloads",
+  "queueEmptyAlbums": "ไม่มีการดาวน์โหลดอัลบั้ม",
   "@queueEmptyAlbums": {
     "description": "Empty state title when no album downloads exist"
   },
@@ -5864,7 +5864,7 @@
       }
     }
   },
-  "notifEmbeddingMetadata": "Embedding metadata...",
+  "notifEmbeddingMetadata": "กำลังฝังข้อมูลเมตา...",
   "@notifEmbeddingMetadata": {
     "description": "Notification body while embedding metadata into a downloaded track"
   },
@@ -6140,7 +6140,7 @@
   "@optionsEmbedMetadata": {
     "description": "Settings toggle title for writing metadata into downloaded files"
   },
-  "optionsEmbedMetadataSubtitleOn": "Write metadata, cover art, and embedded lyrics to files",
+  "optionsEmbedMetadataSubtitleOn": "เขียนข้อมูลเมตา ภาพปก และเนื้อเพลงฝังไว้ในไฟล์",
   "@optionsEmbedMetadataSubtitleOn": {
     "description": "Subtitle when metadata embedding is enabled"
   },
@@ -6208,7 +6208,7 @@
   "@queueMoveDown": {
     "description": "Queue item menu action - move the queued item one position later"
   },
-  "editMetadataMusicBrainzButton": "Fetch from MusicBrainz",
+  "editMetadataMusicBrainzButton": "ดึงจาก MusicBrainz",
   "@editMetadataMusicBrainzButton": {
     "description": "Tag editor button that fills genre and album artist from MusicBrainz by ISRC"
   },
@@ -6216,11 +6216,11 @@
   "@editMetadataMusicBrainzFilled": {
     "description": "Snackbar after MusicBrainz suggestions were applied to the tag editor fields"
   },
-  "editMetadataMusicBrainzNothing": "Nothing found on MusicBrainz",
+  "editMetadataMusicBrainzNothing": "ไม่พบข้อมูลใน MusicBrainz",
   "@editMetadataMusicBrainzNothing": {
     "description": "Snackbar when the MusicBrainz lookup returns no data"
   },
-  "editMetadataMusicBrainzNeedsIsrc": "Requires an ISRC tag",
+  "editMetadataMusicBrainzNeedsIsrc": "ต้องการแท็ก ISRC",
   "@editMetadataMusicBrainzNeedsIsrc": {
     "description": "Snackbar when the MusicBrainz lookup is tapped without an ISRC"
   },
@@ -6338,7 +6338,7 @@
   "@logIssueTrackNotFoundSuggestion": {
     "description": "Diagnostic badge suggestion when a track is unavailable"
   },
-  "clickableLookingUpArtist": "Looking up artist...",
+  "clickableLookingUpArtist": "กำลังค้นหาศิลปิน...",
   "@clickableLookingUpArtist": {
     "description": "Snackbar shown while clickable artist metadata is being resolved"
   },
@@ -6422,7 +6422,7 @@
       }
     }
   },
-  "a11yTrackByArtist": "{trackName} by {artistName}",
+  "a11yTrackByArtist": "{trackName} โดย {artistName}",
   "@a11yTrackByArtist": {
     "description": "Accessibility label for a queue or list track item",
     "placeholders": {
