@@ -3293,7 +3293,7 @@
   "@libraryFindMovedDownloadsSubtitle": {
     "description": "Subtitle for the Find Moved Downloads action"
   },
-  "libraryFindMovedDownloadsResult": "{relinked, plural, =0{ไม่พบดาวน์โหลดที่ย้าย} =1{เชื่อมต่อ 1 ดาวน์โหลด} other{เชื่อมต่อ {relinked} ดาวน์โหลด}}{missing, p",
+  "libraryFindMovedDownloadsResult": "{relinked, plural, =0{ไม่พบดาวน์โหลดที่ย้าย} =1{เชื่อมต่อ 1 ดาวน์โหลด} other{เชื่อมต่อ {relinked} ดาวน์โหลด}}{missing, plural, =0{} =1{ · ไฟล์ 1 ไฟล์ยังหายไป} other{ · {missing} ไฟล์ยังหายไป}}",
   "@libraryFindMovedDownloadsResult": {
     "description": "Snackbar after Find Moved Downloads: downloads relinked, then downloads whose files are still missing",
     "placeholders": {
