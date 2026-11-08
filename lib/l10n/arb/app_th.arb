@@ -10,8 +10,8 @@
   },
   "libraryLyricsSearchIncomplete": "บางเพลงอ่านไม่ได้ ผลลัพธ์อาจไม่ครบ",
   "libraryLyricsRefresh": "รีเฟรช lyrics search",
-  "networkErrorListing": "The server responded, but its folder listing could not be read. For WebDAV, use the WebDAV endpoint. For HTTP, use a directory listing or direct audio URL.",
-  "networkErrorStorage": "The server was reached, but this device could not save the connection. Check the app log and retry.",
+  "networkErrorListing": "เซิร์ฟเวอร์ตอบสนอง แต่อ่านรายการโฟลเดอร์ไม่ได้ สำหรับ WebDAV ให้ใช้ endpoint WebDAV",
+  "networkErrorStorage": "เข้าถึงเซิร์ฟเวอร์ได้ แต่อุปกรณ์นี้บันทึกการเชื่อมต่อไม่ได้ ตรวจสอบบันทึกแอปและลองใหม่",
   "extensionsUnsecuredStorage": "Use unsecured extension storage",
   "extensionsUnsecuredStorageDescription": "Run extensions without a Linux keyring. The key is saved locally, so anyone with access to your app files can read extension credentials. ปิด uses the system keyring.",
   "extensionsStorageKeyringRequired": "Existing extension data needs its original key. Unlock the system keyring once, then enable unsecured storage again. Your data has been preserved.",
@@ -222,19 +222,19 @@
   "@networkStorage": {
     "description": "Title and navigation label for the screen used to manage network connections and browse remote music folders"
   },
-  "networkErrorUnreachable": "The server could not be reached. Check that this phone can access its network and that the file-sharing service is running. For SMB, port 445 must be reachable.",
+  "networkErrorUnreachable": "เข้าถึงเซิร์ฟเวอร์ไม่ได้ ตรวจสอบว่าโทรศัพท์นี้เข้าถึงเครือข่ายของเซิร์ฟเวอร์ได้ และการแชร์ไฟล์เปิดใช้งานอยู่",
   "@networkErrorUnreachable": {
     "description": "Network access error for an unreachable server, with connection troubleshooting and the SMB port requirement"
   },
-  "networkErrorTimeout": "The server did not respond in time. Check the connection and try again.",
+  "networkErrorTimeout": "เซิร์ฟเวอร์ไม่ตอบสนองทันเวลา ตรวจสอบการเชื่อมต่อและลองใหม่",
   "@networkErrorTimeout": {
     "description": "Network access error when a server operation exceeds its time limit"
   },
-  "networkErrorAuthentication": "The server rejected the sign-in. Check the username, password and domain. Leave the domain blank unless your server requires one.",
+  "networkErrorAuthentication": "เซิร์ฟเวอร์ปฏิเสธการเข้าสู่ระบบ ตรวจสอบชื่อผู้ใช้ รหัสผ่าน และโดเมน ให้เว้นโดเมนว่างไว้หากไม่แน่ใจ",
   "@networkErrorAuthentication": {
     "description": "Network access error when the server rejects credentials; domain refers to the optional SMB authentication domain"
   },
-  "networkErrorPermission": "This account is not allowed to open this share or folder. Check its read permissions on the server.",
+  "networkErrorPermission": "บัญชีนี้ไม่ได้รับอนุญาตให้เปิดแชร์หรือโฟลเดอร์นี้ ตรวจสอบสิทธิ์อ่านบนเซิร์ฟเวอร์",
   "@networkErrorPermission": {
     "description": "Network access error when the server denies account permissions for a shared folder; distinct from the device's local network permission"
   },
@@ -242,7 +242,7 @@
   "@networkErrorLocalPermission": {
     "description": "Network access error when Android denies local network permission; Nearby devices is the Android app permission setting"
   },
-  "networkErrorShare": "The share or folder was not found. For SMB, use the server's shared folder name after its address, such as smb://server/Music/.",
+  "networkErrorShare": "ไม่พบแชร์หรือโฟลเดอร์ สำหรับ SMB ให้ใช้ชื่อโฟลเดอร์แชร์ของเซิร์ฟเวอร์หลังที่อยู่ เช่น //server/share/",
   "@networkErrorShare": {
     "description": "Network access error for a missing share or folder; share means an SMB shared folder and the example illustrates its URL path"
   },
@@ -250,7 +250,7 @@
   "@networkErrorProtocol": {
     "description": "Network access error for incompatible SMB protocol versions; preserve the version names SMB1, SMB2, and SMB3"
   },
-  "networkErrorAddress": "Check the server address. Use smb://server/share/ for SMB, or an http:// or https:// address for WebDAV and HTTP.",
+  "networkErrorAddress": "ตรวจสอบที่อยู่เซิร์ฟเวอร์ ใช้ smb://server/share/ สำหรับ SMB หรือ http:// หรือ https:// สำหรับ WebDAV",
   "@networkErrorAddress": {
     "description": "Network access error for an invalid address, with URL scheme examples for SMB, WebDAV, and HTTP connections"
   },
@@ -330,7 +330,7 @@
   "@networkNoFiles": {
     "description": "Empty folder message when the network listing contains no directories or supported audio files"
   },
-  "networkConnectionError": "Could not access the network source. Check the server address, credentials, and connection, then retry.",
+  "networkConnectionError": "เข้าถึงแหล่งเครือข่ายไม่ได้ ตรวจสอบที่อยู่ เซิร์ฟเวอร์ ข้อมูลเข้าสู่ระบบ และการเชื่อมต่อ แล้วลองใหม่",
   "@networkConnectionError": {
     "description": "Fallback network access error when the failure has no more specific classification"
   },
@@ -375,7 +375,7 @@
   "usbDsdOverPcm": "DSD over PCM (DoP)",
   "usbDsdOverPcmDescription": "เปิดใช้งาน only if your DAC explicitly supports DoP. ส่งs DSF/DFF and WavPack DSD inside a PCM carrier when native DSD is unavailable. An incompatible device may play noise; leave off for ordinary USB headsets.",
   "usbDsdUnsupported": "This DSD format or connected DAC is not supported. การเล่น stopped.",
-  "usbPermissionDenied": "USB permission was not granted. Using normal playback.",
+  "usbPermissionDenied": "ไม่ได้รับอนุญาตสิทธิ์ USB ใช้การเล่นปกติ",
   "usbBitPerfectPending": "Waiting for the next track and a compatible USB output.",
   "usbOutputReady": "USB output is ready. Start playback to activate it.",
   "usbOutputPreparing": "Preparing USB audio output...",
@@ -1060,7 +1060,7 @@
   "@trackMetadataDelete": {
     "description": "Action button - delete track"
   },
-  "setupGrantPermission": "Grant Permission",
+  "setupGrantPermission": "อนุญาตสิทธิ์",
   "@setupGrantPermission": {
     "description": "Button to request permission"
   },
@@ -1159,7 +1159,7 @@
   "@setupStorageRequired": {
     "description": "Title when storage permission needed"
   },
-  "setupStorageDescription": "Mornye needs storage permission to save your downloaded music files.",
+  "setupStorageDescription": "Mornye ต้องการสิทธิ์ที่จัดเก็บเพื่อบันทึกไฟล์เพลงที่ดาวน์โหลด",
   "@setupStorageDescription": {
     "description": "Explanation for storage permission"
   },
@@ -1187,7 +1187,7 @@
   "@setupEnableNotifications": {
     "description": "Button to enable notifications"
   },
-  "setupNotificationBackgroundDescription": "Get notified about download progress and completion. This helps you track downloads when the app is in background.",
+  "setupNotificationBackgroundDescription": "รับการแจ้งเตือนความคืบหน้าและการเสร็จสิ้นของการดาวน์โหลด ช่วยให้ติดตามดาวน์โหลดได้แม้แอปจะปิดอยู่",
   "@setupNotificationBackgroundDescription": {
     "description": "Detailed notification explanation"
   },
@@ -1207,7 +1207,7 @@
   "@setupNearbyGranted": {
     "description": "Setup message after the Nearby devices permission is granted"
   },
-  "permissionNearbyDevices": "Nearby devices",
+  "permissionNearbyDevices": "อุปกรณ์ใกล้เคียง",
   "@permissionNearbyDevices": {
     "description": "Nearby devices permission type label; use Android's name for this permission"
   },
@@ -1618,7 +1618,7 @@
   "@errorRateLimited": {
     "description": "Error title - too many requests"
   },
-  "errorRateLimitedMessage": "Too many requests. Please wait a moment before searching again.",
+  "errorRateLimitedMessage": "คำขอมากเกินไป กรุณารอสักครู่ก่อนค้นหาใหม่",
   "@errorRateLimitedMessage": {
     "description": "Error message - rate limit explanation"
   },
@@ -1634,7 +1634,7 @@
   "@errorUrlNotRecognized": {
     "description": "Error title - URL not handled by any extension or service"
   },
-  "errorUrlNotRecognizedMessage": "This link is not supported. Make sure the URL is correct and a compatible extension is installed.",
+  "errorUrlNotRecognizedMessage": "ลิงก์นี้ไม่รองรับ ตรวจสอบว่า URL ถูกต้องและมีส่วนขยายที่เข้ากันได้ติดตั้งอยู่",
   "@errorUrlNotRecognizedMessage": {
     "description": "Error message - URL not recognized explanation"
   },
@@ -1642,7 +1642,7 @@
   "@errorUrlFetchFailed": {
     "description": "Error message - generic URL fetch failure"
   },
-  "errorMissingExtensionSource": "Cannot load {item}: missing extension source",
+  "errorMissingExtensionSource": "โหลด {item} ไม่ได้: ไม่มีแหล่งส่วนขยาย",
   "@errorMissingExtensionSource": {
     "description": "Error - extension source not available",
     "placeholders": {
@@ -2131,7 +2131,7 @@
   "@settingsDownloadSubtitle": {
     "description": "Download settings description"
   },
-  "settingsExtensionsSubtitle": "Manage download providers",
+  "settingsExtensionsSubtitle": "จัดการผู้ให้บริการดาวน์โหลด",
   "@settingsExtensionsSubtitle": {
     "description": "Extensions settings description"
   },
@@ -2490,7 +2490,7 @@
   "@extensionPostProcessingHooks": {
     "description": "Capability - post-processing"
   },
-  "extensionPermissions": "Permissions",
+  "extensionPermissions": "สิทธิ์",
   "@extensionPermissions": {
     "description": "Section header - required permissions"
   },
@@ -2601,7 +2601,7 @@
   "@extensionsDownloadPriority": {
     "description": "Setting - download provider order"
   },
-  "extensionsDownloadPrioritySubtitle": "Set download service order",
+  "extensionsDownloadPrioritySubtitle": "ตั้งค่าลำดับความสำคัญบริการดาวน์โหลด",
   "@extensionsDownloadPrioritySubtitle": {
     "description": "Subtitle for download priority"
   },
@@ -2613,7 +2613,7 @@
   "@extensionsFallbackSubtitle": {
     "description": "Subtitle for download fallback extensions menu"
   },
-  "extensionsNoDownloadProvider": "No extensions with download provider",
+  "extensionsNoDownloadProvider": "ไม่มีส่วนขยายที่มีผู้ให้บริการดาวน์โหลด",
   "@extensionsNoDownloadProvider": {
     "description": "Empty state - no download providers"
   },
@@ -2691,7 +2691,7 @@
   "@downloadAutoConvertSubtitle": {
     "description": "Explanation of safe automatic post-download conversion"
   },
-  "downloadAutoConvertFormat": "Output format",
+  "downloadAutoConvertFormat": "รูปแบบเอาต์พุต",
   "@downloadAutoConvertFormat": {
     "description": "Automatic conversion output format setting"
   },
@@ -2699,7 +2699,7 @@
   "@downloadAutoConvertFormatSubtitle": {
     "description": "Automatic conversion format picker explanation"
   },
-  "downloadAutoConvertBitrate": "Output quality",
+  "downloadAutoConvertBitrate": "คุณภาพเอาต์พุต",
   "@downloadAutoConvertBitrate": {
     "description": "Automatic conversion bitrate setting"
   },
@@ -2791,7 +2791,7 @@
   "@queueClearAll": {
     "description": "Button - clear all queue items"
   },
-  "queueClearAllMessage": "Are you sure you want to clear all downloads?",
+  "queueClearAllMessage": "แน่ใจว่าต้องการล้างคิวดาวน์โหลดทั้งหมด?",
   "@queueClearAllMessage": {
     "description": "Clear queue confirmation"
   },
@@ -2819,7 +2819,7 @@
   "@settingsDownloadNetworkSubtitle": {
     "description": "Subtitle explaining network preference"
   },
-  "settingsConcurrentDownloads": "Concurrent downloads",
+  "settingsConcurrentDownloads": "การดาวน์โหลดพร้อมกัน",
   "@settingsConcurrentDownloads": {
     "description": "Setting title - how many tracks download at the same time"
   },
@@ -3064,7 +3064,7 @@
       }
     }
   },
-  "discographySkippedDownloaded": "{added} added, {skipped} already downloaded",
+  "discographySkippedDownloaded": "{added} เพิ่มแล้ว {skipped} ดาวน์โหลดอยู่แล้ว",
   "@discographySkippedDownloaded": {
     "description": "Snackbar - with skipped tracks count",
     "placeholders": {
@@ -3595,7 +3595,7 @@
   "@tutorialDownloadTitle": {
     "description": "Tutorial download page title"
   },
-  "tutorialDownloadDesc": "Pick an available quality, start the download, and follow its progress in the queue.",
+  "tutorialDownloadDesc": "เลือกคุณภาพที่มี เริ่มดาวน์โหลด และติดตามความคืบหน้าในคิว",
   "@tutorialDownloadDesc": {
     "description": "Tutorial download page description"
   },
@@ -3647,11 +3647,11 @@
   "@tutorialSettingsDesc": {
     "description": "Tutorial settings page description"
   },
-  "tutorialSettingsTip1": "Change download location and folder organization",
+  "tutorialSettingsTip1": "เปลี่ยนตำแหน่งดาวน์โหลดและการจัดระเบียบโฟลเดอร์",
   "@tutorialSettingsTip1": {
     "description": "Tutorial settings tip 1"
   },
-  "tutorialSettingsTip2": "Set quality, concurrency, filenames, and conversion preferences",
+  "tutorialSettingsTip2": "ตั้งค่าคุณภาพ การดาวน์โหลดพร้อมกัน ชื่อไฟล์ และการแปลงไฟล์",
   "@tutorialSettingsTip2": {
     "description": "Tutorial settings tip 2"
   },
@@ -3676,7 +3676,7 @@
   "whatsNewLinkTitle": "Mornye ลิงก์",
   "whatsNewLinkDesc": "Pair your phone and computer on the same network. Mornye ลิงก์ is in beta.",
   "whatsNewLinkPlayTitle": "เล่น across devices",
-  "whatsNewLinkPlayBody": "Browse your computer's library on your phone, control what it plays, and hand playback over without losing your place.",
+  "whatsNewLinkPlayBody": "เรียกดูไลบรารีของคอมพิวเตอร์บนโทรศัพท์ ควบคุมการเล่น และส่งมอบการเล่นต่อไปได้โดยไม่หยุดชะงัก",
   "whatsNewLinkTransferTitle": "ย้าย songs both ways",
   "whatsNewLinkTransferBody": "ส่ง songs to your computer or save them to your phone, right from the song menu.",
   "whatsNewLinkSyncTitle": "Stay in sync",
@@ -3690,7 +3690,7 @@
   "whatsNewHomeAnalysisTitle": "การวิเคราะห์เพลง",
   "whatsNewHomeAnalysisBody": "Mornye สามารถวิเคราะห์เสียงเพลงเพื่อแนะนำที่แม่นยำขึ้น ฟีเจอร์นี้จะปิดอยู่จนกว่าคุณจะเปิดในการตั้งค่า",
   "whatsNewPlayerTitle": "เล่นer and lyrics",
-  "whatsNewPlayerDesc": "Smoother playback, and lyrics in any language.",
+  "whatsNewPlayerDesc": "การเล่นลื่นกว่า และเนื้อเพลงในทุกภาษา",
   "whatsNewPlayerGaplessTitle": "เล่นต่อเนื่อง",
   "whatsNewPlayerGaplessBody": "อัลบั้ม flow from one song into the next without a pause.",
   "whatsNewPlayerTranslateTitle": "แปล lyrics",
@@ -3699,7 +3699,7 @@
   "whatsNewPlayerTimingBody": "ย้าย synced lyrics earlier or later when they drift from the song.",
   "whatsNewPlayerAutoTitle": "Android Auto",
   "whatsNewPlayerAutoBody": "Browse and play your ไลบรารี from your car's screen.",
-  "whatsNewPlayerExclusiveTitle": "Exclusive output",
+  "whatsNewPlayerExclusiveTitle": "เอาต์พุตแบบเฉพาะ",
   "whatsNewPlayerExclusiveBody": "ส่ง audio straight to your output device without the system mixer.",
   "whatsNewLibraryTitle": "ไลบรารี and search",
   "whatsNewLibraryDesc": "ใหม่ ways to find and organize your music.",
@@ -3717,8 +3717,8 @@
   "whatsNewFasterLibraryBody": "แท็บและอัลบั้มเปิดเร็วขึ้น และเลื่อนลื่นขึ้น",
   "whatsNewFasterNetworkTitle": "Faster network music",
   "whatsNewFasterNetworkBody": "แชร์เครือข่าย scan many times faster, and Subsonic servers sync with far fewer requests.",
-  "whatsNewFasterQueueTitle": "Long queues that last",
-  "whatsNewFasterQueueBody": "Large queues save quickly and come back after a restart.",
+  "whatsNewFasterQueueTitle": "คู่อย่างยาวนาน",
+  "whatsNewFasterQueueBody": "คิวขนาดใหญ่บันทึกได้เร็ว และคืนมาหลังรีสตาร์ท",
   "whatsNewFasterBackgroundTitle": "สว่างer in the background",
   "whatsNewFasterBackgroundBody": "The app starts faster and does less work while music plays.",
   "whatsNewDone": "Start listening",
@@ -3759,7 +3759,7 @@
       }
     }
   },
-  "cleanupOrphanedDownloadsNone": "No orphaned entries found",
+  "cleanupOrphanedDownloadsNone": "ไม่พบรายการที่ทิ้งรอด",
   "@cleanupOrphanedDownloadsNone": {
     "description": "Snackbar when no orphans found"
   },
@@ -3832,7 +3832,7 @@
   "@libraryPlaybackNormalizationSubtitle": {
     "description": "Subtitle explaining playback volume normalization"
   },
-  "playbackNormalizationMode": "Gain mode",
+  "playbackNormalizationMode": "โหมดเกน",
   "@playbackNormalizationMode": {
     "description": "Label for choosing between track and album ReplayGain during playback"
   },
@@ -3844,11 +3844,11 @@
   "@playbackNormalizationModeAlbum": {
     "description": "Gain mode that keeps the loudness differences inside an album"
   },
-  "playbackNormalizationPreamp": "Pre-amp",
+  "playbackNormalizationPreamp": "เพรแอมป์",
   "@playbackNormalizationPreamp": {
     "description": "Label for the dB offset applied on top of ReplayGain during playback"
   },
-  "playbackNormalizationPreampValue": "{gain} dB (target {target} LUFS)",
+  "playbackNormalizationPreampValue": "{gain} dB (เป้าหมาย {target} LUFS)",
   "@playbackNormalizationPreampValue": {
     "description": "Pre-amp value with the resulting target loudness",
     "placeholders": {
@@ -4173,7 +4173,7 @@
       }
     }
   },
-  "queueFlacNoReliableMatches": "No reliable online matches found for the selection",
+  "queueFlacNoReliableMatches": "ไม่พบข้อมูลออนไลน์ที่น่าเชื่อถือสำหรับรายการที่เลือก",
   "@queueFlacNoReliableMatches": {
     "description": "Snackbar when no safe FLAC redownload matches were found"
   },
@@ -4398,7 +4398,7 @@
   "@collectionCreatePlaylist": {
     "description": "Action to create a new playlist"
   },
-  "collectionNoPlaylistsYet": "No playlists yet",
+  "collectionNoPlaylistsYet": "ยังไม่มีเพลย์ลิสต์",
   "@collectionNoPlaylistsYet": {
     "description": "Empty state title when user has no playlists"
   },
@@ -4429,7 +4429,7 @@
       }
     }
   },
-  "collectionAlreadyInPlaylist": "Already in \"{playlistName}\"",
+  "collectionAlreadyInPlaylist": "อยู่ใน \"{playlistName}\" แล้ว",
   "@collectionAlreadyInPlaylist": {
     "description": "Snackbar when track already exists in playlist",
     "placeholders": {
@@ -4486,7 +4486,7 @@
   "@collectionPlaylistEmptyTitle": {
     "description": "Playlist empty state title"
   },
-  "collectionPlaylistEmptySubtitle": "Long-press + on any track to add it here",
+  "collectionPlaylistEmptySubtitle": "กดค้าง + บนเพลงใดก็ได้เพื่อเพิ่มที่นี่",
   "@collectionPlaylistEmptySubtitle": {
     "description": "Playlist empty state subtitle"
   },
@@ -4585,7 +4585,7 @@
   "@artistOptionRemoveFromFavorites": {
     "description": "Action label - remove artist from favorite artists"
   },
-  "collectionPlaylistChangeCover": "Change cover image",
+  "collectionPlaylistChangeCover": "เปลี่ยนภาพปก",
   "@collectionPlaylistChangeCover": {
     "description": "Bottom sheet action to pick a custom cover image for a playlist"
   },
@@ -4664,7 +4664,7 @@
       }
     }
   },
-  "downloadedAlbumDownloadedCount": "{count} downloaded",
+  "downloadedAlbumDownloadedCount": "{count} ดาวน์โหลดแล้ว",
   "@downloadedAlbumDownloadedCount": {
     "description": "Downloaded tracks count badge",
     "placeholders": {
@@ -4783,7 +4783,7 @@
   "@settingsDonate": {
     "description": "Settings menu item - donate page"
   },
-  "settingsDonateSubtitle": "Buy the developer a coffee",
+  "settingsDonateSubtitle": "ซื้อคาเฟ่ให้ผู้พัฒนา",
   "@settingsDonateSubtitle": {
     "description": "Subtitle for donate menu item"
   },
@@ -4867,7 +4867,7 @@
   "backupSelectedExportDescription": "บันทึก the selected categories to a backup file. เสียง files are not included.",
   "backupSelectAtLeastOne": "เซเล็กต์ at least one category to create a backup.",
   "backupSelectedRestoreMessage": "Only the categories listed below will be restored. Categories not included in this backup will stay unchanged. Restoring can replace existing data and cannot be undone.",
-  "backupContentsSettings": "App settings",
+  "backupContentsSettings": "การตั้งค่าแอป",
   "@backupContentsSettings": {
     "description": "Backup contents row label for settings"
   },
@@ -5026,7 +5026,7 @@
   "@noTracksFoundForAlbum": {
     "description": "Empty state message when an album has no tracks"
   },
-  "downloadLocationSubtitle": "Choose where to save your downloaded tracks",
+  "downloadLocationSubtitle": "เลือกตำแหน่งบันทึกไฟล์ที่ดาวน์โหลด",
   "@downloadLocationSubtitle": {
     "description": "Subtitle shown in the download location picker sheet"
   },
@@ -5130,7 +5130,7 @@
   "@downloadNeteaseIncludeTranslation": {
     "description": "Setting to include translated lyrics from Netease"
   },
-  "downloadNeteaseIncludeTranslationEnabled": "Chinese translation lines included",
+  "downloadNeteaseIncludeTranslationEnabled": "รวมบรรทัดแปลภาษาจีน",
   "@downloadNeteaseIncludeTranslationEnabled": {
     "description": "Subtitle when Netease translation is on"
   },
@@ -5146,7 +5146,7 @@
   "@downloadNeteaseIncludeRomanizationEnabled": {
     "description": "Subtitle when Netease romanization is on"
   },
-  "downloadNeteaseIncludeRomanizationDisabled": "No romanization",
+  "downloadNeteaseIncludeRomanizationDisabled": "ไม่มีการถอดอักษร",
   "@downloadNeteaseIncludeRomanizationDisabled": {
     "description": "Subtitle when Netease romanization is off"
   },
