@@ -12,11 +12,11 @@
   "libraryLyricsRefresh": "รีเฟรช lyrics search",
   "networkErrorListing": "เซิร์ฟเวอร์ตอบสนอง แต่อ่านรายการโฟลเดอร์ไม่ได้ สำหรับ WebDAV ให้ใช้ endpoint WebDAV",
   "networkErrorStorage": "เข้าถึงเซิร์ฟเวอร์ได้ แต่อุปกรณ์นี้บันทึกการเชื่อมต่อไม่ได้ ตรวจสอบบันทึกแอปและลองใหม่",
-  "extensionsUnsecuredStorage": "Use unsecured extension storage",
+  "extensionsUnsecuredStorage": "ใช้ที่จัดเก็บส่วนขยายแบบไม่ปลอดภัย",
   "extensionsUnsecuredStorageDescription": "Run extensions without a Linux keyring. The key is saved locally, so anyone with access to your app files can read extension credentials. ปิด uses the system keyring.",
   "extensionsStorageKeyringRequired": "ข้อมูลส่วนขยายที่มีอยู่ต้องการคีย์ต้นฉบับ ปลดล็อกคียริงระบบครั้งเดียว แล้วเปิดใช้งานที่จัดเก็บไม่ปลอดภัยอีกครั้ง",
   "extensionsStorageKeyConflict": "The local and system keyring keys differ. ที่เก็บข้อมูล was not changed and both keys were preserved.",
-  "extensionsStorageKeyringUnavailable": "The system keyring is unavailable or locked. Start or unlock it before switching to secure storage. Your local key has been preserved.",
+  "extensionsStorageKeyringUnavailable": "คียริงระบบไม่พร้อมใช้งานหรือถูกล็อก ให้เริ่มหรือปลดล็อกก่อนเปลี่ยนไปใช้ที่จัดเก็บแบบปลอดภัย",
   "linkFileActionOn": "{action} บน {name}",
   "@linkFileActionOn": {
     "description": "File operation on a named linked computer",
@@ -89,7 +89,7 @@
       }
     }
   },
-  "linkFileJobFailedCount": "{count} failed",
+  "linkFileJobFailedCount": "{count} ล้มเหลว",
   "@linkFileJobFailedCount": {
     "placeholders": {
       "count": {
@@ -116,7 +116,7 @@
   "linkFileJobQueued": "คิวd",
   "linkFileJobCompleted": "เสร็จed",
   "linkFileChanged": "The file changed since the preview. ตัวอย่าง it again before saving.",
-  "linkFileOperationFailed": "The operation could not be completed. Check the computer's logs for details.",
+  "linkFileOperationFailed": "ดำเนินการไม่สำเร็จ ตรวจสอบบันทึกของคอมพิวเตอร์เพื่อรายละเอียด",
   "trackBpm": "BPM",
   "trackMood": "ความรู้สึก",
   "subsonicAddToLibrary": "เพิ่มเซิร์ฟเวอร์ to ไลบรารี",
@@ -190,11 +190,11 @@
   "@networkUploadCancelled": {
     "description": "Snackbar when the listener cancels uploading Library songs to network storage"
   },
-  "networkUploadFailed": "Couldn't upload the songs. Check the server connection and that this account can write to the folder.",
+  "networkUploadFailed": "อัปโหลดเพลงไม่ได้ ตรวจสอบการเชื่อมต่อเซิร์ฟเวอร์และว่าบัญชีนี้เขียนโฟลเดอร์นี้ได้หรือไม่",
   "@networkUploadFailed": {
     "description": "Snackbar when uploading Library songs to network storage fails as a whole"
   },
-  "networkUploadReadOnly": "This connection doesn't accept uploads. Choose an SMB or WebDAV folder.",
+  "networkUploadReadOnly": "การเชื่อมต่อนี้ไม่รองรับการอัปโหลด เลือกโฟลเดอร์ SMB หรือ WebDAV",
   "@networkUploadReadOnly": {
     "description": "Snackbar when the chosen upload destination is a read-only connection or no longer exists"
   },
@@ -290,7 +290,7 @@
   "@networkAddress": {
     "description": "Required connection form field for the server or direct audio URL, using the scheme appropriate to the selected protocol"
   },
-  "networkProtocol": "Protocol",
+  "networkProtocol": "โปรโตคอล",
   "@networkProtocol": {
     "description": "Connection form section heading for choosing SMB, WebDAV, or HTTP / HTTPS"
   },
@@ -302,7 +302,7 @@
   "@networkPassword": {
     "description": "Optional connection form field for the server account password, with input characters hidden"
   },
-  "networkDomain": "Domain (optional)",
+  "networkDomain": "โดเมน (ไม่บังคับ)",
   "@networkDomain": {
     "description": "Optional connection form field shown only for SMB; refers to the authentication domain, not the server's internet domain name"
   },
@@ -314,11 +314,11 @@
   "@networkErrorCertificate": {
     "description": "Network access error for HTTPS certificate verification failure, directing the user to review the certificate in the connection form; unrelated to SMB authentication"
   },
-  "networkCertificatePrompt": "This server uses an untrusted HTTPS certificate. Routers and NAS devices often use self-signed certificates. Verify the server address and SHA-256 fingerprint before trusting it. Trust applies only to this certificate on this server; a changed certificate requires approval again.",
+  "networkCertificatePrompt": "เซิร์ฟเวอร์นี้ใช้ใบรับรอง HTTPS ที่ไม่น่าเชื่อถือ เราเตอร์และ NAS มักใช้ใบรับรองเซลฟ์ไซน์",
   "@networkCertificatePrompt": {
     "description": "Connection form warning shown above the HTTPS origin and certificate SHA-256 fingerprint; approval trusts only that fingerprint for this connection's HTTPS origin, not a global certificate authority or an SMB server"
   },
-  "networkTrustCertificate": "Trust certificate and retry",
+  "networkTrustCertificate": "เชื่อถือใบรับรองและลองใหม่",
   "@networkTrustCertificate": {
     "description": "Action approving the displayed certificate SHA-256 fingerprint for this connection's HTTPS origin and retrying connect-and-save; does not grant global certificate trust"
   },
@@ -326,7 +326,7 @@
   "@networkRemoveConnection": {
     "description": "Connection form action that removes the saved connection and its credentials, without deleting files on the server"
   },
-  "networkNoFiles": "No supported music files or folders found.",
+  "networkNoFiles": "ไม่พบไฟล์เพลงหรือโฟลเดอร์ที่รองรับ",
   "@networkNoFiles": {
     "description": "Empty folder message when the network listing contains no directories or supported audio files"
   },
@@ -335,10 +335,10 @@
     "description": "Fallback network access error when the failure has no more specific classification"
   },
   "extensionAccountTitle": "ส่วนขยาย account",
-  "extensionAccountInvalidForm": "The extension returned an invalid account form.",
-  "extensionAccountRestartLogin": "Restart account login to continue.",
+  "extensionAccountInvalidForm": "ส่วนขยายคืนฟอร์มบัญชีที่ไม่ถูกต้อง",
+  "extensionAccountRestartLogin": "เริ่มล็อกอินบัญชีใหม่เพื่อดำเนินต่อ",
   "extensionAccountRequiredValue": "กรุณากรอกค่า",
-  "extensionAccountInvalidNumber": "Enter a valid number.",
+  "extensionAccountInvalidNumber": "กรุณากรอกหมายเลขที่ถูกต้อง",
   "settingsPlaybackSubtitle": "เล่นer, volume, อัตโนมัติMix, and audio output",
   "sectionPlayer": "เล่นer",
   "sectionVolumeAndTransitions": "ระดับเสียง and transitions",
@@ -365,7 +365,7 @@
   "exclusiveOutputPending": "Takes the device when a track plays.",
   "exclusiveOutputActive": "กำลังเล่น in exclusive mode.",
   "exclusiveOutputUnavailableWindows": "The device refused exclusive access, so this track plays through the Windows mixer. ปิด other apps using the device, or allow exclusive control in the device's Windows sound properties.",
-  "exclusiveOutputUnavailableMacos": "Another app holds the output device, so this track plays through the system mixer.",
+  "exclusiveOutputUnavailableMacos": "แอปอื่นครอบอุปกรณ์เอาต์พุท ดังนั้นเพลงนี้เล่นผ่านมิกเซอร์ระบบ",
   "exclusiveOutputUnavailableLinux": "The ALSA device is busy, usually held by the sound server, so this track plays through it. Set the card's profile to ปิด in the sound settings, or choose another device.",
   "exclusiveOutputDevice": "Output device",
   "exclusiveOutputDeviceFirst": "First sound card",
@@ -446,7 +446,7 @@
   "@navSettings": {
     "description": "Bottom navigation - Settings tab"
   },
-  "navStore": "Repo",
+  "navStore": "ที่เก็บ",
   "@navStore": {
     "description": "Bottom navigation - Extension repo tab"
   },
@@ -474,7 +474,7 @@
   "@searchLibraryPrompt": {
     "description": "Shown on the desktop Search page when the Library scope has no search words yet"
   },
-  "searchBrowse": "Browse",
+  "searchBrowse": "เรียกดู",
   "@searchBrowse": {
     "description": "Section header for home feed tiles on the desktop Search page"
   },
@@ -636,7 +636,7 @@
   "@optionsPrimaryProviderSubtitle": {
     "description": "Subtitle for primary provider"
   },
-  "optionsUsingExtension": "Using extension: {extensionName}",
+  "optionsUsingExtension": "กำลังใช้ส่วนขยาย: {extensionName}",
   "@optionsUsingExtension": {
     "description": "Shows active extension name",
     "placeholders": {
@@ -649,7 +649,7 @@
   "@optionsDefaultSearchTab": {
     "description": "Title for the preferred default search tab setting"
   },
-  "optionsDefaultSearchTabSubtitle": "Choose which tab opens first for new search results.",
+  "optionsDefaultSearchTabSubtitle": "เลือกแท็บที่เปิดก่อนสำหรับผลการค้นหาใหม่",
   "@optionsDefaultSearchTabSubtitle": {
     "description": "Subtitle for the preferred default search tab setting"
   },
@@ -849,11 +849,11 @@
   "@optionsClearHistorySubtitle": {
     "description": "Subtitle for clear history"
   },
-  "optionsDetailedLogging": "Detailed Logging",
+  "optionsDetailedLogging": "บันทึกรายละเอียด",
   "@optionsDetailedLogging": {
     "description": "Enable verbose logs for debugging"
   },
-  "optionsDetailedLoggingOn": "Detailed logs are being recorded",
+  "optionsDetailedLoggingOn": "กำลังบันทึกบันทึกรายละเอียด",
   "@optionsDetailedLoggingOn": {
     "description": "Status when logging enabled"
   },
@@ -1419,7 +1419,7 @@
       }
     }
   },
-  "collectionExportM3uNone": "No downloaded files to export",
+  "collectionExportM3uNone": "ไม่มีไฟล์ที่ดาวน์โหลดให้ส่งออก",
   "@collectionExportM3uNone": {
     "description": "Snackbar when an M3U8 export finds no local files"
   },
@@ -2426,7 +2426,7 @@
   "@storeAddRepoButton": {
     "description": "Button to submit a new repository URL"
   },
-  "storeChangeRepoTooltip": "Change repository",
+  "storeChangeRepoTooltip": "เปลี่ยนที่เก็บ",
   "@storeChangeRepoTooltip": {
     "description": "Tooltip for the change-repository icon button in the app bar"
   },
@@ -2454,7 +2454,7 @@
   "@storeEmptyNoResults": {
     "description": "Message when search/filter returns no results"
   },
-  "extensionId": "ID",
+  "extensionId": "รหัส",
   "@extensionId": {
     "description": "Extension detail - unique ID"
   },
@@ -2478,7 +2478,7 @@
   "@extensionLyricsProvider": {
     "description": "Capability - provides lyrics"
   },
-  "extensionUrlHandler": "URL Handler",
+  "extensionUrlHandler": "ตัวจัดการ URL",
   "@extensionUrlHandler": {
     "description": "Capability - handles URLs"
   },
@@ -2486,7 +2486,7 @@
   "@extensionQualityOptions": {
     "description": "Capability - quality selection"
   },
-  "extensionPostProcessingHooks": "Post-Processing Hooks",
+  "extensionPostProcessingHooks": "ฮุคหลังการประมวลผล",
   "@extensionPostProcessingHooks": {
     "description": "Capability - post-processing"
   },
@@ -2514,11 +2514,11 @@
   "@extensionCustomTrackMatching": {
     "description": "Capability - custom track matching algorithm"
   },
-  "extensionPostProcessing": "Post-Processing",
+  "extensionPostProcessing": "หลังการประมวลผล",
   "@extensionPostProcessing": {
     "description": "Capability - post-download processing"
   },
-  "extensionHooksAvailable": "{count} hook(s) available",
+  "extensionHooksAvailable": "{count} ฮุคพร้อมใช้งาน",
   "@extensionHooksAvailable": {
     "description": "Post-processing hooks count",
     "placeholders": {
@@ -2527,7 +2527,7 @@
       }
     }
   },
-  "extensionPatternsCount": "{count} pattern(s)",
+  "extensionPatternsCount": "{count} รูปแบบ",
   "@extensionPatternsCount": {
     "description": "URL patterns count",
     "placeholders": {
@@ -2536,7 +2536,7 @@
       }
     }
   },
-  "extensionStrategy": "Strategy: {strategy}",
+  "extensionStrategy": "กลยุทธ์: {strategy}",
   "@extensionStrategy": {
     "description": "Track matching strategy name",
     "placeholders": {
@@ -2553,7 +2553,7 @@
   "@extensionsInstalledSection": {
     "description": "Section header - installed extensions"
   },
-  "extensionsNoExtensions": "No extensions installed",
+  "extensionsNoExtensions": "ไม่มีส่วนขยายที่ติดตั้ง",
   "@extensionsNoExtensions": {
     "description": "Empty state - no extensions"
   },
@@ -2633,11 +2633,11 @@
   "@extensionsSearchProvider": {
     "description": "Setting - search provider selection"
   },
-  "extensionsNoCustomSearch": "No extensions with custom search",
+  "extensionsNoCustomSearch": "ไม่มีส่วนขยายที่มีการค้นหากำหนดเอง",
   "@extensionsNoCustomSearch": {
     "description": "Empty state - no search providers"
   },
-  "extensionsSearchProviderDescription": "Choose which service to use for searching tracks",
+  "extensionsSearchProviderDescription": "เลือกบริการที่จะใช้ค้นหาเพลง",
   "@extensionsSearchProviderDescription": {
     "description": "Search provider setting description"
   },
@@ -3715,7 +3715,7 @@
   "whatsNewFasterDesc": "Quicker and lighter, especially with large libraries.",
   "whatsNewFasterLibraryTitle": "A quicker ไลบรารี",
   "whatsNewFasterLibraryBody": "แท็บและอัลบั้มเปิดเร็วขึ้น และเลื่อนลื่นขึ้น",
-  "whatsNewFasterNetworkTitle": "Faster network music",
+  "whatsNewFasterNetworkTitle": "เพลงเครือข่ายเร็วขึ้น",
   "whatsNewFasterNetworkBody": "แชร์เครือข่าย scan many times faster, and Subsonic servers sync with far fewer requests.",
   "whatsNewFasterQueueTitle": "คู่อย่างยาวนาน",
   "whatsNewFasterQueueBody": "คิวขนาดใหญ่บันทึกได้เร็ว และคืนมาหลังรีสตาร์ท",
@@ -3771,11 +3771,11 @@
   "@cacheSummaryTitle": {
     "description": "Heading for cache summary card"
   },
-  "cacheSummarySubtitle": "Clearing cache will not remove downloaded music files.",
+  "cacheSummarySubtitle": "การล้างแคชจะไม่ลบไฟล์เพลงที่ดาวน์โหลด",
   "@cacheSummarySubtitle": {
     "description": "Helper text for cache summary card"
   },
-  "cacheEstimatedTotal": "Estimated cache usage: {size}",
+  "cacheEstimatedTotal": "การใช้แคชโดยประมาณ: {size}",
   "@cacheEstimatedTotal": {
     "description": "Total cache size shown in summary",
     "placeholders": {
@@ -3792,7 +3792,7 @@
   "@cacheSectionMaintenance": {
     "description": "Section header for cleanup actions"
   },
-  "cacheAppDirectory": "App cache directory",
+  "cacheAppDirectory": "ไดเรกทอรีแคชแอป",
   "@cacheAppDirectory": {
     "description": "Cache item title for app cache directory"
   },
@@ -3800,11 +3800,11 @@
   "@cacheAppDirectoryDesc": {
     "description": "Description of what app cache directory contains"
   },
-  "cacheTempDirectory": "Temporary directory",
+  "cacheTempDirectory": "ไดเรกทอรีชั่วคราว",
   "@cacheTempDirectory": {
     "description": "Cache item title for temporary files directory"
   },
-  "cacheTempDirectoryDesc": "Temporary files from downloads and audio conversion.",
+  "cacheTempDirectoryDesc": "ไฟล์ชั่วคราวจากการดาวน์โหลดและแปลงเสียง",
   "@cacheTempDirectoryDesc": {
     "description": "Description of what temporary directory contains"
   },
@@ -3894,7 +3894,7 @@
   "@cacheCleanupUnusedDesc": {
     "description": "Description of what cleanup unused data does"
   },
-  "cacheNoData": "No cached data",
+  "cacheNoData": "ไม่มีข้อมูลแคช",
   "@cacheNoData": {
     "description": "Label when cache category has no data"
   },
@@ -3919,7 +3919,7 @@
       }
     }
   },
-  "cacheEntries": "{count} entries",
+  "cacheEntries": "{count} รายการ",
   "@cacheEntries": {
     "description": "Track cache entry count",
     "placeholders": {
@@ -3928,7 +3928,7 @@
       }
     }
   },
-  "cacheClearSuccess": "Cleared: {target}",
+  "cacheClearSuccess": "ล้างแล้ว: {target}",
   "@cacheClearSuccess": {
     "description": "Snackbar after clearing selected cache",
     "placeholders": {
@@ -3958,11 +3958,11 @@
   "@cacheClearAllConfirmMessage": {
     "description": "Dialog message before clearing all caches"
   },
-  "cacheClearAll": "Clear all cache",
+  "cacheClearAll": "ล้างแคชทั้งหมด",
   "@cacheClearAll": {
     "description": "Button label to clear all caches"
   },
-  "cacheCleanupUnused": "Cleanup unused data",
+  "cacheCleanupUnused": "ทำความสะอาดข้อมูลที่ไม่ใช้",
   "@cacheCleanupUnused": {
     "description": "Action title for cleaning unused entries"
   },
@@ -3970,7 +3970,7 @@
   "@cacheCleanupUnusedSubtitle": {
     "description": "Subtitle for cleanup unused data action"
   },
-  "cacheCleanupResult": "Cleanup completed: {downloadCount} orphaned downloads, {libraryCount} missing library entries",
+  "cacheCleanupResult": "ทำความสะอาดเสร็จสิ้น: {downloadCount} ดาวน์โหลดทิ้งรอด, {libraryCount} รายการไลบรารีหายไป",
   "@cacheCleanupResult": {
     "description": "Snackbar after unused data cleanup",
     "placeholders": {
@@ -4156,7 +4156,7 @@
   "@trackReEnrichSuccess": {
     "description": "Snackbar after successful re-enrichment"
   },
-  "trackReEnrichFfmpegFailed": "FFmpeg metadata embed failed",
+  "trackReEnrichFfmpegFailed": "ฝังข้อมูลเมตาด้วย FFmpeg ล้มเหลว",
   "@trackReEnrichFfmpegFailed": {
     "description": "Snackbar when FFmpeg embed fails for MP3/Opus"
   },
@@ -4282,7 +4282,7 @@
       }
     }
   },
-  "trackConvertFailed": "Conversion failed",
+  "trackConvertFailed": "แปลงไฟล์ล้มเหลว",
   "@trackConvertFailed": {
     "description": "Snackbar when conversion fails"
   },
@@ -4354,7 +4354,7 @@
       }
     }
   },
-  "cueSplitFailed": "CUE split failed",
+  "cueSplitFailed": "แยก CUE ล้มเหลว",
   "@cueSplitFailed": {
     "description": "Snackbar when CUE split fails"
   },
@@ -4370,7 +4370,7 @@
   "@actionCreate": {
     "description": "Generic action button - create"
   },
-  "collectionFoldersTitle": "My folders",
+  "collectionFoldersTitle": "โฟลเดอร์ของฉัน",
   "@collectionFoldersTitle": {
     "description": "Library section title for custom folders"
   },
@@ -4378,7 +4378,7 @@
   "@collectionWishlist": {
     "description": "Custom folder for saved tracks to download later"
   },
-  "collectionLoved": "Loved",
+  "collectionLoved": "โปรด",
   "@collectionLoved": {
     "description": "Custom folder for favorite tracks"
   },
@@ -4747,15 +4747,15 @@
   "@lyricsProviderLyricsPlusDesc": {
     "description": "Description for LyricsPlus provider"
   },
-  "lyricsProviderZarzLrcDesc": "Word-by-word Apple Music lyrics from Zarz-LRC",
+  "lyricsProviderZarzLrcDesc": "เนื้อเพลงคำต่อคำ Apple Music จาก Zarz-LRC",
   "@lyricsProviderZarzLrcDesc": {
     "description": "Description for the first-party Zarz-LRC provider"
   },
-  "lyricsProviderLrcRedDesc": "Word-by-word Apple Music lyrics, matched by recording",
+  "lyricsProviderLrcRedDesc": "เนื้อเพลงคำต่อคำ Apple Music จับคู่ด้วยการบันทึกเสียง",
   "@lyricsProviderLrcRedDesc": {
     "description": "Description for lrc.red provider"
   },
-  "lyricsProviderBetterLyricsDesc": "Word-by-word Apple Music lyrics for popular songs",
+  "lyricsProviderBetterLyricsDesc": "เนื้อเพลงคำต่อคำ Apple Music สำหรับเพลงยอดนิยม",
   "@lyricsProviderBetterLyricsDesc": {
     "description": "Description for BetterLyrics provider, which only answers songs it has already cached"
   },
@@ -6286,7 +6286,7 @@
   "@logCopyLogs": {
     "description": "Tooltip for copying logs"
   },
-  "logClearSearch": "Clear search",
+  "logClearSearch": "ล้างการค้นหา",
   "@logClearSearch": {
     "description": "Tooltip for clearing the log search field"
   },
@@ -6342,7 +6342,7 @@
   "@clickableLookingUpArtist": {
     "description": "Snackbar shown while clickable artist metadata is being resolved"
   },
-  "clickableInformationUnavailable": "{type} information not available",
+  "clickableInformationUnavailable": "ข้อมูล {type} ไม่พร้อมใช้งาน",
   "@clickableInformationUnavailable": {
     "description": "Snackbar shown when clickable metadata cannot open a destination",
     "placeholders": {
@@ -6359,7 +6359,7 @@
   "@extensionDetailsInformation": {
     "description": "Section title for extension metadata information"
   },
-  "extensionUtilityFunctions": "Utility Functions",
+  "extensionUtilityFunctions": "ฟังก์ชันยูทิลิตี้",
   "@extensionUtilityFunctions": {
     "description": "Capability label for utility-only extensions"
   },
