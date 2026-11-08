@@ -62,7 +62,7 @@
   },
   "linkFileJobsEmpty": "ยังไม่มีการเปลี่ยนแปลงไฟล์",
   "linkFileJobsEmptyMessage": "แก้ไขs, conversions and deletions you start on the computer's songs from this phone appear here.",
-  "linkDesktopFileJobsSubtitle": "Changes requested from your phones",
+  "linkDesktopFileJobsSubtitle": "การเปลี่ยนแปลงที่ขอจากโทรศัพท์ของคุณ",
   "linkDesktopFileJobsEmptyMessage": "แก้ไขs, conversions and deletions requested from your phones appear here.",
   "linkFileJobRequestedBy": "จาก {name}",
   "@linkFileJobRequestedBy": {
@@ -123,7 +123,7 @@
   "subsonicLibraryAdded": "เซิร์ฟเวอร์ added to ไลบรารี",
   "subsonicLibraryDescription": "ซิงค์ the server catalogue and artwork to ไลบรารี. Music stays on your server. สแกนใหม่ it in Local การตั้งค่าไลบรารี to update the catalogue.",
   "subsonicAuthentication": "การยืนยันตัวตน",
-  "subsonicToken": "Salted token",
+  "subsonicToken": "โทเคนที่ผ่านการแฮช",
   "subsonicPasswordAuth": "รหัสผ่าน",
   "subsonicApiKey": "API Key",
   "subsonicUsername": "ชื่อผู้ใช้",
@@ -346,12 +346,12 @@
   "usbBitPerfect": "Hi-res and bit-perfect audio",
   "usbBitPerfectDescription": "Preserve source precision on compatible outputs. Choose direct USB or Aเสียง exclusive below; otherwise และroid USB output requires และroid 14 or later. Applies from the next track, without อัตโนมัติMix or normalization. ระบบ volume may not control direct USB.",
   "usbHardwareVolume": "DAC hardware volume",
-  "usbVolumeWarningTitle": "Check your listening volume",
+  "usbVolumeWarningTitle": "ตรวจสอบระดับเสียงการฟัง",
   "usbVolumeWarning": "Direct USB audio can be much louder than normal playback, and phone volume buttons may not control it. ต่ำer your DAC or amplifier volume before starting. When supported, Mornye sets the DAC to at most −40 dB on connection; this does not guarantee a safe listening level on every amplifier or headphone.",
   "usbVolumeAccept": "I understand",
   "usbVolumeUnavailable": "การเล่น is paused because this DAC has no verified hardware volume control. ต่ำer the DAC or amplifier volume, then enable fixed-volume output if needed and select the track again.",
   "usbFixedVolume": "ทั้งหมดow fixed-volume USB output",
-  "usbFixedVolumeDescription": "For DACs without a volume control accessible to the app. Keep off for USB headsets without their own volume control. Applies from the next track.",
+  "usbFixedVolumeDescription": "สำหรับ DAC ที่ไม่มีควบคุมระดับเสียงที่แอปเข้าถึงได้ ปิดไว้สำหรับหูฟัง USB ที่ไม่มีควบคุมระดับเสียงของตัวเอง แอปจะใช้ระดับเสียงซอฟต์แวร์แทน",
   "usbFixedVolumeWarning": "The app cannot lower the volume on this output. เสียง may start at full level, and the phone volume slider will not help. Only continue after lowering the volume on your DAC or external amplifier. Do not enable this for a headset without its own volume control.",
   "dapExclusive": "DAP hi-res (Aเสียง exclusive)",
   "dapExclusiveDescription": "Use Oboe/Aเสียง at the track's original rate and precision for FLAC/WAV PCM. Requires และroid 8.1 or later and compatible hardware. Exclusive access is checked; unavailable formats use normal playback. DSD requires the direct USB driver. Applies from the next track.",
@@ -362,14 +362,14 @@
   "exclusiveOutputDescriptionWindows": "Bypass the Windows mixer so the output follows each track's sample rate and bit depth. อื่นๆ apps cannot play sound while Mornye holds the device. อัตโนมัติMix and previews are off in this mode. For bit-perfect output, keep the volume at 100% with the equalizer and normalization off.",
   "exclusiveOutputDescriptionMacos": "Hold the output device for Mornye alone and switch it to each track's sample rate and bit depth, so Core เสียง does not resample. อื่นๆ apps cannot play sound while Mornye holds the device. อัตโนมัติMix and previews are off in this mode. For bit-perfect output, keep the volume at 100% with the equalizer and normalization off.",
   "exclusiveOutputDescriptionLinux": "เล่น straight to an ALSA hardware device, bypassing PipeWire or Pulseเสียง, so the output follows each track's sample rate and bit depth. The device must be free: the sound server releases an idle card after a few seconds, or set its profile to ปิด. อัตโนมัติMix and previews are off in this mode.",
-  "exclusiveOutputPending": "Takes the device when a track plays.",
+  "exclusiveOutputPending": "ควบคุมอุปกรณ์เมื่อเล่นเพลง",
   "exclusiveOutputActive": "กำลังเล่น in exclusive mode.",
   "exclusiveOutputUnavailableWindows": "The device refused exclusive access, so this track plays through the Windows mixer. ปิด other apps using the device, or allow exclusive control in the device's Windows sound properties.",
   "exclusiveOutputUnavailableMacos": "แอปอื่นครอบอุปกรณ์เอาต์พุท ดังนั้นเพลงนี้เล่นผ่านมิกเซอร์ระบบ",
   "exclusiveOutputUnavailableLinux": "The ALSA device is busy, usually held by the sound server, so this track plays through it. Set the card's profile to ปิด in the sound settings, or choose another device.",
-  "exclusiveOutputDevice": "Output device",
-  "exclusiveOutputDeviceFirst": "First sound card",
-  "exclusiveOutputNoDevices": "No ALSA playback devices found",
+  "exclusiveOutputDevice": "อุปกรณ์เอาต์พุต",
+  "exclusiveOutputDeviceFirst": "การ์ดเสียงตัวแรก",
+  "exclusiveOutputNoDevices": "ไม่พบอุปกรณ์เล่นเสียง ALSA",
   "usbDirect": "Direct USB driver",
   "usbDirectDescription": "Use exclusive USB audio for FLAC/WAV, DSF/DFF and WavPack DSD, with และroid USB permission. Native DSD requires a recognized compatible DAC. อื่นๆ PCM formats use normal playback. Applies from the next track.",
   "usbDsdOverPcm": "DSD over PCM (DoP)",
@@ -380,7 +380,7 @@
   "usbOutputReady": "USB output is ready. Start playback to activate it.",
   "usbOutputPreparing": "Preparing USB audio output...",
   "usbOutputCancelled": "USB preparation was cancelled. เลือกเพลงเพื่อลองใหม่",
-  "usbBitPerfectNoDevice": "No USB DAC connected. Using normal audio output.",
+  "usbBitPerfectNoDevice": "ไม่พบ USB DAC ที่เชื่อมต่อ ใช้เอาต์พุตเสียงปกติ",
   "usbBitPerfectFallback": "อุปกรณ์หรือรูปแบบเสียงนี้ไม่รองรับเอาต์พุตแบบบิตเพอร์เฟกต์ ใช้การเล่นปกติ",
   "usbBitPerfectRouteChanged": "The USB audio route changed. การเล่น paused; select a track to reconnect.",
   "upgradeIntroContinue": "ดำเนินต่อ",
@@ -628,11 +628,11 @@
   "@appearanceHistoryViewGrid": {
     "description": "Grid layout option"
   },
-  "optionsPrimaryProvider": "Primary Provider",
+  "optionsPrimaryProvider": "ผู้ให้บริการหลัก",
   "@optionsPrimaryProvider": {
     "description": "Main search provider setting"
   },
-  "optionsPrimaryProviderSubtitle": "Service used for searching by track or album name",
+  "optionsPrimaryProviderSubtitle": "บริการที่ใช้ค้นหาเพลงหรืออัลบั้มตามชื่อ",
   "@optionsPrimaryProviderSubtitle": {
     "description": "Subtitle for primary provider"
   },
@@ -821,7 +821,7 @@
   "@optionsCheckUpdates": {
     "description": "Auto update check toggle"
   },
-  "optionsCheckUpdatesSubtitle": "Notify when new version is available",
+  "optionsCheckUpdatesSubtitle": "แจ้งเตือนเมื่อมีเวอร์ชันใหม่",
   "@optionsCheckUpdatesSubtitle": {
     "description": "Subtitle for update check"
   },
@@ -906,7 +906,7 @@
   "@aboutTitle": {
     "description": "About page title"
   },
-  "aboutContributors": "Contributors",
+  "aboutContributors": "ผู้มีส่วนร่วม",
   "@aboutContributors": {
     "description": "Section for contributors"
   },
@@ -918,7 +918,7 @@
   "@aboutLogoArtist": {
     "description": "Role description for logo artist"
   },
-  "aboutTranslators": "Translators",
+  "aboutTranslators": "ผู้แปล",
   "@aboutTranslators": {
     "description": "Section for translators"
   },
@@ -930,7 +930,7 @@
   "@aboutLinks": {
     "description": "Section for external links"
   },
-  "aboutMobileSource": "Mobile source code",
+  "aboutMobileSource": "ซอร์สโค้ดมือถือ",
   "@aboutMobileSource": {
     "description": "Link to mobile GitHub repo"
   },
@@ -938,7 +938,7 @@
   "@aboutLyricsWebsite": {
     "description": "Link to the Zarz-LRC website for searching and saving word-timed lyrics"
   },
-  "aboutServiceStatus": "Service status",
+  "aboutServiceStatus": "สถานะบริการ",
   "@aboutServiceStatus": {
     "description": "Link to the status page of the Mornye online services"
   },
@@ -946,7 +946,7 @@
   "@aboutReportIssue": {
     "description": "Link to report bugs"
   },
-  "aboutReportIssueSubtitle": "Report any problems you encounter",
+  "aboutReportIssueSubtitle": "รายงานปัญหาที่พบ",
   "@aboutReportIssueSubtitle": {
     "description": "Subtitle for report issue"
   },
@@ -958,11 +958,11 @@
   "@aboutFeatureRequestSubtitle": {
     "description": "Subtitle for feature request"
   },
-  "aboutTelegramChannel": "Telegram Channel",
+  "aboutTelegramChannel": "ช่อง Telegram",
   "@aboutTelegramChannel": {
     "description": "Link to Telegram channel"
   },
-  "aboutTelegramChannelSubtitle": "Announcements and updates",
+  "aboutTelegramChannelSubtitle": "ประกาศและอัปเดต",
   "@aboutTelegramChannelSubtitle": {
     "description": "Subtitle for Telegram channel"
   },
@@ -970,7 +970,7 @@
   "@aboutTelegramChat": {
     "description": "Link to Telegram chat group"
   },
-  "aboutTelegramChatSubtitle": "Chat with other users",
+  "aboutTelegramChatSubtitle": "แชทกับผู้ใช้คนอื่น",
   "@aboutTelegramChatSubtitle": {
     "description": "Subtitle for Telegram chat"
   },
@@ -978,7 +978,7 @@
   "@aboutSocial": {
     "description": "Section for social links"
   },
-  "aboutApp": "App",
+  "aboutApp": "เกี่ยวกับแอป",
   "@aboutApp": {
     "description": "Section for app info"
   },
@@ -1219,7 +1219,7 @@
   "@whatsNewLinkNearbyGranted": {
     "description": "Shown on the Nearby devices page of the What's New tour after the Nearby devices permission is granted"
   },
-  "whatsNewNearbyTitle": "Nearby devices",
+  "whatsNewNearbyTitle": "อุปกรณ์ใกล้เคียง",
   "@whatsNewNearbyTitle": {
     "description": "Title of the What's New page that asks for Android's Nearby devices permission; use Android's name for this permission"
   },
@@ -1227,7 +1227,7 @@
   "@whatsNewNearbyDesc": {
     "description": "Description on the Nearby devices page of the What's New tour, followed by a list of uses"
   },
-  "whatsNewNearbyLinkTitle": "Finding your computer",
+  "whatsNewNearbyLinkTitle": "ค้นหาคอมพิวเตอร์ของคุณ",
   "@whatsNewNearbyLinkTitle": {
     "description": "Use of the Nearby devices permission: Mornye Link finds the computer"
   },
@@ -1243,11 +1243,11 @@
   "@whatsNewNearbyStorageBody": {
     "description": "Explains how network storage uses the Nearby devices permission"
   },
-  "whatsNewNearbyPrivateTitle": "Only your own devices",
+  "whatsNewNearbyPrivateTitle": "เฉพาะอุปกรณ์ของคุณเอง",
   "@whatsNewNearbyPrivateTitle": {
     "description": "Reassurance on the Nearby devices page of the What's New tour"
   },
-  "whatsNewNearbyPrivateBody": "Mornye uses it only to reach devices on your network, never to find where you are.",
+  "whatsNewNearbyPrivateBody": "Mornye ใช้สิทธิ์นี้เพื่อเข้าถึงอุปกรณ์ในเครือข่ายของคุณเท่านั้น ไม่ได้ใช้ค้นหาตำแหน่งที่ตั้ง",
   "@whatsNewNearbyPrivateBody": {
     "description": "Explains that the Nearby devices permission is not used for location"
   },
@@ -1451,15 +1451,15 @@
   "@duplicatesEmpty": {
     "description": "Shown when the duplicate review sheet finds nothing"
   },
-  "duplicatesKeepBest": "Keep best",
+  "duplicatesKeepBest": "เก็บที่ดีที่สุด",
   "@duplicatesKeepBest": {
     "description": "Button that deletes all but the highest-quality copy in a duplicate group"
   },
-  "duplicatesKeepBestAll": "Keep best for all",
+  "duplicatesKeepBestAll": "เก็บที่ดีที่สุดทั้งหมด",
   "@duplicatesKeepBestAll": {
     "description": "Button that keeps the highest-quality copy in every duplicate group and deletes the rest"
   },
-  "duplicatesKeepBestAllMessage": "Keep the best copy of {groupCount} {groupCount, plural, =1{track} other{tracks}} and delete {count} lower-quality {count, plural, =1{copy} other{copies}}?\n\nThe deleted files will be removed from storage.",
+  "duplicatesKeepBestAllMessage": "เก็บสำเนาที่ดีที่สุดของ {groupCount} {groupCount, plural, =1{เพลง} other{เพลง}} และลบ {count} คำว่า {count, plural, =1{คัดลอก} other{คัดลอก}} คุณภาพต่ำกว่า",
   "@duplicatesKeepBestAllMessage": {
     "description": "Confirmation message for keeping the best copy across every duplicate group",
     "placeholders": {
@@ -1838,7 +1838,7 @@
   "@updateAvailable": {
     "description": "Update dialog title"
   },
-  "updateLater": "Later",
+  "updateLater": "ภายหลัง",
   "@updateLater": {
     "description": "Update button - dismiss"
   },
