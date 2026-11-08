@@ -78,7 +78,7 @@
   },
   "linkFileJobsUnsupported": "อัปเดต Mornye on your computer to manage its music files from this phone.",
   "linkFileSelectionOneDevice": "เลือกเพลงจากคอมพิวเตอร์ที่เชื่อมต่อทีละเครื่อง (สูงสุด 100 เพลง)",
-  "linkFileJobProgress": "{finished} of {total} {total, plural, =1{song} other{songs}}",
+  "linkFileJobProgress": "{finished} จาก {total} {total, plural, =1{เพลง} other{เพลง}}",
   "@linkFileJobProgress": {
     "placeholders": {
       "finished": {
@@ -97,7 +97,7 @@
       }
     }
   },
-  "linkFileJobFinished": "{action} finished on {name}",
+  "linkFileJobFinished": "{action} เสร็จสิ้นบน {name}",
   "@linkFileJobFinished": {
     "placeholders": {
       "action": {
@@ -108,8 +108,8 @@
       }
     }
   },
-  "linkFileDeleting": "Deleting...",
-  "linkFileReading": "Reading tags...",
+  "linkFileDeleting": "กำลังลบ...",
+  "linkFileReading": "กำลังอ่านแท็ก...",
   "linkFileSavingCover": "กำลังบันทึกภาพปก...",
   "linkFileCancelHint": "หยุด after the current song",
   "linkFileJobCancelled": "หยุด",
@@ -343,12 +343,12 @@
   "sectionPlayer": "เล่นer",
   "sectionVolumeAndTransitions": "ระดับเสียง and transitions",
   "sectionAudioOutput": "เสียง output",
-  "usbBitPerfect": "Hi-res and bit-perfect audio",
+  "usbBitPerfect": "เสียง Hi-res และ bit-perfect",
   "usbBitPerfectDescription": "Preserve source precision on compatible outputs. Choose direct USB or Aเสียง exclusive below; otherwise และroid USB output requires และroid 14 or later. Applies from the next track, without อัตโนมัติMix or normalization. ระบบ volume may not control direct USB.",
-  "usbHardwareVolume": "DAC hardware volume",
+  "usbHardwareVolume": "ควบคุมระดับเสียงของ DAC",
   "usbVolumeWarningTitle": "ตรวจสอบระดับเสียงการฟัง",
   "usbVolumeWarning": "Direct USB audio can be much louder than normal playback, and phone volume buttons may not control it. ต่ำer your DAC or amplifier volume before starting. When supported, Mornye sets the DAC to at most −40 dB on connection; this does not guarantee a safe listening level on every amplifier or headphone.",
-  "usbVolumeAccept": "I understand",
+  "usbVolumeAccept": "เข้าใจแล้ว",
   "usbVolumeUnavailable": "การเล่น is paused because this DAC has no verified hardware volume control. ต่ำer the DAC or amplifier volume, then enable fixed-volume output if needed and select the track again.",
   "usbFixedVolume": "ทั้งหมดow fixed-volume USB output",
   "usbFixedVolumeDescription": "สำหรับ DAC ที่ไม่มีควบคุมระดับเสียงที่แอปเข้าถึงได้ ปิดไว้สำหรับหูฟัง USB ที่ไม่มีควบคุมระดับเสียงของตัวเอง แอปจะใช้ระดับเสียงซอฟต์แวร์แทน",
@@ -356,9 +356,9 @@
   "dapExclusive": "DAP hi-res (Aเสียง exclusive)",
   "dapExclusiveDescription": "Use Oboe/Aเสียง at the track's original rate and precision for FLAC/WAV PCM. Requires และroid 8.1 or later and compatible hardware. Exclusive access is checked; unavailable formats use normal playback. DSD requires the direct USB driver. Applies from the next track.",
   "dapExclusiveUnavailable": "Aเสียง exclusive access is unavailable for this track and current output. Using normal playback. For a USB DAC, try the direct USB driver.",
-  "exclusiveOutputWindows": "WASAPI exclusive mode",
-  "exclusiveOutputMacos": "Exclusive access (hog mode)",
-  "exclusiveOutputLinux": "Direct ALSA output",
+  "exclusiveOutputWindows": "โหมด WASAPI แบบ Exclusive",
+  "exclusiveOutputMacos": "การเข้าถึงแบบ Exclusive (hog mode)",
+  "exclusiveOutputLinux": "เอาต์พุท ALSA โดยตรง",
   "exclusiveOutputDescriptionWindows": "Bypass the Windows mixer so the output follows each track's sample rate and bit depth. อื่นๆ apps cannot play sound while Mornye holds the device. อัตโนมัติMix and previews are off in this mode. For bit-perfect output, keep the volume at 100% with the equalizer and normalization off.",
   "exclusiveOutputDescriptionMacos": "Hold the output device for Mornye alone and switch it to each track's sample rate and bit depth, so Core เสียง does not resample. อื่นๆ apps cannot play sound while Mornye holds the device. อัตโนมัติMix and previews are off in this mode. For bit-perfect output, keep the volume at 100% with the equalizer and normalization off.",
   "exclusiveOutputDescriptionLinux": "เล่น straight to an ALSA hardware device, bypassing PipeWire or Pulseเสียง, so the output follows each track's sample rate and bit depth. The device must be free: the sound server releases an idle card after a few seconds, or set its profile to ปิด. อัตโนมัติMix and previews are off in this mode.",
@@ -370,15 +370,15 @@
   "exclusiveOutputDevice": "อุปกรณ์เอาต์พุต",
   "exclusiveOutputDeviceFirst": "การ์ดเสียงตัวแรก",
   "exclusiveOutputNoDevices": "ไม่พบอุปกรณ์เล่นเสียง ALSA",
-  "usbDirect": "Direct USB driver",
+  "usbDirect": "ไดรเวอร์ USB โดยตรง",
   "usbDirectDescription": "Use exclusive USB audio for FLAC/WAV, DSF/DFF and WavPack DSD, with และroid USB permission. Native DSD requires a recognized compatible DAC. อื่นๆ PCM formats use normal playback. Applies from the next track.",
   "usbDsdOverPcm": "DSD over PCM (DoP)",
   "usbDsdOverPcmDescription": "เปิดใช้งาน only if your DAC explicitly supports DoP. ส่งs DSF/DFF and WavPack DSD inside a PCM carrier when native DSD is unavailable. An incompatible device may play noise; leave off for ordinary USB headsets.",
   "usbDsdUnsupported": "This DSD format or connected DAC is not supported. การเล่น stopped.",
   "usbPermissionDenied": "ไม่ได้รับอนุญาตสิทธิ์ USB ใช้การเล่นปกติ",
-  "usbBitPerfectPending": "Waiting for the next track and a compatible USB output.",
-  "usbOutputReady": "USB output is ready. Start playback to activate it.",
-  "usbOutputPreparing": "Preparing USB audio output...",
+  "usbBitPerfectPending": "รอเพลงถัดไปและการออก USB ที่รองรับ",
+  "usbOutputReady": "พร้อมใช้งานเอาต์พุท USB เริ่มเล่นเพื่อเปิดใช้งาน",
+  "usbOutputPreparing": "กำลังเตรียมเอาต์พุทเสียง USB...",
   "usbOutputCancelled": "USB preparation was cancelled. เลือกเพลงเพื่อลองใหม่",
   "usbBitPerfectNoDevice": "ไม่พบ USB DAC ที่เชื่อมต่อ ใช้เอาต์พุตเสียงปกติ",
   "usbBitPerfectFallback": "อุปกรณ์หรือรูปแบบเสียงนี้ไม่รองรับเอาต์พุตแบบบิตเพอร์เฟกต์ ใช้การเล่นปกติ",
@@ -910,7 +910,7 @@
   "@aboutContributors": {
     "description": "Section for contributors"
   },
-  "aboutMobileDeveloper": "Mobile version developer",
+  "aboutMobileDeveloper": "ผู้พัฒนารุ่นมือถือ",
   "@aboutMobileDeveloper": {
     "description": "Role description for mobile dev"
   },
@@ -922,7 +922,7 @@
   "@aboutTranslators": {
     "description": "Section for translators"
   },
-  "aboutSpecialThanks": "Special Thanks",
+  "aboutSpecialThanks": "ขอขอบคุณพิเศษ",
   "@aboutSpecialThanks": {
     "description": "Section for special thanks"
   },
@@ -942,7 +942,7 @@
   "@aboutServiceStatus": {
     "description": "Link to the status page of the Mornye online services"
   },
-  "aboutReportIssue": "Report an issue",
+  "aboutReportIssue": "รายงานปัญหา",
   "@aboutReportIssue": {
     "description": "Link to report bugs"
   },
@@ -974,7 +974,7 @@
   "@aboutTelegramChatSubtitle": {
     "description": "Subtitle for Telegram chat"
   },
-  "aboutSocial": "Social",
+  "aboutSocial": "โซเชียล",
   "@aboutSocial": {
     "description": "Section for social links"
   },
@@ -986,11 +986,11 @@
   "@aboutVersion": {
     "description": "Version info label"
   },
-  "aboutBinimumDesc": "The creator of QQDL & HiFi API. This project helped shape lossless download support.",
+  "aboutBinimumDesc": "ผู้สร้าง QQDL และ HiFi API โครงการนี้ช่วยรูปแบบการรองรับดาวน์โหลดไร้การสูญเสีย",
   "@aboutBinimumDesc": {
     "description": "Credit description for binimum"
   },
-  "aboutSachinsenalDesc": "The original HiFi project creator. A foundation for lossless-source integration.",
+  "aboutSachinsenalDesc": "ผู้สร้างโครงการ HiFi ต้นฉบับ ฐานสำคัญสำหรับการรวมแหล่งไร้การสูญเสีย",
   "@aboutSachinsenalDesc": {
     "description": "Credit description for sachinsenal0x64"
   },
@@ -1002,7 +1002,7 @@
   "@aboutMusicBrainzDesc": {
     "description": "Credit for the MusicBrainz database"
   },
-  "aboutSquiglyDesc": "Universal music link service by Liam Macmillan, used as a final cross-platform resolver fallback.",
+  "aboutSquiglyDesc": "บริการลิงก์เพลงข้ามแพลตฟอร์มโดย Liam Macmillan ใช้เป็นตัวแก้ไขข้ามแพลตฟอร์มสุดท้าย",
   "@aboutSquiglyDesc": {
     "description": "Credit for the Squigly resolver"
   },
@@ -1700,7 +1700,7 @@
       }
     }
   },
-  "progressReadingCsv": "Reading CSV...",
+  "progressReadingCsv": "กำลังอ่าน CSV...",
   "@progressReadingCsv": {
     "description": "Progress indicator - parsing CSV file"
   },
@@ -1854,7 +1854,7 @@
   "@updateFailedMessage": {
     "description": "Update error message"
   },
-  "updateNewVersionReady": "A new version is ready",
+  "updateNewVersionReady": "มีเวอร์ชันใหม่พร้อมใช้งาน",
   "@updateNewVersionReady": {
     "description": "Update subtitle"
   },
@@ -1871,7 +1871,7 @@
       }
     }
   },
-  "updateCurrent": "Current",
+  "updateCurrent": "ปัจจุบัน",
   "@updateCurrent": {
     "description": "Label for current version"
   },
@@ -1891,7 +1891,7 @@
   "@updateDownloadInstall": {
     "description": "Update button - download and install"
   },
-  "updateDontRemind": "Don't remind",
+  "updateDontRemind": "อย่าเตือนอีก",
   "@updateDontRemind": {
     "description": "Update button - skip this version"
   },
@@ -1899,11 +1899,11 @@
   "@updateViewRelease": {
     "description": "Update button - open the release page when this install cannot update itself (deb, Flatpak, no matching package)"
   },
-  "updateStartingInstaller": "Starting the installer...",
+  "updateStartingInstaller": "กำลังเริ่มติดตั้ง...",
   "@updateStartingInstaller": {
     "description": "Update status on Windows - the downloaded installer is starting and the app will close"
   },
-  "updateMacInstallHint": "The disk image is open in Finder. Quit Mornye, then drag Mornye from the disk image to Applications and replace the old copy.",
+  "updateMacInstallHint": "ไฟล์ Disk Image เปิดอยู่ใน Finder โปรดปิด Mornye แล้วลาก Mornye จาก Disk Image ไปที่ Applications และแทนที่เวอร์ชันเก่า",
   "@updateMacInstallHint": {
     "description": "Update instructions on macOS after the downloaded disk image opens"
   },
@@ -1911,7 +1911,7 @@
   "@updateQuitApp": {
     "description": "Update button on macOS - quit the app so the new version can replace it"
   },
-  "updateReadyToRestart": "The update is installed. Restart Mornye to use it.",
+  "updateReadyToRestart": "อัปเดตติดตั้งแล้ว รีสตาร์ท Mornye เพื่อใช้งาน",
   "@updateReadyToRestart": {
     "description": "Update status on Linux after the AppImage was replaced"
   },
@@ -1923,11 +1923,11 @@
   "@providerPriorityTitle": {
     "description": "Provider priority page title"
   },
-  "providerPriorityDescription": "Drag to reorder download providers. The app will try providers from top to bottom when downloading tracks.",
+  "providerPriorityDescription": "ลากเพื่อเรียงลำดับผู้ให้บริการดาวน์โหลด แอปจะลองผู้ให้บริการจากบนลงล่างเมื่อดาวน์โหลดเพลง",
   "@providerPriorityDescription": {
     "description": "Provider priority page description"
   },
-  "providerPriorityInfo": "If a track is not available on the first provider, the app will automatically try the next one.",
+  "providerPriorityInfo": "หากเพลงไม่มีในผู้ให้บริการรายแรก แอปจะลองผู้ให้บริการถัดไปโดยอัตโนมัติ",
   "@providerPriorityInfo": {
     "description": "Info tip about fallback behavior"
   },
@@ -1987,7 +1987,7 @@
   "@logClearLogsTitle": {
     "description": "Clear logs dialog title"
   },
-  "logClearLogsMessage": "Are you sure you want to clear all logs?",
+  "logClearLogsMessage": "แน่ใจว่าต้องการล้างบันทึกทั้งหมด?",
   "@logClearLogsMessage": {
     "description": "Clear logs confirmation message"
   },
@@ -1995,7 +1995,7 @@
   "@logFilterBySeverity": {
     "description": "Filter dialog title"
   },
-  "logNoLogsYet": "No logs yet",
+  "logNoLogsYet": "ยังไม่มีบันทึก",
   "@logNoLogsYet": {
     "description": "Empty state title"
   },
@@ -2012,7 +2012,7 @@
       }
     }
   },
-  "logEntries": "Entries ({count})",
+  "logEntries": "รายการ ({count})",
   "@logEntries": {
     "description": "Total log count",
     "placeholders": {
@@ -2041,7 +2041,7 @@
   "@sectionPerformance": {
     "description": "Settings section header"
   },
-  "sectionApp": "App",
+  "sectionApp": "แอป",
   "@sectionApp": {
     "description": "Settings section header"
   },
@@ -2053,7 +2053,7 @@
   "@sectionDebug": {
     "description": "Settings section header"
   },
-  "sectionService": "Service",
+  "sectionService": "บริการ",
   "@sectionService": {
     "description": "Settings section header"
   },
@@ -2111,7 +2111,7 @@
   "@sectionTheme": {
     "description": "Settings section header"
   },
-  "sectionLayout": "Layout",
+  "sectionLayout": "เลย์เอาต์",
   "@sectionLayout": {
     "description": "Settings section header"
   },
@@ -2661,7 +2661,7 @@
   "@qualityHiResFlac": {
     "description": "Quality option - high resolution FLAC"
   },
-  "qualityHiResFlacSubtitle": "24-bit / up to 96kHz",
+  "qualityHiResFlacSubtitle": "24-bit / ถึง 96kHz",
   "@qualityHiResFlacSubtitle": {
     "description": "Technical spec for hi-res"
   },
@@ -2669,7 +2669,7 @@
   "@qualityHiResFlacMax": {
     "description": "Quality option - maximum resolution FLAC"
   },
-  "qualityHiResFlacMaxSubtitle": "24-bit / up to 192kHz",
+  "qualityHiResFlacMaxSubtitle": "24-bit / ถึง 192kHz",
   "@qualityHiResFlacMaxSubtitle": {
     "description": "Technical spec for hi-res max"
   },
@@ -3011,7 +3011,7 @@
       }
     }
   },
-  "discographySinglesOnly": "Singles & EPs Only",
+  "discographySinglesOnly": "เฉพาะซิงเกิลและ EP",
   "@discographySinglesOnly": {
     "description": "Option - download only singles"
   },
@@ -3092,7 +3092,7 @@
   "@allFilesAccess": {
     "description": "Toggle for MANAGE_EXTERNAL_STORAGE permission"
   },
-  "allFilesAccessEnabledSubtitle": "Can write to any folder",
+  "allFilesAccessEnabledSubtitle": "สามารถเขียนในโฟลเดอร์ใดๆ ได้",
   "@allFilesAccessEnabledSubtitle": {
     "description": "Subtitle when all files access is enabled"
   },
@@ -3663,7 +3663,7 @@
   "@tutorialReadyMessage": {
     "description": "Tutorial completion message"
   },
-  "whatsNewIntroTitle": "Mornye {version} is here",
+  "whatsNewIntroTitle": "Mornye {version} มาแล้ว",
   "@whatsNewIntroTitle": {
     "description": "First page of the tour shown once after updating; version is like 5.3",
     "placeholders": {
@@ -3672,15 +3672,15 @@
       }
     }
   },
-  "whatsNewIntroDesc": "Our biggest update yet. Here's a quick look at what's new.",
+  "whatsNewIntroDesc": "อัปเดตใหญ่ที่สุดของเรา นี่คือภาพรวมสรุปสิ่งใหม่ๆ",
   "whatsNewLinkTitle": "Mornye ลิงก์",
   "whatsNewLinkDesc": "Pair your phone and computer on the same network. Mornye ลิงก์ is in beta.",
   "whatsNewLinkPlayTitle": "เล่น across devices",
   "whatsNewLinkPlayBody": "เรียกดูไลบรารีของคอมพิวเตอร์บนโทรศัพท์ ควบคุมการเล่น และส่งมอบการเล่นต่อไปได้โดยไม่หยุดชะงัก",
   "whatsNewLinkTransferTitle": "ย้าย songs both ways",
   "whatsNewLinkTransferBody": "ส่ง songs to your computer or save them to your phone, right from the song menu.",
-  "whatsNewLinkSyncTitle": "Stay in sync",
-  "whatsNewLinkSyncBody": "Collections and listening history stay the same on paired devices.",
+  "whatsNewLinkSyncTitle": "ซิงค์คุ้มกัน",
+  "whatsNewLinkSyncBody": "คอลเลกชันและประวัติการฟังคงเหมือนเดิมบนอุปกรณ์ที่จับคู่",
   "whatsNewHomeTitle": "หน้าแรกที่เรียนรู้จากคุณ",
   "whatsNewHomeDesc": "Mixes และการเล่นอัตโนมัติปรับตัวตามวิธีที่คุณฟังจริง",
   "whatsNewHomeMixesTitle": "Mixes จากไลบรารีของคุณ",
@@ -3711,8 +3711,8 @@
   "whatsNewLibraryRecognizeBody": "Tap the microphone in ค้นหา to find out what's playing nearby.",
   "whatsNewLibraryPlaylistsTitle": "เพลย์ลิสต์ที่ดีขึ้น",
   "whatsNewLibraryPlaylistsBody": "เรียงลำดับเพลง, create a playlist from a folder, or import playlist files.",
-  "whatsNewFasterTitle": "Faster everywhere",
-  "whatsNewFasterDesc": "Quicker and lighter, especially with large libraries.",
+  "whatsNewFasterTitle": "เร็วขึ้นทุกที่",
+  "whatsNewFasterDesc": "รวดเร็วและเบากว่าเดิม โดยเฉพาะกับไลบรารีขนาดใหญ่",
   "whatsNewFasterLibraryTitle": "A quicker ไลบรารี",
   "whatsNewFasterLibraryBody": "แท็บและอัลบั้มเปิดเร็วขึ้น และเลื่อนลื่นขึ้น",
   "whatsNewFasterNetworkTitle": "เพลงเครือข่ายเร็วขึ้น",
@@ -3721,11 +3721,11 @@
   "whatsNewFasterQueueBody": "คิวขนาดใหญ่บันทึกได้เร็ว และคืนมาหลังรีสตาร์ท",
   "whatsNewFasterBackgroundTitle": "สว่างer in the background",
   "whatsNewFasterBackgroundBody": "แอปเริ่มเร็วขึ้น และทำงานน้อยลงขณะเล่นเพลง",
-  "whatsNewDone": "Start listening",
+  "whatsNewDone": "เริ่มฟังเพลง",
   "@whatsNewDone": {
     "description": "Button on the last page of the What's New tour"
   },
-  "whatsNewAboutTitle": "What's new in {version}",
+  "whatsNewAboutTitle": "อะไรใหม่ใน {version}",
   "@whatsNewAboutTitle": {
     "description": "About page row that reopens the What's New tour; version is like 5.3",
     "placeholders": {
@@ -3998,11 +3998,11 @@
   "@trackSaveLyricsProgress": {
     "description": "Snackbar while saving lyrics to file"
   },
-  "trackReEnrich": "Re-enrich",
+  "trackReEnrich": "อัปเดตข้อมูลเมตาใหม่",
   "@trackReEnrich": {
     "description": "Menu action - re-embed metadata into audio file"
   },
-  "trackReEnrichBatchSubtitle": "Choose an online or manual update, then review every change before writing",
+  "trackReEnrichBatchSubtitle": "เลือกการอัปเดตออนไลน์หรือด้วยตนเอง แล้วตรวจสอบทุกการเปลี่ยนแปลงก่อนเขียน",
   "@trackReEnrichBatchSubtitle": {
     "description": "Subtitle for batch metadata update choices"
   },
@@ -4034,11 +4034,11 @@
   "@trackReEnrichSelectAll": {
     "description": "Select all fields checkbox in re-enrich"
   },
-  "trackReEnrichModeIsrc": "ISRC only",
+  "trackReEnrichModeIsrc": "เฉพาะ ISRC",
   "@trackReEnrichModeIsrc": {
     "description": "Batch metadata mode that only writes ISRC"
   },
-  "trackReEnrichModeIsrcSubtitle": "Find and add the recording identifier without changing other tags",
+  "trackReEnrichModeIsrcSubtitle": "ค้นหาและเพิ่มตัวระบุการบันทึกเสียงโดยไม่เปลี่ยนแท็กอื่น",
   "@trackReEnrichModeIsrcSubtitle": {
     "description": "Explanation for the ISRC-only batch metadata mode"
   },
@@ -4046,7 +4046,7 @@
   "@trackReEnrichModeMissing": {
     "description": "Batch metadata mode that fills only empty tags"
   },
-  "trackReEnrichModeMissingSubtitle": "Keep existing values and fill only fields that are empty",
+  "trackReEnrichModeMissingSubtitle": "เก็บค่าที่มีอยู่ และเติมเฉพาะช่องว่าง",
   "@trackReEnrichModeMissingSubtitle": {
     "description": "Explanation for the fill-missing batch metadata mode"
   },
@@ -4054,11 +4054,11 @@
   "@trackReEnrichModeReplace": {
     "description": "Batch metadata mode that replaces selected tag groups"
   },
-  "trackReEnrichModeReplaceSubtitle": "Choose which existing values may be replaced by online metadata",
+  "trackReEnrichModeReplaceSubtitle": "เลือกว่าค่าที่มีอยู่อาจถูกแทนที่ด้วยข้อมูลเมตาออนไลน์",
   "@trackReEnrichModeReplaceSubtitle": {
     "description": "Explanation for the selected-tag batch metadata mode"
   },
-  "trackReEnrichModeManual": "Set common values",
+  "trackReEnrichModeManual": "ตั้งค่าร่วมกัน",
   "@trackReEnrichModeManual": {
     "description": "Batch metadata mode that applies shared values to every selected track"
   },
@@ -4098,7 +4098,7 @@
       }
     }
   },
-  "trackReEnrichNoChanges": "No metadata changes were found for the selected tracks.",
+  "trackReEnrichNoChanges": "ไม่พบการเปลี่ยนแปลงข้อมูลเมตาสำหรับเพลงที่เลือก",
   "@trackReEnrichNoChanges": {
     "description": "Message when batch metadata preview has no proposed changes"
   },
@@ -4136,7 +4136,7 @@
       }
     }
   },
-  "trackReEnrichProgress": "Re-enriching metadata...",
+  "trackReEnrichProgress": "กำลังอัปเดตข้อมูลเมตา...",
   "@trackReEnrichProgress": {
     "description": "Snackbar while re-enriching metadata"
   },
@@ -4144,7 +4144,7 @@
   "@trackReEnrichSearching": {
     "description": "Snackbar while searching metadata from internet for local items"
   },
-  "trackReEnrichPreparing": "Preparing metadata changes...",
+  "trackReEnrichPreparing": "กำลังเตรียมการเปลี่ยนแปลงข้อมูลเมตา...",
   "@trackReEnrichPreparing": {
     "description": "Progress message while preparing manual batch metadata changes"
   },
@@ -4214,7 +4214,7 @@
   "@trackConvertBitrate": {
     "description": "Label for bitrate selection"
   },
-  "trackConvertKeepOriginal": "Keep original file",
+  "trackConvertKeepOriginal": "เก็บไฟล์ต้นฉบับ",
   "@trackConvertKeepOriginal": {
     "description": "Toggle to preserve the source file during conversion"
   },
@@ -4269,11 +4269,11 @@
   "@trackConvertLosslessHint": {
     "description": "Hint shown when converting between lossless formats"
   },
-  "trackConvertConverting": "Converting audio...",
+  "trackConvertConverting": "กำลังแปลงเสียง...",
   "@trackConvertConverting": {
     "description": "Snackbar while converting"
   },
-  "trackConvertSuccess": "Converted to {format} successfully",
+  "trackConvertSuccess": "แปลงเป็น {format} สำเร็จ",
   "@trackConvertSuccess": {
     "description": "Snackbar after successful conversion",
     "placeholders": {
@@ -4286,7 +4286,7 @@
   "@trackConvertFailed": {
     "description": "Snackbar when conversion fails"
   },
-  "cueSplitTitle": "Split CUE Sheet",
+  "cueSplitTitle": "แยก CUE Sheet",
   "@cueSplitTitle": {
     "description": "Title for CUE split bottom sheet"
   },
@@ -4333,7 +4333,7 @@
       }
     }
   },
-  "cueSplitSplitting": "Splitting CUE sheet... ({current}/{total})",
+  "cueSplitSplitting": "กำลังแยก CUE sheet... ({current}/{total})",
   "@cueSplitSplitting": {
     "description": "Snackbar while splitting CUE",
     "placeholders": {
@@ -4771,7 +4771,7 @@
   "@safMigrationMessage1": {
     "description": "First paragraph of SAF migration dialog"
   },
-  "safMigrationMessage2": "Please select your download folder again to switch to the new storage system.",
+  "safMigrationMessage2": "กรุณาเลือกโฟลเดอร์ดาวน์โหลดอีกครั้งเพื่อเปลี่ยนไปใช้ระบบจัดเก็บใหม่",
   "@safMigrationMessage2": {
     "description": "Second paragraph of SAF migration dialog"
   },
@@ -5526,15 +5526,15 @@
   "@audioAnalysisTitle": {
     "description": "Title for audio analysis section"
   },
-  "audioAnalysisDescription": "Verify lossless quality with spectrum analysis",
+  "audioAnalysisDescription": "ตรวจสอบคุณภาพไร้การสูญเสียด้วยการวิเคราะห์สเปกตรัม",
   "@audioAnalysisDescription": {
     "description": "Description for audio analysis tap-to-analyze prompt"
   },
-  "audioAnalysisAnalyzing": "Analyzing audio...",
+  "audioAnalysisAnalyzing": "กำลังวิเคราะห์เสียง...",
   "@audioAnalysisAnalyzing": {
     "description": "Loading text while analyzing audio"
   },
-  "audioAnalysisSampleRate": "Sample Rate",
+  "audioAnalysisSampleRate": "อัตราตัวอย่าง",
   "@audioAnalysisSampleRate": {
     "description": "Sample rate metric label"
   },
@@ -5550,7 +5550,7 @@
   "@audioAnalysisDecodedFormat": {
     "description": "Decoded sample format metric label"
   },
-  "audioAnalysisBitDepth": "Bit Depth",
+  "audioAnalysisBitDepth": "ความลึกของบิต",
   "@audioAnalysisBitDepth": {
     "description": "Bit depth metric label"
   },
@@ -5562,7 +5562,7 @@
   "@audioAnalysisDuration": {
     "description": "Duration metric label"
   },
-  "audioAnalysisNyquist": "Nyquist",
+  "audioAnalysisNyquist": "ไนควิสต์",
   "@audioAnalysisNyquist": {
     "description": "Nyquist frequency metric label"
   },
@@ -5574,7 +5574,7 @@
   "@audioAnalysisDynamicRange": {
     "description": "Dynamic range metric label"
   },
-  "audioAnalysisPeak": "Peak",
+  "audioAnalysisPeak": "ค่าสูงสุด",
   "@audioAnalysisPeak": {
     "description": "Peak amplitude metric label"
   },
@@ -5590,11 +5590,11 @@
   "@audioAnalysisTruePeak": {
     "description": "True peak metric label"
   },
-  "audioAnalysisClipping": "Clipping",
+  "audioAnalysisClipping": "การขาดตัด",
   "@audioAnalysisClipping": {
     "description": "Clipping metric label"
   },
-  "audioAnalysisNoClipping": "No clipping",
+  "audioAnalysisNoClipping": "ไม่มีการขาดตัด",
   "@audioAnalysisNoClipping": {
     "description": "Displayed when no clipped samples were detected"
   },
@@ -5602,19 +5602,19 @@
   "@audioAnalysisSpectralCutoff": {
     "description": "Estimated spectral cutoff metric label"
   },
-  "audioAnalysisCutoffNotDetected": "Not detected",
+  "audioAnalysisCutoffNotDetected": "ไม่ตรวจพบ",
   "@audioAnalysisCutoffNotDetected": {
     "description": "Displayed when no reliable broadband spectral cutoff can be detected"
   },
-  "audioAnalysisChannelStats": "Per-channel Stats",
+  "audioAnalysisChannelStats": "สถิติต่อช่องสัญญาณ",
   "@audioAnalysisChannelStats": {
     "description": "Per-channel audio analysis section label"
   },
-  "audioAnalysisSamples": "Samples",
+  "audioAnalysisSamples": "ตัวอย่าง",
   "@audioAnalysisSamples": {
     "description": "Total samples metric label"
   },
-  "audioAnalysisRescan": "Re-analyze",
+  "audioAnalysisRescan": "วิเคราะห์ใหม่",
   "@audioAnalysisRescan": {
     "description": "Tooltip/label for the button that re-runs the audio analysis, discarding cached results"
   },
@@ -5643,11 +5643,11 @@
   "@hiResCheckVerdictFakeCertain": {
     "description": "Verdict: an exact fingerprint (padded bits or upsampling pattern) proves the file is not real Hi-Res"
   },
-  "hiResCheckReasonSampleHold": "Every sample is repeated: upsampled by duplication",
+  "hiResCheckReasonSampleHold": "ทุกตัวอย่างถูกทำซ้ำ: อัปแซมเพลิงโดยการทำซ้ำ",
   "@hiResCheckReasonSampleHold": {
     "description": "Reason: sample-and-hold upsampling detected"
   },
-  "hiResCheckReasonInterpolation": "In-between samples are linearly interpolated",
+  "hiResCheckReasonInterpolation": "ตัวอย่างระหว่างกันถูกประมาณค่าแบบเส้นตรง",
   "@hiResCheckReasonInterpolation": {
     "description": "Reason: linear-interpolation upsampling detected"
   },
@@ -5655,7 +5655,7 @@
   "@hiResCheckTitle": {
     "description": "Title of the fake Hi-Res check card"
   },
-  "hiResCheckSummary": "Inspect the spectrum and active bit depth for signs of upsampling or padding.",
+  "hiResCheckSummary": "ตรวจสอบสเปกตรัมและความลึกบิตที่ทำงานอยู่สำหรับสัญญาณอัปแซมเพลิงหรือแพดดิ้ง",
   "@hiResCheckSummary": {
     "description": "Introductory text for the sampled Hi-Res analysis"
   },
@@ -5663,11 +5663,11 @@
   "@hiResCheckLimitedBandwidth": {
     "description": "Neutral finding: a limited spectrum alone does not prove upsampling"
   },
-  "hiResCheckNoEvidence": "No upsampling or padding detected",
+  "hiResCheckNoEvidence": "ไม่พบหลักฐานอัปแซมเพลิงหรือแพดดิ้ง",
   "@hiResCheckNoEvidence": {
     "description": "No evidence was detected; this does not certify the master"
   },
-  "hiResCheckEstimatedCutoff": "Estimated cutoff",
+  "hiResCheckEstimatedCutoff": "ค่าต่ำสุดที่ประมาณการ",
   "@hiResCheckEstimatedCutoff": {
     "description": "Estimated upper spectral edge at the analysis threshold"
   },
@@ -5675,11 +5675,11 @@
   "@hiResCheckActiveBits": {
     "description": "Active integer bit depth versus the container depth in the sampled segment"
   },
-  "hiResCheckBandwidthExplanation": "A lower cutoff can come from mastering. It does not, by itself, prove upsampling.",
+  "hiResCheckBandwidthExplanation": "ค่าต่ำสุดที่ต่ำกว่าอาจมาจากมาสเตอร์ติ้ง ไม่ได้พิสูจน์อัปแซมเพลิงด้วยตัวมันเอง",
   "@hiResCheckBandwidthExplanation": {
     "description": "Explains why the limited-bandwidth finding is neutral"
   },
-  "hiResCheckSampledExplanation": "Based on {seconds} seconds of audio. This analysis cannot certify the original master.",
+  "hiResCheckSampledExplanation": "อิงจากเสียง {seconds} วินาที การวิเคราะห์นี้ไม่สามารถรับรองมาสเตอร์ต้นฉบับได้",
   "@hiResCheckSampledExplanation": {
     "description": "Limits of the sampled Hi-Res analysis; seconds is a formatted duration",
     "placeholders": {
@@ -5688,11 +5688,11 @@
       }
     }
   },
-  "hiResCheckImagingEvidence": "The spectrum contains mirrored bands consistent with upsampling.",
+  "hiResCheckImagingEvidence": "สเปกตรัมมีแบนด์กระจายตัวที่สอดคล้องกับอัปแซมเพลิง",
   "@hiResCheckImagingEvidence": {
     "description": "Spectral imaging is suggestive evidence rather than proof"
   },
-  "hiResCheckRateEvidence": "A sharp roll-off near {cutoff} and the measured noise floor suggest a lower-rate source.",
+  "hiResCheckRateEvidence": "การลดลงอย่างรวดเร็วใกล้ {cutoff} และ noise floor ที่วัดได้ บ่งชี้แหล่งที่มาอัตราต่ำกว่า",
   "@hiResCheckRateEvidence": {
     "description": "Heuristic evidence from both a brickwall and a 16-bit-like noise floor",
     "placeholders": {
@@ -5701,7 +5701,7 @@
       }
     }
   },
-  "hiResCheckSteadyEnergy": "Energy above {cutoff} is mostly steady in the analyzed segment and may be noise.",
+  "hiResCheckSteadyEnergy": "พลังงานเหนือ {cutoff} ส่วนใหญ่คงที่ในส่วนที่วิเคราะห์ และอาจเป็น noise",
   "@hiResCheckSteadyEnergy": {
     "description": "An observation about ultrasonic energy, not proof that removing it is safe",
     "placeholders": {
@@ -5710,7 +5710,7 @@
       }
     }
   },
-  "hiResCheckRun": "Check",
+  "hiResCheckRun": "ตรวจสอบ",
   "@hiResCheckRun": {
     "description": "Button that starts the Hi-Res authenticity check"
   },
@@ -5722,15 +5722,15 @@
   "@hiResCheckVerdictFake": {
     "description": "Verdict: the file claims Hi-Res but does not measure as it"
   },
-  "hiResCheckVerdictStandard": "Standard definition, nothing to flag",
+  "hiResCheckVerdictStandard": "ความละเอียดมาตรฐาน ไม่มีอะไรต้องเตือน",
   "@hiResCheckVerdictStandard": {
     "description": "Verdict: neither sample rate nor bit depth claims Hi-Res"
   },
-  "hiResCheckVerdictInconclusive": "Inconclusive: the analyzed segment is too quiet or short",
+  "hiResCheckVerdictInconclusive": "ไม่ชัดเจน: ส่วนที่วิเคราะห์เงียบเกินไปหรือสั้นเกินไป",
   "@hiResCheckVerdictInconclusive": {
     "description": "Verdict: analysis could not reach a reliable conclusion"
   },
-  "hiResCheckUnsupported": "Only FLAC and WAV files can be checked",
+  "hiResCheckUnsupported": "ตรวจสอบได้เฉพาะไฟล์ FLAC และ WAV",
   "@hiResCheckUnsupported": {
     "description": "Shown when the file format cannot be decoded by the Hi-Res check"
   },
@@ -5743,7 +5743,7 @@
       }
     }
   },
-  "hiResCheckReasonDepth": "Declares {declared}-bit but only {effective} bits carry data",
+  "hiResCheckReasonDepth": "ระบุ {declared}-bit แต่มีเพียง {effective} บิตที่ขนข้อมูล",
   "@hiResCheckReasonDepth": {
     "description": "Reason for a fake verdict caused by padded bit depth",
     "placeholders": {
@@ -5755,7 +5755,7 @@
       }
     }
   },
-  "audioAnalysisRescanning": "Re-analyzing audio...",
+  "audioAnalysisRescanning": "กำลังวิเคราะห์ใหม่...",
   "@audioAnalysisRescanning": {
     "description": "Loading text while audio is being re-analyzed after an explicit refresh"
   },
@@ -5855,7 +5855,7 @@
       }
     }
   },
-  "notifFinalizingTrack": "Finalizing {trackName}",
+  "notifFinalizingTrack": "กำลังจัดการ {trackName}",
   "@notifFinalizingTrack": {
     "description": "Notification title while finalizing (embedding metadata) a track",
     "placeholders": {
@@ -6074,7 +6074,7 @@
   "@notifUpdateReady": {
     "description": "Notification title when app update download is complete"
   },
-  "notifUpdateReadyBody": "Mornye v{version} downloaded. Tap to install.",
+  "notifUpdateReadyBody": "ดาวน์โหลด Mornye v{version} แล้ว แตะเพื่อติดตั้ง",
   "@notifUpdateReadyBody": {
     "description": "Notification body when app update is ready to install",
     "placeholders": {
@@ -6290,27 +6290,27 @@
   "@logClearSearch": {
     "description": "Tooltip for clearing the log search field"
   },
-  "logIssueIspBlockingLabel": "ISP BLOCKING DETECTED",
+  "logIssueIspBlockingLabel": "ตรวจพบ ISP บล็อก",
   "@logIssueIspBlockingLabel": {
     "description": "Diagnostic badge label when ISP blocking is detected"
   },
-  "logIssueIspBlockingDescription": "Your ISP may be blocking access to download services",
+  "logIssueIspBlockingDescription": "ISP ของคุณอาจบล็อกการเข้าถึงบริการดาวน์โหลด",
   "@logIssueIspBlockingDescription": {
     "description": "Diagnostic badge description for ISP blocking"
   },
-  "logIssueIspBlockingSuggestion": "Try using a VPN or change DNS to 1.1.1.1 or 8.8.8.8",
+  "logIssueIspBlockingSuggestion": "ลองใช้ VPN หรือเปลี่ยน DNS เป็น 1.1.1.1 หรือ 8.8.8.8",
   "@logIssueIspBlockingSuggestion": {
     "description": "Diagnostic badge suggestion for ISP blocking"
   },
-  "logIssueRateLimitedLabel": "RATE LIMITED",
+  "logIssueRateLimitedLabel": "ถูกจำกัดอัตรา",
   "@logIssueRateLimitedLabel": {
     "description": "Diagnostic badge label when the service rate limits requests"
   },
-  "logIssueRateLimitedDescription": "Too many requests to the service",
+  "logIssueRateLimitedDescription": "คำขอไปยังบริการมากเกินไป",
   "@logIssueRateLimitedDescription": {
     "description": "Diagnostic badge description for rate limiting"
   },
-  "logIssueRateLimitedSuggestion": "Wait a few minutes before trying again",
+  "logIssueRateLimitedSuggestion": "รอสักครู่นึงแล้วลองใหม่",
   "@logIssueRateLimitedSuggestion": {
     "description": "Diagnostic badge suggestion for rate limiting"
   },
@@ -6326,15 +6326,15 @@
   "@logIssueNetworkErrorSuggestion": {
     "description": "Diagnostic badge suggestion for generic network errors"
   },
-  "logIssueTrackNotFoundLabel": "TRACK NOT FOUND",
+  "logIssueTrackNotFoundLabel": "ไม่พบเพลง",
   "@logIssueTrackNotFoundLabel": {
     "description": "Diagnostic badge label when a track is unavailable"
   },
-  "logIssueTrackNotFoundDescription": "Some tracks could not be found on download services",
+  "logIssueTrackNotFoundDescription": "บางเพลงไม่พบในบริการดาวน์โหลด",
   "@logIssueTrackNotFoundDescription": {
     "description": "Diagnostic badge description when a track is unavailable"
   },
-  "logIssueTrackNotFoundSuggestion": "The track may not be available in lossless quality",
+  "logIssueTrackNotFoundSuggestion": "เพลงอาจไม่มีคุณภาพไร้การสูญเสีย",
   "@logIssueTrackNotFoundSuggestion": {
     "description": "Diagnostic badge suggestion when a track is unavailable"
   },
@@ -6661,7 +6661,7 @@
       }
     }
   },
-  "itemCount": "{count} {count, plural, =1{item} other{items}}",
+  "itemCount": "{count} {count, plural, =1{รายการ} other{รายการ}}",
   "@itemCount": {
     "description": "Generic item count label",
     "placeholders": {
@@ -6735,7 +6735,7 @@
       }
     }
   },
-  "storeExtensionsCount": "{count} {count, plural, =1{extension} other{extensions}}",
+  "storeExtensionsCount": "{count} {count, plural, =1{ส่วนขยาย} other{ส่วนขยาย}}",
   "@storeExtensionsCount": {
     "description": "Store extension result count",
     "placeholders": {
@@ -6753,7 +6753,7 @@
       }
     }
   },
-  "logIssueSummary": "Issue Summary",
+  "logIssueSummary": "สรุปปัญหา",
   "@logIssueSummary": {
     "description": "Header for log issue analysis summary"
   },
@@ -6766,7 +6766,7 @@
       }
     }
   },
-  "logAffectedDomains": "Affected: {domains}",
+  "logAffectedDomains": "ได้รับผลกระทบ: {domains}",
   "@logAffectedDomains": {
     "description": "Affected domains in log issue analysis",
     "placeholders": {
@@ -6800,15 +6800,15 @@
   "@downloadNativeWorkerSubtitle": {
     "description": "Setting subtitle for Android native download worker"
   },
-  "extensionServiceStatus": "Service Status",
+  "extensionServiceStatus": "สถานะบริการ",
   "@extensionServiceStatus": {
     "description": "Extension detail section header for service status"
   },
-  "extensionServiceHealth": "Service health",
+  "extensionServiceHealth": "สุขภาพบริการ",
   "@extensionServiceHealth": {
     "description": "Extension capability label for service health checks"
   },
-  "extensionHealthChecksConfigured": "{count} {count, plural, =1{check} other{checks}} configured",
+  "extensionHealthChecksConfigured": "{count} {count, plural, =1{การตรวจสอบ} other{การตรวจสอบ}} ที่ตั้งค่าแล้ว",
   "@extensionHealthChecksConfigured": {
     "description": "Extension service health check count",
     "placeholders": {
@@ -6821,7 +6821,7 @@
   "@extensionOauthConnectHint": {
     "description": "Hint for an OAuth login link field before connecting Spotify"
   },
-  "extensionLastChecked": "Last checked {time}",
+  "extensionLastChecked": "ตรวจสอบล่าสุด {time}",
   "@extensionLastChecked": {
     "description": "Timestamp for the latest extension service health check",
     "placeholders": {
@@ -6838,7 +6838,7 @@
   "@extensionCustomUrlHandling": {
     "description": "Extension detail section title for custom URL handling"
   },
-  "extensionCustomUrlHandlingSubtitle": "This extension can handle links from these sites",
+  "extensionCustomUrlHandlingSubtitle": "ส่วนขยายนี้สามารถจัดการลิงก์จากไซต์เหล่านี้ได้",
   "@extensionCustomUrlHandlingSubtitle": {
     "description": "Extension detail subtitle for custom URL handling"
   },
@@ -6859,7 +6859,7 @@
   "@extensionHealthOnline": {
     "description": "Extension service health status - online"
   },
-  "extensionHealthDegraded": "Degraded",
+  "extensionHealthDegraded": "ลดทอน",
   "@extensionHealthDegraded": {
     "description": "Extension service health status - degraded"
   },
@@ -6867,7 +6867,7 @@
   "@extensionHealthOffline": {
     "description": "Extension service health status - offline"
   },
-  "extensionHealthNotConfigured": "Not configured",
+  "extensionHealthNotConfigured": "ยังไม่ตั้งค่า",
   "@extensionHealthNotConfigured": {
     "description": "Extension service health status - not configured"
   },
@@ -6879,7 +6879,7 @@
   "@extensionHealthRequired": {
     "description": "Label for a required extension service health check"
   },
-  "extensionSettingNotSet": "Not set",
+  "extensionSettingNotSet": "ยังไม่ตั้งค่า",
   "@extensionSettingNotSet": {
     "description": "Value shown when an extension setting has no value"
   },
@@ -6887,23 +6887,23 @@
   "@extensionActionFailed": {
     "description": "Fallback error when an extension action fails without details"
   },
-  "extensionEnterValue": "Enter value",
+  "extensionEnterValue": "ใส่ค่า",
   "@extensionEnterValue": {
     "description": "Hint for editing an extension setting value"
   },
-  "extensionHealthServiceOnline": "Service online",
+  "extensionHealthServiceOnline": "บริการออนไลน์",
   "@extensionHealthServiceOnline": {
     "description": "Tooltip for online extension service"
   },
-  "extensionHealthServiceDegraded": "Service degraded",
+  "extensionHealthServiceDegraded": "บริการลดทอน",
   "@extensionHealthServiceDegraded": {
     "description": "Tooltip for degraded extension service"
   },
-  "extensionHealthServiceOffline": "Service offline",
+  "extensionHealthServiceOffline": "บริการออฟไลน์",
   "@extensionHealthServiceOffline": {
     "description": "Tooltip for offline extension service"
   },
-  "extensionHealthServiceUnknown": "Service status unknown",
+  "extensionHealthServiceUnknown": "สถานะบริการไม่ทราบ",
   "@extensionHealthServiceUnknown": {
     "description": "Tooltip for unknown extension service health"
   },
@@ -6964,7 +6964,7 @@
   "@storeCategoryDownload": {
     "description": "Store extension category - download"
   },
-  "storeCategoryUtility": "Utility",
+  "storeCategoryUtility": "ยูทิลิตี้",
   "@storeCategoryUtility": {
     "description": "Store extension category - utility"
   },
@@ -6972,7 +6972,7 @@
   "@storeCategoryLyrics": {
     "description": "Store extension category - lyrics"
   },
-  "storeCategoryIntegration": "Integration",
+  "storeCategoryIntegration": "การรวมระบบ",
   "@storeCategoryIntegration": {
     "description": "Store extension category - integration"
   },
@@ -7017,7 +7017,7 @@
   "@openInOtherServices": {
     "description": "Title and tooltip for finding the current collection in other services"
   },
-  "shareSheetNoExtensions": "No other compatible services",
+  "shareSheetNoExtensions": "ไม่มีบริการอื่นที่เข้ากันได้",
   "@shareSheetNoExtensions": {
     "description": "Empty state when no extensions can be searched for cross-service links"
   },
@@ -7029,7 +7029,7 @@
   "@shareSheetCopyLink": {
     "description": "Tooltip for copying a cross-service link"
   },
-  "shareSheetLinkCopied": "{service} link copied",
+  "shareSheetLinkCopied": "คัดลอกลิงก์ {service} แล้ว",
   "@shareSheetLinkCopied": {
     "description": "Snackbar after copying a cross-service link",
     "placeholders": {
@@ -7086,13 +7086,13 @@
       }
     }
   },
-  "concertGetTickets": "Get Tickets",
+  "concertGetTickets": "ซื้อบัตร",
   "concertSetList": "รายการเพลงคอนเสิร์ต",
   "concertSetListButton": "รายการเพลง",
   "concertAddToCalendar": "เพิ่ม to Calendar",
   "concertOpenMaps": "เปิด Maps",
-  "concertDetailsUnavailable": "Concert details are currently unavailable.",
-  "concertCalendarUnavailable": "Unable to open the calendar.",
+  "concertDetailsUnavailable": "รายละเอียดคอนเสิร์ตไม่พร้อมใช้งาน",
+  "concertCalendarUnavailable": "ไม่สามารถเปิดปฏิทินได้",
   "nowPlayingAudioOutputUnavailable": "เปิดการตั้งค่าเอาต์พุตเสียงไม่ได้",
   "@nowPlayingUpNext": {
     "description": "Title for the playback queue sheet"
@@ -7222,7 +7222,7 @@
   "@lyricsTranslateSheetTitle": {
     "description": "Title of the sheet that picks the language to translate the current lyrics into"
   },
-  "lyricsTranslateSheetSubtitle": "The lyrics are sent to {provider}.",
+  "lyricsTranslateSheetSubtitle": "เนื้อเพลงถูกส่งไปที่ {provider}",
   "@lyricsTranslateSheetSubtitle": {
     "description": "Notice under the translate sheet title naming the AI provider that receives the lyrics",
     "placeholders": {
@@ -7231,7 +7231,7 @@
       }
     }
   },
-  "lyricsTranslatePartial": "{count, plural, =1{1 line} other{{count} lines}} could not be translated",
+  "lyricsTranslatePartial": "{count, plural, =1{1 บรรทัด} other{{count} บรรทัด}} ไม่สามารถแปลได้",
   "@lyricsTranslatePartial": {
     "description": "Snackbar after an AI translation that left some lines untranslated",
     "placeholders": {
@@ -7240,7 +7240,7 @@
       }
     }
   },
-  "lyricsTranslateAlreadyIn": "These lyrics are already in {language}",
+  "lyricsTranslateAlreadyIn": "เนื้อเพลงนี้เป็นภาษา {language} แล้ว",
   "@lyricsTranslateAlreadyIn": {
     "description": "Snackbar after an AI translation returned every line unchanged; language is the target language's own name",
     "placeholders": {
@@ -7253,7 +7253,7 @@
   "@lyricsAiTranslation": {
     "description": "Lyrics settings row and page title for translating lyrics with the user's own AI provider"
   },
-  "lyricsAiTranslationOff": "Not set up",
+  "lyricsAiTranslationOff": "ยังไม่ตั้งค่า",
   "@lyricsAiTranslationOff": {
     "description": "Subtitle of the AI Translation settings row before a provider is configured"
   },
@@ -7261,7 +7261,7 @@
   "@lyricsAiTranslationNotice": {
     "description": "Privacy notice at the top of the AI translation settings page"
   },
-  "lyricsAiSectionProvider": "Provider",
+  "lyricsAiSectionProvider": "ผู้ให้บริการ",
   "@lyricsAiSectionProvider": {
     "description": "AI translation settings section for the provider, key and model"
   },
@@ -7269,7 +7269,7 @@
   "@lyricsAiSectionTranslation": {
     "description": "AI translation settings section for the target language and behavior"
   },
-  "lyricsAiProvider": "Provider",
+  "lyricsAiProvider": "ผู้ให้บริการ",
   "@lyricsAiProvider": {
     "description": "AI translation setting that picks the AI service"
   },
@@ -7285,11 +7285,11 @@
   "@lyricsAiBaseUrl": {
     "description": "AI translation setting for the address of a custom OpenAI-compatible server"
   },
-  "lyricsAiBaseUrlInvalid": "Enter a URL that starts with http:// or https://",
+  "lyricsAiBaseUrlInvalid": "ใส่ URL เริ่มต้นด้วย http:// หรือ https://",
   "@lyricsAiBaseUrlInvalid": {
     "description": "Validation error for the custom AI server URL"
   },
-  "lyricsAiNotSet": "Not set",
+  "lyricsAiNotSet": "ยังไม่ตั้งค่า",
   "@lyricsAiNotSet": {
     "description": "Subtitle of an AI translation setting that has no value yet"
   },
@@ -7310,7 +7310,7 @@
       }
     }
   },
-  "lyricsAiApiKeyDescription": "Kept in this device's secure storage and only sent to {provider}.",
+  "lyricsAiApiKeyDescription": "เก็บในที่เก็บปลอดภัยของอุปกรณ์นี้ และส่งไปยัง {provider} เท่านั้น",
   "@lyricsAiApiKeyDescription": {
     "description": "Explanation in the API key sheet",
     "placeholders": {
@@ -7319,7 +7319,7 @@
       }
     }
   },
-  "lyricsAiModel": "Model",
+  "lyricsAiModel": "โมเดล",
   "@lyricsAiModel": {
     "description": "AI translation setting for the model id"
   },
@@ -7332,7 +7332,7 @@
       }
     }
   },
-  "lyricsAiModelHint": "Model ID",
+  "lyricsAiModelHint": "รหัสโมเดล",
   "@lyricsAiModelHint": {
     "description": "Hint of the model id text field"
   },
@@ -7340,7 +7340,7 @@
   "@lyricsAiModelUseDefault": {
     "description": "Action in the model sheet that returns to the provider's default model"
   },
-  "lyricsAiModelLoad": "Load Models",
+  "lyricsAiModelLoad": "โหลดโมเดล",
   "@lyricsAiModelLoad": {
     "description": "Button in the model sheet that lists the models the provider offers"
   },
@@ -7356,7 +7356,7 @@
   "@lyricsAiTestConnectionSubtitle": {
     "description": "Subtitle of the test connection action"
   },
-  "lyricsAiTestSuccess": "The connection works",
+  "lyricsAiTestSuccess": "การเชื่อมต่อใช้งานได้",
   "@lyricsAiTestSuccess": {
     "description": "Snackbar after a successful AI translation connection test"
   },
@@ -7373,7 +7373,7 @@
       }
     }
   },
-  "lyricsAiInstruction": "Extra Instruction",
+  "lyricsAiInstruction": "คำสั่งเพิ่มเติม",
   "@lyricsAiInstruction": {
     "description": "AI translation setting for optional guidance added to the translation request"
   },
@@ -7381,7 +7381,7 @@
   "@lyricsAiInstructionNone": {
     "description": "Subtitle of the extra instruction setting when it is empty"
   },
-  "lyricsAiInstructionHint": "For example: keep the rhymes where you can",
+  "lyricsAiInstructionHint": "เช่น: รักษาลำดับท่อนให้ได้มากที่สุด",
   "@lyricsAiInstructionHint": {
     "description": "Hint of the extra instruction text field"
   },
@@ -7397,10 +7397,10 @@
   "@lyricsAiMode": {
     "description": "Select fast line translation or slower word-synced translation"
   },
-  "lyricsAiModeFast": "Fast",
+  "lyricsAiModeFast": "เร็ว",
   "lyricsAiModeFastDescription": "แปลs per line without word timing. Uses less time and output.",
   "lyricsAiModeSynced": "ซิงค์ed",
-  "lyricsAiModeSyncedDescription": "Aligns translations and romanization to sung words and phrases. Takes longer and needs word-timed lyrics.",
+  "lyricsAiModeSyncedDescription": "จัดตำแหน่งการแปลและโรมันไนเซชันให้ตรงกับคำที่ร้อง ใช้เวลานานกว่าและต้องมีเนื้อเพลงที่มีเวลาต่อคำ",
   "lyricsAiRomanize": "เพิ่ม การถอดอักษร",
   "@lyricsAiRomanize": {
     "description": "AI translation switch that also asks for romanized lyrics"
@@ -7458,19 +7458,19 @@
   "@lyricsAiErrorTimeout": {
     "description": "AI translation error when a request times out"
   },
-  "lyricsAiErrorModelNotFound": "The provider does not offer this model",
+  "lyricsAiErrorModelNotFound": "ผู้ให้บริการไม่มีโมเดลนี้",
   "@lyricsAiErrorModelNotFound": {
     "description": "AI translation error for an unknown model id"
   },
-  "lyricsAiErrorRefused": "The model declined to translate these lyrics",
+  "lyricsAiErrorRefused": "โมเดลปฏิเสธการแปลเนื้อเพลงนี้",
   "@lyricsAiErrorRefused": {
     "description": "AI translation error when the model refuses the request"
   },
-  "lyricsAiErrorTruncated": "The model's answer was cut off. Try another model",
+  "lyricsAiErrorTruncated": "คำตอบของโมเดลถูกตัด ตัวลองโมเดลอื่น",
   "@lyricsAiErrorTruncated": {
     "description": "AI translation error when the reply hit the output limit"
   },
-  "lyricsAiErrorBadResponse": "The model's answer could not be read. Try another model",
+  "lyricsAiErrorBadResponse": "ไม่สามารถอ่านคำตอบของโมเดลได้ ลองโมเดลอื่น",
   "@lyricsAiErrorBadResponse": {
     "description": "AI translation error when the reply is not the expected JSON"
   },
@@ -7478,7 +7478,7 @@
   "@lyricsAiErrorService": {
     "description": "AI translation error for other provider failures"
   },
-  "lyricsAiErrorNoLyrics": "These lyrics have nothing to translate",
+  "lyricsAiErrorNoLyrics": "เนื้อเพลงนี้ไม่มีอะไรให้แปล",
   "@lyricsAiErrorNoLyrics": {
     "description": "AI translation error when the lyrics have no translatable lines"
   },
@@ -7511,11 +7511,11 @@
   "@nowPlayingQueueEmpty": {
     "description": "Empty state when the playback queue has no items"
   },
-  "nowPlayingNoMetadata": "No metadata available",
+  "nowPlayingNoMetadata": "ไม่มีข้อมูลเมตา",
   "@nowPlayingNoMetadata": {
     "description": "Empty state when track metadata cannot be loaded"
   },
-  "linkDevicesTitle": "Devices",
+  "linkDevicesTitle": "อุปกรณ์",
   "@linkDevicesTitle": {
     "description": "Mornye Link: title and button tooltip of the phone sheet that controls the paired desktop app"
   },
@@ -7527,11 +7527,11 @@
   "@linkConnectionConnecting": {
     "description": "Mornye Link: the phone is connecting to the paired desktop"
   },
-  "linkConnectionDisconnected": "Not connected",
+  "linkConnectionDisconnected": "ไม่ได้เชื่อมต่อ",
   "@linkConnectionDisconnected": {
     "description": "Mornye Link: the paired desktop cannot be reached"
   },
-  "linkThisPhone": "This phone",
+  "linkThisPhone": "โทรศัพท์เครื่องนี้",
   "@linkThisPhone": {
     "description": "Mornye Link: the phone's own row in the Devices sheet; choosing it plays music here again"
   },
@@ -7583,7 +7583,7 @@
       }
     }
   },
-  "linkHandoffNotFound": "{name} has none of these tracks",
+  "linkHandoffNotFound": "{name} ไม่มีเพลงเหล่านี้",
   "@linkHandoffNotFound": {
     "description": "Mornye Link: the paired desktop has none of the tracks in the phone's queue",
     "placeholders": {
@@ -7592,11 +7592,11 @@
       }
     }
   },
-  "linkHandoffNothingPlaying": "Nothing is playing on this phone",
+  "linkHandoffNothingPlaying": "ไม่มีอะไรเล่นอยู่บนโทรศัพท์นี้",
   "@linkHandoffNothingPlaying": {
     "description": "Mornye Link: Play on desktop needs a track playing on the phone"
   },
-  "linkContinueSkipped": "Not on this phone: {titles}",
+  "linkContinueSkipped": "ไม่อยู่บนโทรศัพท์นี้: {titles}",
   "@linkContinueSkipped": {
     "description": "Mornye Link: tracks of the desktop queue the phone could not play, listed by title",
     "placeholders": {
@@ -7609,7 +7609,7 @@
   "@linkContinueNotFound": {
     "description": "Mornye Link: the phone has none of the tracks of the desktop queue"
   },
-  "linkRequestFailed": "Could not reach {name}",
+  "linkRequestFailed": "ไม่สามารถเข้าถึง {name} ได้",
   "@linkRequestFailed": {
     "description": "Mornye Link: a request to the paired desktop failed",
     "placeholders": {
@@ -7670,7 +7670,7 @@
   "@linkSaveToPhone": {
     "description": "Mornye Link: downloads songs of the paired desktop's library into the phone's download folder"
   },
-  "linkSavingToPhone": "Saving to this phone",
+  "linkSavingToPhone": "กำลังบันทึกไปที่โทรศัพท์นี้",
   "@linkSavingToPhone": {
     "description": "Mornye Link: title of the progress dialog while desktop songs are saved to the phone"
   },
@@ -7692,7 +7692,7 @@
       }
     }
   },
-  "linkSaveToPhoneCancelled": "Saving stopped",
+  "linkSaveToPhoneCancelled": "หยุดบันทึกแล้ว",
   "@linkSaveToPhoneCancelled": {
     "description": "Mornye Link: the listener cancelled saving desktop songs to the phone"
   },
@@ -7730,7 +7730,7 @@
   "@linkTransferPhoneView": {
     "description": "Mornye Link: snackbar action that opens the list of song transfers"
   },
-  "linkTransferPhoneWith": "Transfer with {name}",
+  "linkTransferPhoneWith": "โอนย้ายกับ {name}",
   "@linkTransferPhoneWith": {
     "description": "Mornye Link: tooltip and sheet title of a playlist's button that sends its songs to the paired computer or saves the computer's songs to the phone",
     "placeholders": {
@@ -7788,7 +7788,7 @@
   "@linkDownloadStatusFailed": {
     "description": "Mornye Link: a download on the paired desktop failed"
   },
-  "announcementUnableToOpenLink": "Unable to open link. Please try again.",
+  "announcementUnableToOpenLink": "ไม่สามารถเปิดลิงก์ได้ โปรดลองอีกครั้ง",
   "@announcementUnableToOpenLink": {
     "description": "Snackbar shown when an announcement CTA link cannot be opened"
   },
@@ -7922,7 +7922,7 @@
   "@trackConvertDithering": {
     "description": "Section label for lossless conversion dithering options"
   },
-  "trackConvertResampler": "Resampler",
+  "trackConvertResampler": "รีแซมเพลอร์",
   "@trackConvertResampler": {
     "description": "Section label for lossless conversion resampler options"
   },
@@ -7946,7 +7946,7 @@
   "@trackConvertResamplerSoxr": {
     "description": "Lossless conversion SoX resampler option"
   },
-  "updateSeeReleaseNotes": "See release notes for details.",
+  "updateSeeReleaseNotes": "ดูบันทึกการเปลี่ยนแปลงเพื่อรายละเอียด",
   "@updateSeeReleaseNotes": {
     "description": "Fallback changelog text when release notes cannot be parsed"
   },
@@ -7971,7 +7971,7 @@
       }
     }
   },
-  "snackbarExtensionUpdatedVersion": "{extensionName} updated to v{version}",
+  "snackbarExtensionUpdatedVersion": "{extensionName} อัปเดตเป็น v{version}",
   "@snackbarExtensionUpdatedVersion": {
     "description": "Snackbar after updating an extension from the repo tab",
     "placeholders": {
@@ -8005,7 +8005,7 @@
   "@releaseTypeEp": {
     "description": "Badge label for EP releases"
   },
-  "releaseTypeSingle": "Single",
+  "releaseTypeSingle": "ซิงเกิล",
   "@releaseTypeSingle": {
     "description": "Badge label for single releases"
   },
@@ -8013,67 +8013,67 @@
   "@trackCoverOnline": {
     "description": "Label shown when metadata autofill downloaded cover art from the internet"
   },
-  "regionCountryUS": "United States",
+  "regionCountryUS": "สหรัฐอเมริกา",
   "@regionCountryUS": {
     "description": "Country name for SongLink region picker"
   },
-  "regionCountryIT": "Italy",
+  "regionCountryIT": "อิตาลี",
   "@regionCountryIT": {
     "description": "Country name for Italy"
   },
-  "regionCountryES": "Spain",
+  "regionCountryES": "สเปน",
   "@regionCountryES": {
     "description": "Country name for Spain"
   },
-  "regionCountryGB": "United Kingdom",
+  "regionCountryGB": "สหราชอาณาจักร",
   "@regionCountryGB": {
     "description": "Country name for SongLink region picker"
   },
-  "regionCountryFR": "France",
+  "regionCountryFR": "ฝรั่งเศส",
   "@regionCountryFR": {
     "description": "Country name for SongLink region picker"
   },
-  "regionCountryDE": "Germany",
+  "regionCountryDE": "เยอรมนี",
   "@regionCountryDE": {
     "description": "Country name for SongLink region picker"
   },
-  "regionCountryJP": "Japan",
+  "regionCountryJP": "ญี่ปุ่น",
   "@regionCountryJP": {
     "description": "Country name for SongLink region picker"
   },
-  "regionCountryKR": "South Korea",
+  "regionCountryKR": "เกาหลีใต้",
   "@regionCountryKR": {
     "description": "Country name for SongLink region picker"
   },
-  "regionCountryIN": "India",
+  "regionCountryIN": "อินเดีย",
   "@regionCountryIN": {
     "description": "Country name for SongLink region picker"
   },
-  "regionCountryID": "Indonesia",
+  "regionCountryID": "อินโดนีเซีย",
   "@regionCountryID": {
     "description": "Country name for SongLink region picker"
   },
-  "regionCountryBR": "Brazil",
+  "regionCountryBR": "บราซิล",
   "@regionCountryBR": {
     "description": "Country name for SongLink region picker"
   },
-  "regionCountryMX": "Mexico",
+  "regionCountryMX": "เม็กซิโก",
   "@regionCountryMX": {
     "description": "Country name for SongLink region picker"
   },
-  "regionCountryAU": "Australia",
+  "regionCountryAU": "ออสเตรเลีย",
   "@regionCountryAU": {
     "description": "Country name for SongLink region picker"
   },
-  "regionCountryCA": "Canada",
+  "regionCountryCA": "แคนาดา",
   "@regionCountryCA": {
     "description": "Country name for SongLink region picker"
   },
-  "regionCountryXK": "Kosovo",
+  "regionCountryXK": "โคโซโว",
   "@regionCountryXK": {
     "description": "Country name for SongLink region picker"
   },
-  "extensionVerificationBrowserTitle": "Verification browser",
+  "extensionVerificationBrowserTitle": "เบราว์เซอร์ยืนยันตัวตน",
   "@extensionVerificationBrowserTitle": {
     "description": "Settings option title for extension verification browser preference"
   },
@@ -8089,7 +8089,7 @@
   "@extensionVerificationBrowserExternal": {
     "description": "Chip label for external browser verification mode"
   },
-  "extensionVerificationBrowserInApp": "In-app",
+  "extensionVerificationBrowserInApp": "ในแอป",
   "@extensionVerificationBrowserInApp": {
     "description": "Chip label for in-app browser verification mode"
   },
@@ -8106,7 +8106,7 @@
   "@extensionVerificationHelpTitleManual": {
     "description": "Dialog title when automatic browser launch for verification fails"
   },
-  "extensionVerificationHelpTitleWaiting": "Verification still waiting",
+  "extensionVerificationHelpTitleWaiting": "ยังคงรอการยืนยัน",
   "@extensionVerificationHelpTitleWaiting": {
     "description": "Dialog title when verification is taking longer than expected"
   },
@@ -8114,7 +8114,7 @@
   "@extensionVerificationHelpMessageManual": {
     "description": "Dialog message when automatic browser launch for verification fails"
   },
-  "extensionVerificationHelpMessageWaiting": "If the browser did not open, or verification finished but did not return to Mornye, open this link again or copy it manually.",
+  "extensionVerificationHelpMessageWaiting": "หากเบราว์เซอร์ไม่เปิด หรือการยืนยันเสร็จแต่ไม่กลับมาที่ Mornye ให้เปิดลิงก์นี้อีกครั้งหรือคัดลอกด้วยตนเอง",
   "@extensionVerificationHelpMessageWaiting": {
     "description": "Dialog message when verification may need manual browser help"
   },
@@ -8130,7 +8130,7 @@
   "@extensionVerificationPasteCallback": {
     "description": "Button that completes extension verification from a callback URL in the clipboard"
   },
-  "extensionVerificationLinkCopied": "Verification link copied",
+  "extensionVerificationLinkCopied": "คัดลอกลิงก์ยืนยันแล้ว",
   "@extensionVerificationLinkCopied": {
     "description": "Snackbar after copying the extension verification URL"
   },
@@ -8142,7 +8142,7 @@
   "@settingsSearchHint": {
     "description": "Placeholder of the search field on the Settings tab"
   },
-  "settingsSearchNoResults": "No settings match \"{query}\"",
+  "settingsSearchNoResults": "ไม่มีการตั้งค่าตรงกับ \"{query}\"",
   "@settingsSearchNoResults": {
     "description": "Shown when a Settings search returns nothing",
     "placeholders": {
@@ -8230,17 +8230,17 @@
   "@optionsEmbeddedCoverSizeDescription": {
     "description": "Description shown in the embedded cover size picker"
   },
-  "mornyeFavorite": "Favorite",
+  "mornyeFavorite": "โปรด",
   "mornyeGoToArtist": "Go to ศิลปิน",
   "@mornyeFavorite": {
     "description": "Compact context menu action that adds a track to Loved"
   },
   "mornyeGetInfo": "Get ข้อมูล",
-  "mornyeFavorited": "Favorited",
+  "mornyeFavorited": "เพิ่มในโปรดแล้ว",
   "@mornyeFavorited": {
     "description": "Selected state of the compact favorite action"
   },
-  "autoMixDescription": "Blend songs with beat matching and pitch-preserving tempo adjustment. Uses crossfade when beats cannot be matched.",
+  "autoMixDescription": "ผสมเพลงด้วยการจับตีและปรับความเร็วโดยรักษาพิชด์ ใช้ Crossfade เมื่อจับตีไม่ได้",
   "gaplessPlayback": "เล่นต่อเนื่อง",
   "@gaplessPlayback": {
     "description": "Playback settings switch that starts the next song the moment one ends"
@@ -8269,11 +8269,11 @@
   "@autoHideLyricsControlsDescription": {
     "description": "Subtitle explaining the five-second Now Playing lyrics timeout"
   },
-  "compactPlayer": "Compact player",
+  "compactPlayer": "ผู้เล่นแบบกระชับ",
   "@compactPlayer": {
     "description": "Material player setting: idle lyrics shrink the player to a slim bar instead of hiding it"
   },
-  "compactPlayerDescription": "When lyrics are left alone, shrink the player to a slim bar so the lyrics get more room. A tap brings the full player back",
+  "compactPlayerDescription": "เมื่อเนื้อเพลงอยู่กับตัวเอง ให้ย่อผู้เล่นเป็นแถบบางเพื่อให้เนื้อเพลงได้พื้นที่มากขึ้น แตะเพื่อกลับมาที่ผู้เล่นเต็มรูปแบบ",
   "@compactPlayerDescription": {
     "description": "Subtitle of the compact player setting"
   },
@@ -8281,11 +8281,11 @@
   "@playerCoverStyleDefault": {
     "description": "Cover art style: artwork card above the controls"
   },
-  "playerCoverStyleCard": "Card",
+  "playerCoverStyleCard": "การ์ด",
   "@playerCoverStyleCard": {
     "description": "Cover art style: artwork as a card above the controls (full screen is the default)"
   },
-  "playerCoverStyleDefaultDescription": "Artwork as a card above the controls",
+  "playerCoverStyleDefaultDescription": "ภาพศิลปะเป็นการ์ดเหนือควบคุม",
   "@playerCoverStyleDefaultDescription": {
     "description": "Subtitle of the default cover art style"
   },
@@ -8293,23 +8293,23 @@
   "@playerCoverStyleFullScreen": {
     "description": "Cover art style: artwork fills the top of the player"
   },
-  "playerCoverStyleFullScreenDescription": "Artwork fills the top of the player and fades into a blur. Motion artwork is always full screen in Mornye",
+  "playerCoverStyleFullScreenDescription": "ภาพศิลปะเติมส่วนบนของผู้เล่นและจางเป็นเบลอ Motion artwork จะเต็มจอเสมอใน Mornye",
   "@playerCoverStyleFullScreenDescription": {
     "description": "Subtitle of the full screen cover art style"
   },
-  "musicHaptics": "Music haptics",
+  "musicHaptics": "แฮปติกเพลง",
   "@musicHaptics": {
     "description": "Setting that vibrates the phone along with the music"
   },
-  "musicHapticsDescription": "Vibrate along with the beat of downloaded and local songs",
+  "musicHapticsDescription": "สั่นสะท้อนตีของเพลงที่ดาวน์โหลดและเพลงในเครื่อง",
   "@musicHapticsDescription": {
     "description": "Subtitle of the music haptics setting"
   },
-  "musicHapticsSensitivity": "Sensitivity",
+  "musicHapticsSensitivity": "ความไว",
   "@musicHapticsSensitivity": {
     "description": "Slider for how many beats trigger music haptics; higher values vibrate on softer hits"
   },
-  "musicHapticsStrength": "Strength",
+  "musicHapticsStrength": "ความแรง",
   "@musicHapticsStrength": {
     "description": "Slider for how strongly the phone vibrates with music haptics"
   },
@@ -8321,8 +8321,8 @@
   "queueAutoMix": "อัตโนมัติMix",
   "autoplayFromLibrary": "อัตโนมัติplay from your ไลบรารี",
   "autoplayDescription": "ดำเนินต่อ with related songs from your ไลบรารี when the queue ends.",
-  "autoplayPersonalization": "Personalized autoplay",
-  "autoplayPersonalizationDescription": "Learn from songs you listen to and skip, privately on this device. Turning this off stops learning and restores ordinary autoplay.",
+  "autoplayPersonalization": "การเล่นต่อแบบส่วนตัว",
+  "autoplayPersonalizationDescription": "เรียนรู้จากเพลงที่คุณฟังและข้ามไป ไว้ในเครื่องนี้อย่างเป็นส่วนตัว การปิดจะหยุดเรียนรู้และกลับมาเล่นต่อแบบปกติ",
   "autoplayResetLearning": "รีเซ็ต recommendation learning",
   "autoplayResetLearningConfirmTitle": "รีเซ็ต recommendation learning?",
   "autoplayResetLearningConfirmMessage": "อัตโนมัติplay forgets what it learned from your listening and skips. This can't be undone.",
@@ -8345,7 +8345,7 @@
   "@autoplayLearningWaiting": {
     "description": "Ranking cannot be checked yet because the latest Autoplay songs were all kept or all skipped"
   },
-  "autoplayLearningTuned": "Tuned to you: {learned}% accurate on your latest songs (standard {starting}%)",
+  "autoplayLearningTuned": "ปรับให้คุณ: {learned}% ถูกต้องกับเพลงล่าสุด (มาตรฐาน {starting}%)",
   "@autoplayLearningTuned": {
     "description": "Autoplay uses learned ranking, which orders the latest kept and skipped songs better than the standard ranking",
     "placeholders": {
@@ -8357,7 +8357,7 @@
       }
     }
   },
-  "autoplayLearningStandard": "Standard ranking: tuning was not more accurate on your latest songs ({learned}% vs {starting}%)",
+  "autoplayLearningStandard": "อันดับมาตรฐาน: การปรับไม่แม่นยำกว่ากับเพลงล่าสุด ({learned}% เทียบ {starting}%)",
   "@autoplayLearningStandard": {
     "description": "Autoplay keeps the standard ranking because the learned one did not order the latest songs better",
     "placeholders": {
@@ -8369,14 +8369,14 @@
       }
     }
   },
-  "songAnalysis": "Song analysis",
+  "songAnalysis": "การวิเคราะห์เพลง",
   "@songAnalysis": {
     "description": "Switch that analyzes how each Library song sounds, on the device, for Autoplay"
   },
   "songAnalysisDescription": "Learn how each ไลบรารี song sounds, privately on this device, so อัตโนมัติplay picks songs that sound like what you play and flow into each other.",
-  "songAnalysisOnlyWhileCharging": "Only while charging",
+  "songAnalysisOnlyWhileCharging": "เฉพาะขณะชาร์จ",
   "songAnalysisOnlyWhileChargingDescription": "Analyze the ไลบรารี only while this phone charges. The song playing is analyzed either way.",
-  "songAnalysisProgress": "{analyzed} of {total} songs analyzed",
+  "songAnalysisProgress": "วิเคราะห์แล้ว {analyzed} จาก {total} เพลง",
   "@songAnalysisProgress": {
     "description": "How many Library songs song analysis has described so far",
     "placeholders": {
@@ -8390,20 +8390,20 @@
       }
     }
   },
-  "songAnalysisClear": "Clear song analysis",
-  "songAnalysisClearConfirmTitle": "Clear song analysis?",
+  "songAnalysisClear": "ล้างการวิเคราะห์เพลง",
+  "songAnalysisClearConfirmTitle": "ล้างการวิเคราะห์เพลง?",
   "songAnalysisClearConfirmMessage": "อัตโนมัติplay forgets how your songs sound. While song analysis is on, your ไลบรารี is analyzed again.",
-  "songAnalysisClearConfirm": "Clear",
-  "profileTitle": "Profile",
-  "profileSetUp": "Set up your profile",
+  "songAnalysisClearConfirm": "ล้าง",
+  "profileTitle": "โปรไฟล์",
+  "profileSetUp": "ตั้งค่าโปรไฟล์",
   "profileEdit": "แก้ไข name and photo",
-  "backupIncludesProfile": "Includes your profile name and photo",
+  "backupIncludesProfile": "รวมชื่อและรูปโปรไฟล์",
   "profileName": "ชื่อ",
-  "profileNameHint": "Your name",
-  "profileChangePhoto": "Choose photo",
+  "profileNameHint": "ชื่อของคุณ",
+  "profileChangePhoto": "เลือกรูป",
   "profileRemovePhoto": "ลบ photo",
-  "profilePhotoError": "Choose a valid image smaller than 20 MB.",
-  "profileSaveError": "Could not save your profile. Please try again.",
+  "profilePhotoError": "เลือกภาพที่ถูกต้อง ขนาดไม่เกิน 20 MB",
+  "profileSaveError": "ไม่สามารถบันทึกโปรไฟล์ได้ โปรดลองอีกครั้ง",
   "homeGreetingMorning1": "สวัสดีตอนเช้า",
   "homeGreetingMorning2": "อรุณสวัสดิ์",
   "homeGreetingMorning3": "เริ่มวันใหม่",
@@ -8648,15 +8648,15 @@
   "@homeMixSaveAsPlaylist": {
     "description": "Action that saves a daily mix's songs into one of the user's playlists"
   },
-  "artistUpcomingConcerts": "Upcoming Concerts",
+  "artistUpcomingConcerts": "คอนเสิร์ตที่จะมาถึง",
   "artistAllUpcomingConcerts": "ทั้งหมด Upcoming Concerts",
-  "artistNoUpcomingConcerts": "No upcoming concerts.",
-  "motionArtwork": "Animated artwork",
-  "listeningStats": "Listening statistics",
-  "listeningStatsRecord": "Record listening",
-  "listeningStatsDescription": "Stored only on this device, starting now. Records the built-in player only; pauses, buffering and seeking add no listening time. A play counts after 30 seconds.",
+  "artistNoUpcomingConcerts": "ไม่มีคอนเสิร์ตที่จะมาถึง",
+  "motionArtwork": "ภาพศิลปะเคลื่อนไหว",
+  "listeningStats": "สถิติการฟัง",
+  "listeningStatsRecord": "บันทึกการฟัง",
+  "listeningStatsDescription": "เก็บเฉพาะในอุปกรณ์นี้ เริ่มตอนนี้ บันทึกเฉพาะผู้เล่นภายใน; การหยุดชั่วคราว บัฟเฟอร์ และการข้ามไม่นับเวลาการฟัง การเล่นนับหลังจาก 30 วินาที",
   "listeningStatsEmpty": "เล่น music with the built-in player to start your listening recap. Earlier listening cannot be recovered.",
-  "listeningStatsDays": "{days} days",
+  "listeningStatsDays": "{days} วัน",
   "@listeningStatsDays": {
     "placeholders": {
       "days": {
@@ -8664,7 +8664,7 @@
       }
     }
   },
-  "listeningStatsMinutes": "{minutes} min",
+  "listeningStatsMinutes": "{minutes} นาที",
   "@listeningStatsMinutes": {
     "placeholders": {
       "minutes": {
@@ -8672,7 +8672,7 @@
       }
     }
   },
-  "listeningStatsTotals": "{plays, plural, =1{1 play} other{{plays} plays}} · {tracks, plural, =1{1 track} other{{tracks} tracks}} · {days, plural, =1{1 active day} other{{days} active days}}",
+  "listeningStatsTotals": "{plays, plural, =1{1 ครั้ง} other{{plays} ครั้ง}} · {tracks, plural, =1{1 เพลง} other{{tracks} เพลง}} · {days, plural, =1{1 วันที่ใช้งาน} other{{days} วันที่ใช้งาน}}",
   "@listeningStatsTotals": {
     "placeholders": {
       "plays": {
@@ -8691,15 +8691,15 @@
   "listeningStatsActivity": "ล่าสุด listening days · minutes",
   "listeningStatsTopArtists": "บน artists",
   "listeningStatsTopTracks": "เพลงยอดนิยม",
-  "listeningStatsLoadError": "Could not load listening statistics",
-  "listeningStatsClear": "Clear listening statistics",
-  "listeningStatsClearError": "Could not clear listening statistics. Please try again.",
+  "listeningStatsLoadError": "ไม่สามารถโหลดสถิติการฟังได้",
+  "listeningStatsClear": "ล้างสถิติการฟัง",
+  "listeningStatsClearError": "ไม่สามารถล้างสถิติการฟังได้ โปรดลองอีกครั้ง",
   "listeningStatsClearDescription": "ลบ all listening statistics on this device? Your music and playlists will be kept.",
   "libraryArtistsEmpty": "ศิลปิน appear here once you download music or scan a local library.",
   "listeningRewind": "ข้ามหลัง",
-  "listeningRewindDescription": "Relive the highlights of your recent weeks and months",
+  "listeningRewindDescription": "ทบทวนไฮไลท์ของสัปดาห์และเดือนที่ผ่านมา",
   "listeningRewindChoosePeriod": "เลือกช่วงเวลา",
-  "listeningRewindLastWeeks": "Last {weeks} weeks",
+  "listeningRewindLastWeeks": "{weeks} สัปดาห์ที่ผ่านมา",
   "@listeningRewindLastWeeks": {
     "placeholders": {
       "weeks": {
@@ -8707,7 +8707,7 @@
       }
     }
   },
-  "listeningRewindLastMonths": "Last {months} months",
+  "listeningRewindLastMonths": "{months} เดือนที่ผ่านมา",
   "@listeningRewindLastMonths": {
     "placeholders": {
       "months": {
@@ -8715,7 +8715,7 @@
       }
     }
   },
-  "listeningRewindThisYear": "{year} so far",
+  "listeningRewindThisYear": "{year} จนถึงตอนนี้",
   "@listeningRewindThisYear": {
     "placeholders": {
       "year": {
@@ -8724,7 +8724,7 @@
     }
   },
   "listeningRewindIntroTitle": "Your ข้ามหลัง",
-  "listeningRewindIntroBody": "A look back at what you played from {start} to {end}.",
+  "listeningRewindIntroBody": "มองย้อนกลับสิ่งที่คุณฟังตั้งแต่ {start} ถึง {end}",
   "@listeningRewindIntroBody": {
     "placeholders": {
       "start": {
@@ -8735,8 +8735,8 @@
       }
     }
   },
-  "listeningRewindMinutesTitle": "You listened for",
-  "listeningRewindMinutesUnit": "{minutes, plural, =1{minute} other{minutes}}",
+  "listeningRewindMinutesTitle": "คุณฟังเป็นเวลา",
+  "listeningRewindMinutesUnit": "{minutes, plural, =1{นาที} other{นาที}}",
   "@listeningRewindMinutesUnit": {
     "placeholders": {
       "minutes": {
@@ -8744,7 +8744,7 @@
       }
     }
   },
-  "listeningRewindHours": "{hours, plural, =1{That's about 1 hour of music} other{That's about {hours} hours of music}}",
+  "listeningRewindHours": "{hours, plural, =1{ประมาณ 1 ชั่วโมงของเพลง} other{ประมาณ {hours} ชั่วโมงของเพลง}}",
   "@listeningRewindHours": {
     "placeholders": {
       "hours": {
@@ -8752,7 +8752,7 @@
       }
     }
   },
-  "listeningRewindMore": "{percent}% more than the period before",
+  "listeningRewindMore": "{percent}% มากกว่าช่วงก่อน",
   "@listeningRewindMore": {
     "placeholders": {
       "percent": {
@@ -8760,7 +8760,7 @@
       }
     }
   },
-  "listeningRewindLess": "{percent}% less than the period before",
+  "listeningRewindLess": "{percent}% น้อยกว่าช่วงก่อน",
   "@listeningRewindLess": {
     "placeholders": {
       "percent": {
@@ -8769,8 +8769,8 @@
     }
   },
   "listeningRewindSame": "เกี่ยวกับ the same as the period before",
-  "listeningRewindTopArtistTitle": "Your top artist",
-  "listeningRewindArtistShare": "{percent}% of your listening time",
+  "listeningRewindTopArtistTitle": "ศิลปินอันดับหนึ่งของคุณ",
+  "listeningRewindArtistShare": "{percent}% ของเวลาฟัง",
   "@listeningRewindArtistShare": {
     "placeholders": {
       "percent": {
@@ -8779,8 +8779,8 @@
     }
   },
   "listeningRewindArtistsTitle": "ศิลปิน on rotation",
-  "listeningRewindTopTrackTitle": "Your top song",
-  "listeningRewindPlays": "{plays, plural, =1{1 play} other{{plays} plays}}",
+  "listeningRewindTopTrackTitle": "เพลงอันดับหนึ่งของคุณ",
+  "listeningRewindPlays": "{plays, plural, =1{1 ครั้ง} other{{plays} ครั้ง}}",
   "@listeningRewindPlays": {
     "placeholders": {
       "plays": {
@@ -8789,9 +8789,9 @@
     }
   },
   "listeningRewindTracksTitle": "เพลง on repeat",
-  "listeningRewindTopAlbumTitle": "The album you kept coming back to",
+  "listeningRewindTopAlbumTitle": "อัลบั้มที่คุณกลับมาฟังซ้ำ",
   "listeningRewindNewArtistsTitle": "ใหม่ discoveries",
-  "listeningRewindNewArtistsBody": "{count, plural, =1{You found 1 new artist} other{You found {count} new artists}}",
+  "listeningRewindNewArtistsBody": "{count, plural, =1{คุณพบศิลปินใหม่ 1 คน} other{คุณพบศิลปินใหม่ {count} คน}}",
   "@listeningRewindNewArtistsBody": {
     "placeholders": {
       "count": {
@@ -8799,11 +8799,11 @@
       }
     }
   },
-  "listeningRewindRhythmTitle": "Your listening rhythm",
-  "listeningRewindPeakDay": "Biggest day",
-  "listeningRewindFavoriteDay": "Favorite day",
-  "listeningRewindStreak": "Longest streak",
-  "listeningRewindStreakDays": "{days, plural, =1{1 day} other{{days} days in a row}}",
+  "listeningRewindRhythmTitle": "จังหวะการฟังของคุณ",
+  "listeningRewindPeakDay": "วันที่ฟังมากที่สุด",
+  "listeningRewindFavoriteDay": "วันที่โปรด",
+  "listeningRewindStreak": "สตรีกยาวที่สุด",
+  "listeningRewindStreakDays": "{days, plural, =1{1 วัน} other{{days} วันติดต่อกัน}}",
   "@listeningRewindStreakDays": {
     "placeholders": {
       "days": {
@@ -8811,8 +8811,8 @@
       }
     }
   },
-  "listeningRewindReplayTitle": "Couldn't stop playing",
-  "listeningRewindReplayBody": "You played it {plays} times on {date}",
+  "listeningRewindReplayTitle": "เล่นซ้ำไม่หยุด",
+  "listeningRewindReplayBody": "คุณเล่น {plays} ครั้งใน {date}",
   "@listeningRewindReplayBody": {
     "placeholders": {
       "plays": {
@@ -8827,7 +8827,7 @@
   "listeningRewindOutroBody": "Keep listening. Your next ข้ามหลัง is already taking shape.",
   "listeningRewindEmpty": "Not enough listening in this period yet. เล่น some music with the built-in player and come back later.",
   "listeningRewindLoadError": "Could not load your ข้ามหลัง",
-  "listeningRewindSlide": "Slide {index} of {count}",
+  "listeningRewindSlide": "สไลด์ {index} จาก {count}",
   "@listeningRewindSlide": {
     "placeholders": {
       "index": {
@@ -8842,8 +8842,8 @@
   "listeningRewindShareError": "Could not share your ข้ามหลัง",
   "listeningRewindNext": "ถัดไป",
   "listeningRewindPrevious": "ก่อนหน้า",
-  "listeningRewindMonthlyReady": "Your last 4 weeks are ready to replay",
-  "listeningRewindYearTitle": "Your {year} in Music",
+  "listeningRewindMonthlyReady": "4 สัปดาห์ล่าสุดพร้อมทบทวนแล้ว",
+  "listeningRewindYearTitle": "ปี {year} ของคุณในเพลง",
   "@listeningRewindYearTitle": {
     "placeholders": {
       "year": {
@@ -8852,14 +8852,14 @@
     }
   },
   "listeningRewindYearEyebrow": "ปี-end ข้ามหลัง",
-  "listeningRewindYearBanner": "Your top artists, songs and moments of the year",
-  "listeningRewindYearIntroBody": "Everything you played this year, from your first song to your biggest month.",
-  "listeningRewindNumbersTitle": "Your year in numbers",
+  "listeningRewindYearBanner": "ศิลปิน เพลง และช่วงเวลายอดนิยมของปี",
+  "listeningRewindYearIntroBody": "ทุกเพลงที่คุณฟังในปีนี้ ตั้งแต่เพลงแรกจนถึงเดือนที่ฟังมากที่สุด",
+  "listeningRewindNumbersTitle": "ปีของคุณในตัวเลข",
   "listeningRewindSongsLabel": "เพลง",
   "listeningRewindArtistsLabel": "ศิลปิน",
   "listeningRewindAlbumsLabel": "อัลบั้ม",
   "listeningRewindDaysLabel": "วัน with music",
-  "listeningRewindDaysShare": "Music on {percent}% of your days",
+  "listeningRewindDaysShare": "มีเพลงใน {percent}% ของวัน",
   "@listeningRewindDaysShare": {
     "placeholders": {
       "percent": {
@@ -8867,9 +8867,9 @@
       }
     }
   },
-  "listeningRewindMonthsTitle": "Month by month",
-  "listeningRewindBiggestMonthLabel": "Biggest month",
-  "listeningRewindBiggestMonth": "Your biggest month was {month}",
+  "listeningRewindMonthsTitle": "เดือนละเดือน",
+  "listeningRewindBiggestMonthLabel": "เดือนที่ใหญ่ที่สุด",
+  "listeningRewindBiggestMonth": "เดือนที่ใหญ่ที่สุดของคุณคือ {month}",
   "@listeningRewindBiggestMonth": {
     "placeholders": {
       "month": {
@@ -8878,7 +8878,7 @@
     }
   },
   "listeningRewindMonthlyArtistsTitle": "ศิลปิน of the month",
-  "listeningRewindLoyalTitle": "Always by your side",
+  "listeningRewindLoyalTitle": "อยู่เคียงข้างเสมอ",
   "listeningRewindLoyalBody": "{days, plural, =1{กับ you on 1 day} other{กับ you on {days} different days}}",
   "@listeningRewindLoyalBody": {
     "placeholders": {
@@ -8887,8 +8887,8 @@
       }
     }
   },
-  "listeningRewindFirstSongTitle": "Where your year began",
-  "listeningRewindFirstSongBody": "Your most-played song on your first listening day, {date}",
+  "listeningRewindFirstSongTitle": "จุดเริ่มต้นของปีคุณ",
+  "listeningRewindFirstSongBody": "เพลงที่ฟังมากที่สุดในวันแรกที่ฟัง {date}",
   "@listeningRewindFirstSongBody": {
     "placeholders": {
       "date": {
@@ -8896,7 +8896,7 @@
       }
     }
   },
-  "listeningRewindYearOutroTitle": "That was your {year}",
+  "listeningRewindYearOutroTitle": "นั่นคือปี {year} ของคุณ",
   "@listeningRewindYearOutroTitle": {
     "placeholders": {
       "year": {
@@ -8904,13 +8904,13 @@
       }
     }
   },
-  "listeningRewindYearOutroBody": "Here's to another year of great music.",
+  "listeningRewindYearOutroBody": "ขอให้อีกปีหนึ่งเต็มไปด้วยเพลงดีๆ",
   "weeklyReleases": "ใหม่ releases",
   "weeklyReleasesDescription": "ล่าสุด albums and singles from your favorite artists, supplied by installed metadata extensions.",
   "weeklyReleasesEmpty": "No dated releases found in this period. เพิ่ม favorite artists or try a longer period.",
   "weeklyReleasesUnavailable": "Some artists could not be checked. Their saved results are kept. ผู้ให้บริการ may not supply artist catalogs or exact release dates.",
-  "weeklyReleasesLoadError": "Could not check new releases. Pull to refresh.",
-  "motionArtworkDescription": "Loop video covers supplied by metadata providers. Turn off to use still artwork and reduce battery use.",
+  "weeklyReleasesLoadError": "ไม่สามารถตรวจสอบการปล่อยใหม่ได้ ลากลงเพื่อรีเฟรช",
+  "motionArtworkDescription": "ปกวิดีโอแบบวนซ้ำจากผู้ให้บริการข้อมูลเมตา ปิดเพื่อใช้ภาพนิ่งและลดการใช้แบตเตอรี่",
   "libraryLoading": "กำลังโหลด ไลบรารี…",
   "libraryLoadFailed": "ไลบรารี could not be loaded. ลองใหม่ to load the saved folders and track index.",
   "discordPresenceDescription": "แชร์ the title, artist, album and progress of music played in the built-in player on your Discord profile. Local audio and artwork files are never uploaded. Clears when playback pauses or stops.",
@@ -8918,29 +8918,29 @@
   "discordPresenceLink": "ลิงก์ Discord account",
   "discordPresenceConnecting": "เชื่อมต่อing to Discord…",
   "discordPresenceReady": "พร้อม when music plays",
-  "discordPresenceActive": "Sharing current track",
+  "discordPresenceActive": "แชร์เพลงปัจจุบัน",
   "discordPresenceUnavailable": "Discord is unavailable. ลองใหม่ing during playback.",
-  "discordPresenceBuildUnavailable": "Discord SDK is not available in this build.",
+  "discordPresenceBuildUnavailable": "Discord SDK ไม่พร้อมใช้งานในบิลด์นี้",
   "discordPresenceAndroidHelp": "ติดตั้ง Discord และเข้าสู่ระบบบนโทรศัพท์นี้ เปิดแชร์กิจกรรมใน Discord ผู้เล่นภายนอกไม่รองรับ",
   "discordPresenceIosHelp": "ลิงก์ your account through Discord and allow activity sharing. Tap to link again if authorization fails.",
-  "discordPresenceDesktopHelp": "Keep the Discord desktop app running and signed in on this computer, and allow activity sharing in Discord.",
+  "discordPresenceDesktopHelp": "เก็บแอป Discord เดสก์ท็อปเปิดและลงชื่อเข้าใช้บนคอมพิวเตอร์นี้ และอนุญาตแชร์กิจกรรมใน Discord",
   "discordPresenceDisconnect": "ยกเลิกการเชื่อมต่อ and forget account",
-  "autoMixSettingsTitle": "Mix transitions",
+  "autoMixSettingsTitle": "การเปลี่ยนเพลงแบบ Mix",
   "autoMixAutomaticDuration": "อัตโนมัติmatic duration",
-  "autoMixDuration": "Mix duration",
-  "autoMixEffect": "Transition effect",
+  "autoMixDuration": "ระยะเวลา Mix",
+  "autoMixEffect": "เอฟเฟกต์การเปลี่ยน",
   "autoMixEffectAuto": "อัตโนมัติ",
   "autoMixEffectCrossfade": "ครอสเฟด",
-  "autoMixEffectMuffled": "Muffled",
-  "autoMixEffectEcho": "Echo",
+  "autoMixEffectMuffled": "ปิดบัง",
+  "autoMixEffectEcho": "อีโค่",
   "autoMixEffectPitch": "น้ำเสียง",
   "autoMixEffectCustom": "กำหนดเอง",
   "autoMixEffectsHelp": "เอฟเฟกต์ apply to the end of the outgoing song during the mix. Short songs use a shorter overlap.",
   "autoMixSpeed": "ความเร็ว",
   "autoMixPitch": "น้ำเสียง (semitones)",
-  "autoMixEcho": "Echo",
-  "autoMixLowPass": "Muffled filter",
-  "autoMixMixing": "Mixing",
+  "autoMixEcho": "อีโค่",
+  "autoMixLowPass": "กรอง Low-pass",
+  "autoMixMixing": "กำลัง Mix",
   "autoMixCrossfading": "ครอสเฟด",
   "playbackAutomation": "อัตโนมัติmatic playback",
   "playbackPauseOnMute": "หยุดชั่วคราว when muted",
@@ -8948,7 +8948,7 @@
   "@snackbarPlaybackMuted": {
     "description": "Shown after mute automation pauses playback; another explicit play request can override the pause."
   },
-  "snackbarPlaybackFormatUnsupported": "This format can't be played on this device: {format}",
+  "snackbarPlaybackFormatUnsupported": "รูปแบบนี้เล่นไม่ได้บนอุปกรณ์นี้: {format}",
   "@snackbarPlaybackFormatUnsupported": {
     "description": "Shown when the player cannot decode a song and stops on it. format is a file format name such as APE or WavPack.",
     "placeholders": {
@@ -8971,26 +8971,26 @@
   "playbackOnHeadphonesConnectedDescription": "Resume the current song when wired or น้ำเงินtooth headphones connect. ยกเลิกการเชื่อมต่อing pauses playback. Built-in player only.",
   "appearanceCustomFont": "กำหนดเอง font",
   "appearanceCustomFontSubtitle": "นำเข้า a TTF or OTF file (up to 10 MB). Overrides the theme and system font.",
-  "appearanceCustomFontInvalid": "Could not load this font. Choose a valid TTF or OTF file up to 10 MB.",
-  "appearanceCustomFontReset": "Use theme font",
+  "appearanceCustomFontInvalid": "โหลดฟอนต์นี้ไม่ได้ เลือกไฟล์ TTF หรือ OTF ที่ถูกต้อง ไม่เกิน 10 MB",
+  "appearanceCustomFontReset": "ใช้ฟอนต์ของธีม",
   "equalizerTitle": "อีควไลเซอร์",
-  "equalizerDescription": "5–31 bands, tone controls, preamp and dynamics",
+  "equalizerDescription": "5-31 เบนด์ ควบคุมโทนและสเตรโอ พรีแอมป์ และไดนามิกส์",
   "equalizerEnable": "เปิดใช้งาน equalizer",
-  "equalizerBands": "Bands",
-  "equalizerTone": "Tone & stereo",
-  "equalizerPreamp": "Preamp",
+  "equalizerBands": "เบนด์",
+  "equalizerTone": "โทนและสเตรโอ",
+  "equalizerPreamp": "พรีแอมป์",
   "equalizerBass": "เบส",
   "equalizerTreble": "ทรีเบิล",
   "equalizerBalance": "ความดุล",
   "equalizerDynamics": "ไดนามิกs",
   "equalizerHeadroom": "อัตโนมัติmatic headroom",
   "equalizerHeadroomDescription": "แดงuce input gain to make room for boosted frequencies.",
-  "equalizerLimiter": "Peak limiter",
-  "equalizerLimiterDescription": "Keep peaks below −0.5 dBFS to reduce clipping.",
-  "equalizerCompressor": "Compressor",
+  "equalizerLimiter": "ลิมิเตอร์ค่าสูงสุด",
+  "equalizerLimiterDescription": "เก็บค่าสูงสุดไว้ต่ำกว่า -0.5 dBFS เพื่อลดการขาดตัด",
+  "equalizerCompressor": "คอมเพรสเซอร์",
   "equalizerCompressorDescription": "แดงuce the difference between quiet and loud passages.",
-  "equalizerThreshold": "Threshold",
-  "equalizerRatio": "Ratio",
+  "equalizerThreshold": "เกณฑ์",
+  "equalizerRatio": "อัตราส่วน",
   "equalizerAttack": "Attack",
   "equalizerRelease": "Release",
   "equalizerPresets": "ค่าเริ่มต้นs",
@@ -8998,17 +8998,17 @@
   "equalizerPresetName": "ค่าเริ่มต้น name",
   "equalizerImport": "นำเข้า preset",
   "equalizerExport": "แชร์ preset",
-  "equalizerImportInvalid": "Choose a valid Mornye equalizer preset (JSON, up to 64 KB).",
+  "equalizerImportInvalid": "เลือกพรีเซ็ต Equalizer ของ Mornye ที่ถูกต้อง (JSON, ไม่เกิน 64 KB)",
   "equalizerSaved": "ค่าเริ่มต้น saved",
   "equalizerResetTitle": "รีเซ็ต equalizer?",
   "equalizerResetDescription": "กู้คืน a flat curve, default tone and dynamics settings. บันทึกd presets are kept.",
   "equalizerBypass": "Bit-perfect, Direct USB and exclusive ไฮเรส outputs bypass EQ. ปิดใช้งาน bit-perfect output to use EQ. ภายนอก players manage their own effects.",
-  "equalizerCurve": "EQ curve (estimated)",
-  "equalizerCurveDescription": "The curve shows band gains; the exact response depends on the output engine.",
+  "equalizerCurve": "เส้นโค้ง EQ (ประมาณ)",
+  "equalizerCurveDescription": "เส้นโค้งแสดง gain ของเบนด์ การตอบสนองที่แท้จริงขึ้นอยู่กับ엔진เอาต์พุท",
   "equalizerEffectivePreamp": "อินพุต gain after headroom",
   "equalizerDeletePreset": "ลบค่าเริ่มต้น",
   "equalizerCustom": "กำหนดเอง",
-  "equalizerManagePresets": "Manage presets",
+  "equalizerManagePresets": "จัดการพรีเซ็ต",
   "lyricsShareTitle": "แชร์ lyrics",
   "@lyricsShareTitle": {
     "description": "Screen that turns selected lyric lines into an image for stories"
@@ -9021,7 +9021,7 @@
       }
     }
   },
-  "lyricsShareLimit": "You can share up to {count} lines",
+  "lyricsShareLimit": "แชร์ได้สูงสุด {count} บรรทัด",
   "@lyricsShareLimit": {
     "placeholders": {
       "count": {
@@ -9030,8 +9030,8 @@
     }
   },
   "lyricsShareAction": "แชร์",
-  "lyricsShareError": "Couldn't create the lyrics image",
-  "lyricsShareBackgroundArtwork": "Artwork",
+  "lyricsShareError": "ไม่สามารถสร้างรูปเนื้อเพลงได้",
+  "lyricsShareBackgroundArtwork": "ภาพศิลปะ",
   "lyricsShareBackgroundColor": "ปิดทับ color",
   "lyricsShareBackgroundDark": "มืด",
   "lyricsShareBackgroundLight": "สว่าง",
@@ -9040,11 +9040,11 @@
     "description": "Sheet with technical details of the playing track, opened from the quality badge"
   },
   "audioInfoSource": "แหล่งที่มา file",
-  "audioInfoSignal": "Signal",
+  "audioInfoSignal": "สัญญาณ",
   "audioInfoLoudness": "ความดัง",
-  "audioInfoProcessing": "Processing",
-  "audioInfoOutput": "Output",
-  "audioInfoAnalysis": "Spectrum and level analysis",
+  "audioInfoProcessing": "การประมวลผล",
+  "audioInfoOutput": "เอาต์พุท",
+  "audioInfoAnalysis": "การวิเคราะห์สเปกตรัมและระดับ",
   "audioInfoQuality": "คุณภาพ",
   "audioInfoHiResLossless": "ไฮเรส ลอสเลส",
   "audioInfoLossless": "ลอสเลส",
@@ -9065,8 +9065,8 @@
   "audioInfoBitrate": "บิตเรต",
   "audioInfoDuration": "ความยาว",
   "audioInfoFileSize": "ขนาดไฟล์",
-  "audioInfoCompression": "Compression",
-  "audioInfoCompressionValue": "{percent}% of uncompressed size",
+  "audioInfoCompression": "การบีบอัด",
+  "audioInfoCompressionValue": "{percent}% ของขนาดไม่บีบอัด",
   "@audioInfoCompressionValue": {
     "placeholders": {
       "percent": {
@@ -9074,8 +9074,8 @@
       }
     }
   },
-  "audioInfoLocation": "Location",
-  "audioInfoLocationLocal": "Device storage",
+  "audioInfoLocation": "ตำแหน่ง",
+  "audioInfoLocationLocal": "หน่วยความจำอุปกรณ์",
   "audioInfoLocationShared": "แชร์d folder",
   "audioInfoLocationNetwork": "เครือข่าย storage",
   "audioInfoLocationLink": "{device} via Mornye ลิงก์",
@@ -9087,9 +9087,9 @@
       }
     }
   },
-  "audioInfoPcmRate": "Uncompressed data rate",
-  "audioInfoFrequencyRange": "Frequency range",
-  "audioInfoFrequencyRangeValue": "Up to {frequency} (Nyquist)",
+  "audioInfoPcmRate": "อัตราข้อมูลไม่บีบอัด",
+  "audioInfoFrequencyRange": "ช่วงความถี่",
+  "audioInfoFrequencyRangeValue": "ถึง {frequency} (Nyquist)",
   "@audioInfoFrequencyRangeValue": {
     "placeholders": {
       "frequency": {
@@ -9097,13 +9097,13 @@
       }
     }
   },
-  "audioInfoDynamicRange": "Theoretical dynamic range",
+  "audioInfoDynamicRange": "Dynamic Range ทางทฤษฎี",
   "audioInfoTrackGain": "เพลง gain",
   "audioInfoTrackPeak": "เพลง peak",
   "audioInfoAlbumGain": "อัลบั้ม gain",
   "audioInfoAlbumPeak": "อัลบั้ม peak",
   "audioInfoNoGainTags": "No รีเพลเกน tags",
-  "audioInfoApplied": "Applied {gain}",
+  "audioInfoApplied": "ได้รับการใช้ {gain}",
   "@audioInfoApplied": {
     "placeholders": {
       "gain": {
@@ -9113,17 +9113,17 @@
   },
   "audioInfoOn": "เปิด",
   "audioInfoOff": "ปิด",
-  "audioInfoBypassed": "Bypassed by direct output",
+  "audioInfoBypassed": "ข้ามโดย Direct Output",
   "audioInfoPlayer": "เล่นer",
-  "audioInfoPlayerValue": "Mornye built-in player",
-  "audioInfoSignalPath": "Signal path",
+  "audioInfoPlayerValue": "ผู้เล่นภายใน Mornye",
+  "audioInfoSignalPath": "เส้นทางสัญญาณ",
   "audioInfoPathSystem": "ระบบ mixer",
-  "audioInfoPathDirect": "Direct USB, bypasses the system mixer",
-  "audioInfoPathExclusive": "Exclusive output, bypasses the system mixer",
-  "audioInfoDecoder": "Decoder",
-  "audioInfoHardware": "Hardware",
-  "audioInfoSoftware": "Software",
-  "audioInfoBands": "{count} bands",
+  "audioInfoPathDirect": "USB โดยตรง ข้ามมิกเซอร์ระบบ",
+  "audioInfoPathExclusive": "เอาต์พุท Exclusive ข้ามมิกเซอร์ระบบ",
+  "audioInfoDecoder": "ดีโคเดอร์",
+  "audioInfoHardware": "ฮาร์ดแวร์",
+  "audioInfoSoftware": "ซอฟต์แวร์",
+  "audioInfoBands": "{count} เบนด์",
   "@audioInfoBands": {
     "placeholders": {
       "count": {
@@ -9132,14 +9132,14 @@
     }
   },
   "audioInfoTempo": "Tempo",
-  "audioInfoResampling": "Resampling",
+  "audioInfoResampling": "รีแซมเพลิง",
   "audioInfoResamplingNone": "ไม่มี, rates match",
   "audioInfoBitPerfect": "Bit-perfect",
   "audioInfoBitPerfectActive": "ใช่, unaltered samples",
-  "audioInfoBitPerfectNo": "No, mixed by the system",
-  "audioInfoBitPerfectUnverified": "Not verified",
-  "audioInfoBitPerfectProcessed": "No, audio processing is active",
-  "audioInfoDevice": "Device",
+  "audioInfoBitPerfectNo": "ไม่ ผสมโดยระบบ",
+  "audioInfoBitPerfectUnverified": "ยังไม่ยืนยัน",
+  "audioInfoBitPerfectProcessed": "ไม่ มีการประมวลผลเสียงทำงานอยู่",
+  "audioInfoDevice": "อุปกรณ์",
   "audioInfoDeviceType": "{type, select, speaker{Phone speaker} earpiece{Earpiece} wired_headphones{Wired headphones} wired_headset{Wired headset} line{บรรทัด out} bluetooth{น้ำเงินtooth} bluetooth_le{น้ำเงินtooth LE เสียง} usb{USB audio} usb_headset{USB headset} hdmi{HDMI} dock{Dock} cast{Cast} hearing_aid{Hearing aid} airplay{Airเล่น} car{Car audio} other{อื่นๆ}}",
   "@audioInfoDeviceType": {
     "placeholders": {
@@ -9148,43 +9148,43 @@
       }
     }
   },
-  "audioInfoOutputRate": "Output sample rate",
-  "audioInfoOutputFormat": "Output format",
+  "audioInfoOutputRate": "อัตราตัวอย่างเอาต์พุท",
+  "audioInfoOutputFormat": "รูปแบบเอาต์พุท",
   "audioInfoBluetoothFormat": "น้ำเงินtooth codec format",
   "@audioInfoBluetoothFormat": {
     "description": "Negotiated Bluetooth transport format, separate from Android PCM mixer properties"
   },
   "audioInfoAndroidNotReported": "Android ไม่ได้รายงาน",
-  "audioInfoBluetoothUnavailable": "Unavailable to this app",
+  "audioInfoBluetoothUnavailable": "ไม่พร้อมใช้งานสำหรับแอปนี้",
   "audioInfoBluetoothUnavailableHint": "และroid may show the active codec in น้ำเงินtooth settings without making it available to Mornye. This is separate from the song's file format.",
-  "audioAnalysisFileBitrate": "Average file bitrate",
+  "audioAnalysisFileBitrate": "บิตรูตไฟล์เฉลี่ย",
   "audioAnalysisFileBitrateHint": "Includes tags and container overhead. It can differ from the audio stream bitrate and is not the น้ำเงินtooth bitrate.",
   "audioInfoSystemDefaultRate": "ระบบ default sample rate",
   "audioInfoAndroidPcmRates": "อัตราตัวอย่าง PCM ของ Android",
   "audioInfoAndroidPcmFormats": "รูปแบบ PCM ของ Android",
   "audioInfoSystemDefaultBuffer": "ระบบ default buffer",
-  "audioInfoDeviceRates": "Device sample rates",
-  "audioInfoDeviceFormats": "Device formats",
+  "audioInfoDeviceRates": "อัตราตัวอย่างของอุปกรณ์",
+  "audioInfoDeviceFormats": "รูปแบบของอุปกรณ์",
   "audioInfoAnyRate": "ใดๆ",
-  "audioInfoBuffer": "Mixer buffer",
-  "audioInfoLatency": "Output latency",
+  "audioInfoBuffer": "บัฟเฟอร์มิกเซอร์",
+  "audioInfoLatency": "เลเทนซีเอาต์พุท",
   "audioInfoLowLatency": "ต่ำ-latency audio",
-  "audioInfoProAudio": "Pro audio",
+  "audioInfoProAudio": "Pro Audio",
   "audioInfoSupported": "สนับสนุนed",
-  "audioInfoNotSupported": "Not supported",
-  "audioInfoSpatial": "Spatial audio",
-  "audioInfoHeadTracking": "Head tracking",
-  "audioInfoUnavailable": "Unavailable",
-  "audioInfoFixedVolume": "Controlled by the device",
+  "audioInfoNotSupported": "ไม่รองรับ",
+  "audioInfoSpatial": "เสียงเชิงพื้นที่",
+  "audioInfoHeadTracking": "ติดตามหัว",
+  "audioInfoUnavailable": "ไม่พร้อมใช้งาน",
+  "audioInfoFixedVolume": "ควบคุมโดยอุปกรณ์",
   "audioInfoCopy": "คัดลอก report",
   "audioInfoCopied": "เสียง info copied",
   "lyricsTextSize": "เนื้อเพลง text size",
-  "lyricsTextPreview": "Follow every line of your favorite song",
+  "lyricsTextPreview": "ติดตามทุกบรรทัดของเพลงโปรด",
   "lyricsBlur": "เนื้อเพลง blur",
   "@lyricsBlur": {
     "description": "Mornye setting: how strongly lyric lines around the current one are blurred"
   },
-  "lyricsBlurSubtitle": "How much the lines around the current one soften",
+  "lyricsBlurSubtitle": "ระดับที่บรรทัดรอบๆ จางนุ่ม",
   "lyricsBlurOff": "ปิด",
   "@lyricsBlurOff": {
     "description": "Value of the lyrics blur slider at zero"
@@ -9194,11 +9194,11 @@
     "description": "Setting: move synced lyrics earlier or later than playback"
   },
   "lyricsOffsetSubtitle": "แสดง synced lyrics later or earlier, for example when น้ำเงินtooth audio arrives late",
-  "lyricsOffsetNone": "In sync",
+  "lyricsOffsetNone": "ซิงค์แล้ว",
   "@lyricsOffsetNone": {
     "description": "Value of the lyrics timing slider at zero"
   },
-  "lyricsOffsetLater": "{seconds} s later",
+  "lyricsOffsetLater": "{seconds} วินาทีช้ากว่า",
   "@lyricsOffsetLater": {
     "description": "Value of the lyrics timing slider when lyrics follow playback late",
     "placeholders": {
@@ -9208,7 +9208,7 @@
       }
     }
   },
-  "lyricsOffsetEarlier": "{seconds} s earlier",
+  "lyricsOffsetEarlier": "{seconds} วินาทีเร็วกว่า",
   "@lyricsOffsetEarlier": {
     "description": "Value of the lyrics timing slider when lyrics run ahead of playback",
     "placeholders": {
@@ -9218,21 +9218,21 @@
       }
     }
   },
-  "appCrashTitle": "The app previously crashed",
-  "appAnrTitle": "The app previously stopped responding",
+  "appCrashTitle": "แอปล่มครั้งก่อน",
+  "appAnrTitle": "แอปหยุดตอบสนองครั้งก่อน",
   "@appAnrTitle": {
     "description": "Title for an Android ANR report, distinct from a crash."
   },
-  "appAnrMessage": "A diagnostic report was saved. You can copy it and send it to the developer to help investigate.",
+  "appAnrMessage": "บันทึกรายงานวินิจฉัยแล้ว คุณสามารถคัดลอกและส่งให้ผู้พัฒนาช่วยตรวจสอบได้",
   "@appAnrMessage": {
     "description": "Message shown for an Android process exit due to an ANR."
   },
   "appCrashMessage": "A crash report was saved. คัดลอก it and send it to the developer to help investigate.",
   "appCrashDetails": "ดู error and log",
   "appCrashCopy": "คัดลอก report for developer",
-  "appCrashDismiss": "Dismiss",
-  "appCrashCopyFailed": "Could not copy the crash report. Please try again.",
-  "appCrashDismissFailed": "Could not dismiss the crash report. Please try again.",
+  "appCrashDismiss": "ปิด",
+  "appCrashCopyFailed": "คัดลอกรายงานการล่มไม่ได้ โปรดลองอีกครั้ง",
+  "appCrashDismissFailed": "ปิดรายงานการล่มไม่ได้ โปรดลองอีกครั้ง",
   "optionsEmbeddedCoverSizeOriginal": "ต้นฉบับ resolution",
   "@optionsEmbeddedCoverSizeOriginal": {
     "description": "Option that preserves the provider artwork at its original resolution"
@@ -9249,13 +9249,13 @@
       }
     }
   },
-  "desktopPlayerIdle": "Not playing",
+  "desktopPlayerIdle": "ไม่ได้เล่น",
   "@desktopPlayerIdle": {
     "description": "Desktop player bar text when no track is loaded"
   },
-  "desktopVolumeUp": "Increase volume",
-  "desktopVolumeDown": "Decrease volume",
-  "desktopTableSortedAscending": "{column}, sorted ascending",
+  "desktopVolumeUp": "เพิ่มระดับเสียง",
+  "desktopVolumeDown": "ลดระดับเสียง",
+  "desktopTableSortedAscending": "{column} เรียงน้อยไปมาก",
   "@desktopTableSortedAscending": {
     "description": "Screen reader label of a song table column header that sorts the table A to Z",
     "placeholders": {
@@ -9264,7 +9264,7 @@
       }
     }
   },
-  "desktopTableSortedDescending": "{column}, sorted descending",
+  "desktopTableSortedDescending": "{column} เรียงมากไปน้อย",
   "@desktopTableSortedDescending": {
     "description": "Screen reader label of a song table column header that sorts the table Z to A",
     "placeholders": {
@@ -9281,7 +9281,7 @@
   "@desktopMenuShowDetails": {
     "description": "Context menu item that opens a track's metadata page"
   },
-  "desktopDropToImport": "Drop to add to your library",
+  "desktopDropToImport": "ลากวางเพื่อเพิ่มในไลบรารี",
   "@desktopDropToImport": {
     "description": "Overlay shown while music files or folders are dragged over the desktop window"
   },
@@ -9294,7 +9294,7 @@
       }
     }
   },
-  "desktopDropNothingToImport": "Drop music files or folders to add them to your library",
+  "desktopDropNothingToImport": "ลากไฟล์เพลงหรือโฟลเดอร์เพื่อเพิ่มในไลบรารี",
   "@desktopDropNothingToImport": {
     "description": "Snackbar when the dropped items contain no folders or audio files"
   },
@@ -9309,16 +9309,16 @@
   "desktopMenuFile": "ไฟล์",
   "desktopMenuEdit": "แก้ไข",
   "desktopMenuView": "ดู",
-  "desktopWindowMode": "Window mode",
-  "desktopWindowed": "Windowed",
+  "desktopWindowMode": "โหมดหน้าต่าง",
+  "desktopWindowed": "หน้าต่าง",
   "desktopWindowFullscreen": "เต็มหน้าจอ",
   "desktopWindowBorderless": "ขอบless",
   "desktopExitFullscreen": "ออกจากเต็มหน้าจอ",
-  "desktopMinimizeWindow": "Minimize window",
-  "desktopZoomWindow": "Maximize or restore window",
+  "desktopMinimizeWindow": "ย่อหน้าต่าง",
+  "desktopZoomWindow": "ขยายหรือคืนหน้าต่าง",
   "desktopWindowModeUnavailable": "The window mode could not be changed. ลองอีกครั้ง after the current window transition finishes.",
-  "desktopMenuControls": "Controls",
-  "desktopMenuWindow": "Window",
+  "desktopMenuControls": "ควบคุม",
+  "desktopMenuWindow": "หน้าต่าง",
   "desktopMenuHelp": "ช่วยเหลือ",
   "desktopMenuPlayPause": "เล่น/หยุดชั่วคราว",
   "desktopMenuMiniPlayer": "Mini เล่นer",
@@ -9333,7 +9333,7 @@
   "@desktopMenuRefresh": {
     "description": "View menu item and Keyboard Shortcuts row that reloads the page on screen (Home, Repo, statistics)"
   },
-  "desktopMenuProjectPage": "Project page",
+  "desktopMenuProjectPage": "หน้าโครงการ",
   "@desktopMenuProjectPage": {
     "description": "Help menu item that opens the app's source repository"
   },
@@ -9349,11 +9349,11 @@
   "@desktopDownloadsCancel": {
     "description": "Tooltip of the button that cancels one download in the desktop downloads popover"
   },
-  "linkDesktopSettingsTitle": "Mornye on your phone",
+  "linkDesktopSettingsTitle": "Mornye บนคอมพิวเตอร์",
   "@linkDesktopSettingsTitle": {
     "description": "Desktop Settings page that shares this computer's library with the Mornye phone app over the local network"
   },
-  "linkDesktopSettingsSubtitle": "Stream your library and control playback from your phone",
+  "linkDesktopSettingsSubtitle": "สตรีมไลบรารีและควบคุมการเล่นจากโทรศัพท์",
   "@linkDesktopSettingsSubtitle": {
     "description": "Subtitle of the Mornye on your phone entry in desktop Settings"
   },
@@ -9361,15 +9361,15 @@
   "@linkDesktopEnableTitle": {
     "description": "Switch that turns on the local server phones connect to"
   },
-  "linkDesktopEnableSubtitle": "Your phone can browse, play and download through this computer on your local network",
+  "linkDesktopEnableSubtitle": "โทรศัพท์สามารถเรียกดู เล่น และดาวน์โหลดผ่านคอมพิวเตอร์นี้ในเครือข่ายท้องถิ่น",
   "@linkDesktopEnableSubtitle": {
     "description": "Subtitle of the switch that shares the library with phones, while it is off"
   },
-  "linkDesktopStatusStarting": "Starting",
+  "linkDesktopStatusStarting": "กำลังเริ่ม",
   "@linkDesktopStatusStarting": {
     "description": "Status of the phone link server while it starts"
   },
-  "linkDesktopStatusRunning": "On, {count, plural, =0{no phone connected} =1{1 phone connected} other{{count} phones connected}}",
+  "linkDesktopStatusRunning": "เปิด, {count, plural, =0{ไม่มีโทรศัพท์เชื่อมต่อ} =1{1 โทรศัพท์เชื่อมต่อ} other{{count} โทรศัพท์เชื่อมต่อ}}",
   "@linkDesktopStatusRunning": {
     "description": "Status of the phone link server while it runs, with the number of connected phones",
     "placeholders": {
@@ -9378,7 +9378,7 @@
       }
     }
   },
-  "linkDesktopStatusFailed": "Could not start: {error}",
+  "linkDesktopStatusFailed": "ไม่สามารถเริ่มได้: {error}",
   "@linkDesktopStatusFailed": {
     "description": "Status of the phone link server when it failed to start",
     "placeholders": {
@@ -9391,7 +9391,7 @@
   "@linkDesktopFirewallHint": {
     "description": "Hint shown while the phone link server is on, about the operating system firewall prompt"
   },
-  "linkDesktopSectionComputer": "This computer",
+  "linkDesktopSectionComputer": "คอมพิวเตอร์นี้",
   "@linkDesktopSectionComputer": {
     "description": "Section of the phone link settings about this computer's name and address"
   },
@@ -9399,7 +9399,7 @@
   "@linkDesktopDeviceName": {
     "description": "Row and field label for the name phones see for this computer"
   },
-  "linkDesktopDeviceNameHint": "Phones show this name when they find this computer",
+  "linkDesktopDeviceNameHint": "โทรศัพท์แสดงชื่อนี้เมื่อพบคอมพิวเตอร์นี้",
   "@linkDesktopDeviceNameHint": {
     "description": "Helper text of the field that renames this computer for phones"
   },
@@ -9411,7 +9411,7 @@
   "@linkDesktopSecurityCode": {
     "description": "Row that shows the short certificate fingerprint phones compare while pairing"
   },
-  "linkDesktopSecurityCodeHint": "Your phone shows the same code when it pairs",
+  "linkDesktopSecurityCodeHint": "โทรศัพท์แสดงรหัสเดียวกันเมื่อจับคู่",
   "@linkDesktopSecurityCodeHint": {
     "description": "Subtitle explaining the security code row"
   },
@@ -9424,11 +9424,11 @@
       }
     }
   },
-  "linkDesktopSectionPhones": "Phones",
+  "linkDesktopSectionPhones": "โทรศัพท์",
   "@linkDesktopSectionPhones": {
     "description": "Section of the phone link settings that lists paired phones"
   },
-  "linkDesktopPairPhone": "Pair a phone",
+  "linkDesktopPairPhone": "จับคู่โทรศัพท์",
   "@linkDesktopPairPhone": {
     "description": "Row and dialog title that shows a code to pair a phone with this computer"
   },
@@ -9436,7 +9436,7 @@
   "@linkDesktopPairPhoneSubtitle": {
     "description": "Subtitle of the Pair a phone row"
   },
-  "linkDesktopNoDevices": "No phones paired yet",
+  "linkDesktopNoDevices": "ยังไม่มีโทรศัพท์จับคู่",
   "@linkDesktopNoDevices": {
     "description": "Shown in the paired phones list when it is empty"
   },
@@ -9444,7 +9444,7 @@
   "@linkDesktopDeviceConnected": {
     "description": "Status of a paired phone that is connected now"
   },
-  "linkDesktopDeviceLastSeen": "Last seen {date}",
+  "linkDesktopDeviceLastSeen": "เห็นล่าสุด {date}",
   "@linkDesktopDeviceLastSeen": {
     "description": "Status of a paired phone that is not connected",
     "placeholders": {
@@ -9453,11 +9453,11 @@
       }
     }
   },
-  "linkDesktopDeviceNeverSeen": "Not connected yet",
+  "linkDesktopDeviceNeverSeen": "ยังไม่ได้เชื่อมต่อ",
   "@linkDesktopDeviceNeverSeen": {
     "description": "Status of a paired device that never connected"
   },
-  "linkDesktopSubsonicApp": "Subsonic app",
+  "linkDesktopSubsonicApp": "แอป Subsonic",
   "@linkDesktopSubsonicApp": {
     "description": "Label of a paired device that is a third-party Subsonic app"
   },
@@ -9474,11 +9474,11 @@
       }
     }
   },
-  "linkDesktopRevokeMessage": "It has to pair again before it can connect to this computer.",
+  "linkDesktopRevokeMessage": "ต้องจับคู่ใหม่ก่อนจึงจะเชื่อมต่อกับคอมพิวเตอร์นี้ได้",
   "@linkDesktopRevokeMessage": {
     "description": "Message of the dialog that confirms removing a paired device"
   },
-  "linkDesktopRevoked": "{name} removed",
+  "linkDesktopRevoked": "ลบ {name} แล้ว",
   "@linkDesktopRevoked": {
     "description": "Snackbar after removing a paired device",
     "placeholders": {
@@ -9499,7 +9499,7 @@
   "@linkDesktopAddSubsonicAppSubtitle": {
     "description": "Subtitle of the Add another Subsonic app row"
   },
-  "linkDesktopAppName": "App name",
+  "linkDesktopAppName": "ชื่อแอป",
   "@linkDesktopAppName": {
     "description": "Field label for the name of a third-party Subsonic app"
   },
@@ -9516,7 +9516,7 @@
       }
     }
   },
-  "linkDesktopAppKeyMessage": "Enter these details in the app. The key is shown only now.",
+  "linkDesktopAppKeyMessage": "ใส่รายละเอียดนี้ในแอป Key แสดงเฉพาะตอนนี้เท่านั้น",
   "@linkDesktopAppKeyMessage": {
     "description": "Message of the dialog that shows a new Subsonic app key"
   },
@@ -9545,7 +9545,7 @@
   "@linkDesktopPairInstructions": {
     "description": "Instructions in the pairing dialog above the code"
   },
-  "linkDesktopPairCheckCode": "Check that your phone shows security code {code}.",
+  "linkDesktopPairCheckCode": "ตรวจสอบว่าโทรศัพท์แสดงรหัสความปลอดภัย {code}",
   "@linkDesktopPairCheckCode": {
     "description": "Line in the pairing dialog asking to compare the short certificate fingerprint",
     "placeholders": {
@@ -9554,7 +9554,7 @@
       }
     }
   },
-  "linkDesktopPairExpires": "The code expires in {time}",
+  "linkDesktopPairExpires": "รหัสหมดอายุใน {time}",
   "@linkDesktopPairExpires": {
     "description": "Countdown in the pairing dialog, as minutes and seconds",
     "placeholders": {
@@ -9563,7 +9563,7 @@
       }
     }
   },
-  "linkDesktopPaired": "Paired with {name}",
+  "linkDesktopPaired": "จับคู่กับ {name} แล้ว",
   "@linkDesktopPaired": {
     "description": "Snackbar after a phone paired",
     "placeholders": {
@@ -9572,23 +9572,23 @@
       }
     }
   },
-  "linkDesktopPairExpired": "The code expired. Pair again to get a new one.",
+  "linkDesktopPairExpired": "รหัสหมดอายุ จับคู่ใหม่เพื่อรับรหัสใหม่",
   "@linkDesktopPairExpired": {
     "description": "Snackbar when the pairing code expired"
   },
-  "linkDesktopPairAttempts": "Too many wrong codes. Pair again to get a new one.",
+  "linkDesktopPairAttempts": "รหัสผิดมากเกินไป จับคู่ใหม่เพื่อรับรหัสใหม่",
   "@linkDesktopPairAttempts": {
     "description": "Snackbar when pairing ended after too many wrong codes"
   },
-  "linkDesktopPairFailed": "Could not start pairing",
+  "linkDesktopPairFailed": "ไม่สามารถเริ่มจับคู่ได้",
   "@linkDesktopPairFailed": {
     "description": "Snackbar when the pairing code could not be created"
   },
-  "linkDesktopDevicesTitle": "Phones",
+  "linkDesktopDevicesTitle": "โทรศัพท์",
   "@linkDesktopDevicesTitle": {
     "description": "Tooltip of the player bar button and title of its popover that list connected phones"
   },
-  "linkDesktopPhoneNothingPlaying": "Nothing playing",
+  "linkDesktopPhoneNothingPlaying": "ไม่มีอะไรเล่น",
   "@linkDesktopPhoneNothingPlaying": {
     "description": "Shown for a connected phone that plays nothing"
   },
@@ -9617,7 +9617,7 @@
   "@linkDesktopOpen": {
     "description": "Button that sends the link to the phone"
   },
-  "linkDesktopSentToPhone": "Sent to {name}",
+  "linkDesktopSentToPhone": "ส่งไปที่ {name}",
   "@linkDesktopSentToPhone": {
     "description": "Snackbar after something was sent to a phone",
     "placeholders": {
@@ -9626,11 +9626,11 @@
       }
     }
   },
-  "linkDesktopNotDelivered": "The phone did not receive it",
+  "linkDesktopNotDelivered": "โทรศัพท์ไม่ได้รับ",
   "@linkDesktopNotDelivered": {
     "description": "Snackbar when a message could not reach a phone"
   },
-  "linkDesktopNothingToContinue": "Nothing is playing on this computer",
+  "linkDesktopNothingToContinue": "ไม่มีอะไรเล่นบนคอมพิวเตอร์นี้",
   "@linkDesktopNothingToContinue": {
     "description": "Snackbar when Continue on phone is used without a current song"
   },
@@ -9671,7 +9671,7 @@
       }
     }
   },
-  "linkTransferDesktopReceivingSong": "Receiving \"{title}\" from {name}",
+  "linkTransferDesktopReceivingSong": "กำลังรับ \"{title}\" จาก {name}",
   "@linkTransferDesktopReceivingSong": {
     "description": "Mornye Link desktop: snackbar when one song of the phone {name} starts copying to this computer",
     "placeholders": {
@@ -9707,23 +9707,23 @@
   "@linkTransferDesktopNothingToSave": {
     "description": "Mornye Link desktop: snackbar when Save to this computer finds no song of a connected phone"
   },
-  "desktopScrollBack": "Scroll back",
+  "desktopScrollBack": "เลื่อนกลับ",
   "@desktopScrollBack": {
     "description": "Tooltip of the desktop button that scrolls a horizontal shelf of albums or artists back"
   },
-  "desktopScrollForward": "Scroll forward",
+  "desktopScrollForward": "เลื่อนไปข้างหน้า",
   "@desktopScrollForward": {
     "description": "Tooltip of the desktop button that scrolls a horizontal shelf of albums or artists forward"
   },
-  "settingsKeyboardShortcuts": "Keyboard Shortcuts",
+  "settingsKeyboardShortcuts": "Skัดพิมพ์",
   "@settingsKeyboardShortcuts": {
     "description": "Desktop Settings page that lists the app's keyboard shortcuts"
   },
-  "settingsKeyboardShortcutsSubtitle": "Keys for playback, navigation and panels",
+  "settingsKeyboardShortcutsSubtitle": "ปุ่มสำหรับการเล่น นำทาง และแผง",
   "@settingsKeyboardShortcutsSubtitle": {
     "description": "Subtitle of the Keyboard Shortcuts entry in desktop Settings"
   },
-  "desktopShortcutsNavigation": "Navigation",
+  "desktopShortcutsNavigation": "การนำทาง",
   "@desktopShortcutsNavigation": {
     "description": "Keyboard Shortcuts section for moving between pages"
   },
@@ -9739,7 +9739,7 @@
   "@desktopShortcutToggleSidebar": {
     "description": "Keyboard Shortcuts row for the shortcut that collapses or expands the desktop sidebar"
   },
-  "linkSettingsTitle": "Mornye on your computer",
+  "linkSettingsTitle": "Mornye บนคอมพิวเตอร์ของคุณ",
   "@linkSettingsTitle": {
     "description": "Phone Settings entry that pairs the phone with the Mornye desktop app on the local network"
   },
@@ -9747,19 +9747,19 @@
   "@linkSettingsSubtitle": {
     "description": "Subtitle of the Mornye on your computer entry in phone Settings"
   },
-  "linkPageTitle": "Computers",
+  "linkPageTitle": "คอมพิวเตอร์",
   "@linkPageTitle": {
     "description": "Title of the page listing computers running Mornye that the phone can pair with; kept short for the large title"
   },
-  "linkPageDescription": "Pair with Mornye on your computer to play its library on this phone and control what it plays. Both devices need to be on the same network.",
+  "linkPageDescription": "จับคู่กับ Mornye บนคอมพิวเตอร์เพื่อเล่นไลบรารีของมันบนโทรศัพท์นี้และควบคุมสิ่งที่มันเล่น ทั้งสองอุปกรณ์ต้องอยู่ในเครือข่ายเดียวกัน",
   "@linkPageDescription": {
     "description": "Introduction at the top of the computers page"
   },
-  "linkPairedSection": "Paired computers",
+  "linkPairedSection": "คอมพิวเตอร์ที่จับคู่แล้ว",
   "@linkPairedSection": {
     "description": "Section header for computers this phone is paired with"
   },
-  "linkPhoneSection": "This phone",
+  "linkPhoneSection": "โทรศัพท์นี้",
   "@linkPhoneSection": {
     "description": "Section header for what this phone shares with and how it follows its paired computer"
   },
@@ -9771,23 +9771,23 @@
   "@linkShareSongsSubtitle": {
     "description": "Switch subtitle for showing this phone's songs on the computer"
   },
-  "linkFollowDesktopTitle": "Follow the computer's playback",
+  "linkFollowDesktopTitle": "ติดตามการเล่นของคอมพิวเตอร์",
   "@linkFollowDesktopTitle": {
     "description": "Switch title: the phone's player shows the computer when the computer starts playing"
   },
-  "linkFollowDesktopSubtitle": "When the computer starts playing, this phone shows and controls it",
+  "linkFollowDesktopSubtitle": "เมื่อคอมพิวเตอร์เริ่มเล่น โทรศัพท์นี้จะแสดงและควบคุมมัน",
   "@linkFollowDesktopSubtitle": {
     "description": "Switch subtitle for following the computer's playback"
   },
-  "linkNearbySection": "On this network",
+  "linkNearbySection": "ในเครือข่ายนี้",
   "@linkNearbySection": {
     "description": "Section header for computers running Mornye found on the local network"
   },
-  "linkSearching": "Looking for computers...",
+  "linkSearching": "กำลังค้นหาคอมพิวเตอร์...",
   "@linkSearching": {
     "description": "Row shown while the phone searches the local network for computers"
   },
-  "linkNoneFoundTitle": "No computers found",
+  "linkNoneFoundTitle": "ไม่พบคอมพิวเตอร์",
   "@linkNoneFoundTitle": {
     "description": "Row shown when the phone is not searching and found no computer"
   },
@@ -9799,7 +9799,7 @@
   "@linkAddManually": {
     "description": "Button and dialog title for pairing with a computer by typing its address and port"
   },
-  "linkManualHost": "Computer address",
+  "linkManualHost": "ที่อยู่คอมพิวเตอร์",
   "@linkManualHost": {
     "description": "Field label for the computer's IP address or host name"
   },
@@ -9807,7 +9807,7 @@
   "@linkManualPort": {
     "description": "Field label for the network port of the Mornye desktop server"
   },
-  "linkManualMessage": "Mornye on your computer shows its address and port where you turn on sharing.",
+  "linkManualMessage": "Mornye บนคอมพิวเตอร์ของคุณแสดงที่อยู่และพอร์ตที่คุณเปิดการแชร์",
   "@linkManualMessage": {
     "description": "Explains where to find the address and port to type"
   },
@@ -9823,23 +9823,23 @@
   "@linkStateConnecting": {
     "description": "Status of the paired computer while the phone connects to it"
   },
-  "linkStateDisconnected": "Not connected",
+  "linkStateDisconnected": "ไม่ได้เชื่อมต่อ",
   "@linkStateDisconnected": {
     "description": "Status of the paired computer when it cannot be reached"
   },
-  "linkStateInactive": "Tap to use this computer",
+  "linkStateInactive": "แตะเพื่อใช้คอมพิวเตอร์นี้",
   "@linkStateInactive": {
     "description": "Status of a paired computer other than the one in use; tapping it makes it the one in use"
   },
-  "linkActive": "In use",
+  "linkActive": "ใช้งาน中",
   "@linkActive": {
     "description": "Label next to the paired computer the phone currently uses, shown when several are paired"
   },
-  "linkForget": "Forget",
+  "linkForget": "ลืม",
   "@linkForget": {
     "description": "Action that unpairs a computer from this phone"
   },
-  "linkForgetTitle": "Forget {name}?",
+  "linkForgetTitle": "ลืม {name}?",
   "@linkForgetTitle": {
     "description": "Title of the dialog confirming that a paired computer is forgotten",
     "placeholders": {
@@ -9848,7 +9848,7 @@
       }
     }
   },
-  "linkForgetMessage": "This phone stops connecting to it. You can pair again later.",
+  "linkForgetMessage": "โทรศัพท์นี้หยุดเชื่อมต่อกับมัน คุณสามารถจับคู่ใหม่ได้ภายหลัง",
   "@linkForgetMessage": {
     "description": "Explanation in the forget computer dialog"
   },
@@ -9856,7 +9856,7 @@
   "@linkForgetRemoveLibrary": {
     "description": "Switch in the forget computer dialog that also removes the computer's network connection and Library source"
   },
-  "linkPinTitle": "Pair with {name}",
+  "linkPinTitle": "จับคู่กับ {name}",
   "@linkPinTitle": {
     "description": "Title of the dialog asking for the pairing PIN",
     "placeholders": {
@@ -9865,7 +9865,7 @@
       }
     }
   },
-  "linkPinMessage": "Enter the 6-digit PIN shown on your computer.",
+  "linkPinMessage": "ใส่ PIN 6 หลักที่แสดงบนคอมพิวเตอร์ของคุณ",
   "@linkPinMessage": {
     "description": "Instruction in the pairing PIN dialog"
   },
@@ -9873,7 +9873,7 @@
   "@linkPinField": {
     "description": "Label of the pairing PIN field"
   },
-  "linkPinCode": "Your computer shows the code {code} next to the PIN. Pair only if it matches.",
+  "linkPinCode": "คอมพิวเตอร์ของคุณแสดงรหัส {code} ถัดจาก PIN จับคู่ก็ต่อเมื่อตรงกัน",
   "@linkPinCode": {
     "description": "Security check in the PIN dialog; the placeholder is 8 hexadecimal characters of the computer's certificate fingerprint, grouped as 'ab12 cd34'",
     "placeholders": {
@@ -9882,11 +9882,11 @@
       }
     }
   },
-  "linkPinNotOpen": "Pairing is not open yet. Start pairing in Mornye on your computer to show a PIN.",
+  "linkPinNotOpen": "การจับคู่อยู่ในขั้นตอนเปิด เริ่มจับคู่ใน Mornye บนคอมพิวเตอร์เพื่อแสดง PIN",
   "@linkPinNotOpen": {
     "description": "Note in the PIN dialog when the computer reports that no pairing window is open"
   },
-  "linkPair": "Pair",
+  "linkPair": "จับคู่",
   "@linkPair": {
     "description": "Action that sends the PIN to pair with the computer"
   },
@@ -9899,11 +9899,11 @@
       }
     }
   },
-  "linkPairAgain": "Pair again",
+  "linkPairAgain": "จับคู่ใหม่",
   "@linkPairAgain": {
     "description": "Action that repeats pairing with a computer that no longer accepts this phone"
   },
-  "linkTransfersTitle": "Transfers",
+  "linkTransfersTitle": "การโอนย้าย",
   "@linkTransfersTitle": {
     "description": "Mornye Link: title of the list of songs copied between this device and a linked phone or computer, and of the rows that open it"
   },
@@ -9915,11 +9915,11 @@
   "@linkTransfersFinished": {
     "description": "Section of the Transfers list for transfers that stopped: done, stopped by someone or failed"
   },
-  "linkTransfersClearFinished": "Clear finished",
+  "linkTransfersClearFinished": "ล้างที่เสร็จแล้ว",
   "@linkTransfersClearFinished": {
     "description": "Action that removes the finished transfers from the Transfers list; the copied songs stay"
   },
-  "linkTransfersEmptyTitle": "No transfers yet",
+  "linkTransfersEmptyTitle": "ยังไม่มีการโอนย้าย",
   "@linkTransfersEmptyTitle": {
     "description": "Title of the empty Transfers list, also the status of the row that opens it while there is none"
   },
@@ -9963,7 +9963,7 @@
       }
     }
   },
-  "linkTransfersReceivingSong": "Receiving {title} from {name}",
+  "linkTransfersReceivingSong": "กำลังรับ {title} จาก {name}",
   "@linkTransfersReceivingSong": {
     "description": "Title of a running or waiting transfer of one song to this device; the placeholder is the song's title",
     "placeholders": {
@@ -9999,7 +9999,7 @@
       }
     }
   },
-  "linkTransfersSongTo": "{title} to {name}",
+  "linkTransfersSongTo": "{title} ไป {name}",
   "@linkTransfersSongTo": {
     "description": "Title of a finished transfer of one song from this device; the placeholder is the song's title",
     "placeholders": {
@@ -10011,7 +10011,7 @@
       }
     }
   },
-  "linkTransfersSongFrom": "{title} from {name}",
+  "linkTransfersSongFrom": "{title} จาก {name}",
   "@linkTransfersSongFrom": {
     "description": "Title of a finished transfer of one song to this device; the placeholder is the song's title",
     "placeholders": {
@@ -10023,7 +10023,7 @@
       }
     }
   },
-  "linkTransfersPosition": "{position} of {total}",
+  "linkTransfersPosition": "{position} จาก {total}",
   "@linkTransfersPosition": {
     "description": "Which song of a running transfer is being copied, for example '3 of 12'",
     "placeholders": {
@@ -10044,11 +10044,11 @@
       }
     }
   },
-  "linkTransfersWaiting": "Waiting",
+  "linkTransfersWaiting": "รออยู่",
   "@linkTransfersWaiting": {
     "description": "Status of a transfer or song that waits for the ones before it"
   },
-  "linkTransfersSavedCount": "{count, plural, other{{count} saved}}",
+  "linkTransfersSavedCount": "{count, plural, other{{count} บันทึกแล้ว}}",
   "@linkTransfersSavedCount": {
     "description": "Outcome of a finished transfer: how many songs were copied",
     "placeholders": {
@@ -10057,7 +10057,7 @@
       }
     }
   },
-  "linkTransfersAlreadyThereCount": "{count, plural, other{{count} already there}}",
+  "linkTransfersAlreadyThereCount": "{count, plural, other{{count} มีอยู่แล้ว}}",
   "@linkTransfersAlreadyThereCount": {
     "description": "Outcome of a finished transfer: how many songs the receiving device already had, so they were not copied again",
     "placeholders": {
@@ -10066,7 +10066,7 @@
       }
     }
   },
-  "linkTransfersFailedCount": "{count, plural, other{{count} failed}}",
+  "linkTransfersFailedCount": "{count, plural, other{{count} ล้มเหลว}}",
   "@linkTransfersFailedCount": {
     "description": "Outcome of a finished transfer: how many songs could not be copied",
     "placeholders": {
@@ -10104,7 +10104,7 @@
       }
     }
   },
-  "linkTransfersReasonBusy": "Busy, try again later",
+  "linkTransfersReasonBusy": "ยุ่ง ลองใหม่ภายหลัง",
   "@linkTransfersReasonBusy": {
     "description": "Why a transfer failed: the receiving device could not take it now"
   },
@@ -10116,7 +10116,7 @@
   "@linkTransfersSongSaved": {
     "description": "State of one song in a transfer: it was copied"
   },
-  "linkTransfersSongAlreadyThere": "Already there",
+  "linkTransfersSongAlreadyThere": "มีอยู่แล้ว",
   "@linkTransfersSongAlreadyThere": {
     "description": "State of one song in a transfer: the receiving device already had it"
   },
@@ -10128,7 +10128,7 @@
   "@linkTransfersSongCopying": {
     "description": "State of the song a transfer copies right now"
   },
-  "linkTransfersSongNotCopied": "Not copied",
+  "linkTransfersSongNotCopied": "ไม่ได้คัดลอก",
   "@linkTransfersSongNotCopied": {
     "description": "State of a song a stopped or failed transfer did not reach"
   },
@@ -10136,7 +10136,7 @@
   "@linkTransfersStop": {
     "description": "Tooltip of the button that stops a running or waiting transfer; songs already copied stay"
   },
-  "linkTransfersActiveCount": "{count, plural, =1{1 transfer} other{{count} transfers}}",
+  "linkTransfersActiveCount": "{count, plural, =1{1 การโอนย้าย} other{{count} การโอนย้าย}}",
   "@linkTransfersActiveCount": {
     "description": "Status of the row that opens the Transfers list while several transfers run, followed by their progress",
     "placeholders": {
@@ -10145,7 +10145,7 @@
       }
     }
   },
-  "linkTransfersFinishedCount": "{count, plural, =1{1 transfer finished} other{{count} transfers finished}}",
+  "linkTransfersFinishedCount": "{count, plural, =1{1 การโอนย้ายเสร็จ} other{{count} การโอนย้ายเสร็จ}}",
   "@linkTransfersFinishedCount": {
     "description": "Status of the row that opens the Transfers list when none runs: how many finished since the app opened",
     "placeholders": {
@@ -10154,23 +10154,23 @@
       }
     }
   },
-  "linkErrorBadPin": "That PIN is not right. Check the PIN on your computer and try again.",
+  "linkErrorBadPin": "PIN นั้นไม่ถูกต้อง ตรวจสอบ PIN บนคอมพิวเตอร์และลองใหม่",
   "@linkErrorBadPin": {
     "description": "Pairing error when the PIN is wrong"
   },
-  "linkErrorPairingClosed": "Pairing is not open on your computer. Start pairing there, then try again.",
+  "linkErrorPairingClosed": "การจับคู่อยู่ปิดบนคอมพิวเตอร์ เริ่มจับคู่ที่นั่น แล้วลองใหม่",
   "@linkErrorPairingClosed": {
     "description": "Pairing error when the computer has no pairing window open"
   },
-  "linkErrorTooManyAttempts": "Too many attempts. Wait a moment, then try again.",
+  "linkErrorTooManyAttempts": "พยายามมากเกินไป รอสักครู่ แล้วลองใหม่",
   "@linkErrorTooManyAttempts": {
     "description": "Pairing error when the computer rate limits pairing attempts"
   },
-  "linkErrorCertificateTitle": "Computer not verified",
+  "linkErrorCertificateTitle": "คอมพิวเตอร์ไม่ได้รับการยืนยัน",
   "@linkErrorCertificateTitle": {
     "description": "Title of the warning shown when the computer's certificate does not match what it reported"
   },
-  "linkErrorCertificate": "The computer's security certificate does not match what it reported. Someone on this network may be intercepting the connection, so pairing stopped.",
+  "linkErrorCertificate": "ใบรับรองความปลอดภัยของคอมพิวเตอร์ไม่ตรงกับที่รายงาน บุคคลในเครือข่ายนี้อาจกำลังแทรกสอด การจับคู่จึงหยุด",
   "@linkErrorCertificate": {
     "description": "Warning shown when the certificate seen during the connection differs from the computer's reported fingerprint"
   },
@@ -10178,7 +10178,7 @@
   "@linkErrorIncompatible": {
     "description": "Pairing error when the computer is not a compatible Mornye desktop"
   },
-  "linkErrorUnreachable": "The computer could not be reached. Check that Mornye is open on it and that both devices are on the same network.",
+  "linkErrorUnreachable": "ไม่สามารถเข้าถึงคอมพิวเตอร์ได้ ตรวจสอบว่า Mornye เปิดอยู่บนมัน และอุปกรณ์ทั้งสองอยู่ในเครือข่ายเดียวกัน",
   "@linkErrorUnreachable": {
     "description": "Pairing error when the computer cannot be reached"
   },
@@ -10186,7 +10186,7 @@
   "@linkErrorTimeout": {
     "description": "Pairing error when the computer does not answer"
   },
-  "linkErrorInvalidAddress": "Enter a valid address and port, such as 192.168.1.20 and 47710.",
+  "linkErrorInvalidAddress": "ใส่ที่อยู่และพอร์ตที่ถูกต้อง เช่น 192.168.1.20 และ 47710",
   "@linkErrorInvalidAddress": {
     "description": "Error for an address or port that cannot be used"
   },
@@ -10194,11 +10194,11 @@
   "@linkErrorFailed": {
     "description": "Generic pairing error"
   },
-  "linkLocalNetworkTitle": "Local network access needed",
+  "linkLocalNetworkTitle": "ต้องการการเข้าถึงเครือข่ายท้องถิ่น",
   "@linkLocalNetworkTitle": {
     "description": "Title of the notice shown when the phone is not allowed to use the local network"
   },
-  "linkLocalNetworkMessage": "Mornye needs local network access to find your computer and connect to it.",
+  "linkLocalNetworkMessage": "Mornye ต้องการการเข้าถึงเครือข่ายท้องถิ่นเพื่อค้นหาคอมพิวเตอร์ของคุณและเชื่อมต่อ",
   "@linkLocalNetworkMessage": {
     "description": "Explains why local network access is needed"
   },
@@ -10206,7 +10206,7 @@
   "@linkLocalNetworkAllow": {
     "description": "Button that asks for local network access again"
   },
-  "linkWifiOffTitle": "Not on Wi-Fi",
+  "linkWifiOffTitle": "ไม่อยู่บน Wi-Fi",
   "@linkWifiOffTitle": {
     "description": "Title of the notice shown when the phone is not connected to Wi-Fi or Ethernet"
   },
@@ -10214,7 +10214,7 @@
   "@linkWifiOffMessage": {
     "description": "Explains that the phone must join the computer's Wi-Fi network"
   },
-  "linkIssueUnauthorized": "{name} no longer accepts this phone. Pair again to reconnect.",
+  "linkIssueUnauthorized": "{name} ไม่อนุญาตให้โทรศัพท์นี้ใช้งาน จับคู่ใหม่เพื่อเชื่อมต่ออีกครั้ง",
   "@linkIssueUnauthorized": {
     "description": "Notice when the paired computer refuses the phone's key",
     "placeholders": {
@@ -10223,7 +10223,7 @@
       }
     }
   },
-  "linkIssueCertificate": "{name} presented a different security certificate. Pair again only if you reinstalled or reset Mornye on that computer.",
+  "linkIssueCertificate": "{name} เสนอใบรับรองความปลอดภัยที่ต่างออกไป จับคู่ใหม่ก็ต่อเมื่อคุณติดตั้งใหม่หรือรีเซ็ต Mornye บนคอมพิวเตอร์นั้น",
   "@linkIssueCertificate": {
     "description": "Warning when a paired computer's certificate changed",
     "placeholders": {
@@ -10245,13 +10245,13 @@
   "@playlistEditOrder": {
     "description": "Playlist header action and page title for reordering the playlist's tracks"
   },
-  "playlistEditOrderDescription": "Drag a track by its handle, or touch and hold it, to move it.",
+  "playlistEditOrderDescription": "ลากเพลงด้วยจับ손 หรือกดค้างเพื่อย้าย",
   "@playlistEditOrderDescription": {
     "description": "Explanation at the top of the playlist reorder page"
   },
   "playlistEditOrderSaved": "เพลย์ลิสต์ order saved",
-  "collectionOrderSaved": "Song order saved",
-  "collectionOrderChanged": "This collection changed while editing. Please reorder it again.",
+  "collectionOrderSaved": "บันทึกเรียงลำดับเพลงแล้ว",
+  "collectionOrderChanged": "คอลเลกชันนี้เปลี่ยนไประหว่างแก้ไข โปรดเรียงลำดับใหม่",
   "collectionOrderSaveFailed": "Could not save the song order. ลองอีกครั้ง.",
   "@playlistEditOrderSaved": {
     "description": "Snackbar after saving a new playlist track order"
@@ -10276,7 +10276,7 @@
   "@playlistImportFile": {
     "description": "Create playlist option that imports an M3U or CSV file"
   },
-  "playlistImportFileSubtitle": "M3U, M3U8 or CSV, matched to files on this device",
+  "playlistImportFileSubtitle": "M3U, M3U8 หรือ CSV จับคู่กับไฟล์บนอุปกรณ์นี้",
   "@playlistImportFileSubtitle": {
     "description": "Subtitle of the import playlist file option"
   },
@@ -10319,43 +10319,43 @@
       }
     }
   },
-  "playlistImportNoTracks": "No tracks found in this file",
+  "playlistImportNoTracks": "ไม่พบเพลงในไฟล์นี้",
   "@playlistImportNoTracks": {
     "description": "Snackbar when an imported playlist file has no entries"
   },
-  "playlistImportFailed": "Could not read this playlist file",
+  "playlistImportFailed": "ไม่สามารถอ่านไฟล์เพลย์ลิสต์นี้ได้",
   "@playlistImportFailed": {
     "description": "Snackbar when reading or parsing an imported playlist file fails"
   },
-  "recognizeTitle": "Identify Song",
+  "recognizeTitle": "ระบุเพลง",
   "@recognizeTitle": {
     "description": "Title of the screen that identifies a song playing nearby through the microphone (keep short)"
   },
-  "recognizeSearchTooltip": "Identify a song playing nearby",
+  "recognizeSearchTooltip": "ระบุเพลงที่เล่นอยู่ใกล้ๆ",
   "@recognizeSearchTooltip": {
     "description": "Tooltip of the microphone button in the search field that opens song identification"
   },
-  "recognizeIdleTitle": "What's playing?",
+  "recognizeIdleTitle": "กำลังเล่นอะไร?",
   "@recognizeIdleTitle": {
     "description": "Headline of the song identification screen before listening starts"
   },
-  "recognizeIdleMessage": "Hold your device near the music, then tap to listen.",
+  "recognizeIdleMessage": "วางอุปกรณ์ใกล้เพลง แล้วแตะเพื่อฟัง",
   "@recognizeIdleMessage": {
     "description": "Hint under the headline before listening starts"
   },
-  "recognizeStartListening": "Start listening",
+  "recognizeStartListening": "เริ่มฟัง",
   "@recognizeStartListening": {
     "description": "Accessible name of the large microphone button that starts listening"
   },
-  "recognizeServiceNote": "A sound fingerprint is sent to Shazam to find the song. The recording stays on your device.",
+  "recognizeServiceNote": "ลายนิ้วมือเสียงถูกส่งไป Shazam เพื่อค้นหาเพลง การบันทึกอยู่บนอุปกรณ์ของคุณ",
   "@recognizeServiceNote": {
     "description": "Privacy note on the identification screen; Shazam is the recognition service and must not be translated"
   },
-  "recognizeListening": "Listening…",
+  "recognizeListening": "กำลังฟัง…",
   "@recognizeListening": {
     "description": "Status while the microphone listens for a song"
   },
-  "recognizeListeningMessage": "Keep the music playing near your device.",
+  "recognizeListeningMessage": "ให้เพลงเล่นต่อใกล้อุปกรณ์ของคุณ",
   "@recognizeListeningMessage": {
     "description": "Hint while the microphone listens"
   },
@@ -10363,7 +10363,7 @@
   "@recognizeSearching": {
     "description": "Status after listening stops while the last answer is on its way"
   },
-  "recognizeNoMatchTitle": "No match found",
+  "recognizeNoMatchTitle": "ไม่พบเพลงที่ตรงกัน",
   "@recognizeNoMatchTitle": {
     "description": "Title when the recognition service did not know the song"
   },
@@ -10371,11 +10371,11 @@
   "@recognizeNoMatchMessage": {
     "description": "Hint when no song was found"
   },
-  "recognizeTryAgain": "Try Again",
+  "recognizeTryAgain": "ลองอีกครั้ง",
   "@recognizeTryAgain": {
     "description": "Button that starts listening again after no match or an error"
   },
-  "recognizeQuietTitle": "Couldn't hear the music",
+  "recognizeQuietTitle": "ได้ยินเพลงไม่ชัด",
   "@recognizeQuietTitle": {
     "description": "Title when the microphone captured too little or too quiet audio to identify"
   },
@@ -10383,23 +10383,23 @@
   "@recognizeQuietMessage": {
     "description": "Hint when the captured audio was too quiet or short"
   },
-  "recognizeNetworkTitle": "No connection",
+  "recognizeNetworkTitle": "ไม่มีการเชื่อมต่อ",
   "@recognizeNetworkTitle": {
     "description": "Title when identification failed because the network is unreachable"
   },
-  "recognizeNetworkMessage": "Check your internet connection and try again.",
+  "recognizeNetworkMessage": "ตรวจสอบการเชื่อมต่ออินเทอร์เน็ตและลองใหม่",
   "@recognizeNetworkMessage": {
     "description": "Hint when identification failed because of the network"
   },
-  "recognizeRateLimitedTitle": "Too many tries",
+  "recognizeRateLimitedTitle": "ลองมากเกินไป",
   "@recognizeRateLimitedTitle": {
     "description": "Title when the recognition service asked to slow down"
   },
-  "recognizeRateLimitedMessage": "Wait a minute, then try again.",
+  "recognizeRateLimitedMessage": "รอหนึ่งนาที แล้วลองใหม่",
   "@recognizeRateLimitedMessage": {
     "description": "Hint when the recognition service rate limited the app"
   },
-  "recognizeUnavailableTitle": "Identification unavailable",
+  "recognizeUnavailableTitle": "การระบุเพลงไม่พร้อมใช้งาน",
   "@recognizeUnavailableTitle": {
     "description": "Title when the recognition service failed or answered unexpectedly"
   },
@@ -10407,11 +10407,11 @@
   "@recognizeUnavailableMessage": {
     "description": "Hint when the recognition service failed"
   },
-  "recognizeMicrophoneTitle": "Microphone unavailable",
+  "recognizeMicrophoneTitle": "ไมโครโฟนไม่พร้อมใช้งาน",
   "@recognizeMicrophoneTitle": {
     "description": "Title when the microphone could not record"
   },
-  "recognizeMicrophoneMessage": "No microphone is available, or another app is using it.",
+  "recognizeMicrophoneMessage": "ไม่มีไมโครโฟนพร้อมใช้งาน หรือแอปอื่นกำลังใช้อยู่",
   "@recognizeMicrophoneMessage": {
     "description": "Hint when the microphone could not record"
   },
@@ -10439,7 +10439,7 @@
   "@recognizeOpenInShazam": {
     "description": "Button that opens the identified song on the Shazam website; Shazam must not be translated"
   },
-  "recognizeListenAgain": "Listen Again",
+  "recognizeListenAgain": "ฟังอีกครั้ง",
   "@recognizeListenAgain": {
     "description": "Button that starts a new identification from a result"
   },
@@ -10447,7 +10447,7 @@
   "@recognizeHistory": {
     "description": "Section header for the list of songs identified before"
   },
-  "recognizeClearHistory": "Clear identified songs",
+  "recognizeClearHistory": "ล้างประวัติเพลงที่ระบุ",
   "@recognizeClearHistory": {
     "description": "Tooltip of the header button that clears the identification history"
   },
@@ -10455,11 +10455,11 @@
   "@recognizeClearHistoryMessage": {
     "description": "Confirmation message before clearing the identification history"
   },
-  "collectionSuggestionsTitle": "Suggested songs",
+  "collectionSuggestionsTitle": "เพลงแนะนำ",
   "@collectionSuggestionsTitle": {
     "description": "Heading of the songs suggested below an album, single or playlist"
   },
-  "collectionSuggestionsRelated": "Based on the songs above",
+  "collectionSuggestionsRelated": "อิงจากเพลงด้านบน",
   "@collectionSuggestionsRelated": {
     "description": "Line under the suggestions heading when an extension suggested songs like the album's or playlist's"
   },
@@ -10467,7 +10467,7 @@
   "@collectionSuggestionsByArtists": {
     "description": "Line under the suggestions heading when the songs were found by searching the album's or playlist's artists"
   },
-  "collectionSuggestionsRefresh": "Suggest other songs",
+  "collectionSuggestionsRefresh": "แนะนำเพลงอื่น",
   "@collectionSuggestionsRefresh": {
     "description": "Tooltip of the button that loads other suggestions"
   },
@@ -10476,7 +10476,7 @@
   "lastfmConnecting": "เชื่อมต่อing to Last.fm...",
   "lastfmFinishConnection": "เสร็จ connecting",
   "lastfmAuthorizeHelp": "Approve access in your browser, then return here and choose เสร็จ connecting.",
-  "lastfmScrobbling": "Scrobbling",
+  "lastfmScrobbling": "สครอบเบิล",
   "lastfmScrobblingDescription": "ส่ง songs you listen to in the built-in player to Last.fm.",
   "lastfmNowPlaying": "แสดง กำลังเล่น",
   "lastfmNowPlayingDescription": "แสดง the current song on your Last.fm profile.",
@@ -10486,9 +10486,9 @@
   "lastfmAuthorizationPending": "Access has not been approved yet. เสร็จ authorizing Mornye in your browser.",
   "lastfmAuthorizationExpired": "This connection request expired. เชื่อมต่อ again to continue.",
   "lastfmReauthenticate": "Your Last.fm connection expired. เชื่อมต่อ again to resume scrobbling.",
-  "lastfmUnavailable": "Last.fm is unavailable in this build.",
-  "lastfmRejected": "Last.fm rejected a scrobble. Check the song's title and artist tags.",
-  "lastfmPending": "{count, plural, =1{1 scrobble waiting to sync} other{{count} scrobbles waiting to sync}}",
+  "lastfmUnavailable": "Last.fm ไม่พร้อมใช้งานในบิลด์นี้",
+  "lastfmRejected": "Last.fm ปฏิเสธการสครอบเบิล ตรวจสอบแท็กชื่อเพลงและศิลปิน",
+  "lastfmPending": "{count, plural, =1{1 สครอบเบิลรอซิงค์} other{{count} สครอบเบิลรอซิงค์}}",
   "@lastfmPending": {
     "description": "Number of saved Last.fm scrobbles awaiting submission",
     "placeholders": {
@@ -10498,19 +10498,19 @@
     }
   },
   "audioOutputSystem": "This device and น้ำเงินtooth",
-  "audioOutputCast": "Cast to TV",
-  "audioOutputCastDescription": "Google Cast devices on the same Wi-Fi network",
+  "audioOutputCast": "Cast ไปที่ TV",
+  "audioOutputCastDescription": "อุปกรณ์ Google Cast บน Wi-Fi เดียวกัน",
   "audioOutputStopCasting": "หยุด casting",
   "audioOutputCastUnavailable": "Unable to open Google Cast. Check Google เล่น services and local network access.",
   "audioOutputAirPlay": "Airเล่น and น้ำเงินtooth",
   "@audioOutputAirPlay": {
     "description": "iOS Audio output sheet row that opens the system picker for AirPlay, Bluetooth and this iPhone"
   },
-  "audioOutputCastSearching": "Looking for Google Cast devices…",
+  "audioOutputCastSearching": "กำลังค้นหาอุปกรณ์ Google Cast…",
   "@audioOutputCastSearching": {
     "description": "Shown in the Cast device picker on iOS and desktop while no receiver has been found on the network yet"
   },
-  "audioOutputCastConnectFailed": "Could not connect to {device}",
+  "audioOutputCastConnectFailed": "ไม่สามารถเชื่อมต่อกับ {device}",
   "@audioOutputCastConnectFailed": {
     "description": "Snackbar after connecting to a Google Cast receiver failed; device is the name the owner gave it",
     "placeholders": {
@@ -10670,18 +10670,18 @@
     }
   },
   "offlineSave": "บันทึก offline",
-  "offlineOnDevice": "On this device",
-  "offlineOnIPhone": "On iPhone",
-  "offlineOnPhone": "On phone",
+  "offlineOnDevice": "บนอุปกรณ์นี้",
+  "offlineOnIPhone": "บน iPhone",
+  "offlineOnPhone": "บนโทรศัพท์",
   "offlineServerOnly": "เซิร์ฟเวอร์ only",
   "offlineServerAndDevice": "เซิร์ฟเวอร์ + device",
-  "offlineDeviceOnly": "Device only",
+  "offlineDeviceOnly": "อุปกรณ์อย่างเดียว",
   "offlineRemove": "ลบสำเนาออฟไลน์",
   "offlineRemoveMessage": "ลบ the offline copy from this device? The server file will be kept.",
   "offlineDeleteServer": "ลบเซิร์ฟเวอร์ copy",
-  "offlineServerReadOnly": "This server connection does not support deleting files.",
+  "offlineServerReadOnly": "การเชื่อมต่อเซิร์ฟเวอร์นี้ไม่รองรับการลบไฟล์",
   "offlineDeleteServerMessage": "ลบ the original file from the server? The offline copy on this device will be kept.",
-  "offlineSaving": "Saving offline",
+  "offlineSaving": "กำลังบันทึกออฟไลน์",
   "offlineResult": "บันทึกd {saved}, already available {skipped}, failed {failed}",
   "@offlineResult": {
     "placeholders": {
@@ -10696,7 +10696,7 @@
       }
     }
   },
-  "offlineFailed": "Couldn't save the offline copy. Check the server connection and download folder access.",
+  "offlineFailed": "ไม่สามารถบันทึกสำเนาออฟไลน์ได้ ตรวจสอบการเชื่อมต่อเซิร์ฟเวอร์และการเข้าถึงโฟลเดอร์ดาวน์โหลด",
   "offlineNoSongs": "No network ไลบรารี songs in this selection.",
   "offlineCopyUnavailable": "The offline copy is unavailable. บันทึก it again before deleting the server copy.",
   "offlinePlayingLocal": "กำลังเล่นจาก this device",
@@ -10724,15 +10724,15 @@
   "@lyricsEditTitle": {
     "description": "Lyrics menu action and title of the lyrics editor, which edits lines and their times"
   },
-  "lyricsEditWrite": "Write lyrics",
+  "lyricsEditWrite": "เขียนเนื้อเพลง",
   "@lyricsEditWrite": {
     "description": "Button under 'No lyrics' in the player that opens the lyrics editor with an empty line"
   },
-  "lyricsEditSetTime": "Set time",
+  "lyricsEditSetTime": "ตั้งเวลา",
   "@lyricsEditSetTime": {
     "description": "Lyrics editor button that gives the selected line the current playback position, then selects the next line"
   },
-  "lyricsEditSetTimeTooltip": "Give the selected line the current position",
+  "lyricsEditSetTimeTooltip": "ให้บรรทัดที่เลือกมีตำแหน่งปัจจุบัน",
   "lyricsEditEarlier": "−0.1",
   "@lyricsEditEarlier": {
     "description": "Short label of the button that moves the selected line's time 0.1 seconds earlier"
@@ -10743,7 +10743,7 @@
   },
   "lyricsEditEarlierTooltip": "ย้าย 0.1 s earlier",
   "lyricsEditLaterTooltip": "ย้าย 0.1 s later",
-  "lyricsEditNoTime": "No time",
+  "lyricsEditNoTime": "ไม่มีเวลา",
   "@lyricsEditNoTime": {
     "description": "Shown for a lyric line that has no time yet"
   },
@@ -10755,15 +10755,15 @@
       }
     }
   },
-  "lyricsEditOutOfOrder": "Earlier than the line before it",
-  "lyricsEditLineHint": "Lyric line",
+  "lyricsEditOutOfOrder": "เร็วกว่าบรรทัดก่อนหน้า",
+  "lyricsEditLineHint": "บรรทัดเนื้อเพลง",
   "lyricsEditAddLine": "เพิ่มบรรทัด",
-  "lyricsEditInsertBelow": "Insert line below",
+  "lyricsEditInsertBelow": "แทรกบรรทัดด้านล่าง",
   "lyricsEditRemoveTime": "ลบ time",
   "lyricsEditDeleteLine": "ลบบรรทัด",
   "lyricsEditLineActions": "บรรทัด actions",
   "lyricsEditSaved": "บันทึกเนื้อเพลงแล้ว",
-  "lyricsEditSaveFailed": "Couldn't save the lyrics to this file",
+  "lyricsEditSaveFailed": "ไม่สามารถบันทึกเนื้อเพลงลงไฟล์นี้ได้",
   "lyricsEditReadOnly": "เนื้อเพลง can't be saved to this song's file",
   "trackSaveLyricsError": "บันทึกเนื้อร้องไม่ได้",
   "lyricsSearchNoResults": "ไม่พบเนื้อร้อง",
