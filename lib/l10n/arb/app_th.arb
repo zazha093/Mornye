@@ -454,11 +454,11 @@
   "@homeTitle": {
     "description": "Home screen title"
   },
-  "homeEmptyTitle": "No search providers yet",
+  "homeEmptyTitle": "ยังไม่มีผู้ให้บริการค้นหา",
   "@homeEmptyTitle": {
     "description": "Title shown on home when no providers are available yet"
   },
-  "homeEmptySubtitle": "ติดตั้ง an extension to continue.",
+  "homeEmptySubtitle": "ติดตั้งส่วนขยายเพื่อเริ่มใช้งาน",
   "@homeEmptySubtitle": {
     "description": "Subtitle shown on home when no providers are available yet"
   },
@@ -3681,14 +3681,14 @@
   "whatsNewLinkTransferBody": "ส่ง songs to your computer or save them to your phone, right from the song menu.",
   "whatsNewLinkSyncTitle": "Stay in sync",
   "whatsNewLinkSyncBody": "Collections and listening history stay the same on paired devices.",
-  "whatsNewHomeTitle": "A หน้าแรก that learns",
-  "whatsNewHomeDesc": "Mixes and autoplay now follow how you actually listen.",
-  "whatsNewHomeMixesTitle": "Mixes from your ไลบรารี",
-  "whatsNewHomeMixesBody": "ใหม่ mixes built from your own songs, including a mix for each genre.",
-  "whatsNewHomeAutoplayTitle": "Smarter autoplay",
-  "whatsNewHomeAutoplayBody": "อัตโนมัติplay follows your listening session and learns from your favorites, playlists and replays.",
-  "whatsNewHomeAnalysisTitle": "Song analysis",
-  "whatsNewHomeAnalysisBody": "Mornye can analyze how your songs sound for closer picks. It stays off until you turn it on in การตั้งค่า.",
+  "whatsNewHomeTitle": "หน้าแรกที่เรียนรู้จากคุณ",
+  "whatsNewHomeDesc": "Mixes และการเล่นอัตโนมัติปรับตัวตามวิธีที่คุณฟังจริง",
+  "whatsNewHomeMixesTitle": "Mixes จากไลบรารีของคุณ",
+  "whatsNewHomeMixesBody": "Mixes ใหม่ที่สร้างจากเพลงของคุณเอง รวมถึง Mix แยกตามแนวเพลง",
+  "whatsNewHomeAutoplayTitle": "การเล่นอัตโนมัติที่ฉลาดขึ้น",
+  "whatsNewHomeAutoplayBody": "การเล่นอัตโนมัติปรับตามการฟังของคุณ และเรียนรู้จากเพลงโปรด เพลย์ลิสต์ และการเล่นซ้ำ",
+  "whatsNewHomeAnalysisTitle": "การวิเคราะห์เพลง",
+  "whatsNewHomeAnalysisBody": "Mornye สามารถวิเคราะห์เสียงเพลงเพื่อแนะนำที่แม่นยำขึ้น ฟีเจอร์นี้จะปิดอยู่จนกว่าคุณจะเปิดในการตั้งค่า",
   "whatsNewPlayerTitle": "เล่นer and lyrics",
   "whatsNewPlayerDesc": "Smoother playback, and lyrics in any language.",
   "whatsNewPlayerGaplessTitle": "เล่นต่อเนื่อง",
@@ -4981,15 +4981,15 @@
       }
     }
   },
-  "homeSkipAlreadyDownloaded": "ข้าม already downloaded songs",
+  "homeSkipAlreadyDownloaded": "ข้ามเพลงที่ดาวน์โหลดแล้ว",
   "@homeSkipAlreadyDownloaded": {
     "description": "Checkbox label in import dialog to skip already-downloaded songs"
   },
-  "homeGoToAlbum": "Go to อัลบั้ม",
+  "homeGoToAlbum": "ไปที่อัลบั้ม",
   "@homeGoToAlbum": {
     "description": "Context menu item to navigate to the album page"
   },
-  "homeAlbumInfoUnavailable": "อัลบั้ม info not available",
+  "homeAlbumInfoUnavailable": "ไม่พบข้อมูลอัลบั้ม",
   "@homeAlbumInfoUnavailable": {
     "description": "Snackbar when album info cannot be loaded"
   },
@@ -5771,7 +5771,7 @@
   "@extensionsHomeFeedCountryDescription": {
     "description": "Help for choosing regional Home recommendations"
   },
-  "extensionsHomeFeedDescription": "Choose which extension provides the home feed on the main screen",
+  "extensionsHomeFeedDescription": "เลือกส่วนขยายที่ให้บริการฟีดหน้าแรกบนหน้าจอหลัก",
   "@extensionsHomeFeedDescription": {
     "description": "Extensions page - description for home feed provider picker"
   },
@@ -5779,7 +5779,7 @@
   "@extensionsHomeFeedAuto": {
     "description": "Label for auto-selected search provider"
   },
-  "extensionsHomeFeedAutoSubtitle": "อัตโนมัติmatically select the best available",
+  "extensionsHomeFeedAutoSubtitle": "เลือกผู้ให้บริการที่ดีที่สุดโดยอัตโนมัติ",
   "@extensionsHomeFeedAutoSubtitle": {
     "description": "Extensions page - subtitle for auto home feed option"
   },
@@ -5787,11 +5787,11 @@
   "@extensionsHomeFeedOff": {
     "description": "Extensions page - home feed provider option: off"
   },
-  "extensionsHomeFeedOffSubtitle": "Do not show the home feed on the main screen",
+  "extensionsHomeFeedOffSubtitle": "ไม่แสดงฟีดหน้าแรกบนหน้าจอหลัก",
   "@extensionsHomeFeedOffSubtitle": {
     "description": "Extensions page - subtitle for off home feed option"
   },
-  "extensionsHomeFeedUse": "Use {extensionName} home feed",
+  "extensionsHomeFeedUse": "ใช้ฟีดหน้าแรกของ {extensionName}",
   "@extensionsHomeFeedUse": {
     "description": "Extensions page - subtitle for a specific extension home feed option",
     "placeholders": {
@@ -5800,7 +5800,7 @@
       }
     }
   },
-  "extensionsNoHomeFeedExtensions": "No extensions with home feed",
+  "extensionsNoHomeFeedExtensions": "ไม่มีส่วนขยายที่มีฟีดหน้าแรก",
   "@extensionsNoHomeFeedExtensions": {
     "description": "Extensions page - shown when no installed extension has home feed"
   },
@@ -6095,11 +6095,11 @@
   "@searchTracks": {
     "description": "Search filter label - tracks"
   },
-  "homeSearchHintDefault": "ค้นหา or paste a supported URL...",
+  "homeSearchHintDefault": "ค้นหาหรือวางลิงก์ที่รองรับ...",
   "@homeSearchHintDefault": {
     "description": "Default placeholder for the main search field on Home"
   },
-  "homeSearchHintProvider": "ค้นหา with {providerName}...",
+  "homeSearchHintProvider": "ค้นหาด้วย {providerName}...",
   "@homeSearchHintProvider": {
     "description": "Placeholder for the main search field when a provider is selected",
     "placeholders": {
@@ -6112,7 +6112,7 @@
   "@homeImportCsvTooltip": {
     "description": "Tooltip for importing a CSV or M3U playlist file into Home search"
   },
-  "homeChangeSearchProviderTooltip": "Change search provider",
+  "homeChangeSearchProviderTooltip": "เปลี่ยนผู้ให้บริการค้นหา",
   "@homeChangeSearchProviderTooltip": {
     "description": "Tooltip for the Home search provider picker"
   },
@@ -8404,18 +8404,18 @@
   "profileRemovePhoto": "ลบ photo",
   "profilePhotoError": "Choose a valid image smaller than 20 MB.",
   "profileSaveError": "Could not save your profile. Please try again.",
-  "homeGreetingMorning1": "Good morning",
-  "homeGreetingMorning2": "Rise and shine",
-  "homeGreetingMorning3": "Fresh start",
-  "homeGreetingAfternoon1": "Good afternoon",
-  "homeGreetingAfternoon2": "Afternoon groove",
-  "homeGreetingAfternoon3": "Keep the vibe going",
-  "homeGreetingEvening1": "Good evening",
-  "homeGreetingEvening2": "Time to unwind",
-  "homeGreetingEvening3": "Golden hour",
-  "homeGreetingNight1": "Good night",
-  "homeGreetingNight2": "Late-night session",
-  "homeGreetingNight3": "Quiet hours",
+  "homeGreetingMorning1": "สวัสดีตอนเช้า",
+  "homeGreetingMorning2": "อรุณสวัสดิ์",
+  "homeGreetingMorning3": "เริ่มวันใหม่",
+  "homeGreetingAfternoon1": "สวัสดีตอนบ่าย",
+  "homeGreetingAfternoon2": "ช่วงบ่ายเพลิดเพลิน",
+  "homeGreetingAfternoon3": "ต่อยอดความสุขต่อไป",
+  "homeGreetingEvening1": "สวัสดีตอนเย็น",
+  "homeGreetingEvening2": "เวลาพักผ่อน",
+  "homeGreetingEvening3": "ช่วงเวลาทอง",
+  "homeGreetingNight1": "ราตรีสวัสดิ์",
+  "homeGreetingNight2": "เซสชันดึกๆ",
+  "homeGreetingNight3": "ช่วงเงียบสงบ",
   "homeGreetingNamed": "{greeting}, {name}",
   "@homeGreetingNamed": {
     "description": "Home greeting followed by the first name from the user's profile",
@@ -8428,23 +8428,23 @@
       }
     }
   },
-  "homeTaglineListening": "What are we listening to?",
+  "homeTaglineListening": "วันนี้จะฟังอะไรดี?",
   "@homeTaglineListening": {
     "description": "Rotating Home prompt under the greeting"
   },
-  "homeTaglineLink": "Got a link? Drop it in the search",
+  "homeTaglineLink": "มีลิงก์? วางในช่องค้นหาเลย",
   "@homeTaglineLink": {
     "description": "Rotating Home prompt explaining that links can be pasted into search"
   },
-  "homeTaglineDiscover": "Find your next favorite album",
+  "homeTaglineDiscover": "ค้นหาอัลบั้มโปรดถัดไปของคุณ",
   "@homeTaglineDiscover": {
     "description": "Rotating Home prompt under the greeting"
   },
-  "homeContinueListening": "ดำเนินต่อ listening",
+  "homeContinueListening": "เล่นต่อ",
   "@homeContinueListening": {
     "description": "Home section header for the track currently loaded in the player"
   },
-  "homeRecentlyPlayed": "ล่าสุดly เล่นed",
+  "homeRecentlyPlayed": "เล่นล่าสุด",
   "@homeRecentlyPlayed": {
     "description": "Mornye Home: heading of the shelf of what was played lately"
   },
@@ -8452,11 +8452,11 @@
   "@homeRecentlyAdded": {
     "description": "Home section header for the newest downloaded and scanned tracks"
   },
-  "homeOnRepeat": "On repeat",
+  "homeOnRepeat": "เล่นซ้ำ",
   "@homeOnRepeat": {
     "description": "Home section header for the most played tracks of the last four weeks"
   },
-  "homeShortcuts": "Shortcuts",
+  "homeShortcuts": "ทางลัด",
   "@homeShortcuts": {
     "description": "Home section header for quick links to player tools"
   },
@@ -8464,23 +8464,23 @@
   "@searchResults": {
     "description": "Heading of a mixed preview of search result types, without implying a relevance ranking"
   },
-  "homeTopPicks": "บน Picks for You",
+  "homeTopPicks": "แนะนำสำหรับคุณ",
   "@homeTopPicks": {
     "description": "Mornye Home: heading of the first shelf, the day's mixes shown as banners"
   },
-  "homeMadeForYou": "Made for You",
+  "homeMadeForYou": "สร้างมาให้คุณ",
   "@homeMadeForYou": {
     "description": "Mornye Home: small label on a mix banner"
   },
-  "homeMixesForYou": "Mixes for you",
+  "homeMixesForYou": "Mixes สำหรับคุณ",
   "@homeMixesForYou": {
     "description": "Home section header for daily mixes made from the user's own Library songs"
   },
-  "homeMixFavoritesTitle": "โปรด Mix",
+  "homeMixFavoritesTitle": "Mix เพลงโปรด",
   "@homeMixFavoritesTitle": {
     "description": "Title of the daily mix of the user's most played songs and songs like them"
   },
-  "homeMixGenreTitle": "{genre} Mix",
+  "homeMixGenreTitle": "Mix {genre}",
   "@homeMixGenreTitle": {
     "description": "Title of a daily mix of one genre from the user's Library, e.g. 'Hip-Hop Mix'",
     "placeholders": {
@@ -8489,7 +8489,7 @@
       }
     }
   },
-  "homeMixArtistTitle": "{artist} Mix",
+  "homeMixArtistTitle": "Mix {artist}",
   "@homeMixArtistTitle": {
     "description": "Title of a daily mix built around one artist and similar songs from the user's Library",
     "placeholders": {
@@ -8498,7 +8498,7 @@
       }
     }
   },
-  "homeMixDecadeTitle": "{decade}s Mix",
+  "homeMixDecadeTitle": "Mix ยุค {decade}s",
   "@homeMixDecadeTitle": {
     "description": "Title of a daily mix of songs released in one decade, e.g. '2010s Mix'; decade is the decade's first year",
     "placeholders": {
@@ -8507,15 +8507,15 @@
       }
     }
   },
-  "homeMixFreshTitle": "ใหม่ เพิ่มitions Mix",
+  "homeMixFreshTitle": "Mix เพลงเพิ่งเพิ่ม",
   "@homeMixFreshTitle": {
     "description": "Title of the daily mix of songs added to the user's Library in the last month"
   },
-  "homeMixRediscoverTitle": "แดงiscover Mix",
+  "homeMixRediscoverTitle": "Mix ค้นพบใหม่",
   "@homeMixRediscoverTitle": {
     "description": "Title of the daily mix of songs the user played often months ago but not lately"
   },
-  "homeMixDiscoverTitle": "Discover Mix",
+  "homeMixDiscoverTitle": "Mix ค้นพบ",
   "@homeMixDiscoverTitle": {
     "description": "Title of the daily mix of Library songs the user has never played, from their favorite genres"
   },
@@ -8528,7 +8528,7 @@
       }
     }
   },
-  "homeMixArtistsTwo": "{first} and {second}",
+  "homeMixArtistsTwo": "{first} และ {second}",
   "@homeMixArtistsTwo": {
     "description": "Subtitle of a daily mix with two main artists, e.g. 'Tyler, The Creator and Frank Ocean'",
     "placeholders": {
@@ -8540,7 +8540,7 @@
       }
     }
   },
-  "homeMixArtistsMore": "{first}, {second} and more",
+  "homeMixArtistsMore": "{first}, {second} และอีกมากมาย",
   "@homeMixArtistsMore": {
     "description": "Subtitle of a daily mix with three or more main artists, naming the first two, e.g. 'Tyler, The Creator, Frank Ocean and more'",
     "placeholders": {
@@ -8552,11 +8552,11 @@
       }
     }
   },
-  "homeMixGenreHipHop": "Hip-Hop",
+  "homeMixGenreHipHop": "ฮิป-ฮอป",
   "@homeMixGenreHipHop": {
     "description": "Genre name used in a daily mix title such as 'Hip-Hop Mix'"
   },
-  "homeMixGenreRnb": "R&B",
+  "homeMixGenreRnb": "อาร์แอนด์บี",
   "@homeMixGenreRnb": {
     "description": "Genre name used in a daily mix title such as 'R&B Mix'"
   },
@@ -8564,11 +8564,11 @@
   "@homeMixGenrePop": {
     "description": "Genre name used in a daily mix title such as 'Pop Mix'"
   },
-  "homeMixGenreKpop": "K-ป๊อป",
+  "homeMixGenreKpop": "เค-ป๊อป",
   "@homeMixGenreKpop": {
     "description": "Genre name (Korean pop) used in a daily mix title such as 'K-Pop Mix'"
   },
-  "homeMixGenreJpop": "J-ป๊อป",
+  "homeMixGenreJpop": "เจ-ป๊อป",
   "@homeMixGenreJpop": {
     "description": "Genre name (Japanese pop, anime and related music) used in a daily mix title such as 'J-Pop Mix'"
   },
@@ -8576,15 +8576,15 @@
   "@homeMixGenreRock": {
     "description": "Genre name used in a daily mix title such as 'Rock Mix'"
   },
-  "homeMixGenreMetal": "Metal",
+  "homeMixGenreMetal": "เมทัล",
   "@homeMixGenreMetal": {
     "description": "Genre name used in a daily mix title such as 'Metal Mix'"
   },
-  "homeMixGenrePunk": "Punk",
+  "homeMixGenrePunk": "ปังค์",
   "@homeMixGenrePunk": {
     "description": "Genre name used in a daily mix title such as 'Punk Mix'"
   },
-  "homeMixGenreIndie": "Indie & Alternative",
+  "homeMixGenreIndie": "อินดี้ & อัลเทอร์เนทีฟ",
   "@homeMixGenreIndie": {
     "description": "Genre name used in a daily mix title such as 'Indie & Alternative Mix'"
   },
@@ -8592,7 +8592,7 @@
   "@homeMixGenreElectronic": {
     "description": "Genre name used in a daily mix title such as 'Electronic Mix'"
   },
-  "homeMixGenreChill": "Chill & Lo-Fi",
+  "homeMixGenreChill": "ชิล & โล-ไฟ",
   "@homeMixGenreChill": {
     "description": "Genre name (ambient, lo-fi and relaxing music) used in a daily mix title such as 'Chill & Lo-Fi Mix'"
   },
@@ -8600,7 +8600,7 @@
   "@homeMixGenreJazz": {
     "description": "Genre name used in a daily mix title such as 'Jazz Mix'"
   },
-  "homeMixGenreBlues": "น้ำเงินs",
+  "homeMixGenreBlues": "บลูส์",
   "@homeMixGenreBlues": {
     "description": "Genre name used in a daily mix title such as 'Blues Mix'"
   },
@@ -8608,11 +8608,11 @@
   "@homeMixGenreClassical": {
     "description": "Genre name used in a daily mix title such as 'Classical Mix'"
   },
-  "homeMixGenreSoundtrack": "Soundtrack",
+  "homeMixGenreSoundtrack": "ซาวด์แทร็ก",
   "@homeMixGenreSoundtrack": {
     "description": "Genre name (film, game and TV music) used in a daily mix title such as 'Soundtrack Mix'"
   },
-  "homeMixGenreCountry": "Country",
+  "homeMixGenreCountry": "คันทรี",
   "@homeMixGenreCountry": {
     "description": "Genre name used in a daily mix title such as 'Country Mix'"
   },
@@ -8620,31 +8620,31 @@
   "@homeMixGenreFolk": {
     "description": "Genre name used in a daily mix title such as 'Folk & Acoustic Mix'"
   },
-  "homeMixGenreLatin": "Latin",
+  "homeMixGenreLatin": "ลาติน",
   "@homeMixGenreLatin": {
     "description": "Genre name used in a daily mix title such as 'Latin Mix'"
   },
-  "homeMixGenreReggae": "Reggae",
+  "homeMixGenreReggae": "รากเก๊",
   "@homeMixGenreReggae": {
     "description": "Genre name used in a daily mix title such as 'Reggae Mix'"
   },
-  "homeMixGenreAfro": "Afrobeats",
+  "homeMixGenreAfro": "อะฟโรบีตส์",
   "@homeMixGenreAfro": {
     "description": "Genre name used in a daily mix title such as 'Afrobeats Mix'"
   },
-  "homeMixGenreGospel": "Gospel & Worship",
+  "homeMixGenreGospel": "กอสเปล & เวิร์ชิพ",
   "@homeMixGenreGospel": {
     "description": "Genre name (Christian music) used in a daily mix title such as 'Gospel & Worship Mix'"
   },
-  "homeMixGenreDangdut": "Dangdut",
+  "homeMixGenreDangdut": "ดังดุท",
   "@homeMixGenreDangdut": {
     "description": "Genre name (Indonesian popular music) used in a daily mix title such as 'Dangdut Mix'"
   },
-  "homeMixUpdatedDaily": "Made from your ไลบรารี, updated daily",
+  "homeMixUpdatedDaily": "สร้างจากไลบรารีของคุณ อัปเดตทุกวัน",
   "@homeMixUpdatedDaily": {
     "description": "Note in a daily mix's header explaining where its songs come from"
   },
-  "homeMixSaveAsPlaylist": "บันทึก as playlist",
+  "homeMixSaveAsPlaylist": "บันทึกเป็นเพลย์ลิสต์",
   "@homeMixSaveAsPlaylist": {
     "description": "Action that saves a daily mix's songs into one of the user's playlists"
   },
