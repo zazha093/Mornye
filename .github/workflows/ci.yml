@@ -108,6 +108,23 @@ jobs:
               - '.fvmrc'
               - '.github/workflows/ci.yml'
 
+  check-secrets:
+    name: Check Discord SDK secret
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    outputs:
+      has_discord_secret: ${{ steps.check.outputs.has_secret }}
+    steps:
+      - name: Check if Discord SDK passphrase secret is set
+        id: check
+        run: |
+          if [ -n "${{ secrets.DISCORD_MOBILE_SDK_PASSPHRASE }}" ]; then
+            echo "has_secret=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_secret=false" >> $GITHUB_OUTPUT
+          fi
+
   flutter:
     name: Flutter analyze & test
     runs-on: ubuntu-latest
@@ -191,8 +208,8 @@ jobs:
   rust-ios:
     name: Rust iOS libraries & release application
     runs-on: xcode-27
-    needs: changes
-    if: (needs.changes.outputs.rust == 'true' || needs.changes.outputs.ios == 'true') && secrets.DISCORD_MOBILE_SDK_PASSPHRASE != ''
+    needs: [changes, check-secrets]
+    if: (needs.changes.outputs.rust == 'true' || needs.changes.outputs.ios == 'true') && needs.check-secrets.outputs.has_discord_secret == 'true'
     env:
       MORNYE_DISCORD_SDK: "0"
 
@@ -256,8 +273,8 @@ jobs:
   android:
     name: Android Rust builds & native tests
     runs-on: ubuntu-latest
-    needs: changes
-    if: needs.changes.outputs.android == 'true' && secrets.DISCORD_MOBILE_SDK_PASSPHRASE != ''
+    needs: [changes, check-secrets]
+    if: needs.changes.outputs.android == 'true' && needs.check-secrets.outputs.has_discord_secret == 'true'
     env:
       MORNYE_DISCORD_SDK: "0"
 
