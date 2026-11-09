@@ -164,7 +164,7 @@ jobs:
       - name: Install media test tools & Xvfb
         run: |
           sudo apt-get update
-          sudo apt-get install -y ffmpeg xvfb libgl1-mesa-glx
+          sudo apt-get install -y ffmpeg xvfb
           ffmpeg -version
           ffprobe -version
           Xvfb :99 -screen 0 1280x720x24 &
